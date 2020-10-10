@@ -4,7 +4,7 @@ node_js:
 script:
   - npm run docs
 before_deploy:
-  - npm run test || travis_terminate 1
+  - npm run test -- --coverage || travis_terminate 1
   - npm run build
 deploy:
   - provider: pages

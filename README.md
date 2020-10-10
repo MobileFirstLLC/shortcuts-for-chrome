@@ -1,5 +1,8 @@
 # Shortcuts for Chrome
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/a157da9689c99fc90a57/maintainability)](https://codeclimate.com/github/MobileFirstLLC/shortcuts-for-chrome/maintainability)
+
+
 **Quick access navigation menu for developers working with chrome browser**
 
 * * * 
@@ -18,8 +21,22 @@
 **The latest version is available for installation at Chrome Web Store.**
 
 <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
-<img width="250" src=".github/badge.png"/>
+<img alt="install at chrome web store" width="250" src=".github/badge.png"/>
 </a>
+
+* * * 
+
+## Development
+
+Building this application from requires Node.js and some web editor.
+
+```
+npm install
+npm run build
+```
+
+- This extension is build with [extension-cli](https://oss.mobilefirst.me/extension-cli/).
+- You can view source code docs [here](http://oss.mobilefirst.me/shortcuts-for-chrome/)
 
 * * *
 
