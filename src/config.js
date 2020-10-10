@@ -49,7 +49,7 @@ export const ContextMenuOptions = () => {
             url: '{URI}/reviews'
         },
         source: {
-            title: 'ctx_source', url: 'https://github.com/nkrusch/shortcuts-for-chrome'
+            title: 'ctx_source', url: 'https://github.com/mobilefirstllc/shortcuts-for-chrome'
         }
     };
 }
