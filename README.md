@@ -10,6 +10,8 @@
 
 <img src='https://lh3.googleusercontent.com/NmmoTZwJiTAIYdpkiSaepbJ3WdwT2XNo1yh3ljkQzeqUGQivtIJrHyjzOSAKzW83wjSyZtFj6kg=w640-h400-e365' />
 
+* * *
+
 ## 🔥 Features
 
 ✔️ **Pin** your favorite links for fast access<br/>
@@ -24,8 +26,6 @@
 <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
 <img alt="install at chrome web store" width="250" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/.github/badge.png"/>
 </a>
-
-* * * 
 
 ## Development
 
