@@ -1,0 +1,65 @@
+{
+  "name": "shortcuts-for-chrome",
+  "version": "2.3.0",
+  "license": "MIT",
+  "author": {
+    "name": "Mobile First>",
+    "email": "hello@mobilefirst.me",
+    "url": "https://mobilefirst.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MobileFirstLLC/shortcuts-for-chrome.git"
+  },
+  "description": "Menu of internal chrome links",
+  "homepage": "https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal",
+  "scripts": {
+    "start": "xt-build -e dev",
+    "build": "xt-build -e prod",
+    "docs": "xt-docs",
+    "test": "xt-test",
+    "clean": "xt-clean",
+    "sync": "xt-sync -e -g",
+    "release": "git add -A && git commit && standard-version"
+  },
+  "devDependencies": {
+    "cws-publish": "^1.0.13",
+    "extension-cli": "latest"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "eslintIgnore": [
+    "test/**/*"
+  ],
+  "xtbuild": {
+    "js_bundles": [
+      {
+        "name": "background",
+        "src": "./src/background/background.js"
+      },
+      {
+        "name": "popup",
+        "src": "./src/popup/**/*.js"
+      }
+    ]
+  },
+  "xtdocs": {
+    "source": {
+      "include": [
+        "README.md",
+        "src"
+      ]
+    },
+    "opts": {
+      "destination": "./docs"
+    },
+    "templates": {
+      "systemName": "Shortcuts for Chrome",
+      "systemSummary": "Source code documentation",
+      "systemColor": "#546E7A"
+    }
+  }
+}

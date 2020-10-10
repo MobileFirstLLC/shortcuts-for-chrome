@@ -1,0 +1,121 @@
+$panel-width: 280px;
+
+//----------------------
+// LINKS MENU
+//----------------------
+
+#menu {
+  width: $panel-width;
+  border: none;
+  padding-top: 0;
+
+  .divider {
+    margin: 5px 0;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  a,
+  a:link,
+  a:active,
+  a:focus,
+  a:visited {
+    display: block;
+    line-height: 31px;
+    padding-left: 47px;
+    padding-right: 10px;
+
+    span {
+      display: table;
+    }
+
+    svg.pin,
+    svg.unpin {
+      position: absolute;
+      display: none;
+      left: 14px;
+      width: 17px;
+      height: 17px;
+      top: 6px;
+      cursor: pointer;
+
+      path {
+        transition: all 0.1s;
+      }
+    }
+
+    svg.pin path {
+      fill: #666;
+    }
+
+    svg.unpin {
+      display: inline-block;
+
+      path {
+        fill: #4CAF50;
+      }
+    }
+  }
+
+  #pinned {
+    padding-top: 6px;
+
+    a,
+    a:link,
+    a:active,
+    a:focus,
+    a:visited {
+      line-height: 27px;
+      border-top: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      cursor: move;
+      span {
+        cursor: default
+      }
+      svg.pin {
+        top: 4px;
+        cursor: pointer;
+      }
+    }
+
+    a.before {
+      border-top-color: #333 !important;
+    }
+
+    a.after {
+      border-bottom-color: #333 !important;
+    }
+  }
+
+  a:hover {
+    background: rgb(235, 235, 235);
+
+    svg.pin {
+      display: inline-block;
+    }
+
+    svg.unpin:hover path {
+      fill: #FF5252;
+    }
+  }
+
+  a.rate::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+    left: 14px;
+    top: 7px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    background-image: url('../icons/16x16.png');
+  }
+
+  a:last-child {
+    margin-bottom: 6px;
+  }
+}
+
