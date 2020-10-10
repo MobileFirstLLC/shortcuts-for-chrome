@@ -6,5 +6,15 @@
     "message": "Shortcuts"
   },
   "appDesc": {
-    "message": "Find all internal chrome features in 1 place - organize however you like." }
+    "message": "Find all internal chrome features in 1 place - organize however you like."
+  },
+  "ctx_rate": {
+    "message": "Rate extension"
+  },
+  "ctx_source": {
+    "message": "View source"
+  },
+  "ctx_share_tw": {
+    "message": "Tweet about this"
+  }
 }

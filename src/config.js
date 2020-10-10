@@ -36,21 +36,17 @@ export const MenuLinks = ['accessibility', 'appcache-internals', 'apps', 'blob-i
  */
 export const ContextMenuOptions = () => {
     return {
-        facebook: {
-            title: 'ctx_share_fb', ww: 600, wh: 650,
-            url: 'https://www.facebook.com/sharer/sharer.php?u={URI}&amp;src=sdkpreparse'
-        },
-        twitter: {
-            title: 'ctx_share_tw', ww: 600, wh: 500,
-            url: 'https://twitter.com/intent/tweet?text={hash} {URI} '
-        },
         chromeStore: {
             title: 'ctx_rate', ww: 1200, wh: 800,
             url: '{URI}/reviews'
         },
         source: {
             title: 'ctx_source', url: 'https://github.com/mobilefirstllc/shortcuts-for-chrome'
-        }
+        },
+        twitter: {
+            title: 'ctx_share_tw', ww: 600, wh: 500,
+            url: 'https://twitter.com/intent/tweet?text={hash} {URI} '
+        },
     };
 }
 
