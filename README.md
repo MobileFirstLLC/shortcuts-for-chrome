@@ -21,7 +21,7 @@
 **The latest version is available for installation at Chrome Web Store.**
 
 <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
-<img alt="install at chrome web store" width="250" src=".github/badge.png"/>
+<img alt="install at chrome web store" width="250" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/.github/badge.png"/>
 </a>
 
 * * * 
@@ -30,13 +30,15 @@
 
 Building this application from requires Node.js and some web editor.
 
+Run these commands to build a locally debuggable version:
+
 ```
 npm install
 npm run build
 ```
 
-- This extension is build with [extension-cli](https://oss.mobilefirst.me/extension-cli/).
 - You can view source code docs [here](http://oss.mobilefirst.me/shortcuts-for-chrome/)
+- This extension is build with [extension-cli](https://oss.mobilefirst.me/extension-cli/).
 
 * * *
 

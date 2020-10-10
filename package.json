@@ -54,12 +54,22 @@
       ]
     },
     "opts": {
-      "destination": "./docs"
+      "destination": "./docs",
+      "tutorials": "guide",
+      "template": "./node_modules/foodoc/template"
     },
     "templates": {
+      "inlineNav": true,
+      "search": false,
+      "analytics": "UA-129118591-7",
       "systemName": "Shortcuts for Chrome",
       "systemSummary": "Source code documentation",
-      "systemColor": "#546E7A"
+      "systemColor": "#546E7A",
+      "navMembers":[
+        {"kind": "global", "title": ""},
+        {"kind": "class", "title": "Classes", "summary": "All documented classes."},
+        {"kind": "tutorial", "title": "Other", "summary": "All other documents."}
+      ]
     }
   }
 }
