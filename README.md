@@ -17,7 +17,9 @@
 
 **The latest version is available for installation at Chrome Web Store.**
 
-**[Install here](https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal "Chrome URLs")**
+<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
+<img width="250" src="./ChromeWebStore_Badge_v2_496x150.png"/>
+</a>
 
 * * *
 
