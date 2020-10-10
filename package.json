@@ -1,6 +1,6 @@
 {
   "name": "shortcuts-for-chrome",
-  "version": "2.3.0",
+  "version": "2.3.1-major.0",
   "license": "MIT",
   "author": {
     "name": "Mobile First>",
@@ -64,10 +64,21 @@
       "systemName": "Shortcuts for Chrome",
       "systemSummary": "Source code documentation",
       "systemColor": "#546E7A",
-      "navMembers":[
-        {"kind": "global", "title": ""},
-        {"kind": "class", "title": "Classes", "summary": "All documented classes."},
-        {"kind": "tutorial", "title": "Other", "summary": "All other documents."}
+      "navMembers": [
+        {
+          "kind": "global",
+          "title": ""
+        },
+        {
+          "kind": "class",
+          "title": "Classes",
+          "summary": "All documented classes."
+        },
+        {
+          "kind": "tutorial",
+          "title": "Other",
+          "summary": "All other documents."
+        }
       ]
     }
   }
