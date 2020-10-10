@@ -48,3 +48,5 @@ npm run build
 **Maker:** [Mobile First](https://mobilefirst.me)
 
 **License:** [MIT](https://github.com/MobileFirstLLC/shortcuts-for-chrome/blob/master/LICENSE)
+
+<style>.readme-section{font-size:1.2em; line-height:1.8;}</style>
