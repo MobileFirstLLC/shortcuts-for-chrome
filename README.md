@@ -1,6 +1,7 @@
 # Shortcuts for Chrome
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a157da9689c99fc90a57/maintainability)](https://codeclimate.com/github/MobileFirstLLC/shortcuts-for-chrome/maintainability)
+[![Build Status](https://travis-ci.org/MobileFirstLLC/shortcuts-for-chrome.svg?branch=master)](https://travis-ci.org/MobileFirstLLC/shortcuts-for-chrome) [![Maintainability](https://api.codeclimate.com/v1/badges/a157da9689c99fc90a57/maintainability)](https://codeclimate.com/github/MobileFirstLLC/shortcuts-for-chrome/maintainability) [![users](https://img.shields.io/chrome-web-store/users/jnmekaomnicdcpgdndekkmojfomifjal)](https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal) [![version](https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal)](https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal)
+
 
 
 **Quick access navigation menu for developers working with chrome browser**
