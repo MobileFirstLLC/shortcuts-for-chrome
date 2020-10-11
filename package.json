@@ -48,7 +48,7 @@
   "xtdocs": {
     "source": {
       "include": [
-        "README.md",
+        "./docs/docs.md",
         "src"
       ]
     },
@@ -70,7 +70,7 @@
       "methodHeadingReturns": false,
       "stylesheets": [
         "data:text/css;base64,Zm9vdGVyewogICAgZGlzcGxheTpub25lIWltcG9ydGFudDsKfQ==",
-        "https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/docs/style.css"
+        "data:text/css;base64,Ym9keSB7CiAgICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDsKICAgIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7CiAgICBmb250LXNpemU6IDE2cHg7Cn0KCmJvZHksCi5zeW1ib2wtdGl0bGUgaDEsIC5zeW1ib2wtdGl0bGUgaDIsIC5zeW1ib2wtdGl0bGUgaDMsIC5zeW1ib2wtdGl0bGUgaDQsIC5zeW1ib2wtdGl0bGUgaDUgewogICAgZm9udC1mYW1pbHk6IHN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAiU2Vnb2UgVUkiLAogICAgUm9ib3RvLCBVYnVudHUsICJIZWx2ZXRpY2EgTmV1ZSIsIHNhbnMtc2VyaWYgIWltcG9ydGFudDsKfQoKLnJlYWRtZS1zZWN0aW9uIGgxIHsKICAgIGRpc3BsYXk6IG5vbmU7Cn0KCi5yZWFkbWUtc2VjdGlvbiAuZmVhdHVyZSB7CiAgICBkaXNwbGF5OiBibG9jazsKICAgIG1hcmdpbjogNHJlbSAwOwp9CgoudG9jIC5uYXYgPiBsaSA+IGEsIC50b2MgLm5hdiAubmF2ID4gbGkgPiBhLCAuYmFjay10by10b3AgewogICAgZm9udC1zaXplOiAxZW07Cn0KCi5jb250ZW50IHAgewogICAgbGluZS1oZWlnaHQ6IDEuNTsKfQoKLnJlYWRtZS1zZWN0aW9uIGgyLCAucmVhZG1lLXNlY3Rpb24gaDMsCi50dXRvcmlhbC1zZWN0aW9uIGgyLCAudHV0b3JpYWwtc2VjdGlvbiBoMyB7CiAgICBtYXJnaW4tdG9wOiAzcmVtOwogICAgbWFyZ2luLWJvdHRvbTogMnJlbTsKfQoKLnRvYyAuc2lnbmF0dXJlLW5ldywKLnRvYyAubmF2ID4gbGkgPiBhIC5uYW1lLXNpZ25hdHVyZSwgLnRvYyAubmF2ID4gbGkgPiBhIC5zaWduYXR1cmUtcGFyYW1zIHsKICAgIGRpc3BsYXk6IG5vbmU7Cn0KCi5zeW1ib2wtZGV0YWlscy5jb2xsYXBzaWJsZS1zeW1ib2wudHJhbnNpdGlvbiB7CiAgICB0cmFuc2l0aW9uOiBub25lOwp9Cg=="
       ],
       "navMembers": [
         {

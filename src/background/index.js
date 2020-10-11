@@ -1,8 +1,6 @@
-import BackgroundApi from '../modules/backgroundApi';
-import ContextMenu from '../modules/contextMenu';
+import Background from "./background";
 import Analytics from '../modules/analytics';
 import {UA_ID} from "../config";
 
-(() => new BackgroundApi())();
-(() => new ContextMenu())();
+(() => new Background())();
 (() => new Analytics(UA_ID))();

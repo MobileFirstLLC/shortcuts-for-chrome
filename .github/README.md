@@ -21,19 +21,9 @@
 <img alt="install at chrome web store" width="250" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/.github/badge.png"/>
 </a>
 
-## Development
+### Development
 
-Building this application from requires Node.js and some web editor.
-
-Run these commands to build a locally debuggable version:
-
-```
-npm install
-npm run build
-```
-
-- You can view source code docs [here](http://oss.mobilefirst.me/shortcuts-for-chrome/)
-- This extension is build with [extension-cli](https://oss.mobilefirst.me/extension-cli/).
+[View documentation here ↗](http://oss.mobilefirst.me/shortcuts-for-chrome/)
 
 * * *
 

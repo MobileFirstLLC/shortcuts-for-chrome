@@ -9,7 +9,7 @@ import Draggable from './dragging.js';
  *
  * @class
  * @name MenuPanel
- * @classdesc Menu panel shows a list of links
+ * @classdesc Menu panel is a view that shows a list of links
  */
 export default  class MenuPanel {
 
