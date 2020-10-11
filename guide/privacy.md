@@ -18,5 +18,3 @@ By using the app the user accepts this policy.
 
 Last modified: October 10, 2020
 
-<style>.tutorial-section{font-size:1.2em; line-height:1.8;}</style>
-
