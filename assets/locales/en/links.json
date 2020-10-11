@@ -63,7 +63,7 @@
     "message": "Extensions"
   },
   "extensions_configureCommands": {
-    "message": "Keyboard Shortcuts for Extensions and Apps"
+    "message": "Keyboard Shortcuts"
   },
   "flags": {
     "message": "Flags"
@@ -98,6 +98,9 @@
   "inspect": {
     "message": "Inspect"
   },
+  "internals_web_app": {
+    "message": "Web App Internals"
+  },
   "interstitials": {
     "message": "Interstitials"
   },
@@ -109,6 +112,9 @@
   },
   "local_state": {
     "message": "Local State"
+  },
+  "management": {
+    "message": "Management"
   },
   "media_engagement": {
     "message": "Media Engagement"
@@ -139,6 +145,9 @@
   },
   "password_manager_internals": {
     "message": "Password Manager Internals"
+  },
+  "prefs-internals": {
+    "message": "Pref Internals"
   },
   "policy": {
     "message": "Policies"
@@ -194,8 +203,8 @@
   "settings_onStartup": {
     "message": "On Startup Settings"
   },
-  "settings_passwordsAndForms": {
-    "message": "Passwords and Forms"
+  "settings_passwords": {
+    "message": "Passwords"
   },
   "settings_people": {
     "message": "People"
@@ -250,6 +259,9 @@
   },
   "translate_internals": {
     "message": "Translate Internals"
+  },
+  "ukm": {
+    "message": "UKM Debug Page"
   },
   "usb_internals": {
     "message": "USB Internals"
