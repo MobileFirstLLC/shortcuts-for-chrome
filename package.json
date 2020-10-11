@@ -53,8 +53,8 @@
       ]
     },
     "opts": {
-      "destination": "./docs",
-      "tutorials": "guide",
+      "destination": "./pages",
+      "tutorials": "docs",
       "template": "./node_modules/foodoc/template"
     },
     "templates": {
