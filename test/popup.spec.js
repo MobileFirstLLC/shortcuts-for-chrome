@@ -1,5 +1,5 @@
 import Popup from '../src/popup/popup';
-import Storage from '../src/components/storage';
+import Storage from '../src/modules/storage';
 
 describe('Popup Window', function () {
 

@@ -1,5 +1,5 @@
 import Popup from './popup';
-import Analytics from '../components/analytics';
+import Analytics from '../modules/analytics';
 import {UA_ID} from "../config";
 
 (() => new Popup())();

@@ -1,8 +1,9 @@
 /**
- * @class
- * @classdesc Analytics
+ * Google analytics wrapper
+ * @module
+ * @name Analytics
  */
-class Analytics {
+export default class Analytics {
 
     constructor(UA_id) {
         (function (i, s, o, g, r, a, m) {
@@ -33,5 +34,3 @@ class Analytics {
         window.ga('send', 'event', category, action, label, 1);
     }
 }
-
-export default Analytics;

@@ -1,17 +1,16 @@
-let _storageKeys = {pinned: 'pinned'};
-
 /**
- * @class
- * @classdesc Application storage for persisting data
+ * Application storage for persisting data
+ * @module
+ * @name Storage
  */
-class Storage {
+export default class Storage {
 
     /**
      * @description List of storage keys. Only these keys can be stored in this storage.
      * @returns Object
      */
     static get keys() {
-        return _storageKeys;
+        return {pinned: 'pinned'};
     };
 
     /**
@@ -43,5 +42,3 @@ class Storage {
         window.chrome.storage.local.set(obj, callback);
     };
 }
-
-export default Storage;

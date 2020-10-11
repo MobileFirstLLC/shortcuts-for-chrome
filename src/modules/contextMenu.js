@@ -2,14 +2,16 @@ import CenteredPopup from './centeredPopup';
 import Share from './share';
 
 /**
- * @class
- * @classdesc This module adds custom options to chrome browser action context menu
+ * This module adds custom options to chrome browser action context menu
  * (right click on extension icon next to address bar). `contextMenus` permissions
  * is required in`manifest.json`.
+ * @module
+ * @name ContextMenu
  */
-class ContextMenu {
+export default class ContextMenu {
 
     /**
+     * @ignore
      * @description Initialize the context menu
      */
     constructor() {
@@ -27,7 +29,8 @@ class ContextMenu {
             });
         });
 
-        window.chrome.contextMenus.onClicked.addListener(ContextMenu.contextMenuOnClick);
+        window.chrome.contextMenus.onClicked
+            .addListener(ContextMenu.contextMenuOnClick);
     }
 
     /**
@@ -51,5 +54,3 @@ class ContextMenu {
             });
     }
 }
-
-export default ContextMenu;

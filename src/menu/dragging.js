@@ -1,28 +1,27 @@
 let activedragSrcEl;
 
 /**
- * @class
- * @description This module makes childNodes of some DOM Element draggble using HTML5 dnd.
- *
- * @param {String} idAttribute - for each draggble element, this property contains its id
- *
- * @param {Element} container - the first parent of all draggble elements
- *
+ * @param {String} idAttribute - for each draggble element, this attribute will provide its id, for example `id`
+ * @param {Element} container - the first parent of all draggble elements; provide DOM element reference
  * @param {function} onElementRender - after drag events have been attaced, all other action handlers still
  * need to be attached. This callback function will allow initiator to bind additional events to draggble elements.
- *
  * @example onElementRender(Element element) {
- *      // do something with element
+ *      // do something with element here...
  * }
  *
  * @param {function} onDragEndCallback - after drag is done, this callback function notifies
  * initiator that item order has changed order
  *
- * @example onDradEndCallback(Array<String> ids) {
- *     // do something with ids...
- * }
+ * @example
+ onDradEndCallback(Array<String> ids) {
+    // do something with ids...
+ }
+ *
+ * @class
+ * @name Dragging
+ * @classdesc This module makes childNodes of some DOM Element draggble using native HTML5 drag and drop.
  */
-class Dragging {
+export default class Dragging {
 
     constructor(idAttribute, container, onElementRender, onDragEndCallback) {
 
@@ -90,8 +89,8 @@ class Dragging {
     /**
      * @ignore
      * @description The drop event is fired when an element or text selection is dropped
-     * on a valid drop target. 
-     * 
+     * on a valid drop target.
+     *
      * When this event occurs we want to moved the dragged element to new DOM location
      * @param {Object} e - drop event
      */
@@ -185,5 +184,3 @@ class Dragging {
         el.classList.remove('after');
     }
 }
-
-export default Dragging;

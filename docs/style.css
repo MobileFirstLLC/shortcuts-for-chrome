@@ -1,0 +1,43 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+}
+
+body,
+.symbol-title h1, .symbol-title h2, .symbol-title h3, .symbol-title h4, .symbol-title h5 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, "Helvetica Neue", sans-serif !important;
+}
+
+.readme-section h1 {
+    display: none;
+}
+
+.readme-section .feature {
+    display: block;
+    margin: 4rem 0;
+}
+
+.toc .nav > li > a, .toc .nav .nav > li > a, .back-to-top {
+    font-size: 1em;
+}
+
+.content p {
+    line-height: 1.5;
+}
+
+.readme-section h2, .readme-section h3,
+.tutorial-section h2, .tutorial-section h3 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.toc .signature-new,
+.toc .nav > li > a .name-signature, .toc .nav > li > a .signature-params {
+    display: none;
+}
+
+.symbol-details.collapsible-symbol.transition {
+    transition: none;
+}

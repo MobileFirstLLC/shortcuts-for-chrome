@@ -1,9 +1,14 @@
+/** @namespace Config */
+
 /**
- * @description List of all links featured in the menu.
- * The items in this list should be formatted so that 'chrome://' + item is a navigable url.
+ * List of all links featured in the menu.
+ * The items in this list should be formatted so that `chrome://' + item` is a navigable url.
  * When adding/removing items also update the visible text label for item at:
- * ./assest/locales/en/links.json. If the url contains "-" or "/"
- * replace such chars with underscore "_" in the i18n dictionary.
+ * `./assest/locales/en/links.json`. If the url contains `-` or `/`
+ * replace such chars with underscore `_` in the i18n dictionary.
+ * @memberof Config
+ * @name MenuLinks
+ * @type Array.<string>
  */
 export const MenuLinks = [
     "accessibility", "appcache-internals", "apps", "autofill-internals", "blob-internals", "bluetooth-internals", "bookmarks",
@@ -25,19 +30,52 @@ export const MenuLinks = [
 
 /**
  * List of options to display in the context menu
- * @return {{twitter: {ww: number, wh: number, title: string, url: string}, facebook: {ww: number, wh: number, title: string, url: string}, chromeStore: {ww: number, wh: number, title: string, url: string}}}
- * @constructor
+ * Links will open in new window when width/height (ww/wh) are not specified
+ * Otherwise links will open in a popup window of specified size
+ * @memberof Config
+ * @name ContextMenuOptions
+ * @type Object.<Object>
  */
-export const ContextMenuOptions = () => {
-    return {
-        chromeStore: {title: 'ctx_rate', url: '{URI}/reviews'},
-        source: {title: 'ctx_source', url: 'https://github.com/mobilefirstllc/shortcuts-for-chrome'},
-        twitter: {title: 'ctx_share_tw', ww: 600, wh: 500, url: 'https://twitter.com/intent/tweet?text={hash} {URI} '},
-    };
-}
+export const ContextMenuOptions = {
+    chromeStore: {
+        title: 'ctx_rate',
+        url: '{URI}/reviews'
+    },
+    source: {
+        title: 'ctx_source',
+        url: 'https://github.com/mobilefirstllc/shortcuts-for-chrome'
+    },
+    twitter: {
+        title: 'ctx_share_tw',
+        ww: 600, wh: 500,
+        url: 'https://twitter.com/intent/tweet?text={hash} {URI} '
+    },
+};
 
 /**
- * Analytics id
- * @type {string}
+ * Analytics id - used within extension
+ * @memberof Config
+ * @name UA_ID
+ * @type string
  */
 export const UA_ID = "UA-129118591-4"
+
+/**
+ * App icon svg paths
+ * @memberof Config
+ * @name SVGIconPaths
+ * @type Object.<Object>
+ */
+export const SVGIconPaths = {
+    'bookmarkEmpty': {
+        'd': 'M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,' +
+            '5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z'
+    },
+    'bookmarkChecked': {
+        'd': 'M17,3A2,2 0 0,1 19,5V21L12,18L5,21V5C5,3.89 5.9,3 7,' +
+            '3H17M11,14L17.25,7.76L15.84,6.34L11,11.18L8.41,8.59L7,10L11,14Z'
+    },
+    'arrowBack': {
+        'd': 'M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z'
+    }
+};

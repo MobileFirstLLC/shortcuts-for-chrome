@@ -1,17 +1,18 @@
-import Storage from '../components/storage';
+import Storage from '../modules/storage';
 import {MenuLinks} from '../config';
 import MenuPanel from '../menu/menu';
 
 /**
  * @class
- * @description This is the main class for the popup window
+ * @name Popup
+ * @classdesc This is the main class for the popup window
  * This class is responsible for saving/restoring persistent data
  * and rendering the menu panel.
  *
  * This module can easily be extended to display other content but
  * currently the only content that does get rendered is the menu panel.
  */
-class Popup {
+export default class Popup {
 
     constructor() {
         this.pinned = [];
@@ -58,7 +59,7 @@ class Popup {
      * @param {String} key - id of the pin that was clicked
      */
     onPinToggle(key) {
-        let index = this.pinned.indexOf(key);
+        const index = this.pinned.indexOf(key);
 
         if (index < 0) {
             this.pinned.push(key);
@@ -83,17 +84,11 @@ class Popup {
      * @description Get menu links
      */
     getLinks() {
-        let pinned = this.pinned,
-            unpinned = MenuLinks.filter(
-                link => {
-                    return pinned.indexOf(link) < 0;
-                });
+        const pinned = this.pinned;
 
         return {
-            pinned: pinned,
-            unpinned: unpinned
+            pinned,
+            unpinned: MenuLinks.filter(link => pinned.indexOf(link) < 0)
         };
     }
 }
-
-export default Popup;

@@ -1,8 +1,9 @@
 /**
- * @class
- * @classdesc Utility class for opening popup window in the middle of user's viewport
+ * Utility class for opening popup window in the middle of user's viewport
+ * @module
+ * @name CenteredPopup
  */
-class CenteredPopup {
+export default class CenteredPopup {
 
     /**
      * @private
@@ -67,5 +68,3 @@ class CenteredPopup {
         });
     }
 }
-
-export default CenteredPopup;

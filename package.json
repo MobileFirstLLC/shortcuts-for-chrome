@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "cws-publish": "^1.0.13",
-    "extension-cli": "latest"
+    "extension-cli": "^0.9.1"
   },
   "babel": {
     "presets": [
@@ -60,14 +60,23 @@
     "templates": {
       "inlineNav": true,
       "search": false,
-      "analytics": "UA-129118591-7",
+      "analytics": {
+        "ua": "UA-129118591-7",
+        "domain": "https://oss.mobilefirst.me/shortcuts-for-chrome"
+      },
       "systemName": "Shortcuts for Chrome",
       "systemSummary": "Source code documentation",
       "systemColor": "#546E7A",
+      "methodHeadingReturns": false,
+      "stylesheets": [
+        "data:text/css;base64,Zm9vdGVyewogICAgZGlzcGxheTpub25lIWltcG9ydGFudDsKfQ==",
+        "https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/docs/style.css"
+      ],
       "navMembers": [
         {
-          "kind": "global",
-          "title": ""
+          "kind": "namespace",
+          "title": "Constants",
+          "summary": "Application constants"
         },
         {
           "kind": "class",
@@ -75,8 +84,13 @@
           "summary": "All documented classes."
         },
         {
+          "kind": "module",
+          "title": "Modules",
+          "summary": "All documented modules."
+        },
+        {
           "kind": "tutorial",
-          "title": "Other",
+          "title": "Documents",
           "summary": "All other documents."
         }
       ]

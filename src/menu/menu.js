@@ -1,14 +1,17 @@
-import appIcons from './icons.js';
+import appIcons from '../modules/appIcons.js';
 import Draggable from './dragging.js';
 
 /**
- * @class
- * @description the menu panel shows a list of links
+ * Initialize menu panel instance
  * @param {function} getLinks - function that returns currently pinned/unpinned links
  * @param {function} onPinToggle - callback when pin is turned on/off
  * @param {function} onPinOrderChange - callback when pins are rearranged
+ *
+ * @class
+ * @name MenuPanel
+ * @classdesc Menu panel shows a list of links
  */
-class MenuPanel {
+export default  class MenuPanel {
 
     constructor(getLinks, onPinToggle, onPinOrderChange) {
         this.name = 'menu';
@@ -159,7 +162,4 @@ class MenuPanel {
         this.attachClickActions(a);
         return a;
     };
-
 };
-
-export default MenuPanel;

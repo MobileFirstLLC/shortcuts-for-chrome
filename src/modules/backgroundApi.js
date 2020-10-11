@@ -1,19 +1,23 @@
 import CenteredPopup from './centeredPopup.js';
 
 /**
- * @class
- * @classdesc Handle messaging between different parts of the extension, @see
+ * Handle messaging between different parts of the extension, @see
  * {@link https://developer.chrome.com/apps/runtime#event-onMessage|onMessage}
- * @param {Object} request - user defined dynamic parameters
- * @param {String} request.open - opens the url defined by this property value
- * @param {Object} request.share - one of `share.options` - share window will launch
- *
- * @example chrome.runtime.sendMessage({open: "chrome://about"});
+ * @module
+ * @name BackgroundApi
  */
-class BackgroundApi {
+export default class BackgroundApi {
 
     /**
+     * @ignore
      * @description Call the constructor to register background API listeners
+     *
+     * @param {Object} request - user defined dynamic parameters
+     * @param {String} request.open - opens the url defined by this property value
+     * @param {Object} request.share - one of `share.options` - share window will launch
+     *
+     * @example chrome.runtime.sendMessage({open: "chrome://about"});
+     *
      */
     constructor() {
         window.chrome.runtime.onMessage.addListener(
@@ -31,5 +35,3 @@ class BackgroundApi {
             });
     }
 }
-
-export default BackgroundApi;

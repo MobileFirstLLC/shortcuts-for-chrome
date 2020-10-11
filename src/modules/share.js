@@ -1,36 +1,26 @@
 import {ContextMenuOptions} from '../config'
 
 /**
- * @class
- * @classdesc Share module contains the configuration and options for social sharing
+ * Share module contains the configuration and options for social sharing
+ * @module
+ * @name Share
  */
-class Share {
+export default class Share {
 
     /**
      * @description List of all available share options
      * @returns {Object}
      */
     static get options() {
-        return ContextMenuOptions();
+        return ContextMenuOptions;
     }
 
     /**
      * @returns Object
+     * @param {string} key - i18n dictionary key
      */
     static label(key) {
-        let loc = window.chrome.i18n.getMessage(key);
-
-        if (loc) return loc;
-
-        switch (key) {
-            case Share.options.chromeStore.title:
-                return 'Rate Extension';
-            case Share.options.facebook.title:
-                return 'Share on Facebook';
-            case Share.options.twitter.title:
-                return 'Share on Twitter';
-        }
-        return '';
+        return window.chrome.i18n.getMessage(key) || '';
     }
 
     /**
@@ -43,11 +33,10 @@ class Share {
     static onClick(channel, callback) {
         const manifest = window.chrome.runtime.getManifest(),
             url = channel.url
-                .replace('{hash}', '%23' + ((manifest.short_name || '').replace(/ /g, '')))
+                .replace('{hash}', '%23' + ((manifest.short_name || '')
+                    .replace(/ /g, '')))
                 .replace('{URI}', manifest.homepage_url);
 
         return callback(url);
     }
 }
-
-export default Share;
