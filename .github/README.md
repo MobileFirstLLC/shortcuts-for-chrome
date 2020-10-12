@@ -6,12 +6,19 @@
 
 <img class="feature" src='https://lh3.googleusercontent.com/NmmoTZwJiTAIYdpkiSaepbJ3WdwT2XNo1yh3ljkQzeqUGQivtIJrHyjzOSAKzW83wjSyZtFj6kg=w640-h400-e365' />
 
+<br/>
+
 ## 🔥 Features
 
-✔️ **Pin** your favorite links for fast access<br/>
-✔️ **Drag and drop** to organize links<br/>
-✔️ **Discover** hidden browser features you never knew existed<br/>
-✔️ **Play** the dino game while you are online<br/>
+#### 📍 &nbsp; **Pin** your favorite links for fast access
+
+#### 🖲️ &nbsp; **Drag and drop** to organize links
+
+#### 🗺️ &nbsp; **Discover** hidden browser features you never knew existed
+
+#### 🦖 &nbsp; **Play** the dino game while you are online
+
+<br/>
 
 ## Installation
 
