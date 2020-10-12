@@ -28,6 +28,8 @@
 <img alt="install at chrome web store" width="250" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/.github/badge.png"/>
 </a>
 
+<br/>
+
 ### Development
 
 [View documentation here ↗](http://oss.mobilefirst.me/shortcuts-for-chrome/)
