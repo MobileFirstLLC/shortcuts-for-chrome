@@ -5,7 +5,11 @@
  */
 export default class Analytics {
 
-    constructor(UA_id) {
+    /**
+     * @name Analytics
+     * @param UA_ID <string> - analytics ID
+     */
+    constructor(UA_ID) {
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function () {
@@ -19,7 +23,7 @@ export default class Analytics {
             if (m && m.parentNode) m.parentNode.insertBefore(a, m);
         })(window, document, 'script',
             'https://www.google-analytics.com/analytics.js', 'ga');
-        window.ga('create', UA_id, 'auto');
+        window.ga('create', UA_ID, 'auto');
         window.ga('set', 'checkProtocolTask', null);
         window.ga('set', 'transport', 'beacon');
     }

@@ -1,28 +1,34 @@
 let activedragSrcEl;
 
 /**
- * @param {String} idAttribute - for each draggble element, this attribute will provide its id, for example `id`
- * @param {Element} container - the first parent of all draggble elements; provide DOM element reference
- * @param {function} onElementRender - after drag events have been attaced, all other action handlers still
- * need to be attached. This callback function will allow initiator to bind additional events to draggble elements.
- * @example onElementRender(Element element) {
- *      // do something with element here...
- * }
- *
- * @param {function} onDragEndCallback - after drag is done, this callback function notifies
- * initiator that item order has changed order
- *
- * @example
- onDradEndCallback(Array<String> ids) {
-    // do something with ids...
- }
- *
- * @class
+ * @module
  * @name Dragging
  * @classdesc This module makes childNodes of some DOM Element draggble using native HTML5 drag and drop.
  */
 export default class Dragging {
 
+    /**
+     * Create element whose children can be dragged and dropped
+     * @name Dragging
+     *
+     * @param {String} idAttribute - for each draggble element, this attribute will provide its id, for example `id`
+     * @param {Element} container - the first parent of all draggble elements; provide DOM element reference
+     * @param {function} onElementRender - after drag events have been attached, all other action handlers still
+     * need to be attached. This callback function will allow initiator to bind additional events to draggble elements.}
+     * @param {function} onDragEndCallback - after drag is done, this callback function notifies
+     * initiator that item order has changed order
+     *
+     @example new Draggable("id",
+         containerElement,
+         onElementRender(Element element) {
+            // attach other event handlers to element
+         },
+         onDradEndCallback(Array<String> ids) {
+             // do something with ids after drag even has completed
+         })
+     );
+     *
+     */
     constructor(idAttribute, container, onElementRender, onDragEndCallback) {
 
         this.idAttribute = idAttribute;
@@ -38,6 +44,7 @@ export default class Dragging {
     }
 
     /**
+     * @ignore
      * @description get the element that is being actively dragged
      */
     static get dragSrcEl() {
@@ -45,6 +52,7 @@ export default class Dragging {
     }
 
     /**
+     * @ignore
      * @description set the element that is being actively dragged
      */
     static set dragSrcEl(value) {

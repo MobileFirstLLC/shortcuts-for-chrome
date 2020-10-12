@@ -4,6 +4,7 @@ import {SVGIconPaths} from '../config'
  * Generates simple SVG icons dynamically
  * @module
  * @name AppIcons
+ * @static
  */
 export default class AppIcons {
 

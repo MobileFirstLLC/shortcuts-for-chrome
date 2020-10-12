@@ -48,7 +48,7 @@
   "xtdocs": {
     "source": {
       "include": [
-        "./docs/docs.md",
+        "./.github/index.md",
         "src"
       ]
     },

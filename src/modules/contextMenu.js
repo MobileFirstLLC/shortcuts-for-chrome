@@ -1,5 +1,5 @@
 import CenteredPopup from './centeredPopup';
-import Share from './share';
+import {ContextMenuOptions} from "../config";
 
 /**
  * This module adds custom options to chrome browser action context menu
@@ -11,8 +11,9 @@ import Share from './share';
 export default class ContextMenu {
 
     /**
-     * @ignore
-     * @description Initialize the context menu
+     * Initialize the context menu
+     *
+     * @name ContextMenu
      */
     constructor() {
         const manifest = window.chrome.runtime.getManifest(),
@@ -20,9 +21,9 @@ export default class ContextMenu {
                 'page_action' : 'browser_action';
 
         window.chrome.contextMenus.removeAll(() => {
-            Object.keys(Share.options).map(key => {
+            Object.keys(ContextMenu.options).map(key => {
                 window.chrome.contextMenus.create({
-                    title: Share.label(Share.options[key].title),
+                    title: ContextMenu.label(ContextMenu.options[key].title),
                     contexts: [CONTEXT],
                     id: key
                 });
@@ -34,23 +35,54 @@ export default class ContextMenu {
     }
 
     /**
+     * @description List of all available share options
+     * @returns {Object}
+     */
+    static get options() {
+        return ContextMenuOptions;
+    }
+
+    /**
+     * @returns Object
+     * @param {string} key - i18n dictionary key
+     */
+    static label(key) {
+        return window.chrome.i18n.getMessage(key) || '';
+    }
+
+    /**
+     * @function
+     * @description Constructs absolute shareable url then calls the callback function
+     * @param {Object} channel - one of `share.options`
+     * has been resolved. The first param of the callback function is the full url returned by this function.
+     */
+    static generateUrl(channel) {
+        const manifest = window.chrome.runtime.getManifest();
+
+        return channel.url
+            .replace('{hash}', '%23' + ((manifest.short_name || '')
+                .replace(/ /g, '')))
+            .replace('{URI}', manifest.homepage_url);
+    }
+
+    /**
      * @private
      * @description when user clicks on context menu option
      * @param {Object} info - click event details
      */
     static contextMenuOnClick(info) {
-        Object.keys(Share.options)
+        Object.keys(ContextMenu.options)
             .filter(function (key) {
                 return (key === info.menuItemId);
             })
             .map(function (key) {
-                let c = Share.options[key];
+                const c = ContextMenu.options[key];
+                const url = ContextMenu.generateUrl(c);
+                const {ww, wh} = c;
 
-                return Share.onClick(c, (url) => {
-                    (c.ww && c.wh) ?
-                        CenteredPopup.open(c.ww, c.wh, url) :
-                        window.open(url);
-                });
+                return ww && wh ?
+                    CenteredPopup.open(ww, wh, url) :
+                    window.open(url);
             });
     }
 }

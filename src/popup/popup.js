@@ -7,10 +7,9 @@ import MenuPanel from '../menu/menu';
  * @name Popup
  * @classdesc This is the main class for the popup window
  * This class is responsible for saving/restoring persistent data
- * and rendering the menu panel.
- *
- * This module can easily be extended to display other content but
- * currently the only content that does get rendered is the menu panel.
+ * and rendering the menu panel. This element can easily be extended
+ * to display other content but currently the only content that does
+ * get rendered is the menu panel.
  */
 export default class Popup {
 

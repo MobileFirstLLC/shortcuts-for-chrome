@@ -34,12 +34,11 @@ export default class CenteredPopup {
      * @param {number} width - width of the new window (px)
      * @param {number} height - height of the new window (px)
      * @param {String} url - url to open
-     * @param {String} type - window type enum: `popup` or `normal`, defaults to `popup`
      * @returns {Promise}
      *
      * @example CenteredPopup.open(500,500, 'http://www.example.com')
      */
-    static open(width, height, url, type) {
+    static open(width, height, url) {
 
         return new Promise(function (resolve) {
 
@@ -54,7 +53,7 @@ export default class CenteredPopup {
                     width: width,
                     height: height,
                     focused: true,
-                    type: type || 'popup',
+                    type: 'popup',
                     left: CenteredPopup.center(area.width, width),
                     top: CenteredPopup.center(area.height, height)
                 }, resolve);

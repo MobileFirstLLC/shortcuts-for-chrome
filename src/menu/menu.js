@@ -1,5 +1,5 @@
 import appIcons from '../modules/appIcons.js';
-import Draggable from './dragging.js';
+import Draggable from '../modules/dragging.js';
 
 /**
  * Initialize menu panel instance

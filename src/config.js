@@ -1,13 +1,10 @@
-/** @namespace Config */
-
 /**
  * List of all links featured in the menu.
  * The items in this list should be formatted so that `chrome://' + item` is a navigable url.
  * When adding/removing items also update the visible text label for item at:
  * `./assest/locales/en/links.json`. If the url contains `-` or `/`
  * replace such chars with underscore `_` in the i18n dictionary.
- * @memberof Config
- * @name MenuLinks
+ * @namespace MenuLinks
  * @type Array.<string>
  */
 export const MenuLinks = [
@@ -32,8 +29,7 @@ export const MenuLinks = [
  * List of options to display in the context menu
  * Links will open in new window when width/height (ww/wh) are not specified
  * Otherwise links will open in a popup window of specified size
- * @memberof Config
- * @name ContextMenuOptions
+ * @namespace ContextMenuOptions
  * @type Object.<Object>
  */
 export const ContextMenuOptions = {
@@ -54,16 +50,14 @@ export const ContextMenuOptions = {
 
 /**
  * Analytics id - used within extension
- * @memberof Config
- * @name UA_ID
+ * @namespace UA_ID
  * @type string
  */
 export const UA_ID = "UA-129118591-4"
 
 /**
  * App icon svg paths
- * @memberof Config
- * @name SVGIconPaths
+ * @namespace SVGIconPaths
  * @type Object.<Object>
  */
 export const SVGIconPaths = {
