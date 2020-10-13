@@ -12,7 +12,7 @@ import ContextMenu from '../modules/contextMenu';
  */
 export default class Background {
     constructor() {
-        (() => new BackgroundApi())();
-        (() => new ContextMenu())();
+        new BackgroundApi();
+        new ContextMenu();
     }
 }

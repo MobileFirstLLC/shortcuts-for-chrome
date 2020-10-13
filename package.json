@@ -37,7 +37,7 @@
     "js_bundles": [
       {
         "name": "background",
-        "src": "./src/background/background.js"
+        "src": "./src/background/index.js"
       },
       {
         "name": "popup",
@@ -95,5 +95,6 @@
         }
       ]
     }
-  }
+  },
+  "dependencies": {}
 }

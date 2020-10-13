@@ -8,6 +8,9 @@
   "appcache_internals": {
     "message": "Application Cache"
   },
+  "autofill_internals": {
+    "message": "Autofill Internals"
+  },
   "apps": {
     "message": "Apps"
   },
@@ -31,6 +34,9 @@
   },
   "conflicts": {
     "message": "Conflicts"
+  },
+  "conversion_internals": {
+    "message": "Conversion Internals"
   },
   "crashes": {
     "message": "Crashes"
@@ -146,7 +152,7 @@
   "password_manager_internals": {
     "message": "Password Manager Internals"
   },
-  "prefs-internals": {
+  "prefs_internals": {
     "message": "Pref Internals"
   },
   "policy": {
