@@ -14,7 +14,7 @@
 
 #### 🖲️ &nbsp; **Drag and drop** to organize links
 
-#### 🗺️ &nbsp; **Discover** hidden browser features you never knew existed
+#### 🗺️ &nbsp; **Discover** rare browser features
 
 #### 🦖 &nbsp; **Play** the dino game while you are online
 
