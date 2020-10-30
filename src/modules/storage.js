@@ -32,10 +32,6 @@ export default class Storage {
      * @param {function} callback - called after save operation has completed
      */
     static save(key, value, callback) {
-        if (!Storage.keys.hasOwnProperty(key)) {
-            throw Error('unknown key');
-        }
-
         let obj = {};
 
         obj[key] = value;
