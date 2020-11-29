@@ -32,7 +32,7 @@ describe('Popup Window', function () {
         }
     });
     beforeEach(() => {
-        chrome.storage.local.get.yields({ pinned: ['about', 'history', 'crashes'] });
+        chrome.storage.sync.get.yields({ pinned: ['about', 'history', 'crashes'] });
         sandbox.spy(Storage, 'save');
         global.popup = new Popup();
     });
@@ -51,16 +51,16 @@ describe('Popup Window', function () {
     });
 
     it('Menu Panel initializes without error', () => {
-        chrome.storage.local.get.yields({});
+        chrome.storage.sync.get.yields({});
         expect(() => { new Popup() }, 'empty storage').to.not.throw();
-        chrome.storage.local.get.yields({ pinned: [] });
+        chrome.storage.sync.get.yields({ pinned: [] });
         expect(() => { new Popup() }, 'no pinned items').to.not.throw();
-        chrome.storage.local.get.yields({ pinned: ['about', 'history'] });
+        chrome.storage.sync.get.yields({ pinned: ['about', 'history'] });
         expect(() => { new Popup() }, 'some pinned items').to.not.throw();
     });
 
     it('Pin click toggles link on and off', () => {
-        chrome.storage.local.set.yields(null);
+        chrome.storage.sync.set.yields(null);
         let link = getLink(0),
             name = getLinkName(link),
             pin = getLinkPin(link);
