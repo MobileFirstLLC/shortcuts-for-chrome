@@ -12,7 +12,9 @@ import ContextMenu from '../modules/contextMenu';
  */
 export default class Background {
     constructor() {
+        // eslint-disable-next-line no-new
         new BackgroundApi();
+        // eslint-disable-next-line no-new
         new ContextMenu();
     }
 }

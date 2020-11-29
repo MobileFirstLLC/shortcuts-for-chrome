@@ -1,6 +1,8 @@
-import Background from "./background";
+import Background from './background';
 import Analytics from '../modules/analytics';
-import {UA_ID} from "../config";
+import UpdateHandler from './onUpdate';
+import {UA_ID} from '../config';
 
-(() => new Background())();
 (() => new Analytics(UA_ID))();
+(() => new Background())();
+(() => new UpdateHandler())();
