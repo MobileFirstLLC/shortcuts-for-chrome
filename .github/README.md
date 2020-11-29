@@ -4,7 +4,7 @@
 
 > ### Quick access navigation menu for developers working with chrome browser
 
-Default Chrome browser is optimized for a non-technical user. For developers who build extensions or web devs who want to inspect what is happening under the hood with indexedDB or service workers, this menu brings shortcuts to those hidden browser features. You can further customize the menu by pinning items you care about on top.
+Default Chrome browser is optimized for a non-technical user. For developers who build extensions or web devs who want to inspect what is happening under the hood with indexedDB, service workers or Bluetooth devices, this menu brings shortcuts to those hidden browser features. You can further customize the menu by pinning items you care about on top.
 
 <img class="feature" src='https://lh3.googleusercontent.com/NmmoTZwJiTAIYdpkiSaepbJ3WdwT2XNo1yh3ljkQzeqUGQivtIJrHyjzOSAKzW83wjSyZtFj6kg=w640-h400-e365' />
 
