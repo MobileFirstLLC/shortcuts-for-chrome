@@ -12,13 +12,13 @@
 
 ## 🔥 `Features`
 
-#### 📍 &nbsp; **`Pin`** `your favorite links for fast access`
+#### 📍 &nbsp; `Pin your favorite links for fast access`
 
-#### 🖲️ &nbsp; **`Drag and drop`** `to organize links`
+#### 🖲️ &nbsp; `Drag and drop to organize links`
 
-#### 🗺️ &nbsp; **`Discover`** `rare browser features`
+#### 🗺️ &nbsp; `Discover rare browser features`
 
-#### 🦖 &nbsp; **`Play`** `the dino game while you are online`
+#### 🦖 &nbsp; `Play the dino game while you are online`
 
 <br/>
 
