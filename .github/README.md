@@ -31,11 +31,8 @@ Default Chrome browser is optimized for non-technical users. For developers who 
   </tbody>
 </table>  
 
-* * *
 
-### Development
-
-[`View documentation here ↗`](http://oss.mobilefirst.me/shortcuts-for-chrome/)
+**Development:** [`View documentation here ↗`](http://oss.mobilefirst.me/shortcuts-for-chrome/)
 
 **Issues & Feature Requests:** [`Submit on Github`](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/new/choose)
 
