@@ -10,8 +10,8 @@ Default Chrome browser is optimized for non-technical users. For developers who 
  <tbody>
  <tr>
    <td width="304" align="right">
-     <h2>Installation</h2>
-     <h4>The latest version is available for installation at Chrome Web Store</h4>
+     <h2>Installation 📦</h2>
+     <h4>The latest version is available at Chrome Web Store</h4>
      <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
       <img alt="install at chrome web store" width="250" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/.github/badge.png"/>
      </a>
