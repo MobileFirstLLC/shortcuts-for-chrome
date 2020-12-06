@@ -8,21 +8,22 @@
  * @type Array.<string>
  */
 export const MenuLinks = [
-    "accessibility", "appcache-internals", "apps", "autofill-internals", "blob-internals", "bluetooth-internals", "bookmarks",
-    "chrome-urls", "components", "conversion-internals", "crashes", "credits", "device-log", "devices", "dino", "discards",
-    "download-internals", "downloads", "extensions", "extensions/configureCommands", "flags",
-    "gcm-internals", "gpu", "help", "histograms", "history", "history/syncedTabs", "identity-internals",
-    "indexeddb-internals", "inspect", "internals/web-app", "interstitials", "interventions-internals", "invalidations",
-    "local-state", "management", "media-engagement", "media-internals", "nacl", "net-export", "net-internals",
-    "network-errors", "newtab", "ntp-tiles-internals", "omnibox", "password-manager-internals",
-    "policy", "predictors", "prefs-internals", "print", "process-internals", "quota-internals", "safe-browsing",
-    "serviceworker-internals", "settings", "settings/accessibility", "settings/appearance",
-    "settings/autofill", "settings/clearBrowserData", "settings/defaultBrowser", "settings/importData",
-    "settings/languages", "settings/onStartup", "settings/passwords", "settings/people", "settings/printing",
-    "settings/privacy", "settings/reset", "settings/search", "settings/syncSetup", "settings/system",
-    "signin-internals", "site-engagement", "suggestions", "sync-internals", "system", "terms",
-    "tracing", "translate-internals", "ukm", "usb-internals", "user-actions", "version", "webrtc-internals",
-    "webrtc-logs"
+    'accessibility', 'appcache-internals', 'apps', 'autofill-internals', 'blob-internals',
+    'bluetooth-internals', 'bookmarks', 'chrome-urls', 'components', 'conversion-internals',
+    'crashes', 'credits', 'device-log', 'devices', 'dino', 'discards', 'download-internals',
+    'downloads', 'extensions', 'extensions/configureCommands', 'flags', 'gcm-internals', 'gpu',
+    'help', 'histograms', 'history', 'history/syncedTabs', 'identity-internals', 'indexeddb-internals',
+    'inspect', 'internals/web-app', 'interstitials', 'interventions-internals', 'invalidations',
+    'local-state', 'management', 'media-engagement', 'media-internals', 'nacl', 'net-export', 'net-internals',
+    'network-errors', 'newtab', 'ntp-tiles-internals', 'omnibox', 'password-manager-internals',
+    'policy', 'predictors', 'prefs-internals', 'print', 'process-internals', 'quota-internals', 'safe-browsing',
+    'serviceworker-internals', 'settings', 'settings/accessibility', 'settings/appearance',
+    'settings/autofill', 'settings/clearBrowserData', 'settings/defaultBrowser', 'settings/importData',
+    'settings/languages', 'settings/onStartup', 'settings/passwords', 'settings/people', 'settings/printing',
+    'settings/privacy', 'settings/reset', 'settings/search', 'settings/syncSetup', 'settings/system',
+    'signin-internals', 'site-engagement', 'suggestions', 'sync-internals', 'system', 'terms',
+    'tracing', 'translate-internals', 'ukm', 'usb-internals', 'user-actions', 'version', 'webrtc-internals',
+    'webrtc-logs'
 ];
 
 /**
@@ -53,7 +54,7 @@ export const ContextMenuOptions = {
  * @namespace UA_ID
  * @type string
  */
-export const UA_ID = "UA-129118591-4"
+export const UA_ID = 'UA-129118591-4';
 
 /**
  * App icon svg paths
