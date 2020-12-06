@@ -1,9 +1,12 @@
 /**
  * List of all links featured in the menu.
- * The items in this list should be formatted so that `chrome://' + item` is a navigable url.
- * When adding/removing items also update the visible text label for item at:
- * `./assest/locales/en/links.json`. If the url contains `-` or `/`
- * replace such chars with underscore `_` in the i18n dictionary.
+ *
+ * The items in this list should be formatted so that `'chrome://' + item` is a navigable url.
+ *
+ * When adding/removing items also update the visible text label for the item at:
+ * `./assest/locales/en/links.json`. If the url contains characters `-` or `/`
+ * replace the chars with underscore `_` in the links.json dictionary.
+ *
  * @namespace MenuLinks
  * @type Array.<string>
  */

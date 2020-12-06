@@ -1,10 +1,10 @@
-import Storage from '../modules/storage';
+import Storage from './storage';
 
 /**
- * @class
- * @name UpdateHandler
- * @classdesc Register action that should occur on
+ * Register action that should occur on
  * extension install or update.
+ * @module
+ * @name UpdateHandler
  */
 export default class UpdateHandler {
     constructor() {

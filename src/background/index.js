@@ -1,6 +1,6 @@
 import Background from './background';
 import Analytics from '../modules/analytics';
-import UpdateHandler from './onUpdate';
+import UpdateHandler from '../modules/onUpdate';
 import {UA_ID} from '../config';
 
 (() => new Analytics(UA_ID))();
