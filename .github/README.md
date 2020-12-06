@@ -6,9 +6,9 @@
 
 Default Chrome browser is optimized for non-technical users. For developers who build extensions, or web devs who want to inspect what is happening under the hood with indexedDB, service workers, or Bluetooth devices, this menu brings shortcuts to those hidden browser features. You can further customize the menu by pinning items you care about on top.
 
-<br/><img class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/assets/preview.gif' height="400" />
-
-<br/>
+<p align="center">
+<img src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/assets/preview.gif' height="400" />
+</p>  
 
 ## 🔥 Features
 
