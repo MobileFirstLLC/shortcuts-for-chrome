@@ -1,21 +1,30 @@
 This is the source code documentation for a chrome extension Shortcuts for Chrome.
 
-This extension is written in vanilla js with ES6 syntax; no frills or fancy stuff.
+This is a simple extension, written in vanilla js with ES6 syntax; no frills or fancy stuff.
 
 ## How it Works
 
 This extension has 3 primary parts: Popup, Menu and Background (see: [classes](list_class.html)). 
 
-- User clicks extension icon to launch a popup. `manifest.json` specifies this behavior.
+When user clicks extension icon ("browser action") extension opens a popup. This behavior is specified in `manifest.json`:
 
-- **Popup** is a HTML template with some styling and javascript. 
-    - `popup.js` will determine what visible content renders inside the popup
-    - Menu is currently the only possible view, so popup will display this menu panel
+```json
+"browser_action": {
+
+    ...
+
+    "default_popup": "popup.html"
+  }
+```
+
+- **Popup** is a HTML document with some CSS styles and javascript. 
+    - `popup.js` will determine what visible content renders inside the popup window
+    - Menu is currently the only possible view, so popup will render this menu panel
       <br/><br/>
 
 - **Menu** panel shows list of links. 
     - User can pin/unpin links and drag and drop pinned links.
-    - User preferences are saved in chrome.storage, which is local to current device.
+    - User preferences are saved in chrome sync storage
       <br/><br/>
 
 - **Background** has no visual interface, but runs in the background of the browser
