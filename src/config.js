@@ -49,7 +49,7 @@ export const ContextMenuOptions = {
         title: 'ctx_share_tw',
         ww: 600, wh: 500,
         url: 'https://twitter.com/intent/tweet?text={hash} {URI} '
-    },
+    }
 };
 
 /**
