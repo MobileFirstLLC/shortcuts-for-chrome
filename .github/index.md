@@ -2,7 +2,7 @@ This is the source code documentation for a chrome extension Shortcuts for Chrom
 
 This is a simple extension, written in vanilla js with ES6 syntax; no frills or fancy stuff.
 
-## How it Works
+## Structure
 
 This extension has 3 primary parts: Popup, Menu and Background (see: [classes](list_class.html)). 
 
@@ -10,9 +10,7 @@ When user clicks extension icon ("browser action") extension opens a popup. This
 
 ```json
 "browser_action": {
-
     ...
-
     "default_popup": "popup.html"
   }
 ```
@@ -34,6 +32,23 @@ When user clicks extension icon ("browser action") extension opens a popup. This
 Beyond these 3 classes, several utility [modules](list_module.html) are used to implement this behavior.
 
 Menu links etc. are defined in [constants](list_namespace.html).
+
+#### Project organization
+
+Path | Description
+--- | ---
+`└` **.github** | github files
+`└` **assets** |  static assets
+`└` **docs** | files used for these docs
+`└` **src** | source code
+`  └ ---` **background** | background files
+`  └ ---` **menu** | links menu
+`  └ ---` **modules** | reusable modules
+`  └ ---` **popup** | extension popup
+`  └ ---` **config.js** | extension config
+`  └ ---` **manifest.json** | extension manifest
+`└` **test** | unit tests
+`└` `/` | config files
 
 
 ## Development
