@@ -18,7 +18,7 @@
     "message": "Jaa Twitterissä"
   },
   "accessibility": {
-    "message": "Esteettömyyden sisäiset"
+    "message": "Esteettömyys sisäiset"
   },
   "appcache_internals": {
     "message": "Sovellusten välimuisti"
@@ -107,14 +107,80 @@
   "inspect": {
     "message": "Tutki laitteita"
   },
+  "internals_web_app": {
+    "message": "Verkkosovellusten sisäiset"
+  },
+  "interstitials": {
+    "message": "Väliaikaiset"
+  },
+  "interventions_internals": {
+    "message": "Interventiot"
+  },
+  "invalidations": {
+    "message": "Mitätöinnit"
+  },
+  "local_state": {
+    "message": "Paikallinen tila"
+  },
+  "management": {
+    "message": "Hallinto"
+  },
+  "media_engagement": {
+    "message": "Median käyttö"
+  },
+  "media_internals": {
+    "message": "Median sisäiset"
+  },
+  "nacl": {
+    "message": "NaCl"
+  },
+  "net_export": {
+    "message": "Verkkolokin vienti"
+  },
+  "network_errors": {
+    "message": "Verkkovirheet"
+  },
+  "newtab": {
+    "message": "Uusi välilehti"
+  },
+  "ntp_tiles_internals": {
+    "message": "Uuden välilehden sisäiset"
+  },
+  "omnibox": {
+    "message": "Omnibox"
+  },
+  "password_manager_internals": {
+    "message": "Salasanojen hallinta"
+  },
+  "policy": {
+    "message": "Käytännöt"
+  },
+  "predictors": {
+    "message": "Ennustajat"
+  },
+  "prefs_internals": {
+    "message": "Käyttöasetusten sisäiset"
+  },
   "print": {
     "message": "Tulosta"
+  },
+  "process_internals": {
+    "message": "Prosessin sisäiset"
+  },
+  "quota_internals": {
+    "message": "Kiintiöiden sisäiset"
+  },
+  "safe_browsing": {
+    "message": "Turvallinen selaaminen"
+  },
+  "serviceworker_internals": {
+    "message": "ServiceWorker"
   },
   "settings": {
     "message": "Asetukset"
   },
   "settings_accessibility": {
-    "message": "Esteettömyys asetukset"
+    "message": "Esteettömyysasetukset"
   },
   "settings_appearance": {
     "message": "Ulkoasu"

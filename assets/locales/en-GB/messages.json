@@ -137,9 +137,6 @@
   "net_export": {
     "message": "Network Log Export"
   },
-  "net_internals": {
-    "message": "Net Internals"
-  },
   "network_errors": {
     "message": "Network Errors"
   },

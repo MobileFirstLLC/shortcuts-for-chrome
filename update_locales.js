@@ -2,7 +2,7 @@ const csv = require('csv-parser');
 const fs = require('fs');
 
 let counter = 0;
-const locales = {};
+const locales = {}, keys = [];
 
 const createDir = function (dirPath) {
     // doesn't exist
@@ -31,6 +31,7 @@ fs.createReadStream('./assets/language.csv')
                 .replace(/-/g, '_')
                 .replace(/\//g, '_');
 
+            keys.push(row.key);
             Object.keys(locales).map(loc => {
                 if (row[loc] || counter === 1) {
                     locales[loc][k] = {'message': row[loc] || row['en']};
@@ -47,5 +48,7 @@ fs.createReadStream('./assets/language.csv')
                     JSON.stringify(locales[k], null, 2));
             }
         });
+        writeFile('./menuLinks.json',
+            JSON.stringify(keys, null, 2));
         console.log('CSV file successfully processed');
     });
