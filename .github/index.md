@@ -33,9 +33,8 @@ In addition, there are several utility [modules](list_module.html) that are used
 
 Menu links are defined in [constants](list_namespace.html).
 
-<br/>
 
-### Project organization
+## Project Organization
 
 Path | Description
 --- | ---
