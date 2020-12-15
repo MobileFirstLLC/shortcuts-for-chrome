@@ -12,7 +12,7 @@ $panel-width: 280px;
   .divider {
     margin: 5px 0;
     height: 1px;
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--divider);
   }
 
   a,
@@ -89,7 +89,7 @@ $panel-width: 280px;
   }
 
   a:hover {
-    background: rgb(235, 235, 235);
+    background: var(--link-hover-bg);
 
     svg.pin {
       display: inline-block;

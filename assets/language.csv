@@ -4,7 +4,7 @@ appName,Shortcuts for Chrome,Shortcuts for Chrome,,,,,,,,,,,,,,,Pikavalinnat Chr
 appShortName,Shortcuts for Chrome,Shortcuts for Chrome,,,,,,,,,,,,,,,Pikavalinnat Chromelle,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 appDesc,All Chrome browser URLs under one menu - organize however you like.,All Chrome browser URLs under one menu - organize however you like.,,,,,,,,,,,,,,,Kaikki Chrome-selaimen URL-osoitteet yhdessä valikossa - järjestä haluamallasi tavalla.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ctx_rate,Rate extension,Rate extension,,,,,,,,,,,,,,,Arvostele laajennus,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ctx_source,View source,View source,,,,,,,,,,,,,,,Lähdekoodi,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ctx_source,Source code,Source code,,,,,,,,,,,,,,,Lähdekoodi,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ctx_share_tw,Share on Twitter,Share on Twitter,,,,,,,,,,,,,,,Jaa Twitterissä,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 accessibility,Accessibility Internals,Accessibility Internals,,,,,,,,,,,,,,,Esteettömyys sisäiset,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 appcache-internals,Application Cache,Application Cache,,,,,,,,,,,,,,,Sovellusten välimuisti,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

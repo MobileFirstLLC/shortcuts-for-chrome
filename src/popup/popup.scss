@@ -1,6 +1,29 @@
 $panel-width: 280px;
 $scroll-width: 10px;
 
+:root {
+  --body-bg: #fff;
+  --link-color: #222;
+  --scrollbar-track: #f3f3f3;
+  --scrollbar-thumb: #ccc;
+  --scrollbar-thumb-hover: rgba(22, 22, 22, 0.3);
+  --scrollbar-border: rgba(0, 0, 0, 0.15);
+  --divider: rgba(0, 0, 0, 0.15);
+  --link-hover-bg: rgb(235, 235, 235);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg: rgb(41, 42, 45);
+    --link-color: #fff;
+    --scrollbar-track: rgb(33, 33, 36);
+    --scrollbar-thumb: #191919;
+    --scrollbar-thumb-hover: #111;
+    --divider: rgba(0, 0, 0, 0.3);
+    --link-hover-bg: #0002;
+  }
+}
+
 //------------------------
 // GENERAL LAYOUT SETTINGS
 //------------------------
@@ -8,8 +31,8 @@ $scroll-width: 10px;
 *::-webkit-scrollbar-track {
   box-shadow: none;
   border: none;
-  border-left: 1px solid rgba(0, 0, 0, 0.15);
-  background: #f3f3f3;
+  border-left: 1px solid var(--scrollbar-border);
+  background: var(--scrollbar-track);
 }
 
 *::-webkit-scrollbar {
@@ -17,16 +40,17 @@ $scroll-width: 10px;
   height: $scroll-width;
 }
 
-*::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(22, 22, 22, 0.3);
-}
-
 *::-webkit-scrollbar-thumb {
-  background-color: #ccc;
+  background-color: var(--scrollbar-thumb);
   box-shadow: none;
   border-radius: 0;
   border: none;
 }
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
 
 html,
 body {
@@ -36,7 +60,7 @@ body {
 }
 
 body {
-  background: #fff;
+  background: var(--body-bg);
   height: 600px;
   font-size: 13.5px;
   letter-spacing: 0;
@@ -45,21 +69,24 @@ body {
   -webkit-user-select: none;
   user-select: none;
   overflow-y: visible;
+
   * {
     outline: none;
   }
+
   a,
   a:link,
   a:active,
   a:focus,
   a:visited {
-    color: #222;
+    color: var(--link-color);
     text-decoration: none;
     position: relative;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
   .hidden {
     display: none;
   }
