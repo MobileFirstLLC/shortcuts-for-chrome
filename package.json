@@ -19,12 +19,13 @@
     "docs": "xt-docs",
     "test": "xt-test",
     "clean": "xt-clean",
-    "sync": "xt-sync -e -g"
+    "sync": "xt-sync -e -g",
+    "translate": "node translate"
   },
   "devDependencies": {
     "csv-parser": "^3.0.0",
     "cws-publish": "^1.0.13",
-    "extension-cli": "^0.10.0"
+    "extension-cli": "^0.10.1"
   },
   "babel": {
     "presets": [
@@ -50,63 +51,8 @@
     ],
     "locales_list": [
       "en",
-      "en-GB"
-    ],
-    "pending_locales_list": [
-      "am",
-      "ar",
-      "eu",
-      "bn",
-      "pt-BR",
-      "bg",
-      "ca",
-      "chr",
-      "hr",
-      "cs",
-      "da",
-      "nl",
-      "et",
-      "fil",
-      "fi",
-      "fr",
-      "de",
-      "el",
-      "gu",
-      "iw",
-      "hi",
-      "hu",
-      "is",
-      "id",
-      "it",
-      "ja",
-      "kn",
-      "ko",
-      "lv",
-      "lt",
-      "ms",
-      "ml",
-      "mr",
-      "no",
-      "pl",
-      "",
-      "ro",
-      "ru",
-      "sr",
-      "",
-      "sk",
-      "sl",
-      "es",
-      "sw",
-      "sv",
-      "ta",
-      "te",
-      "th",
-      "zh-TW",
-      "tr",
-      "ur",
-      "uk",
-      "vi",
-      "cy"
+      "en-GB",
+      "fi"
     ]
   },
   "xtdocs": {
