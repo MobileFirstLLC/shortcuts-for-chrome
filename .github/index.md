@@ -2,6 +2,14 @@ This is the source code documentation for a chrome extension Shortcuts for Chrom
 
 This is a simple extension, written in vanilla js with ES6 syntax; no frills or fancy stuff.
 
+**Source Code** is available **[on Github ↗](https://github.com/MobileFirstLLC/shortcuts-for-chrome)**
+
+**Installation** - get the latest release from Chrome Web Store.
+
+<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
+<img alt="install at chrome web store" width="250" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/.github/badge.png"/>
+</a>
+
 ## Structure
 
 This extension has 3 primary parts: Popup, Menu and Background (see: [classes](list_class.html)). 
@@ -83,17 +91,9 @@ Go to `chrome://extensions` to debug the build:
 This extension is build with [extension-cli](https://oss.mobilefirst.me/extension-cli/).
 Refer to extension-cli docs for further details on each command.
 
-### Source Code
+### Translations
 
-**[View on Github ↗](https://github.com/MobileFirstLLC/shortcuts-for-chrome)**
-
-### Installation
-
-**The latest release is available for installation at Chrome Web Store.**
-
-<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
-<img alt="install at chrome web store" width="250" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/.github/badge.png"/>
-</a>
+You can contribute to this software by [translating it here](https://github.com/MobileFirstLLC/shortcuts-for-chrome/blob/master/assets/language.csv).
 
 * * *
 

@@ -1,0 +1,155 @@
+{
+  "appName": {
+    "message": "Pikavalinnat Chromelle"
+  },
+  "appShortName": {
+    "message": "Pikavalinnat Chromelle"
+  },
+  "appDesc": {
+    "message": "Kaikki Chrome-selaimen URL-osoitteet yhdessä valikossa - järjestä haluamallasi tavalla."
+  },
+  "ctx_rate": {
+    "message": "Arvostele laajennus"
+  },
+  "ctx_source": {
+    "message": "Lähdekoodi"
+  },
+  "ctx_share_tw": {
+    "message": "Jaa Twitterissä"
+  },
+  "accessibility": {
+    "message": "Esteettömyyden sisäiset"
+  },
+  "appcache_internals": {
+    "message": "Sovellusten välimuisti"
+  },
+  "apps": {
+    "message": "Sovellukset"
+  },
+  "autofill_internals": {
+    "message": "Automaattisen täytön sisäiset"
+  },
+  "blob_internals": {
+    "message": "Blob internals"
+  },
+  "bluetooth_internals": {
+    "message": "Bluetooth"
+  },
+  "bookmarks": {
+    "message": "Kirjanmerkit"
+  },
+  "chrome_urls": {
+    "message": "Chrome URL-osoitteet"
+  },
+  "components": {
+    "message": "Komponentit"
+  },
+  "conversion_internals": {
+    "message": "Conversion Internals"
+  },
+  "crashes": {
+    "message": "Kaatumiset"
+  },
+  "credits": {
+    "message": "Krediitit"
+  },
+  "device_log": {
+    "message": "Laitelokit"
+  },
+  "devices": {
+    "message": "Laitteet"
+  },
+  "dino": {
+    "message": "Dino"
+  },
+  "discards": {
+    "message": "Hylätyt välilehdet"
+  },
+  "download_internals": {
+    "message": "Latausten sisäiset"
+  },
+  "downloads": {
+    "message": "Lataukset"
+  },
+  "extensions": {
+    "message": "Laajennukset"
+  },
+  "extensions_configureCommands": {
+    "message": "Pikanäppäimet"
+  },
+  "flags": {
+    "message": "Flags"
+  },
+  "gcm_internals": {
+    "message": "GCM sisäiset"
+  },
+  "gpu": {
+    "message": "GPU"
+  },
+  "help": {
+    "message": "Apua"
+  },
+  "histograms": {
+    "message": "Histogrammit"
+  },
+  "history": {
+    "message": "Historia"
+  },
+  "history_syncedTabs": {
+    "message": "Välilehdet muista laitteista"
+  },
+  "identity_internals": {
+    "message": "Identiteetti API tunnuksen välimuisti"
+  },
+  "indexeddb_internals": {
+    "message": "IndexedDB"
+  },
+  "inspect": {
+    "message": "Tutki laitteita"
+  },
+  "print": {
+    "message": "Tulosta"
+  },
+  "settings": {
+    "message": "Asetukset"
+  },
+  "settings_accessibility": {
+    "message": "Esteettömyys asetukset"
+  },
+  "settings_appearance": {
+    "message": "Ulkoasu"
+  },
+  "settings_people": {
+    "message": "Sinä ja Google"
+  },
+  "settings_printing": {
+    "message": "Tulostaminen"
+  },
+  "settings_privacy": {
+    "message": "Tietosuoja ja turvallisuus"
+  },
+  "settings_reset": {
+    "message": "Nollaa asetukset"
+  },
+  "settings_search": {
+    "message": "Hakukone"
+  },
+  "ukm": {
+    "message": "UKM debug sivu"
+  },
+  "usb_internals": {
+    "message": "USB sisäiset"
+  },
+  "user_actions": {
+    "message": "Käyttäjän toimet"
+  },
+  "version": {
+    "message": "Versio"
+  },
+  "webrtc_internals": {
+    "message": "WebRTC sisäiset"
+  },
+  "webrtc_logs": {
+    "message": "WebRTC lokit"
+  }
+}

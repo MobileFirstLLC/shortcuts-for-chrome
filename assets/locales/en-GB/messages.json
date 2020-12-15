@@ -1,6 +1,21 @@
 {
-  "about": {
-    "message": "About"
+  "appName": {
+    "message": "Shortcuts for Chrome"
+  },
+  "appShortName": {
+    "message": "Shortcuts for Chrome"
+  },
+  "appDesc": {
+    "message": "All Chrome browser URLs under one menu - organize however you like."
+  },
+  "ctx_rate": {
+    "message": "Rate extension"
+  },
+  "ctx_source": {
+    "message": "View source"
+  },
+  "ctx_share_tw": {
+    "message": "Share on Twitter"
   },
   "accessibility": {
     "message": "Accessibility Internals"
@@ -8,11 +23,11 @@
   "appcache_internals": {
     "message": "Application Cache"
   },
-  "autofill_internals": {
-    "message": "Autofill Internals"
-  },
   "apps": {
     "message": "Apps"
+  },
+  "autofill_internals": {
+    "message": "Autofill Internals"
   },
   "blob_internals": {
     "message": "Blob Internals"
@@ -23,17 +38,11 @@
   "bookmarks": {
     "message": "Bookmarks"
   },
-  "cache": {
-    "message": "Cache"
-  },
   "chrome_urls": {
     "message": "Chrome URLs"
   },
   "components": {
     "message": "Components"
-  },
-  "conflicts": {
-    "message": "Conflicts"
   },
   "conversion_internals": {
     "message": "Conversion Internals"
@@ -56,9 +65,6 @@
   "discards": {
     "message": "Discarded Tabs"
   },
-  "dns": {
-    "message": "DNS"
-  },
   "download_internals": {
     "message": "Download Internals"
   },
@@ -73,9 +79,6 @@
   },
   "flags": {
     "message": "Flags"
-  },
-  "flash": {
-    "message": "Flash"
   },
   "gcm_internals": {
     "message": "GCM Internals"
@@ -152,23 +155,20 @@
   "password_manager_internals": {
     "message": "Password Manager Internals"
   },
-  "prefs_internals": {
-    "message": "Pref Internals"
-  },
   "policy": {
     "message": "Policies"
   },
   "predictors": {
     "message": "Predictors"
   },
+  "prefs_internals": {
+    "message": "Pref Internals"
+  },
   "print": {
     "message": "Print"
   },
   "process_internals": {
     "message": "Process Internals"
-  },
-  "profiler": {
-    "message": "Profiler"
   },
   "quota_internals": {
     "message": "Quota Internals"
@@ -196,9 +196,6 @@
   },
   "settings_defaultBrowser": {
     "message": "Default Browser Settings"
-  },
-  "settings_frame": {
-    "message": "Settings (old)"
   },
   "settings_importData": {
     "message": "Import Bookmarks and Settings"
@@ -242,23 +239,14 @@
   "suggestions": {
     "message": "Suggestions"
   },
-  "supervised_user_internals": {
-    "message": "Supervised User Internals"
-  },
   "sync_internals": {
     "message": "Sync Internals"
   },
   "system": {
     "message": "System"
   },
-  "taskscheduler_internals": {
-    "message": "Task Scheduler Internals"
-  },
   "terms": {
     "message": "Terms of Service"
-  },
-  "thumbnails": {
-    "message": "TopSites URLs with Thumbnails"
   },
   "tracing": {
     "message": "Tracing"
@@ -277,9 +265,6 @@
   },
   "version": {
     "message": "Version"
-  },
-  "view_http_cache": {
-    "message": "View Http Cache"
   },
   "webrtc_internals": {
     "message": "WebRTC Internals"

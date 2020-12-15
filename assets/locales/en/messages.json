@@ -15,6 +15,261 @@
     "message": "View source"
   },
   "ctx_share_tw": {
-    "message": "Tweet about this"
+    "message": "Share on Twitter"
+  },
+  "accessibility": {
+    "message": "Accessibility Internals"
+  },
+  "appcache_internals": {
+    "message": "Application Cache"
+  },
+  "apps": {
+    "message": "Apps"
+  },
+  "autofill_internals": {
+    "message": "Autofill Internals"
+  },
+  "blob_internals": {
+    "message": "Blob Internals"
+  },
+  "bluetooth_internals": {
+    "message": "Bluetooth Internals"
+  },
+  "bookmarks": {
+    "message": "Bookmarks"
+  },
+  "chrome_urls": {
+    "message": "Chrome URLs"
+  },
+  "components": {
+    "message": "Components"
+  },
+  "conversion_internals": {
+    "message": "Conversion Internals"
+  },
+  "crashes": {
+    "message": "Crashes"
+  },
+  "credits": {
+    "message": "Credits"
+  },
+  "device_log": {
+    "message": "Device Logs"
+  },
+  "devices": {
+    "message": "Devices"
+  },
+  "dino": {
+    "message": "Dino"
+  },
+  "discards": {
+    "message": "Discarded Tabs"
+  },
+  "download_internals": {
+    "message": "Download Internals"
+  },
+  "downloads": {
+    "message": "Downloads"
+  },
+  "extensions": {
+    "message": "Extensions"
+  },
+  "extensions_configureCommands": {
+    "message": "Keyboard Shortcuts"
+  },
+  "flags": {
+    "message": "Flags"
+  },
+  "gcm_internals": {
+    "message": "GCM Internals"
+  },
+  "gpu": {
+    "message": "GPU"
+  },
+  "help": {
+    "message": "Help"
+  },
+  "histograms": {
+    "message": "Histograms"
+  },
+  "history": {
+    "message": "History"
+  },
+  "history_syncedTabs": {
+    "message": "Tabs from other Devices"
+  },
+  "identity_internals": {
+    "message": "Identity API Token Cache"
+  },
+  "indexeddb_internals": {
+    "message": "IndexedDB"
+  },
+  "inspect": {
+    "message": "Inspect"
+  },
+  "internals_web_app": {
+    "message": "Web App Internals"
+  },
+  "interstitials": {
+    "message": "Interstitials"
+  },
+  "interventions_internals": {
+    "message": "Interventions Internals"
+  },
+  "invalidations": {
+    "message": "Invalidations"
+  },
+  "local_state": {
+    "message": "Local State"
+  },
+  "management": {
+    "message": "Management"
+  },
+  "media_engagement": {
+    "message": "Media Engagement"
+  },
+  "media_internals": {
+    "message": "Media Internals"
+  },
+  "nacl": {
+    "message": "NaCl"
+  },
+  "net_export": {
+    "message": "Network Log Export"
+  },
+  "net_internals": {
+    "message": "Net Internals"
+  },
+  "network_errors": {
+    "message": "Network Errors"
+  },
+  "newtab": {
+    "message": "New tab"
+  },
+  "ntp_tiles_internals": {
+    "message": "NTP Tiles Internals"
+  },
+  "omnibox": {
+    "message": "Omnibox"
+  },
+  "password_manager_internals": {
+    "message": "Password Manager Internals"
+  },
+  "policy": {
+    "message": "Policies"
+  },
+  "predictors": {
+    "message": "Predictors"
+  },
+  "prefs_internals": {
+    "message": "Pref Internals"
+  },
+  "print": {
+    "message": "Print"
+  },
+  "process_internals": {
+    "message": "Process Internals"
+  },
+  "quota_internals": {
+    "message": "Quota Internals"
+  },
+  "safe_browsing": {
+    "message": "Safe Browsing"
+  },
+  "serviceworker_internals": {
+    "message": "ServiceWorker"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "settings_accessibility": {
+    "message": "Accessibility Settings"
+  },
+  "settings_appearance": {
+    "message": "Appearance Settings"
+  },
+  "settings_autofill": {
+    "message": "Autofill Settings"
+  },
+  "settings_clearBrowserData": {
+    "message": "Clear browsing data"
+  },
+  "settings_defaultBrowser": {
+    "message": "Default Browser Settings"
+  },
+  "settings_importData": {
+    "message": "Import Bookmarks and Settings"
+  },
+  "settings_languages": {
+    "message": "Language Settings"
+  },
+  "settings_onStartup": {
+    "message": "On Startup Settings"
+  },
+  "settings_passwords": {
+    "message": "Passwords"
+  },
+  "settings_people": {
+    "message": "People"
+  },
+  "settings_printing": {
+    "message": "Printing Settings"
+  },
+  "settings_privacy": {
+    "message": "Privacy and Security Settings"
+  },
+  "settings_reset": {
+    "message": "Reset"
+  },
+  "settings_search": {
+    "message": "Search Engine Settings"
+  },
+  "settings_syncSetup": {
+    "message": "Advanced Sync Settings"
+  },
+  "settings_system": {
+    "message": "System Settings"
+  },
+  "signin_internals": {
+    "message": "Signin Internals"
+  },
+  "site_engagement": {
+    "message": "Site Engagement"
+  },
+  "suggestions": {
+    "message": "Suggestions"
+  },
+  "sync_internals": {
+    "message": "Sync Internals"
+  },
+  "system": {
+    "message": "System"
+  },
+  "terms": {
+    "message": "Terms of Service"
+  },
+  "tracing": {
+    "message": "Tracing"
+  },
+  "translate_internals": {
+    "message": "Translate Internals"
+  },
+  "ukm": {
+    "message": "UKM Debug Page"
+  },
+  "usb_internals": {
+    "message": "USB Internals"
+  },
+  "user_actions": {
+    "message": "User Actions"
+  },
+  "version": {
+    "message": "Version"
+  },
+  "webrtc_internals": {
+    "message": "WebRTC Internals"
+  },
+  "webrtc_logs": {
+    "message": "WebRTC Logs"
   }
 }
