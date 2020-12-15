@@ -39,7 +39,7 @@ When user clicks extension icon ("browser action") extension opens a popup. This
 
 In addition, there are several utility [modules](list_module.html) that are used to implement this behavior.
 
-Menu links are defined in [constants](list_namespace.html).
+Menu links are defined in `assets/dictionary.csv` and in `src/links.json` which is generated programmatically.
 
 
 ## Project Organization
@@ -55,6 +55,7 @@ Path | Description
 `└─── ` **modules** | reusable modules
 `└─── ` **popup** | extension popup
 `└─── ` **config.js** | extension config
+`└─── ` **links.json** | list of menu links
 `└─── ` **manifest.json** | extension manifest
 `└` **test** | unit tests
 `└` **/** | config files
@@ -93,7 +94,7 @@ Refer to extension-cli docs for further details on each command.
 
 ### Translations
 
-You can contribute to this software by [translating it here](https://github.com/MobileFirstLLC/shortcuts-for-chrome/blob/master/assets/language.csv).
+You can contribute to this software by [translating it here](https://github.com/MobileFirstLLC/shortcuts-for-chrome/blob/master/assets/dictionary.csv).
 
 * * *
 

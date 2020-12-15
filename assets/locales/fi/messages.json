@@ -6,7 +6,7 @@
     "message": "Pikavalinnat Chromelle"
   },
   "appDesc": {
-    "message": "Kaikki Chrome-selaimen URL-osoitteet yhdessä valikossa - järjestä haluamallasi tavalla."
+    "message": "Kaikki Chrome-selaimen URL-osoitteet yhdessä valikossa. Järjestä haluamallasi tavalla."
   },
   "ctx_rate": {
     "message": "Arvostele laajennus"
@@ -14,8 +14,11 @@
   "ctx_source": {
     "message": "Lähdekoodi"
   },
-  "ctx_share_tw": {
-    "message": "Jaa Twitterissä"
+  "ctx_share": {
+    "message": "Jaa..."
+  },
+  "ctx_share_copy": {
+    "message": "Kopioi URL"
   },
   "accessibility": {
     "message": "Esteettömyys sisäiset"
@@ -30,7 +33,7 @@
     "message": "Automaattisen täytön sisäiset"
   },
   "blob_internals": {
-    "message": "Blob internals"
+    "message": "Blob sisäiset"
   },
   "bluetooth_internals": {
     "message": "Bluetooth"
@@ -45,7 +48,7 @@
     "message": "Komponentit"
   },
   "conversion_internals": {
-    "message": "Conversion Internals"
+    "message": "Konvertoinnin sisäiset"
   },
   "crashes": {
     "message": "Kaatumiset"
@@ -78,7 +81,7 @@
     "message": "Pikanäppäimet"
   },
   "flags": {
-    "message": "Flags"
+    "message": "Vivut"
   },
   "gcm_internals": {
     "message": "GCM sisäiset"
@@ -99,7 +102,7 @@
     "message": "Välilehdet muista laitteista"
   },
   "identity_internals": {
-    "message": "Identiteetti API tunnuksen välimuisti"
+    "message": "Identiteetti APIn  välimuisti"
   },
   "indexeddb_internals": {
     "message": "IndexedDB"
@@ -185,6 +188,27 @@
   "settings_appearance": {
     "message": "Ulkoasu"
   },
+  "settings_autofill": {
+    "message": "Automaattinen täyttö\r\n"
+  },
+  "settings_clearBrowserData": {
+    "message": "Poista selaustiedot"
+  },
+  "settings_defaultBrowser": {
+    "message": "Oletusasetukset"
+  },
+  "settings_importData": {
+    "message": "Kirjanmerkkien ja asetusten tuominen"
+  },
+  "settings_languages": {
+    "message": "Kielet"
+  },
+  "settings_onStartup": {
+    "message": "Käynnistyksessä"
+  },
+  "settings_passwords": {
+    "message": "Salasanat"
+  },
   "settings_people": {
     "message": "Sinä ja Google"
   },
@@ -200,8 +224,38 @@
   "settings_search": {
     "message": "Hakukone"
   },
+  "settings_syncSetup": {
+    "message": "Synkronointi"
+  },
+  "settings_system": {
+    "message": "Järjestelmä"
+  },
+  "signin_internals": {
+    "message": "Kirjautumiset"
+  },
+  "site_engagement": {
+    "message": "Sivujen sitoumukset"
+  },
+  "suggestions": {
+    "message": "Ehdotukset"
+  },
+  "sync_internals": {
+    "message": "Synkronoinnin sisäiset"
+  },
+  "system": {
+    "message": "Tietoja järjestelmästä"
+  },
+  "terms": {
+    "message": "Lisäkäyttöehdot"
+  },
+  "tracing": {
+    "message": "Jäljittäminen"
+  },
+  "translate_internals": {
+    "message": "Käännösten sisäiset"
+  },
   "ukm": {
-    "message": "UKM debug sivu"
+    "message": "UKM debuggaus sivu"
   },
   "usb_internals": {
     "message": "USB sisäiset"

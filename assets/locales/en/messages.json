@@ -6,16 +6,28 @@
     "message": "Shortcuts for Chrome"
   },
   "appDesc": {
-    "message": "All Chrome browser URLs under one menu - organize however you like."
+    "message": "All Chrome browser URLs under one menu. Organize however you like."
   },
   "ctx_rate": {
     "message": "Rate extension"
   },
   "ctx_source": {
-    "message": "View source"
+    "message": "Source code"
+  },
+  "ctx_share": {
+    "message": "Share..."
   },
   "ctx_share_tw": {
-    "message": "Share on Twitter"
+    "message": "Twitter"
+  },
+  "ctx_share_fb": {
+    "message": "Facebook"
+  },
+  "ctx_share_rd": {
+    "message": "Reddit"
+  },
+  "ctx_share_copy": {
+    "message": "Copy URL"
   },
   "accessibility": {
     "message": "Accessibility Internals"
