@@ -29,11 +29,13 @@ When user clicks extension icon ("browser action") extension opens a popup. This
     - it manages extension context menu
     - it programmatically launches links user clicks in the menu
 
-Beyond these 3 classes, several utility [modules](list_module.html) are used to implement this behavior.
+In addition, there are several utility [modules](list_module.html) that are used to implement this behavior.
 
-Menu links etc. are defined in [constants](list_namespace.html).
+Menu links are defined in [constants](list_namespace.html).
 
-#### Project organization
+<br/>
+
+### Project organization
 
 Path | Description
 --- | ---
@@ -41,14 +43,14 @@ Path | Description
 `└` **assets** |  static assets
 `└` **docs** | files used for these docs
 `└` **src** | source code
-`  └ ---` **background** | background files
-`  └ ---` **menu** | links menu
-`  └ ---` **modules** | reusable modules
-`  └ ---` **popup** | extension popup
-`  └ ---` **config.js** | extension config
-`  └ ---` **manifest.json** | extension manifest
+`└─── ` **background** | background files
+`└─── ` **menu** | links menu
+`└─── ` **modules** | reusable modules
+`└─── ` **popup** | extension popup
+`└─── ` **config.js** | extension config
+`└─── ` **manifest.json** | extension manifest
 `└` **test** | unit tests
-`└` `/` | config files
+`└` **/** | config files
 
 
 ## Development
