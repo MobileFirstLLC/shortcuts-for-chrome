@@ -1,5 +1,5 @@
 import CenteredPopup from './centeredPopup';
-import {ContextMenuOptions} from "../config";
+import {ContextMenuOptions} from '../config';
 
 /**
  * This module adds custom options to chrome browser action context menu
@@ -25,7 +25,8 @@ export default class ContextMenu {
                 window.chrome.contextMenus.create({
                     title: ContextMenu.label(ContextMenu.options[key].title),
                     contexts: [CONTEXT],
-                    id: key
+                    parentId: ContextMenu.options[key].parentId,
+                    id: ContextMenu.options[key].id || key
                 });
             });
         });
@@ -66,23 +67,41 @@ export default class ContextMenu {
     }
 
     /**
+     * @description Copy text value to clipboard
+     * @param {String} value
+     */
+    static clipboardCopy(value) {
+        /** @ignore */
+        document.oncopy = (event) => {
+            event.preventDefault();
+            event.clipboardData.setData('text/plain', value);
+        };
+        document.execCommand('Copy', false, null);
+    }
+
+    /**
      * @private
      * @description when user clicks on context menu option
      * @param {Object} info - click event details
      */
     static contextMenuOnClick(info) {
-        Object.keys(ContextMenu.options)
-            .filter(function (key) {
-                return (key === info.menuItemId);
-            })
-            .map(function (key) {
-                const c = ContextMenu.options[key];
-                const url = ContextMenu.generateUrl(c);
-                const {ww, wh} = c;
+        const key = info.menuItemId;
+        const c = ContextMenu.options[key];
 
-                return ww && wh ?
-                    CenteredPopup.open(ww, wh, url) :
-                    window.open(url);
-            });
+        if (c) {
+            const c = ContextMenu.options[key];
+            const url = ContextMenu.generateUrl(c);
+            const {ww, wh} = c;
+
+            if (key === ContextMenu.options.copy.id) {
+                return ContextMenu.clipboardCopy(url);
+            }
+
+            return ww && wh ?
+                CenteredPopup.open(ww, wh, url) :
+                window.open(url);
+
+        }
+        return false;
     }
 }

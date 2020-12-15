@@ -1,5 +1,7 @@
+/* eslint-disable no-new */
 import BackgroundApi from '../modules/backgroundApi';
 import ContextMenu from '../modules/contextMenu';
+import UpdateHandler from '../modules/onUpdate';
 
 /**
  * @class
@@ -12,9 +14,8 @@ import ContextMenu from '../modules/contextMenu';
  */
 export default class Background {
     constructor() {
-        // eslint-disable-next-line no-new
         new BackgroundApi();
-        // eslint-disable-next-line no-new
         new ContextMenu();
+        new UpdateHandler();
     }
 }

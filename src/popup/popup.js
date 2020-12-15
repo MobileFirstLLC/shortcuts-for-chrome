@@ -1,5 +1,5 @@
 import Storage from '../modules/storage';
-import {MenuLinks} from '../config';
+import {MenuLinks} from '../links.json';
 import MenuPanel from '../menu/menu';
 
 /**

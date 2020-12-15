@@ -19,8 +19,8 @@ export default  class MenuPanel {
         this.getLinks = getLinks;
         this.onPinToggle = onPinToggle;
         this.onPinOrderChange = onPinOrderChange;
-        this.pinIcon = appIcons.generateIcon(appIcons.icons.bookmarkEmpty, 'pin');
-        this.unpinIcon = appIcons.generateIcon(appIcons.icons.bookmarkChecked, 'unpin');
+        this.pinIcon = appIcons.generateIcon(appIcons.icons.addPin, 'pin');
+        this.unpinIcon = appIcons.generateIcon(appIcons.icons.removePin, 'unpin');
     }
 
     /**
