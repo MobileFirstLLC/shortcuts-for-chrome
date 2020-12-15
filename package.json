@@ -24,7 +24,7 @@
   "devDependencies": {
     "csv-parser": "^3.0.0",
     "cws-publish": "^1.0.13",
-    "extension-cli": "^0.9.4"
+    "extension-cli": "^0.10.0"
   },
   "babel": {
     "presets": [
