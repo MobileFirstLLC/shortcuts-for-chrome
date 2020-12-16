@@ -100,21 +100,6 @@ $panel-width: 280px;
     }
   }
 
-  a.rate::before {
-    content: "";
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    position: absolute;
-    left: 14px;
-    top: 7px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: transparent;
-    background-image: url('../icons/16x16.png');
-  }
-
   a:last-child {
     margin-bottom: 6px;
   }

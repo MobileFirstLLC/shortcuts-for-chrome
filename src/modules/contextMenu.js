@@ -85,23 +85,19 @@ export default class ContextMenu {
      * @param {Object} info - click event details
      */
     static contextMenuOnClick(info) {
-        const key = info.menuItemId;
-        const c = ContextMenu.options[key];
+        const option = ContextMenu.options[info.menuItemId];
 
-        if (c) {
-            const c = ContextMenu.options[key];
-            const url = ContextMenu.generateUrl(c);
-            const {ww, wh} = c;
+        if (!option) return false;
 
-            if (key === ContextMenu.options.copy.id) {
-                return ContextMenu.clipboardCopy(url);
-            }
+        const url = ContextMenu.generateUrl(option);
+        const {ww, wh} = option;
 
-            return ww && wh ?
-                CenteredPopup.open(ww, wh, url) :
-                window.open(url);
-
+        if (option.id === ContextMenu.options.copy.id) {
+            return ContextMenu.clipboardCopy(url);
         }
-        return false;
+        if (ww && wh) {
+            return CenteredPopup.open(ww, wh, url);
+        }
+        return window.open(url);
     }
 }
