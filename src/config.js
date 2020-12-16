@@ -27,13 +27,33 @@ export const ContextMenuOptions = {
     facebook: {
         parentId: 'share',
         title: 'ctx_share_fb',
-        ww: 600, wh: 650,
+        ww: 600, wh: 700,
         url: 'https://www.facebook.com/sharer/sharer.php?u={URI}&amp;src=sdkpreparse'
     },
     reddit: {
         parentId: 'share',
         title: 'ctx_share_rd',
         url: 'https://www.reddit.com/submit?url={URI}'
+    },
+    linkedin: {
+        parentId: 'share',
+        title: 'ctx_share_li',
+        ww: 600, wh: 500,
+        url: 'https://www.linkedin.com/sharing/share-offsite/?url={URI}'
+    },
+    whatsapp: {
+        parentId: 'share',
+        title: 'ctx_share_wa',
+        ww: 800, wh: 800,
+        url: 'https://api.whatsapp.com/send/?phone&text={URI}'
+    },
+    pinterest: {
+        parentId: 'share',
+        title: 'ctx_share_pi',
+        ww: 700, wh: 800,
+        url: 'https://www.pinterest.com/pin/create/button/?url={URI}&media=' +
+            'https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/' +
+            '68bf15ddb9f263b058a10340202ac775f0f4cf8d/assets/preview.gif'
     },
     copy: {
         id: 'copy',
