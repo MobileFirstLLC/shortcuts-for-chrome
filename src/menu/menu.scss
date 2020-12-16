@@ -46,7 +46,7 @@ $panel-width: 280px;
     }
 
     svg.pin path {
-      fill: #666;
+      fill: var(--inactive-icon);
     }
 
     svg.unpin {

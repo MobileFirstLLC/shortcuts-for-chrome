@@ -10,17 +10,19 @@ $scroll-width: 10px;
   --scrollbar-border: rgba(0, 0, 0, 0.15);
   --divider: rgba(0, 0, 0, 0.15);
   --link-hover-bg: rgb(235, 235, 235);
+  --inactive-icon:#666;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --body-bg: rgb(41, 42, 45);
     --link-color: #fff;
-    --scrollbar-track: rgb(33, 33, 36);
+    --scrollbar-track: rgb(38, 38, 41);
     --scrollbar-thumb: #191919;
     --scrollbar-thumb-hover: #111;
     --divider: rgba(0, 0, 0, 0.3);
-    --link-hover-bg: #0002;
+    --link-hover-bg: #4B4C4F;
+    --inactive-icon:#999;
   }
 }
 
