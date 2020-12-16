@@ -26,6 +26,15 @@
   "ctx_share_rd": {
     "message": "Reddit"
   },
+  "ctx_share_li": {
+    "message": "LinkedIn"
+  },
+  "ctx_share_wa": {
+    "message": "Whatsapp"
+  },
+  "ctx_share_pi": {
+    "message": "Pinterest"
+  },
   "ctx_share_copy": {
     "message": "Copy URL"
   },
