@@ -84,7 +84,7 @@ Refer to extension-cli docs for further details on each command.
 | `npm run test` | run unit tests |
 | `npm run clean` | clean generated files |
 | `npm run sync` | update config files |
-| `npm run translate` | gnerate locales dictionaries and links.json |
+| `npm run translate` | generate locales dictionaries and links.json |
 
 
 ### Translations
