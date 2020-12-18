@@ -1,63 +1,54 @@
-This is the source code documentation for a chrome extension Shortcuts for Chrome.
-
-This is a simple extension, written in vanilla js with ES6 syntax; no frills or fancy stuff.
+This is source code documentation for a chrome extension **Shortcuts for Chrome**. 
 
 **Source Code** is available **[on Github ↗](https://github.com/MobileFirstLLC/shortcuts-for-chrome)**
 
-**Installation** - get the latest release from Chrome Web Store.
+**Install** the latest release from Chrome Web Store:
 
 <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
 <img alt="install at chrome web store" width="250" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/.github/badge.png"/>
 </a>
 
-## Structure
+## General Structure
 
-This extension has 3 primary parts: Popup, Menu and Background (see: [classes](list_class.html)). 
+When user clicks extension icon ("browser action") extension opens the extension popup window. This is the primary UI and way for user to interact with the extension. 
 
-When user clicks extension icon ("browser action") extension opens a popup. This behavior is specified in `manifest.json`:
+At a more detailed level, this extension has 3 parts: Popup, Menu and Background. 
 
-```json
-"browser_action": {
-    ...
-    "default_popup": "popup.html"
-  }
-```
-
-- **Popup** is a HTML document with some CSS styles and javascript. 
-    - `popup.js` will determine what visible content renders inside the popup window
+- (parent) **Popup** manages the extension popup window
+    - It saves and restores user preferences 
+    - It sets the visible content rendering inside popup window
     - Menu is currently the only possible view, so popup will render this menu panel
       <br/><br/>
 
-- **Menu** panel shows list of links. 
-    - User can pin/unpin links and drag and drop pinned links.
-    - User preferences are saved in chrome sync storage
+- (child) **Menu** panel shows list of links
+    - User can pin/unpin links and drag and drop pinned links
       <br/><br/>
 
 - **Background** has no visual interface, but runs in the background of the browser
     - it manages extension context menu
     - it programmatically launches links user clicks in the menu
+    - other parts of the extension can communicate with background through message passing
 
 In addition, there are several utility [modules](list_module.html) that are used to implement this behavior.
-
-Menu links are defined in `assets/dictionary.csv` and in `src/links.json` which is generated programmatically.
+Menu links and their associated labels are defined in `assets/dictionary.csv`.
 
 
 ## Project Organization
 
 Path | Description
 --- | ---
-`└` **.github** | github files
-`└` **assets** |  static assets
-`└` **docs** | files used for these docs
-`└` **src** | source code
-`└─── ` **background** | background files
-`└─── ` **menu** | links menu
-`└─── ` **modules** | reusable modules
-`└─── ` **popup** | extension popup
+`└` **.github/** | github files
+`└` **assets/** |  static assets
+`└` **docs/** | files used for these docs
+`└` **src/** | source code
+`└─── ` **background/** | background files
+`└─── ` **menu/** | links menu
+`└─── ` **modules/** | reusable modules
+`└─── ` **popup/** | extension popup
 `└─── ` **config.js** | extension config
-`└─── ` **links.json** | list of menu links
+`└─── ` **links.json** | list of menu links (generated; do not edit)
 `└─── ` **manifest.json** | extension manifest
-`└` **test** | unit tests
+`└` **test/** | unit tests
 `└` **/** | config files
 
 
@@ -69,7 +60,9 @@ Run these commands to build a locally debuggable version:
 
 ```
 git clone https://github.com/MobileFirstLLC/shortcuts-for-chrome.git
+
 npm install
+
 npm run build
 ```
 
@@ -80,6 +73,9 @@ Go to `chrome://extensions` to debug the build:
 
 ### Available Commands
 
+This extension is build with [extension-cli](https://oss.mobilefirst.me/extension-cli/).
+Refer to extension-cli docs for further details on each command.
+
 | command | description |
 | --- | --- |
 | `npm run start` | development build |
@@ -88,9 +84,8 @@ Go to `chrome://extensions` to debug the build:
 | `npm run test` | run unit tests |
 | `npm run clean` | clean generated files |
 | `npm run sync` | update config files |
+| `npm run translate` | gnerate locales dictionaries and links.json |
 
-This extension is build with [extension-cli](https://oss.mobilefirst.me/extension-cli/).
-Refer to extension-cli docs for further details on each command.
 
 ### Translations
 
