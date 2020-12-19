@@ -86,11 +86,6 @@ Refer to extension-cli docs for further details on each command.
 | `npm run sync` | update config files |
 | `npm run translate` | generate locales dictionaries and links.json |
 
-
-### Translations
-
-You can contribute to this software by [translating it here](https://github.com/MobileFirstLLC/shortcuts-for-chrome/blob/master/assets/dictionary.csv).
-
 * * *
 
 **Maker:** [Mobile First](https://mobilefirst.me) &bull; **License:** [MIT](https://github.com/MobileFirstLLC/shortcuts-for-chrome/blob/master/LICENSE)

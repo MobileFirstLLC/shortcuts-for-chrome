@@ -36,10 +36,15 @@ Default Chrome browser is optimized for non-technical users. For developers who 
 
 [`View documentation here ↗`](http://oss.mobilefirst.me/shortcuts-for-chrome/)
 
+
+### Translations
+
+You can contribute to this software by [translating it](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/4).
+
 * * *
 
 **Issues & Feature Requests:** [`Submit on Github`](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/new/choose)
 
-**Maker:** [`Mobile First`](https://mobilefirst.me)
+**Maker:** [`Mobile First`](https://mobilefirst.me)  &nbsp;  [![Twitter Follow](https://img.shields.io/twitter/follow/mobilefirstllc?label=follow&style=social)](https://twitter.com/intent/follow?screen_name=mobilefirstllc&tw_p=followbutton)
 
 **License:** [`MIT`](https://github.com/MobileFirstLLC/shortcuts-for-chrome/blob/master/LICENSE)
