@@ -20,6 +20,8 @@ Default Chrome browser is optimized for non-technical users. For developers who 
 
 #### 🦖 &nbsp; Play the dino game while you are online
 
+#### 🌗 &nbsp; Matches browser dark/light mode
+
 <br/>
 
 ## Installation
