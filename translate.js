@@ -1,6 +1,20 @@
-/**
- * This utility script converts CSV file to localized dictionaries
- */
+/** * * * * * * * * * * * * * * * * * * * *
+ *
+ * Shortcuts for Chrome
+ * Custom navigation menu for Chrome browser
+ *
+ * Author: Mobile First LLC
+ * Website: https://mobilefirst.me
+ *
+ * @description
+ * Utility script for converting CSV files to localized dictionaries.
+ *
+ * This script takes a CSV file and converts that to multiple json files
+ * formatted as expected by chrome browser extension.
+ *
+ * [Localization message formats]{@link https://developer.chrome.com/docs/extensions/mv2/i18n-messages}
+ *
+ * * * * * * * * * * * * * * * * * * * * */
 
 const csv = require('csv-parser');
 const fs = require('fs');
