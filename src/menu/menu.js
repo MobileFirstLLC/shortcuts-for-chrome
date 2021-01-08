@@ -1,3 +1,16 @@
+/** * * * * * * * * * * * * * * * * * * * *
+ *
+ * Shortcuts for Chrome
+ * Custom navigation menu for Chrome browser
+ *
+ * Author: Mobile First LLC
+ * Website: https://mobilefirst.me
+ *
+ * @description
+ * Menu of browser links
+ *
+ * * * * * * * * * * * * * * * * * * * * */
+
 import appIcons from '../modules/appIcons.js';
 import Draggable from '../modules/dragging.js';
 
@@ -11,7 +24,7 @@ import Draggable from '../modules/dragging.js';
  * @name MenuPanel
  * @classdesc Menu panel is a view that shows a list of links
  */
-export default  class MenuPanel {
+export default class MenuPanel {
 
     constructor(getLinks, onPinToggle, onPinOrderChange) {
         this.name = 'menu';
@@ -42,7 +55,7 @@ export default  class MenuPanel {
      * @param {String} link - url of the link to open; this should be absolute url string
      */
     launchTab(link) {
-        window.chrome.runtime.sendMessage({ open: link });
+        window.chrome.runtime.sendMessage({open: link});
     };
 
     /**
@@ -118,7 +131,6 @@ export default  class MenuPanel {
         };
         el.getElementsByTagName('span')[0].onclick = () => {
             this.launchTab('chrome://' + name);
-            window.ga('send', 'event', 'chrome-urls', 'click', null, 1);
         };
     }
 

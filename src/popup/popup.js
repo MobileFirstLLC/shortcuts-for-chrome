@@ -1,3 +1,16 @@
+/** * * * * * * * * * * * * * * * * * * * *
+ *
+ * Shortcuts for Chrome
+ * Custom navigation menu for Chrome browser
+ *
+ * Author: Mobile First LLC
+ * Website: https://mobilefirst.me
+ *
+ * @description
+ * Popup window script implementation
+ *
+ * * * * * * * * * * * * * * * * * * * * */
+
 import Storage from '../modules/storage';
 import {MenuLinks} from '../links.json';
 import MenuPanel from '../menu/menu';
@@ -66,7 +79,6 @@ export default class Popup {
             this.pinned.splice(index, 1);
         }
         this.onPinOrderChange(this.pinned.concat([]), this.drawCurrentView);
-        window.ga('send', 'event', 'chrome-urls', 'pin', null, 1);
     }
 
     /**

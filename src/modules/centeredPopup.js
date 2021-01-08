@@ -1,5 +1,21 @@
+/** * * * * * * * * * * * * * * * * * * * *
+ *
+ * Shortcuts for Chrome
+ * Custom navigation menu for Chrome browser
+ *
+ * Author: Mobile First LLC
+ * Website: https://mobilefirst.me
+ *
+ * @description
+ * Open a browser window in the middle
+ * of user's viewport
+ *
+ * * * * * * * * * * * * * * * * * * * * */
+
 /**
- * Utility class for opening popup window in the middle of user's viewport
+ * Utility class for opening popup window in
+ * the middle of user's viewport
+ *
  * @module
  * @name CenteredPopup
  */

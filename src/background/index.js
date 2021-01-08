@@ -1,6 +1,16 @@
-import Background from './background';
-import Analytics from '../modules/analytics';
-import {UA_ID} from '../config';
+/** * * * * * * * * * * * * * * * * * * * *
+ *
+ * Shortcuts for Chrome
+ * Custom navigation menu for Chrome browser
+ *
+ * Author: Mobile First LLC
+ * Website: https://mobilefirst.me
+ *
+ * @description
+ * Run background scripts
+ *
+ * * * * * * * * * * * * * * * * * * * * */
 
-(() => new Analytics(UA_ID))();
+import Background from './background';
+
 (() => new Background())();

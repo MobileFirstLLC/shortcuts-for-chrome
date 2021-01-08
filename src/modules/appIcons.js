@@ -1,4 +1,18 @@
-import {SVGIconPaths} from '../config'
+/** * * * * * * * * * * * * * * * * * * * *
+ *
+ * Shortcuts for Chrome
+ * Custom navigation menu for Chrome browser
+ *
+ * Author: Mobile First LLC
+ * Website: https://mobilefirst.me
+ *
+ * @description
+ * Utility module for building vectors
+ * dynamically
+ *
+ * * * * * * * * * * * * * * * * * * * * */
+
+import {SVGIconPaths} from '../config';
 
 /**
  * Generates simple SVG icons dynamically
@@ -27,7 +41,8 @@ export default class AppIcons {
 
         path.setAttribute('d', icon.d);
         svg.setAttribute('class', className);
-        svg.setAttribute('viewBox', [0, 0, (icon.w || 24), (icon.h || 24)].join(' '));
+        svg.setAttribute('viewBox',
+            [0, 0, (icon.w || 24), (icon.h || 24)].join(' '));
         svg.appendChild(path);
         return svg.outerHTML;
     }

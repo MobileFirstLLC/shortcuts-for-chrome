@@ -4,7 +4,6 @@ import Storage from '../src/modules/storage';
 describe('Popup Window', function () {
 
     before(function () {
-        window.ga = () => { };
         global.popup = null;
         global.getLink = (n) => {
             return document.getElementsByTagName("a")[n || 0];
@@ -41,7 +40,6 @@ describe('Popup Window', function () {
         sandbox.restore();
     });
     after(function () {
-        delete window.ga;
         delete global.popup;
         delete global.getLink;
         delete global.getLinkName;

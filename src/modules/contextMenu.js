@@ -1,3 +1,17 @@
+/** * * * * * * * * * * * * * * * * * * * *
+ *
+ * Shortcuts for Chrome
+ * Custom navigation menu for Chrome browser
+ *
+ * Author: Mobile First LLC
+ * Website: https://mobilefirst.me
+ *
+ * @description
+ * Extension context menu
+ *
+ * * * * * * * * * * * * * * * * * * * * */
+
+
 import CenteredPopup from './centeredPopup';
 import {ContextMenuOptions} from '../config';
 

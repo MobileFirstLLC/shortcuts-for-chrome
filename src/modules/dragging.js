@@ -1,3 +1,18 @@
+/** * * * * * * * * * * * * * * * * * * * *
+ *
+ * Shortcuts for Chrome
+ * Custom navigation menu for Chrome browser
+ *
+ * Author: Mobile First LLC
+ * Website: https://mobilefirst.me
+ *
+ * @description
+ * Vanilla drag and drop implementation
+ * to enable dragging links within their
+ * container element.
+ *
+ * * * * * * * * * * * * * * * * * * * * */
+
 let activedragSrcEl;
 
 /**
@@ -19,11 +34,11 @@ export default class Dragging {
      * initiator that item order has changed order
      *
      @example new Draggable("id",
-         containerElement,
-         onElementRender(Element element) {
+     containerElement,
+     onElementRender(Element element) {
             // attach other event handlers to element
          },
-         onDradEndCallback(Array<String> ids) {
+     onDradEndCallback(Array<String> ids) {
              // do something with ids after drag even has completed
          })
      );
@@ -65,7 +80,7 @@ export default class Dragging {
      * has changed as a result of dnd.
      * This method has some added latency to make sure the DOM
      * nodes have updated before this event fires.
-    */
+     */
     notifyParent() {
         let newOrder = [];
 

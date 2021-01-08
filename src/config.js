@@ -1,7 +1,22 @@
+/** * * * * * * * * * * * * * * * * * * * *
+ *
+ * Shortcuts for Chrome
+ * Custom navigation menu for Chrome browser
+ *
+ * Author: Mobile First LLC
+ * Website: https://mobilefirst.me
+ *
+ * @description
+ * Extension configuration options
+ *
+ * * * * * * * * * * * * * * * * * * * * */
+
 /**
  * List of options to display in the context menu
- * Links will open in new window when width/height (ww/wh) are not specified
- * Otherwise links will open in a popup window of specified size
+ * Links will open in new window when width/height
+ * (ww/wh) are not specified Otherwise links will
+ * open in a popup window of specified size
+ *
  * @namespace ContextMenuOptions
  * @type Object.<Object>
  */
@@ -64,14 +79,8 @@ export const ContextMenuOptions = {
 };
 
 /**
- * Analytics id - used within extension
- * @namespace UA_ID
- * @type string
- */
-export const UA_ID = 'UA-129118591-4';
-
-/**
- * App icon svg paths
+ * App icons svg paths
+ *
  * @namespace SVGIconPaths
  * @type Object.<Object>
  */
