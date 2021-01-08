@@ -1,5 +1,4 @@
 /** * * * * * * * * * * * * * * * * * * * *
- *
  * Shortcuts for Chrome
  * Custom navigation menu for Chrome browser
  *
@@ -8,14 +7,13 @@
  *
  * @description
  * Extension configuration options
- *
  * * * * * * * * * * * * * * * * * * * * */
 
 /**
  * List of options to display in the context menu
- * Links will open in new window when width/height
- * (ww/wh) are not specified Otherwise links will
- * open in a popup window of specified size
+ * Links will open in new tab when width/height
+ * (ww/wh) are not specified. Otherwise links will
+ * open in a window of specified size
  *
  * @namespace ContextMenuOptions
  * @type Object.<Object>

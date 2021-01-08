@@ -1,5 +1,4 @@
 /** * * * * * * * * * * * * * * * * * * * *
- *
  * Shortcuts for Chrome
  * Custom navigation menu for Chrome browser
  *
@@ -7,12 +6,11 @@
  * Website: https://mobilefirst.me
  *
  * @description
- * Menu of browser links
- *
+ * Browser links menu UI and event handling
  * * * * * * * * * * * * * * * * * * * * */
 
-import appIcons from '../modules/appIcons.js';
-import Draggable from '../modules/dragging.js';
+import appIcons from '../../modules/appIcons.js';
+import Draggable from '../../modules/dragging.js';
 
 /**
  * Initialize menu panel instance
@@ -32,8 +30,10 @@ export default class MenuPanel {
         this.getLinks = getLinks;
         this.onPinToggle = onPinToggle;
         this.onPinOrderChange = onPinOrderChange;
-        this.pinIcon = appIcons.generateIcon(appIcons.icons.addPin, 'pin');
-        this.unpinIcon = appIcons.generateIcon(appIcons.icons.removePin, 'unpin');
+        this.pinIcon = appIcons.generateIcon(
+            appIcons.icons.addPin, 'pin');
+        this.unpinIcon = appIcons.generateIcon(
+            appIcons.icons.removePin, 'unpin');
     }
 
     /**
@@ -44,7 +44,7 @@ export default class MenuPanel {
         let links = this.getLinks();
         let panel = document.createElement('div');
 
-        this.renderPinnerLinks(panel, links.pinned);
+        this.renderPinnedLinks(panel, links.pinned);
         this.renderUnpinnedLinks(panel, links.unpinned);
 
         return panel;
@@ -64,7 +64,7 @@ export default class MenuPanel {
      * @param {Element} panel - DOM element where links will be appended
      * @param {Array<String>} pinned - list of pinned links
      */
-    renderPinnerLinks(panel, pinned) {
+    renderPinnedLinks(panel, pinned) {
         if (!pinned || !pinned.length) return;
 
         let container = document.createElement('div'),
@@ -140,7 +140,8 @@ export default class MenuPanel {
      * @param {String} name - link name
      */
     linkLabel(name) {
-        return window.chrome.i18n.getMessage(name.replace(/[\-\/]/g, '_')) || name;
+        return window.chrome.i18n.getMessage(
+            name.replace(/[\-\/]/g, '_')) || name;
     }
 
     /**

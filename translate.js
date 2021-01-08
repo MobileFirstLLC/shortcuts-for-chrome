@@ -1,5 +1,4 @@
 /** * * * * * * * * * * * * * * * * * * * *
- *
  * Shortcuts for Chrome
  * Custom navigation menu for Chrome browser
  *
@@ -14,7 +13,6 @@
  *
  * see: Localization message formats
  * {@link https://developer.chrome.com/docs/extensions/mv2/i18n-messages}
- *
  * * * * * * * * * * * * * * * * * * * * */
 
 const csv = require('csv-parser');
@@ -80,7 +78,8 @@ fs.createReadStream(input)
                 .replace(/-/g, '_')
                 .replace(/\//g, '_');
 
-            // add dictionary entry for each language, if localized value exists
+            // add dictionary entry for each language,
+            // if localized value exists
             Object.keys(locales).map(locale => {
                 if (row[locale]) locales[locale][k] = {'message': row[locale]};
             });
@@ -92,7 +91,8 @@ fs.createReadStream(input)
             menuLinksStartRow = true;
         }
 
-        // record all entries that represent links in their original form
+        // record all entries that represent links
+        // in their original form
         if (menuLinksStartRow && row.key) {
             keys.push(row.key);
         }
@@ -110,7 +110,8 @@ fs.createReadStream(input)
             // only take non-empty dictionaries
             .filter(k => (k && Object.values(locales[k]).length))
             // write locales directories
-            .map(language => writeFile(outPath + language, outFileName, locales[language]));
+            .map(language => writeFile(outPath + language,
+                outFileName, locales[language]));
 
         // write all links to file for use by source
         writeFile('./src/', 'links.json', {'MenuLinks': keys});

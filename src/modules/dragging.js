@@ -1,5 +1,4 @@
 /** * * * * * * * * * * * * * * * * * * * *
- *
  * Shortcuts for Chrome
  * Custom navigation menu for Chrome browser
  *
@@ -10,7 +9,6 @@
  * Vanilla drag and drop implementation
  * to enable dragging links within their
  * container element.
- *
  * * * * * * * * * * * * * * * * * * * * */
 
 let activedragSrcEl;

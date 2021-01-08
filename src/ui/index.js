@@ -1,5 +1,4 @@
 /** * * * * * * * * * * * * * * * * * * * *
- *
  * Shortcuts for Chrome
  * Custom navigation menu for Chrome browser
  *
@@ -8,9 +7,8 @@
  *
  * @description
  * Run popup window script
- *
  * * * * * * * * * * * * * * * * * * * * */
 
-import Popup from './popup';
+import Popup from './popup/popup';
 
 (() => new Popup())();

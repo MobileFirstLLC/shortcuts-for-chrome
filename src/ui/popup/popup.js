@@ -1,5 +1,4 @@
 /** * * * * * * * * * * * * * * * * * * * *
- *
  * Shortcuts for Chrome
  * Custom navigation menu for Chrome browser
  *
@@ -8,11 +7,10 @@
  *
  * @description
  * Popup window script implementation
- *
  * * * * * * * * * * * * * * * * * * * * */
 
-import Storage from '../modules/storage';
-import {MenuLinks} from '../links.json';
+import Storage from '../../modules/storage';
+import {MenuLinks} from '../../links.json';
 import MenuPanel from '../menu/menu';
 
 /**

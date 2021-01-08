@@ -1,4 +1,4 @@
-import Popup from '../src/popup/popup';
+import Popup from '../src/ui/popup/popup';
 import Storage from '../src/modules/storage';
 
 describe('Popup Window', function () {
@@ -18,15 +18,19 @@ describe('Popup Window', function () {
             return link.getElementsByTagName("svg")[0];
         }
         global.SimulateDragEvent = function (el, type) {
-            var createTransferEvent = (type) => {
-                var ev = new window.CustomEvent(type, {});
+            const createTransferEvent = (type) => {
+                const ev = new window.CustomEvent(type, {});
                 ev.dataTransfer = {
-                    effectAllowed: () => { },
-                    setData: () => { },
-                    getData: () => { return el.outerHTML }
-                }
+                    effectAllowed: () => {
+                    },
+                    setData: () => {
+                    },
+                    getData: () => {
+                        return el.outerHTML;
+                    }
+                };
                 return ev;
-            }
+            };
             el.dispatchEvent(createTransferEvent(type));
         }
     });

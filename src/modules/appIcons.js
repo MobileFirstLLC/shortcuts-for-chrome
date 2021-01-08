@@ -1,5 +1,4 @@
 /** * * * * * * * * * * * * * * * * * * * *
- *
  * Shortcuts for Chrome
  * Custom navigation menu for Chrome browser
  *
@@ -9,7 +8,6 @@
  * @description
  * Utility module for building vectors
  * dynamically
- *
  * * * * * * * * * * * * * * * * * * * * */
 
 import {SVGIconPaths} from '../config';

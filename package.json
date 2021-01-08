@@ -46,7 +46,17 @@
       },
       {
         "name": "popup",
-        "src": "./src/popup/**/*.js"
+        "src": "./src/ui/index.js"
+      }
+    ],
+    "scss_bundles": [
+      {
+        "src": [
+          "./src/ui/theme.scss",
+          "./src/ui/popup/popup.scss",
+          "./src/**/*.scss"
+        ],
+        "name": "styles.css"
       }
     ],
     "locales_list": [
@@ -58,7 +68,7 @@
   "xtdocs": {
     "source": {
       "include": [
-        "./.github/index.md",
+        "./.github/DOCS_INDEX.md",
         "src"
       ]
     },

@@ -12,25 +12,25 @@ This is source code documentation for a chrome extension **Shortcuts for Chrome*
 
 When user clicks extension icon ("browser action") extension opens the extension popup window. This is the primary UI and way for user to interact with the extension. 
 
-At a more detailed level, this extension has 3 parts: Popup, Menu and Background. 
+At a more detailed level, this extension has 3 parts: `Popup`, `Menu` and `Background`. 
 
-- (parent) **Popup** manages the extension popup window
+- **`Popup`** manages the extension popup window
     - It saves and restores user preferences 
     - It sets the visible content rendering inside popup window
     - Menu is currently the only possible view, so popup will render this menu panel
       <br/><br/>
 
-- (child) **Menu** panel shows list of links
+- **`Menu`** panel shows list of links
     - User can pin/unpin links and drag and drop pinned links
       <br/><br/>
 
-- **Background** has no visual interface, but runs in the background of the browser
+- **`Background`** has no visual interface, but runs in the background of the browser
     - it manages extension context menu
     - it programmatically launches links user clicks in the menu
     - other parts of the extension can communicate with background through message passing
 
 In addition, there are several utility [modules](list_module.html) that are used to implement this behavior.
-Menu links and their associated labels are defined in `assets/dictionary.csv`.
+Menu links and their associated, localized labels are defined in `assets/dictionary.csv`.
 
 
 ## Project Organization
@@ -42,11 +42,12 @@ Path | Description
 `└` **docs/** | files used for these docs
 `└` **src/** | source code
 `└─── ` **background/** | background files
-`└─── ` **menu/** | links menu
 `└─── ` **modules/** | reusable modules
-`└─── ` **popup/** | extension popup
+`└─── ` **ui/** | visible ui elements
+`└────── ` **menu/** | links menu
+`└────── ` **popup/** | extension popup
 `└─── ` **config.js** | extension config
-`└─── ` **links.json** | list of menu links (generated; do not edit)
+`└─── ` **links.json** | generated list of menu links (do not edit)
 `└─── ` **manifest.json** | extension manifest
 `└` **test/** | unit tests
 `└` **/** | config files
@@ -55,7 +56,6 @@ Path | Description
 ## Development
 
 Building this application from source requires Node.js and some web IDE.
-
 Run these commands to build a locally debuggable version:
 
 ```
@@ -66,18 +66,20 @@ npm install
 npm run build
 ```
 
-Go to `chrome://extensions` to debug the build:
+### Debugging
 
-1. enable developer mode
-2. load unpacked > choose `dist` directory
+1. Go to `chrome://extensions`
+2. Enable developer mode
+3. Click `load unpacked` 
+4. Navigate to the extension source and choose `dist` directory
 
 ### Available Commands
 
 This extension is build with [extension-cli](https://oss.mobilefirst.me/extension-cli/).
 Refer to extension-cli docs for further details on each command.
 
-| command | description |
-| --- | --- |
+| Command | Description |
+| :--- | :--- |
 | `npm run start` | development build |
 | `npm run build` | production build |
 | `npm run docs` | generate docs |

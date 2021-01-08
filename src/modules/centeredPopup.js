@@ -1,5 +1,4 @@
 /** * * * * * * * * * * * * * * * * * * * *
- *
  * Shortcuts for Chrome
  * Custom navigation menu for Chrome browser
  *
@@ -7,9 +6,8 @@
  * Website: https://mobilefirst.me
  *
  * @description
- * Open a browser window in the middle
- * of user's viewport
- *
+ * Utility class for opening popup window in
+ * the middle of user's viewport
  * * * * * * * * * * * * * * * * * * * * */
 
 /**
@@ -20,17 +18,6 @@
  * @name CenteredPopup
  */
 export default class CenteredPopup {
-
-    /**
-     * @private
-     * @description Compute offset for element to center it within some space
-     * @param {Number} max max width
-     * @param {Number} size element width
-     * @return {Number}
-     */
-    static center(max, size) {
-        return parseInt(Math.max(0, Math.round(0.5 * (max - size))), 0);
-    }
 
     /**
      * @private
@@ -58,11 +45,14 @@ export default class CenteredPopup {
 
         return new Promise(function (resolve) {
 
-            /**
-             * @private
-             */
-            function openWindow(info) {
-                let area = info[0].workArea;
+            /** @private */
+            const center = (max, size) =>
+                Math.trunc(Math.max(0, Math.round(0.5 * (max - size))));
+
+            /** @private */
+            const openWindow = (info) => {
+                const [{workArea: {width: w, height: h}}] = info ||
+                [{workArea: {width: 0, height: 0}}];
 
                 window.chrome.windows.create({
                     url: url,
@@ -70,16 +60,14 @@ export default class CenteredPopup {
                     height: height,
                     focused: true,
                     type: 'popup',
-                    left: CenteredPopup.center(area.width, width),
-                    top: CenteredPopup.center(area.height, height)
+                    left: center(w, width),
+                    top: center(h, height)
                 }, resolve);
-            }
+            };
 
             CenteredPopup.getBounds()
                 .then(openWindow)
-                .catch(() => {
-                    openWindow([{workArea: {width: 0, height: 0}}]);
-                });
+                .catch(() => openWindow());
         });
     }
 }

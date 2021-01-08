@@ -1,5 +1,4 @@
 /** * * * * * * * * * * * * * * * * * * * *
- *
  * Shortcuts for Chrome
  * Custom navigation menu for Chrome browser
  *
@@ -8,7 +7,6 @@
  *
  * @description
  * Run background scripts
- *
  * * * * * * * * * * * * * * * * * * * * */
 
 import Background from './background';

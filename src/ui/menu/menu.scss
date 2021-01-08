@@ -1,11 +1,5 @@
-$panel-width: 280px;
-
-//----------------------
-// LINKS MENU
-//----------------------
-
 #menu {
-  width: $panel-width;
+  width: var(--panel-width);
   border: none;
   padding-top: 0;
 
@@ -53,7 +47,7 @@ $panel-width: 280px;
       display: inline-block;
 
       path {
-        fill: #4CAF50;
+        fill: var(--pin-color);
       }
     }
   }
@@ -80,11 +74,11 @@ $panel-width: 280px;
     }
 
     a.before {
-      border-top-color: #333 !important;
+      border-top-color: var(--drag-color) !important;
     }
 
     a.after {
-      border-bottom-color: #333 !important;
+      border-bottom-color: var(--drag-color) !important;
     }
   }
 
@@ -96,7 +90,7 @@ $panel-width: 280px;
     }
 
     svg.unpin:hover path {
-      fill: #FF5252;
+      fill: var(--unpin-color);
     }
   }
 
@@ -104,4 +98,3 @@ $panel-width: 280px;
     margin-bottom: 6px;
   }
 }
-

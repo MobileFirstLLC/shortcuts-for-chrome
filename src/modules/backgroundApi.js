@@ -1,5 +1,4 @@
 /** * * * * * * * * * * * * * * * * * * * *
- *
  * Shortcuts for Chrome
  * Custom navigation menu for Chrome browser
  *
@@ -8,7 +7,6 @@
  *
  * @description
  * Background message listeners
- *
  * * * * * * * * * * * * * * * * * * * * */
 
 // noinspection JSUnresolvedVariable,JSDeprecatedSymbols

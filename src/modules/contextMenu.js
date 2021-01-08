@@ -1,5 +1,4 @@
 /** * * * * * * * * * * * * * * * * * * * *
- *
  * Shortcuts for Chrome
  * Custom navigation menu for Chrome browser
  *
@@ -7,18 +6,17 @@
  * Website: https://mobilefirst.me
  *
  * @description
- * Extension context menu
- *
+ * Build extension context menu and handle context menu clicks
  * * * * * * * * * * * * * * * * * * * * */
-
 
 import CenteredPopup from './centeredPopup';
 import {ContextMenuOptions} from '../config';
 
 /**
  * This module adds custom options to chrome browser action context menu
- * (right click on extension icon next to address bar). `contextMenus` permissions
- * is required in`manifest.json`.
+ * (right click on extension icon next to address bar). `contextMenus`
+ * permissions is required in`manifest.json`.
+ *
  * @module
  * @name ContextMenu
  */
@@ -30,17 +28,19 @@ export default class ContextMenu {
      * @name ContextMenu
      */
     constructor() {
+        // TODO: v3 manifest this will be "action"
         const manifest = window.chrome.runtime.getManifest(),
             CONTEXT = manifest['page_action'] ?
                 'page_action' : 'browser_action';
 
         window.chrome.contextMenus.removeAll(() => {
-            Object.keys(ContextMenu.options).map(key => {
+            Object.keys(ContextMenuOptions).map(key => {
                 window.chrome.contextMenus.create({
-                    title: ContextMenu.label(ContextMenu.options[key].title),
+                    title: window.chrome.i18n.getMessage(
+                        ContextMenuOptions[key].title),
                     contexts: [CONTEXT],
-                    parentId: ContextMenu.options[key].parentId,
-                    id: ContextMenu.options[key].id || key
+                    parentId: ContextMenuOptions[key].parentId,
+                    id: ContextMenuOptions[key].id || key
                 });
             });
         });
@@ -50,34 +50,22 @@ export default class ContextMenu {
     }
 
     /**
-     * @description List of all available share options
-     * @returns {Object}
-     */
-    static get options() {
-        return ContextMenuOptions;
-    }
-
-    /**
-     * @returns Object
-     * @param {string} key - i18n dictionary key
-     */
-    static label(key) {
-        return window.chrome.i18n.getMessage(key) || '';
-    }
-
-    /**
      * @function
-     * @description Constructs absolute shareable url then calls the callback function
+     * @description Constructs absolute shareable url then calls the
+     * callback function
      * @param {Object} channel - one of `share.options`
-     * has been resolved. The first param of the callback function is the full url returned by this function.
+     * has been resolved. The first param of the callback function is the
+     * full url returned by this function.
      */
     static generateUrl(channel) {
-        const manifest = window.chrome.runtime.getManifest();
+        const {short_name, homepage_url} =
+            window.chrome.runtime.getManifest();
+        const hashtag = '%23' + ((short_name || '')
+            .replace(/ /g, ''));
 
         return channel.url
-            .replace('{hash}', '%23' + ((manifest.short_name || '')
-                .replace(/ /g, '')))
-            .replace('{URI}', manifest.homepage_url);
+            .replace('{hash}', hashtag)
+            .replace('{URI}', homepage_url);
     }
 
     /**
@@ -99,14 +87,14 @@ export default class ContextMenu {
      * @param {Object} info - click event details
      */
     static contextMenuOnClick(info) {
-        const option = ContextMenu.options[info.menuItemId];
+        const option = ContextMenuOptions[info.menuItemId];
 
         if (!option) return false;
 
         const url = ContextMenu.generateUrl(option);
         const {ww, wh} = option;
 
-        if (option.id === ContextMenu.options.copy.id) {
+        if (option.id === ContextMenuOptions.copy.id) {
             return ContextMenu.clipboardCopy(url);
         }
         if (ww && wh) {
