@@ -12,7 +12,8 @@
  * This script takes a CSV file and converts that to multiple json files
  * formatted as expected by chrome browser extension.
  *
- * [Localization message formats]{@link https://developer.chrome.com/docs/extensions/mv2/i18n-messages}
+ * see: Localization message formats
+ * {@link https://developer.chrome.com/docs/extensions/mv2/i18n-messages}
  *
  * * * * * * * * * * * * * * * * * * * * */
 
@@ -24,9 +25,11 @@ const locales = {}, keys = [];
 const input = './assets/dictionary.csv';
 const outPath = './assets/locales/';
 const outFileName = 'messages.json';
-let menuLinksStartRow = false, rowCounter = 0;
 
-const ensureDir = function (dirPath) {
+let menuLinksStartRow = false,
+    rowCounter = 0;
+
+const ensureDirectoryExists = function (dirPath) {
     if (!fs.existsSync(dirPath)) {
         fs.mkdirSync(dirPath);
     }
@@ -35,7 +38,7 @@ const ensureDir = function (dirPath) {
 const writeFile = function (path, filename, obj) {
     const content = JSON.stringify(obj, null, 2);
 
-    ensureDir(path);
+    ensureDirectoryExists(path);
     fs.writeFileSync(path + '/' + filename, content);
 };
 
