@@ -41,7 +41,9 @@ Default Chrome browser is optimized for non-technical users. For developers who 
 
 #### 🌗 &nbsp; Matches browser dark/light mode
 
-<br/><img class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/assets/preview.gif' height="400" /><br/>
+<p align="center">
+<img class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/assets/preview.gif' />
+</p>
 
 * * *
 
@@ -51,7 +53,9 @@ Default Chrome browser is optimized for non-technical users. For developers who 
 
 ### Translations
 
-You can contribute to this software by [translating it](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/4).
+You can contribute to this software by [`translating it`](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/4).
+
+<br/>
 
 **Issues & Feature Requests:** [`Submit on Github`](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/new/choose)
 
