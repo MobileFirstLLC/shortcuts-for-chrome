@@ -12,20 +12,22 @@ Quick access nav for devs working with chrome browser
 </h3>
 
 <p align="center"><a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal?label=latest&color=3D5AFE&style=flat-square" alt="version"/></a> <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal" ><img src="https://img.shields.io/chrome-web-store/users/jnmekaomnicdcpgdndekkmojfomifjal?style=flat-square" alt="users"></a> <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/stars/jnmekaomnicdcpgdndekkmojfomifjal?style=flat-square" alt="rating" /></a>
-</p>
-
-<p align="center">
+<br/>
 <a href="https://travis-ci.com/github/MobileFirstLLC/shortcuts-for-chrome"><img alt="Travis (.org)" src="https://img.shields.io/travis/MobileFirstLLC/shortcuts-for-chrome?style=flat-square"></a>
 <a href="https://coveralls.io/github/MobileFirstLLC/shortcuts-for-chrome"><img alt="Coveralls github" src="https://img.shields.io/coveralls/github/MobileFirstLLC/shortcuts-for-chrome?style=flat-square"></a>
 <a href="https://oss.mobilefirst.me/shortcuts-for-chrome/"><img src="https://inch-ci.org/github/MobileFirstLLC/shortcuts-for-chrome.svg?branch=master" alt="Docs" /></a>
 <a href="https://codeclimate.com/github/MobileFirstLLC/shortcuts-for-chrome/maintainability"><img alt="Code Climate maintainability" src="https://img.shields.io/codeclimate/maintainability/MobileFirstLLC/shortcuts-for-chrome?style=flat-square"></a>
 </p>
 
-
-
 Default Chrome browser is optimized for non-technical users. For developers who build extensions, or web devs who want to inspect what is happening under the hood with indexedDB, service workers, or Bluetooth devices, this menu brings shortcuts to those hidden browser features. You can further customize the menu by pinning items you care about on top.
 
-<br/>
+<p align="center">
+<strong>Install at Chrome Web Store</strong><br/>
+<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
+<img alt="install at chrome web store" width="250" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/.github/badge.png"/>
+</a>
+</p>
+
 
 ## 🔥 Features
 
@@ -39,24 +41,13 @@ Default Chrome browser is optimized for non-technical users. For developers who 
 
 #### 🌗 &nbsp; Matches browser dark/light mode
 
-<br/><img class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/assets/preview.gif' height="400" />
+<br/><img class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/assets/preview.gif' height="400" /><br/>
 
-<br/>
-
-## Installation
-
-**The latest version is available for installation at Chrome Web Store.**
-
-<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
-<img alt="install at chrome web store" width="250" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/.github/badge.png"/>
-</a>
-
-<br/>
+* * *
 
 ### Development
 
 [`View documentation here ↗`](https://oss.mobilefirst.me/shortcuts-for-chrome/)
-
 
 ### Translations
 
