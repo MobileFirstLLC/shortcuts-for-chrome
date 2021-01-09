@@ -42,7 +42,7 @@ Default Chrome browser is optimized for non-technical users. For developers who 
 #### 🌗 &nbsp; Matches browser dark/light mode
 
 <p align="center">
-<img class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/assets/preview.gif' />
+<img class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/assets/preview_new.gif' />
 </p>
 
 * * *
