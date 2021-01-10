@@ -19,10 +19,10 @@ import Draggable from '../../modules/dragging.js';
  * @param {function} onPinOrderChange - callback when pins are rearranged
  *
  * @class
- * @name MenuPanel
+ * @name Menu
  * @classdesc Menu panel is a view that shows a list of links
  */
-export default class MenuPanel {
+export default class Menu {
 
     constructor(getLinks, onPinToggle, onPinOrderChange) {
         this.name = 'menu';

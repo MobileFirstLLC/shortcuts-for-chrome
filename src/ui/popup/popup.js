@@ -11,7 +11,7 @@
 
 import Storage from '../../modules/storage';
 import {MenuLinks} from '../../links.json';
-import MenuPanel from '../menu/menu';
+import Menu from '../menu/menu';
 
 /**
  * @class
@@ -30,7 +30,7 @@ export default class Popup {
         this.onPinToggle = this.onPinToggle.bind(this);
         this.onPinOrderChange = this.onPinOrderChange.bind(this);
         this.drawCurrentView = this.drawCurrentView.bind(this);
-        this.activeView = new MenuPanel(
+        this.activeView = new Menu(
             this.getLinks,
             this.onPinToggle,
             this.onPinOrderChange);
