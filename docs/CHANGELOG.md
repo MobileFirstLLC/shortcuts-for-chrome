@@ -4,9 +4,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [3.2.2](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.2.1...v3.2.2) (2021-01-09)
 
-### [3.2.1](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.2.0...v3.2.1) (2021-01-09)
-
-
 ### Features
 
 * add more share options ([3ccbc63](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commit/3ccbc63cd09d587dda5eb91244c62f9cefd1b315))
