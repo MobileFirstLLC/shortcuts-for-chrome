@@ -41,14 +41,14 @@ Path | Description
 `└` **assets/** |  static assets
 `└` **docs/** | files used for these docs
 `└` **src/** | source code
-`└─── ` **background/** | background files
-`└─── ` **modules/** | reusable modules
-`└─── ` **ui/** | visible ui elements
-`└────── ` **menu/** | links menu
-`└────── ` **popup/** | extension popup
-`└─── ` **config.js** | extension config
-`└─── ` **links.json** | generated list of menu links (do not edit)
-`└─── ` **manifest.json** | extension manifest
+`└───` **background/** | background files
+`└───` **modules/** | reusable modules
+`└───` **ui/** | visible ui elements
+`└──────` **menu/** | links menu
+`└──────` **popup/** | extension popup
+`└───` **config.js** | extension config
+`└───` **links.json** | generated list of menu links (do not edit)
+`└───` **manifest.json** | extension manifest
 `└` **test/** | unit tests
 `└` **/** | config files
 
