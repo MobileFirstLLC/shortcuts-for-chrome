@@ -29,7 +29,7 @@ Default Chrome browser is optimized for non-technical users. For developers who 
 </p>
 
 <p align="center">
-<img width="700" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/assets/preview_new.gif' />
+<img width="700" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/assets/preview.gif' />
 </p>
 
 
