@@ -8,7 +8,7 @@
 </h1>
 
 <h3 align="center">
-Quick access nav for devs working with chrome browser
+  Quick access nav for devs working with chrome browser &mdash; find all <code>chrome://</code> URLs easily
 </h3>
 
 <p align="center"><a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal?label=latest&color=3D5AFE&style=flat-square" alt="version"/></a> <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal" ><img src="https://img.shields.io/chrome-web-store/users/jnmekaomnicdcpgdndekkmojfomifjal?style=flat-square" alt="users"></a> <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/stars/jnmekaomnicdcpgdndekkmojfomifjal?style=flat-square" alt="rating" /></a>
