@@ -14,18 +14,18 @@
   "description": "Handy menu of Chrome URLs",
   "homepage": "https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal",
   "scripts": {
-    "start": "xt-build -e dev",
+    "start": "xt-build -e dev -w",
     "build": "xt-build -e prod",
     "docs": "xt-docs",
     "test": "xt-test",
     "clean": "xt-clean",
-    "sync": "xt-sync -e -g",
+    "sync": "xt-sync -e",
     "translate": "node translate"
   },
   "devDependencies": {
+    "extension-cli": "^0.11.3",
     "csv-parser": "^3.0.0",
-    "cws-publish": "^1.0.13",
-    "extension-cli": "^0.11.2"
+    "cws-publish": "^1.0.13"
   },
   "babel": {
     "presets": [
