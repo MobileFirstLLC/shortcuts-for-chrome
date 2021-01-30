@@ -8,13 +8,13 @@ Application does not require users to create login credentials nor to provide an
 
 ### 3rd Party Libraries
 
-App may use third party libraries for purposes of implementing specific features needed by the app to function as intended. These include analytics which help to understand user behavior and to provide better experiences for users in the future. Analytics data, if collected, is anonymized and aggregated. It does not identify individual users or personal data.
+App may use third party libraries for purposes of implementing specific features needed by the app to function as intended. This privacy policy does not cover 3rd party libraries.
 
-Note that 3rd party libraries many include their own privacy policies. These policies may be different from this one. However, the developer will very carefully vet each 3rd party library to ensure high integrity of the provider, and does not integrate questionable solutions.
+This application does NOT include tracking/analytics about user behavior.
 
 ### Acknowledgement
 
 By using the app the user accepts this policy.
 
-Last modified: October 10, 2020
+Last modified: January 29, 2021.
 

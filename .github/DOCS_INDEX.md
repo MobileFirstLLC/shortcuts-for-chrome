@@ -1,12 +1,19 @@
-This is source code documentation for a chrome extension **Shortcuts for Chrome**. 
+This is source code documentation for a chrome extension Shortcuts for Chrome. 
 
-**Source Code** is available **[on Github ↗](https://github.com/MobileFirstLLC/shortcuts-for-chrome)**
+<h3>
+Source code is <a href='https://github.com/MobileFirstLLC/shortcuts-for-chrome'>on Github ↗</a>
+</h3>
+<br/>
 
-**Install** the latest release from Chrome Web Store:
+**Install** the latest release from Chrome Web Store
 
 <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
 <img alt="install at chrome web store" width="250" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/.github/badge.png"/>
 </a>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/assets/preview.gif" alt="preview" />
+</p>
 
 ## General Structure
 
@@ -37,25 +44,24 @@ Menu links and their associated, localized labels are defined in `assets/diction
 
 Path | Description
 --- | ---
-`└` **.github/** | github files
-`└` **assets/** |  static assets
-`└` **docs/** | files used for these docs
-`└` **src/** | source code
-`└───` **background/** | background files
-`└───` **modules/** | reusable modules
-`└───` **ui/** | visible ui elements
-`└──────` **menu/** | links menu
-`└──────` **popup/** | extension popup
-`└───` **config.js** | extension config
-`└───` **links.json** | generated list of menu links (do not edit)
-`└───` **manifest.json** | extension manifest
-`└` **test/** | unit tests
-`└` **/** | config files
+**`└─ .github/`** | github files
+**`└─ assets/`** |  static assets, such as images and string dictionaries
+**`└─ docs/`** | files used for generating these these docs
+**`└─ src/`** | source code
+ &nbsp; **`└── background/`** | background scripts
+ &nbsp; **`└── modules/`** | reusable modules
+ &nbsp; **`└── ui/`** | visible ui elements
+ &nbsp; **`└── config.js`** | extension config
+ &nbsp; **`└── links.json`** | generated list of menu links (do not edit)
+ &nbsp; **`└── manifest.json`** | extension manifest
+**`└─ test/`** | unit tests
+**`└─ /`** | config files
 
 
 ## Development
 
 Building this application from source requires Node.js and some web IDE.
+
 Run these commands to build a locally debuggable version:
 
 ```
