@@ -34,15 +34,18 @@ describe('Popup Window', function () {
             el.dispatchEvent(createTransferEvent(type));
         }
     });
+
     beforeEach(() => {
         chrome.storage.sync.get.yields({ pinned: ['about', 'history', 'crashes'] });
         sandbox.spy(Storage, 'save');
         global.popup = new Popup();
     });
+
     afterEach(function () {
         chrome.flush();
         sandbox.restore();
     });
+
     after(function () {
         delete global.popup;
         delete global.getLink;
