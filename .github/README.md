@@ -53,9 +53,7 @@ Default Chrome browser is optimized for non-technical users. For developers who 
 
 You can contribute to this software by [`translating it`](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/4)
 
-This extension is currently available in these languages:
- 
-🇺🇸 🇫🇮
+This extension is currently available in these languages: en (US/UK), fi
 
 <br/>
 
