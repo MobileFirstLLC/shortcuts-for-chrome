@@ -39,9 +39,7 @@ Default Chrome browser is optimized for non-technical users. For developers who 
 
 #### 🖲️ &nbsp; Drag and drop to organize links
 
-#### 🗺️ &nbsp; Discover rare browser features
-
-#### 🦖 &nbsp; Play the dino game while you are online
+#### 🔍 &nbsp; Discover rare browser features
 
 #### 🌗 &nbsp; Matches browser dark/light mode
 
@@ -53,7 +51,11 @@ Default Chrome browser is optimized for non-technical users. For developers who 
 
 ### Translations
 
-You can contribute to this software by [`translating it`](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/4).
+You can contribute to this software by [`translating it`](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/4)
+
+This extension is currently available in these languages:
+ 
+🇺🇸 🇫🇮
 
 <br/>
 
