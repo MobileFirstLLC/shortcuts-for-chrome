@@ -99,8 +99,8 @@ export const SVGIconPaths = {
  */
 export const AppConfig = {
     /**
-     * Wne non-pinned item was used within last X
-     * millis, it is considered "recently used"
+     * When a link clicked within last X milliseconds,
+     * it is considered "recently used".
      */
     recentIntervalMillis: 10 * 60 * 1000 // 10 minutes
 };

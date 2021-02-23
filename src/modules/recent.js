@@ -13,9 +13,9 @@ import {AppConfig} from '../config';
 import Storage from './storage';
 
 /**
- * "Recent" links were used "recently".
- * They become stale after some time and
- * ust get removed from the list of recent.
+ * Recent links were used recently (based on config).
+ * They become stale after some time and then get
+ * removed from the list of recent.
  * @module
  * @name RecentLinks
  */
@@ -24,7 +24,7 @@ export default class RecentLinks {
     /**
      * Determine if some timestamp still qualifies as "recent"
      * @param {number} timestamp - millis since epoch
-     * @returns {boolean}
+     * @returns {boolean} - true if link is still valid
      */
     static isStillRecent(timestamp) {
         const minTime = Date.now() - AppConfig.recentIntervalMillis;
@@ -64,8 +64,10 @@ export default class RecentLinks {
     }
 
     /**
-     * Get all recent items
-     * @param callback
+     * Get all recent items; note that this methods returns
+     * everything that is "not-stale". It doesn't check if
+     * link is pinned or not. That should be done at display time.
+     * @param {function} callback - result handler
      */
     static getRecent(callback) {
         Storage.get(null, items => {

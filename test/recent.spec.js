@@ -4,8 +4,6 @@ import Storage from '../src/modules/storage';
 
 describe('Recent links', function () {
 
-    before(function () {
-    });
     beforeEach(() => {
         global.now = Date.now();
         global.clock = sinon.useFakeTimers(global.now);
@@ -24,10 +22,7 @@ describe('Recent links', function () {
         sandbox.restore();
         global.clock.restore();
     });
-
-    after(function () {
-    });
-
+    
     it('It returns pinned items', done => {
         RecentLinks.getRecent(result => {
             expect(result).to.contain('apps');
@@ -77,5 +72,4 @@ describe('Recent links', function () {
         expect(objectMatcher.test(stub.getCall(0).args[1])).to.be.true;
         done();
     });
-
 });
