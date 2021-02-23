@@ -92,3 +92,15 @@ export const SVGIconPaths = {
             '3H17M11,14L17.25,7.76L15.84,6.34L11,11.18L8.41,8.59L7,10L11,14Z'
     }
 };
+
+/**
+ * Various application configs
+ * @type {{recentInterval: number}}
+ */
+export const AppConfig = {
+    /**
+     * Wne non-pinned item was used within last X
+     * millis, it is considered "recently used"
+     */
+    recentIntervalMillis: 10 * 60 * 1000 // 10 minutes
+};

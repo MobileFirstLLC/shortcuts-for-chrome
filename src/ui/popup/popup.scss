@@ -48,7 +48,8 @@ body {
   a:link,
   a:active,
   a:focus,
-  a:visited {
+  a:visited,
+  .category-title {
     color: var(--link-color);
     text-decoration: none;
     position: relative;

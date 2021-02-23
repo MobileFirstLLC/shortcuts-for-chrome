@@ -38,6 +38,9 @@
   "ctx_share_copy": {
     "message": "Copy URL"
   },
+  "recently_used": {
+    "message": "Recently used"
+  },
   "accessibility": {
     "message": "Accessibility Internals"
   },
