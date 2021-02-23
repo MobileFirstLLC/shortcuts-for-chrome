@@ -13,7 +13,8 @@
   a:link,
   a:active,
   a:focus,
-  a:visited {
+  a:visited,
+  .category-title {
     display: block;
     line-height: 31px;
     padding-left: 47px;
@@ -64,9 +65,11 @@
       border-top: 2px solid transparent;
       border-bottom: 2px solid transparent;
       cursor: move;
+
       span {
         cursor: default
       }
+
       svg.pin {
         top: 4px;
         cursor: pointer;
@@ -96,5 +99,11 @@
 
   a:last-child {
     margin-bottom: 6px;
+  }
+
+  .category-title {
+    text-transform: uppercase;
+    opacity: .6;
+    font-size: 85%;
   }
 }

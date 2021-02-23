@@ -20,6 +20,9 @@
   "ctx_share_copy": {
     "message": "Kopioi URL"
   },
+  "recently_used": {
+    "message": "Äskettäin käytetty"
+  },
   "accessibility": {
     "message": "Esteettömyys sisäiset"
   },

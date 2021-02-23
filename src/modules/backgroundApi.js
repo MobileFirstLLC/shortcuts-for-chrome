@@ -10,6 +10,8 @@
  * * * * * * * * * * * * * * * * * * * * */
 
 // noinspection JSUnresolvedVariable,JSDeprecatedSymbols
+import RecentLinks from './recent';
+
 /**
  * Listen to incoming messages from other browser contexts.
  *
@@ -23,14 +25,19 @@ export default class BackgroundApi {
      * handles messaging between different parts of the extension, @see
      * {@link https://developer.chrome.com/apps/runtime#event-onMessage|onMessage}
      *
-     * @example chrome.runtime.sendMessage({open: "chrome://about"});
+     * @example chrome.runtime.sendMessage({open: "about"});
+     * will open tab at chrome://about
      * @name BackgroundApi
      */
     constructor() {
         window.chrome.runtime.onMessage.addListener(
             (request) => {
                 if (request.open) {
-                    window.chrome.tabs.create({url: request.open});
+                    const urlPath = request.open;
+                    const fullURL = 'chrome://' + urlPath;
+
+                    window.chrome.tabs.create({url: fullURL});
+                    RecentLinks.addRecent(urlPath);
                 }
             });
     }

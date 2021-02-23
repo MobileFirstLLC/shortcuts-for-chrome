@@ -6,7 +6,7 @@
     "message": "Shortcuts for Chrome"
   },
   "appDesc": {
-    "message": "All Chrome browser URLs under one menu. Organize however you like."
+    "message": "All Chrome browser URLs under one menu. Organise however you like."
   },
   "ctx_rate": {
     "message": "Rate extension"
@@ -19,6 +19,9 @@
   },
   "ctx_share_copy": {
     "message": "Copy URL"
+  },
+  "recently_used": {
+    "message": "Recently used"
   },
   "accessibility": {
     "message": "Accessibility Internals"

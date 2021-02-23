@@ -11,6 +11,7 @@
 
 import Storage from '../../modules/storage';
 import {MenuLinks} from '../../links.json';
+import RecentLinks from '../../modules/recent';
 import Menu from '../menu/menu';
 
 /**
@@ -26,18 +27,23 @@ export default class Popup {
 
     constructor() {
         this.pinned = [];
+        this.recent = [];
         this.getLinks = this.getLinks.bind(this);
+        this.getRecent = this.getRecent.bind(this);
         this.onPinToggle = this.onPinToggle.bind(this);
         this.onPinOrderChange = this.onPinOrderChange.bind(this);
         this.drawCurrentView = this.drawCurrentView.bind(this);
         this.activeView = new Menu(
             this.getLinks,
             this.onPinToggle,
-            this.onPinOrderChange);
-
-        Storage.get([Storage.keys.pinned], items => {
-            this.pinned = items[Storage.keys.pinned] || [];
-            this.drawCurrentView();
+            this.onPinOrderChange,
+            this.getRecent);
+        RecentLinks.getRecent(list => {
+            Storage.get([Storage.keys.pinned], items => {
+                this.recent = list || [];
+                this.pinned = items[Storage.keys.pinned] || [];
+                this.drawCurrentView();
+            });
         });
     }
 
@@ -76,6 +82,7 @@ export default class Popup {
         } else {
             this.pinned.splice(index, 1);
         }
+
         this.onPinOrderChange(this.pinned.concat([]), this.drawCurrentView);
     }
 
@@ -97,7 +104,17 @@ export default class Popup {
 
         return {
             pinned,
-            unpinned: MenuLinks.filter(link => pinned.indexOf(link) < 0)
+            unpinned: MenuLinks.filter(link =>
+                pinned.indexOf(link) < 0)
         };
+    }
+
+    /**
+     * Get Recently used links
+     * @returns {Array.<Object>}
+     */
+    getRecent() {
+        return this.recent
+            .filter(x => this.pinned.indexOf(x) < 0);
     }
 }

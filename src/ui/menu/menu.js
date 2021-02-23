@@ -17,6 +17,7 @@ import Draggable from '../../modules/dragging.js';
  * @param {function} getLinks - function that returns currently pinned/unpinned links
  * @param {function} onPinToggle - callback when pin is turned on/off
  * @param {function} onPinOrderChange - callback when pins are rearranged
+ * @param {function} getRecent - function that returns recent links
  *
  * @class
  * @name Menu
@@ -24,15 +25,16 @@ import Draggable from '../../modules/dragging.js';
  */
 export default class Menu {
 
-    constructor(getLinks, onPinToggle, onPinOrderChange) {
+    constructor(getLinks, onPinToggle, onPinOrderChange, getRecent) {
         this.name = 'menu';
         this.idAttr = 'data-name';
         this.getLinks = getLinks;
+        this.getRecent = getRecent;
         this.onPinToggle = onPinToggle;
         this.onPinOrderChange = onPinOrderChange;
-        this.pinIcon = appIcons.generateIcon(
+        this.unpinnedItemIcon = appIcons.generateIcon(
             appIcons.icons.addPin, 'pin');
-        this.unpinIcon = appIcons.generateIcon(
+        this.pinnedItemIcon = appIcons.generateIcon(
             appIcons.icons.removePin, 'unpin');
     }
 
@@ -41,12 +43,13 @@ export default class Menu {
      * @returns {Element} - DOM element
      */
     render() {
-        let links = this.getLinks();
-        let panel = document.createElement('div');
+        const panel = document.createElement('div');
+        const {pinned, unpinned} = this.getLinks();
+        const recent = this.getRecent();
 
-        this.renderPinnedLinks(panel, links.pinned);
-        this.renderUnpinnedLinks(panel, links.unpinned);
-
+        this.renderPinnedLinks(panel, pinned);
+        this.renderRecentItems(panel, recent);
+        this.renderUnpinnedLinks(panel, unpinned);
         return panel;
     };
 
@@ -77,7 +80,10 @@ export default class Menu {
 
         container.id = 'pinned';
         pinned.map((link) => {
-            let elem = this.makeLink(true, this.linkLabel(link), link);
+            let elem = this.makeLink(
+                this.pinnedItemIcon,
+                this.linkLabel(link),
+                link);
 
             container.appendChild(elem);
         });
@@ -89,6 +95,37 @@ export default class Menu {
             container,
             actionCallback,
             orderChangeCallback))();
+    }
+
+    /**
+     * @ignore
+     * @param panel - DOM reference
+     * @param recent - list of recent items
+     */
+    renderRecentItems(panel, recent) {
+        if (!recent || !recent.length) return;
+
+        const label = document.createElement('span');
+
+        label.innerText = this.linkLabel('recently_used');
+        label.classList.add('category-title');
+        panel.appendChild(label);
+
+        recent.map((link) => (
+            // localize label
+            [this.linkLabel(link), link]
+        ))
+            // sort by localized label
+            .sort()
+            .map(([label, link]) =>
+                panel.appendChild(
+                    this.makeLink(
+                        this.unpinnedItemIcon,
+                        label, link
+                    )));
+
+        // add divider below
+        panel.appendChild(this.makeDivider());
     }
 
     /**
@@ -108,7 +145,7 @@ export default class Menu {
             .sort()
             // only then make the elements
             .map((item) => {
-                let elem = this.makeLink(false, item[0], item[1]);
+                let elem = this.makeLink(this.unpinnedItemIcon, item[0], item[1]);
 
                 if (firstLetter && firstLetter !== item[0][0]) {
                     panel.appendChild(this.makeDivider());
@@ -126,11 +163,11 @@ export default class Menu {
     attachClickActions(el) {
         let name = el.getAttribute(this.idAttr);
 
+        el.getElementsByTagName('span')[0].onclick = () => {
+            this.launchTab(name);
+        };
         el.getElementsByTagName('svg')[0].onclick = () => {
             this.onPinToggle(name);
-        };
-        el.getElementsByTagName('span')[0].onclick = () => {
-            this.launchTab('chrome://' + name);
         };
     }
 
@@ -159,19 +196,18 @@ export default class Menu {
     /**
      * @ignore
      * @description Create link element that can be pinned
-     * @param {Boolean} pinned - current pin state
+     * @param {String} icon - icon HTML as string
      * @param {String} label - link text
      * @param {String} name - className
      * @returns {Element} - created link element
      */
-    makeLink(pinned, label, name) {
+    makeLink(icon, label, name) {
         let a = document.createElement('a'),
-            text = document.createElement('span'),
-            pin = pinned ? this.unpinIcon : this.pinIcon;
+            text = document.createElement('span');
 
         text.innerText = label;
         a.setAttribute(this.idAttr, name);
-        a.innerHTML = pin + text.outerHTML;
+        a.innerHTML = icon + text.outerHTML;
         this.attachClickActions(a);
         return a;
     };
