@@ -1,5 +1,4 @@
 import ContextMenu from '../src/modules/contextMenu';
-import BackgroundApi from '../src/modules/backgroundApi';
 
 describe('Context Menu', function () {
 
@@ -17,19 +16,4 @@ describe('Context Menu', function () {
     });
     after(function () {
     });
-});
-
-describe('Background API', function () {
-
-    before(function () {
-    });
-    beforeEach(() => {
-    });
-    afterEach(function () {
-        chrome.flush();
-        sandbox.restore();
-    });
-    after(function () {
-    });
-
 });
