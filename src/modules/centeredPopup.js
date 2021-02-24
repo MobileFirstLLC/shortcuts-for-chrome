@@ -20,54 +20,41 @@
 export default class CenteredPopup {
 
     /**
-     * @private
-     * @description Request viewport dimensions from chrome runtime
-     * @returns {Promise}
-     */
-    static getBounds() {
-        return new Promise(function (resolve) {
-            window.chrome.system.display.getInfo(resolve);
-        });
-    }
-
-    /**
      * @description Create centered popup window in the middle of user's monitor viewport.
      * If user has multiple monitors this method launches window in the first/leftmost monitor.
      * This method requires `system.display` permission in `manifest.json`
      * @param {number} width - width of the new window (px)
      * @param {number} height - height of the new window (px)
      * @param {String} url - url to open
-     * @returns {Promise}
      *
      * @example CenteredPopup.open(500,500, 'http://www.example.com')
      */
     static open(width, height, url) {
 
-        return new Promise(function (resolve) {
+        /** @private */
+        const getBounds = (callback) =>
+            window.chrome.system.display.getInfo(callback);
 
-            /** @private */
-            const center = (max, size) =>
-                Math.trunc(Math.max(0, Math.round(0.5 * (max - size))));
+        /** @private */
+        const center = (max, size) =>
+            Math.trunc(Math.max(0, Math.round(0.5 * (max - size))));
 
-            /** @private */
-            const openWindow = (info) => {
-                const [{workArea: {width: w, height: h}}] = info ||
-                [{workArea: {width: 0, height: 0}}];
+        /** @private */
+        const openWindow = (info) => {
+            const [{workArea: {width: w, height: h}}] = info ||
+            [{workArea: {width: 0, height: 0}}];
 
-                window.chrome.windows.create({
-                    url: url,
-                    width: width,
-                    height: height,
-                    focused: true,
-                    type: 'popup',
-                    left: center(w, width),
-                    top: center(h, height)
-                }, resolve);
-            };
+            window.chrome.windows.create({
+                url: url,
+                width: width,
+                height: height,
+                focused: true,
+                type: 'popup',
+                left: center(w, width),
+                top: center(h, height)
+            });
+        };
 
-            CenteredPopup.getBounds()
-                .then(openWindow)
-                .catch(() => openWindow());
-        });
+        getBounds(openWindow);
     }
 }

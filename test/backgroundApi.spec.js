@@ -3,16 +3,8 @@ import RecentLinks from '../src/modules/recent';
 
 describe('Background API', function () {
 
-    before(function () {
-    });
     beforeEach(() => {
         new BackgroundApi();
-    });
-    afterEach(function () {
-        chrome.flush();
-        sandbox.restore();
-    });
-    after(function () {
     });
 
     it('It opens tab on request', done => {
@@ -21,6 +13,7 @@ describe('Background API', function () {
         expect(chrome.tabs.create.withArgs({url: 'chrome://history'}).calledOnce).to.be.true;
         done();
     });
+
     it('It adds opened links to recent links', done => {
         const stub = sandbox.stub(RecentLinks, 'addRecent');
         chrome.runtime.onMessage.dispatch({open: 'about'});

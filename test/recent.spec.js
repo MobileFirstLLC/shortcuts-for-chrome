@@ -18,11 +18,9 @@ describe('Recent links', function () {
     });
 
     afterEach(function () {
-        chrome.flush();
-        sandbox.restore();
         global.clock.restore();
     });
-    
+
     it('It returns pinned items', done => {
         RecentLinks.getRecent(result => {
             expect(result).to.contain('apps');
@@ -56,7 +54,6 @@ describe('Recent links', function () {
 
         chrome.storage.sync.get.yields({recent: [targetObject]});
         RecentLinks.addRecent('other');
-
         expect(objectMatcher.test(stub.getCall(0).args[1])).to.be.true;
         done();
     });
@@ -72,4 +69,5 @@ describe('Recent links', function () {
         expect(objectMatcher.test(stub.getCall(0).args[1])).to.be.true;
         done();
     });
+
 });

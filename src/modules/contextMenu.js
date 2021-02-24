@@ -29,9 +29,7 @@ export default class ContextMenu {
      */
     constructor() {
         // TODO: v3 manifest this will be "action"
-        const manifest = window.chrome.runtime.getManifest(),
-            CONTEXT = manifest['page_action'] ?
-                'page_action' : 'browser_action';
+        const CONTEXT = 'browser_action';
 
         window.chrome.contextMenus.removeAll(() => {
             Object.keys(ContextMenuOptions).map(key => {
