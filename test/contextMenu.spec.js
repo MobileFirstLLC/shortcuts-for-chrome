@@ -15,18 +15,8 @@ describe('Context Menu', function () {
             short_name: 'app',
             homepage_url: 'https://google.com'
         });
-        document.oncopy = () => {
-        };
-        document.execCommand = (command) => {
-            if (command === 'Copy') {
-                document.oncopy({
-                    preventDefault: () => false,
-                    clipboardData: {
-                        setData: () => false
-                    }
-                });
-            }
-        };
+        document.oncopy = () => {};
+        document.execCommand = (command) => {};
         window.chrome.system.display = new DisplayStub();
         window.chrome.contextMenus.removeAll.yields({});
         new ContextMenu();
