@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [3.3.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.2.2...v3.3.0) (2021-02-24)
 
+### Features
+
+* [add recent links](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/7)
+
 ### [3.2.2](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.2.1...v3.2.2) (2021-01-09)
 
 ### Features
