@@ -95,6 +95,7 @@ export const SVGIconPaths = {
 
 /**
  * Various application configs
+ * @namespace AppConfig
  * @type {{recentInterval: number}}
  */
 export const AppConfig = {
