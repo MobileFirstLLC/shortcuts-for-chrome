@@ -38,7 +38,7 @@ describe('Context Menu', function () {
     });
 
     it('It copies URL to clipboard', done => {
-        const stub = sandbox.stub(document, 'oncopy');
+        const stub = sandbox.stub(document, 'execCommand');
         expect(stub.notCalled).to.be.true;
         chrome.contextMenus.onClicked.dispatch({menuItemId: 'copy'});
         expect(stub.calledOnce).to.be.true;
