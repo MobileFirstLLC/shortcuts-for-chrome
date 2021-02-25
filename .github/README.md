@@ -15,7 +15,6 @@
 <br/>
 <a href="https://travis-ci.com/github/MobileFirstLLC/shortcuts-for-chrome"><img alt="Travis (.org)" src="https://img.shields.io/travis/MobileFirstLLC/shortcuts-for-chrome?style=flat-square"></a>
 <a href="https://coveralls.io/github/MobileFirstLLC/shortcuts-for-chrome"><img alt="Coveralls github" src="https://img.shields.io/coveralls/github/MobileFirstLLC/shortcuts-for-chrome?style=flat-square"></a>
-<a href="https://oss.mobilefirst.me/shortcuts-for-chrome/"><img src="https://inch-ci.org/github/MobileFirstLLC/shortcuts-for-chrome.svg?branch=master" alt="Docs" /></a>
 <a href="https://codeclimate.com/github/MobileFirstLLC/shortcuts-for-chrome/maintainability"><img alt="Code Climate maintainability" src="https://img.shields.io/codeclimate/maintainability/MobileFirstLLC/shortcuts-for-chrome?style=flat-square"></a>
 </p>
 
