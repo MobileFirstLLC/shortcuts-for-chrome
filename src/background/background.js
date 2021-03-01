@@ -15,10 +15,10 @@ import ContextMenu from '../modules/contextMenu';
 import UpdateHandler from '../modules/onUpdate';
 
 /**
- * @class
+ * @module
  * @name Background
  *
- * @classdesc This class is responsible for setting up
+ * @description This class is responsible for setting up
  * event handlers and actions that happen in the
  * background context of the browser. It:
  * 1. initialize the message passing API

@@ -99,11 +99,6 @@
           "summary": "Application constants"
         },
         {
-          "kind": "class",
-          "title": "Classes",
-          "summary": "All documented classes."
-        },
-        {
           "kind": "module",
           "title": "Modules",
           "summary": "All documented modules."

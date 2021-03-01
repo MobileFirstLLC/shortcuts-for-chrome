@@ -9,15 +9,15 @@
  * Popup window script implementation
  * * * * * * * * * * * * * * * * * * * * */
 
-import Storage from '../../modules/storage';
 import {MenuLinks} from '../../links.json';
+import Storage from '../../modules/storage';
 import RecentLinks from '../../modules/recent';
 import Menu from '../menu/menu';
 
 /**
- * @class
+ * @module
  * @name Popup
- * @classdesc This is the main class for the popup window
+ * @description This is the main class for the popup window
  * This class is responsible for saving/restoring persistent data
  * and rendering the menu panel. This element can easily be extended
  * to display other content but currently the only content that does
@@ -25,6 +25,10 @@ import Menu from '../menu/menu';
  */
 export default class Popup {
 
+    /**
+     * @constructor
+     * @name Popup
+     */
     constructor() {
         Popup.activeView = new Menu(
             Popup.getLinks,
@@ -42,10 +46,18 @@ export default class Popup {
         });
     }
 
+    /**
+     * Get pinned links
+     * @returns {Array.<String>}
+     */
     static get pinned() {
         return this._pinned;
     }
 
+    /**
+     * Get unpinned links
+     * @returns {Array.<String>}
+     */
     static get unpinned() {
         return MenuLinks.filter(link =>
             Popup.pinned.indexOf(link) < 0);
@@ -55,6 +67,10 @@ export default class Popup {
         this._pinned = value;
     }
 
+    /**
+     * Get recent links
+     * @returns {Array.<String>}
+     */
     static get recent() {
         return this._recent;
     }
@@ -63,6 +79,10 @@ export default class Popup {
         this._recent = value;
     }
 
+    /**
+     * Get active view
+     * @returns {Element}
+     */
     static get activeView() {
         return this._activeView;
     }
@@ -72,8 +92,9 @@ export default class Popup {
     }
 
     /**
-     * @description get DOM element where to render content
+     * Get DOM element where to render content
      * This will also clear all existing children from that element
+     * @static
      */
     static get renderTarget() {
         let tmp = document.body;
@@ -85,7 +106,8 @@ export default class Popup {
     }
 
     /**
-     * @description Render currently active view
+     * Render currently active view
+     * @static
      */
     static drawCurrentView() {
         let wrapper = Popup.renderTarget;
@@ -95,8 +117,9 @@ export default class Popup {
     }
 
     /**
-     * @description Handler for when user pins/unpins an item
+     * Handler for when user pins/unpins an item
      * @param {String} key - id of the pin that was clicked
+     * @static
      */
     static onPinToggle(key) {
         const index = Popup.pinned.indexOf(key);
@@ -111,17 +134,19 @@ export default class Popup {
     }
 
     /**
-     * @description When user rearranges pins -> update and save new pin order
+     * When user rearranges pins -> update and save new pin order
      * @param {Array<String>} newOrder - list of link ids and their new order
-     * @param {function?} cb - callback function (optional)
+     * @param {function?} callback - callback function (optional)
+     * @static
      */
-    static onPinOrderChange(newOrder, cb) {
+    static onPinOrderChange(newOrder, callback) {
         Popup.pinned = newOrder;
-        Storage.save(Storage.keys.pinned, Popup.pinned, cb);
+        Storage.save(Storage.keys.pinned, Popup.pinned, callback);
     }
 
     /**
-     * @description Get menu links
+     * Get menu links
+     * @static
      */
     static getLinks() {
         return {
@@ -133,6 +158,7 @@ export default class Popup {
     /**
      * Get Recently used links
      * @returns {Array.<Object>}
+     * @static
      */
     static getRecent() {
         return Popup.recent.filter(x =>

@@ -19,196 +19,281 @@ import Draggable from '../../modules/dragging.js';
  * @param {function} onPinOrderChange - callback when pins are rearranged
  * @param {function} getRecent - function that returns recent links
  *
- * @class
+ * @module
  * @name Menu
- * @classdesc Menu panel is a view that shows a list of links
+ * @description Menu panel is a view that shows a list of links
  */
 export default class Menu {
 
+    /**
+     * @constructor
+     * @name Menu
+     * @param getLinks
+     * @param onPinToggle
+     * @param onPinOrderChange
+     * @param getRecent
+     * @returns {{idAttr: string, name: string, render: (function(): Element)}}
+     */
     constructor(getLinks, onPinToggle, onPinOrderChange, getRecent) {
-        this.name = 'menu';
-        this.idAttr = 'data-name';
-        this.getLinks = getLinks;
-        this.getRecent = getRecent;
-        this.onPinToggle = onPinToggle;
-        this.onPinOrderChange = onPinOrderChange;
-        this.unpinnedItemIcon = appIcons.generateIcon(
+        Menu.getLinks = getLinks;
+        Menu.getRecent = getRecent;
+        Menu.onPinToggle = onPinToggle;
+        Menu.onPinOrderChange = onPinOrderChange;
+
+        // return instance methods
+        return {
+            name: Menu.name,
+            idAttr: Menu.idAttr,
+            render: Menu.render
+        };
+    }
+
+    /**
+     * @static
+     * @returns {string}
+     */
+    static get name() {
+        return 'menu';
+    }
+
+    /**
+     * @static
+     * @returns {string}
+     */
+    static get idAttr() {
+        return 'data-name';
+    }
+
+    /**
+     * @static
+     * @returns {string}
+     */
+    static get unpinnedItemIcon() {
+        return appIcons.generateIcon(
             appIcons.icons.addPin, 'pin');
-        this.pinnedItemIcon = appIcons.generateIcon(
+    }
+
+    /**
+     * @static
+     * @returns {string}
+     */
+    static get pinnedItemIcon() {
+        return appIcons.generateIcon(
             appIcons.icons.removePin, 'unpin');
     }
 
     /**
-     * @description Draws the menu panel
+     * @static
+     * @returns {Function}
+     */
+    static get getLinks() {
+        return this._getLinks;
+    }
+
+    static set getLinks(func) {
+        this._getLinks = func;
+    }
+
+    /**
+     * @static
+     * @returns {Function}
+     */
+    static get getRecent() {
+        return this._getRecent;
+    }
+
+    static set getRecent(func) {
+        this._getRecent = func;
+    }
+
+    /**
+     * @static
+     * @returns {Function}
+     */
+    static get onPinToggle() {
+        return this._onPinToggle;
+    }
+
+    static set onPinToggle(func) {
+        this._onPinToggle = func;
+    }
+
+    /**
+     * @static
+     * @returns {Function}
+     */
+    static get onPinOrderChange() {
+        return this._onPinOrderChange;
+    }
+
+    static set onPinOrderChange(func) {
+        this._onPinOrderChange = func;
+    }
+
+    /**
+     * @static
+     * Draws the menu panel
      * @returns {Element} - DOM element
      */
-    render() {
+    static render() {
         const panel = document.createElement('div');
-        const {pinned, unpinned} = this.getLinks();
-        const recent = this.getRecent();
 
-        this.renderPinnedLinks(panel, pinned);
-        this.renderRecentItems(panel, recent);
-        this.renderUnpinnedLinks(panel, unpinned);
+        Menu.renderPinnedLinks(panel);
+        Menu.renderRecentItems(panel);
+        Menu.renderUnpinnedLinks(panel);
         return panel;
     };
 
     /**
-     * @description Send message to background to launch some link in new tab
-     * @param {String} link - url of the link to open; this should be absolute url string
+     * @static
+     * When user has some pinned items, render
+     * each and make them draggable
+     * @param {Element} panel - where links will be appended
      */
-    launchTab(link) {
-        window.chrome.runtime.sendMessage({open: link});
-    };
+    static renderPinnedLinks(panel) {
+        const {pinned} = Menu.getLinks();
 
-    /**
-     * @ignore
-     * @description when user has some pinned items, render each and make them draggable
-     * @param {Element} panel - DOM element where links will be appended
-     * @param {Array<String>} pinned - list of pinned links
-     */
-    renderPinnedLinks(panel, pinned) {
         if (!pinned || !pinned.length) return;
-
-        let container = document.createElement('div'),
-            actionCallback = (el) => {
-                this.attachClickActions(el);
-            },
-            orderChangeCallback = (n) => {
-                this.onPinOrderChange(n);
-            };
+        const container = document.createElement('div');
 
         container.id = 'pinned';
-        pinned.map((link) => {
-            let elem = this.makeLink(
-                this.pinnedItemIcon,
-                this.linkLabel(link),
-                link);
-
-            container.appendChild(elem);
-        });
+        pinned.map((link) => (
+            container.appendChild(
+                Menu.createLink(
+                    Menu.pinnedItemIcon,
+                    Menu.translateLabel(link),
+                    link))
+        ));
         panel.appendChild(container);
-        panel.appendChild(this.makeDivider());
+        Menu.appendDivider(panel);
 
         (() => new Draggable(
-            this.idAttr,
+            Menu.idAttr,
             container,
-            actionCallback,
-            orderChangeCallback))();
+            Menu.attachClickActions,
+            Menu.onPinOrderChange))();
     }
 
     /**
-     * @ignore
-     * @param panel - DOM reference
-     * @param recent - list of recent items
+     * @static
+     * @param {Element} panel - DOM reference
      */
-    renderRecentItems(panel, recent) {
-        if (!recent || !recent.length) return;
+    static renderRecentItems(panel) {
+        const recent = Menu.getRecent();
 
+        if (!recent || !recent.length) return;
         const label = document.createElement('span');
 
-        label.innerText = this.linkLabel('recently_used');
+        label.innerText = Menu.translateLabel('recently_used');
         label.classList.add('category-title');
         panel.appendChild(label);
 
-        recent.map((link) => (
-            // localize label
-            [this.linkLabel(link), link]
-        ))
-            // sort by localized label
-            .sort()
+        Menu.localizedSort(recent)
             .map(([label, link]) =>
-                panel.appendChild(
-                    this.makeLink(
-                        this.unpinnedItemIcon,
-                        label, link
-                    )));
+                Menu.appendUnpinnedLink(panel, label, link));
 
         // add divider below
-        panel.appendChild(this.makeDivider());
+        Menu.appendDivider(panel);
     }
 
     /**
-     * @ignore
-     * @description The unpinned items will be displayed in alphabetical order (localized)
+     * @static
+     * The unpinned items will be displayed in alphabetical order (localized)
      * @param {Element} panel - DOM element where links will be added
-     * @param {Array<String>} links - list of link names
      */
-    renderUnpinnedLinks(panel, links) {
+    static renderUnpinnedLinks(panel) {
+        const {unpinned} = Menu.getLinks();
         let firstLetter = null;
 
-        links.map((link) => {
-            // first get localized label
-            return [this.linkLabel(link), link];
-        })
-            // then sort based on the localized label
-            .sort()
-            // only then make the elements
-            .map((item) => {
-                let elem = this.makeLink(this.unpinnedItemIcon, item[0], item[1]);
-
-                if (firstLetter && firstLetter !== item[0][0]) {
-                    panel.appendChild(this.makeDivider());
+        Menu.localizedSort(unpinned)
+            .map(([label, link]) => {
+                if (firstLetter && firstLetter !== label[0]) {
+                    Menu.appendDivider(panel);
                 }
-                firstLetter = item[0][0];
-                panel.appendChild(elem);
+                firstLetter = label[0];
+                Menu.appendUnpinnedLink(panel, label, link);
             });
     }
 
     /**
-     * @ignore
-     * @description bind the onclick events to some link element
-     * @param {Element} el - link element
+     * @static
+     * Sort a list of links yby localized label
+     * @param {Array.<String>} linkList - list of links
+     * @returns - sorted list where first
+     * element is localized label, second element is
+     * the original link
      */
-    attachClickActions(el) {
-        let name = el.getAttribute(this.idAttr);
-
-        el.getElementsByTagName('span')[0].onclick = () => {
-            this.launchTab(name);
-        };
-        el.getElementsByTagName('svg')[0].onclick = () => {
-            this.onPinToggle(name);
-        };
+    static localizedSort(linkList) {
+        return linkList.map(link =>
+            [Menu.translateLabel(link), link])
+            .sort();
     }
 
     /**
-     * @ignore
-     * @description Get the i18n dictionary key for some link
-     * @param {String} name - link name
+     * @static
+     * bind the onclick events to a link
+     * @param {Element} element - DOM node representing a link
      */
-    linkLabel(name) {
+    static attachClickActions(element) {
+        let name = element.getAttribute(Menu.idAttr);
+
+        element.getElementsByTagName('span')[0].onclick =
+            () => window.chrome.runtime.sendMessage({open: name});
+        element.getElementsByTagName('svg')[0].onclick =
+            () => Menu.onPinToggle(name);
+    }
+
+    /**
+     * @static
+     * Get the translated dictionary value for some link
+     * @param {String} name - link name (dictionary key)
+     */
+    static translateLabel(name) {
         return window.chrome.i18n.getMessage(
             name.replace(/[\-\/]/g, '_')) || name;
     }
 
     /**
-     * @ignore
-     * @function
-     * @description Makes a menu divider
+     * @static
+     * Create a horizontal menu divider element
+     * @param {Element} panel - DOM element where to append the divider
      */
-    makeDivider() {
-        let div = document.createElement('div');
+    static appendDivider(panel) {
+        const div = document.createElement('div');
 
         div.setAttribute('class', 'divider');
-        return div;
+        panel.appendChild(div);
     };
 
     /**
-     * @ignore
-     * @description Create link element that can be pinned
+     * @static
+     * Create link element that can be pinned
      * @param {String} icon - icon HTML as string
      * @param {String} label - link text
      * @param {String} name - className
      * @returns {Element} - created link element
      */
-    makeLink(icon, label, name) {
-        let a = document.createElement('a'),
+    static createLink(icon, label, name) {
+        const a = document.createElement('a'),
             text = document.createElement('span');
 
         text.innerText = label;
-        a.setAttribute(this.idAttr, name);
+        a.setAttribute(Menu.idAttr, name);
         a.innerHTML = icon + text.outerHTML;
-        this.attachClickActions(a);
+        Menu.attachClickActions(a);
         return a;
     };
+
+    /**
+     * @static
+     * Create and append an unpinned link
+     * @param {Element} panel - DOM node where to append link
+     * @param {String} label - link text
+     * @param {String} name - className
+     * @returns {Element}
+     */
+    static appendUnpinnedLink(panel, label, name) {
+        panel.appendChild(Menu.createLink(
+            Menu.unpinnedItemIcon, label, name));
+    }
 };

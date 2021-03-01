@@ -38,7 +38,10 @@ describe('Popup Window', function () {
     beforeEach(() => {
         chrome.storage.sync.get.yields({
             pinned: ['about', 'history', 'crashes'],
-            recent: [{url: 'apps', ts: 1}, {url: 'about', ts: 2}]
+            recent: [
+                {url: 'apps', ts: Date.now() + 500},
+                {url: 'about', ts: Date.now() - 500}
+            ]
         });
         sandbox.spy(Storage, 'save');
         global.popup = new Popup();
@@ -60,18 +63,24 @@ describe('Popup Window', function () {
 
     it('Menu panel initializes when empty storage', () => {
         chrome.storage.sync.get.yields({});
-        expect(() => {new Popup()}, 'empty storage').to.not.throw();
+        expect(() => {
+            new Popup();
+        }, 'empty storage').to.not.throw();
         expect(Popup.getLinks().pinned, 'no pinned items').to.have.length(0);
     });
 
     it('Menu panel initializes when empty pinned list', () => {
         chrome.storage.sync.get.yields({pinned: []});
-        expect(() => {new Popup()}, 'no pinned items').to.not.throw();
+        expect(() => {
+            new Popup();
+        }, 'no pinned items').to.not.throw();
         expect(Popup.getLinks().pinned, 'no pinned items').to.have.length(0);
     });
 
     it('Menu panel initializes with pinned items', () => {
-        expect(() => {new Popup()}, 'some pinned items').to.not.throw();
+        expect(() => {
+            new Popup();
+        }, 'some pinned items').to.not.throw();
         expect(Popup.getLinks().pinned, '3 pinned items').to.have.length(3);
     });
 
