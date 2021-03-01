@@ -58,19 +58,21 @@ describe('Popup Window', function () {
         delete global.SimulateDragEvent;
     });
 
-    it('Menu Panel initializes without error', () => {
+    it('Menu panel initializes when empty storage', () => {
         chrome.storage.sync.get.yields({});
-        expect(() => {
-            new Popup();
-        }, 'empty storage').to.not.throw();
+        expect(() => {new Popup()}, 'empty storage').to.not.throw();
+        expect(Popup.getLinks().pinned, 'no pinned items').to.have.length(0);
+    });
+
+    it('Menu panel initializes when empty pinned list', () => {
         chrome.storage.sync.get.yields({pinned: []});
-        expect(() => {
-            new Popup();
-        }, 'no pinned items').to.not.throw();
-        chrome.storage.sync.get.yields({pinned: ['about', 'history']});
-        expect(() => {
-            new Popup();
-        }, 'some pinned items').to.not.throw();
+        expect(() => {new Popup()}, 'no pinned items').to.not.throw();
+        expect(Popup.getLinks().pinned, 'no pinned items').to.have.length(0);
+    });
+
+    it('Menu panel initializes with pinned items', () => {
+        expect(() => {new Popup()}, 'some pinned items').to.not.throw();
+        expect(Popup.getLinks().pinned, '3 pinned items').to.have.length(3);
     });
 
     it('Pin click toggles link on and off', () => {

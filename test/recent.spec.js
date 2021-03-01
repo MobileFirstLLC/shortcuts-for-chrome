@@ -21,7 +21,22 @@ describe('Recent links', function () {
         global.clock.restore();
     });
 
-    it('It returns pinned items', done => {
+    it('It always returns a list', done => {
+        RecentLinks.getRecent(result => {
+            expect(Array.isArray(result)).to.equal(true);
+            chrome.storage.sync.get.yields({});
+            RecentLinks.getRecent(result => {
+                expect(Array.isArray(result)).to.equal(true);
+                chrome.storage.sync.get.yields({recent: undefined});
+                RecentLinks.getRecent(result => {
+                    expect(Array.isArray(result)).to.equal(true);
+                    done();
+                });
+            });
+        });
+    });
+
+    it('It returns recent items', done => {
         RecentLinks.getRecent(result => {
             expect(result).to.contain('apps');
             expect(result).to.contain('about');

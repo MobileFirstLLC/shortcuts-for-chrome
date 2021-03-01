@@ -33,9 +33,9 @@ export default class Popup {
             Popup.getRecent);
 
         // load user settings and draw initial view
-        RecentLinks.getRecent(list => {
+        RecentLinks.getRecent(recentList => {
+            Popup.recent = recentList;
             Storage.get([Storage.keys.pinned], items => {
-                Popup.recent = list || [];
                 Popup.pinned = items[Storage.keys.pinned] || [];
                 Popup.drawCurrentView();
             });
@@ -43,7 +43,7 @@ export default class Popup {
     }
 
     static get pinned() {
-        return this._pinned || [];
+        return this._pinned;
     }
 
     static get unpinned() {
@@ -56,7 +56,7 @@ export default class Popup {
     }
 
     static get recent() {
-        return this._recent || [];
+        return this._recent;
     }
 
     static set recent(value) {
