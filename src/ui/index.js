@@ -6,7 +6,7 @@
  * Website: https://mobilefirst.me
  *
  * @description
- * Run popup window script
+ * Runner for popup window script
  * * * * * * * * * * * * * * * * * * * * */
 
 import Popup from './popup/popup';

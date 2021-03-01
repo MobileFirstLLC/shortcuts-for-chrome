@@ -79,11 +79,11 @@ describe('Popup Window', function () {
             name = getLinkName(link),
             pin = getLinkPin(link);
 
-        expect(popup.getLinks().pinned, 'pinned').to.contain(name);
+        expect(Popup.getLinks().pinned, 'pinned').to.contain(name);
         pin.onclick();
-        expect(popup.getLinks().pinned, 'not pinned after 1 click').to.not.contain(name);
+        expect(Popup.getLinks().pinned, 'not pinned after 1 click').to.not.contain(name);
         pin.onclick();
-        expect(popup.getLinks().pinned, 'pinned after 2nd click').to.contain(name);
+        expect(Popup.getLinks().pinned, 'pinned after 2nd click').to.contain(name);
     });
 
     it('Clicking link text opens a tab', () => {
@@ -119,7 +119,7 @@ describe('Popup Window', function () {
             }, 10);
         });
 
-        it('Drag N drop on self', (done) => {
+        it('Drag/drop on self', (done) => {
             let firstLink = getLink(0);
 
             expect(Storage.save.notCalled, 'before drag').to.be.true;
@@ -133,7 +133,7 @@ describe('Popup Window', function () {
             }, 10);
         });
 
-        it('Drag N drop with order change > move before to after', (done) => {
+        it('Drag/drop with order change > move before to after', (done) => {
             let firstLink = getLink(0),
                 secondLink = getLink(1);
 
@@ -148,7 +148,7 @@ describe('Popup Window', function () {
             }, 10);
         });
 
-        it('Drag N drop with order change > move after to before', (done) => {
+        it('Drag/drop with order change > move after to before', (done) => {
             let firstLink = getLink(0),
                 secondLink = getLink(1);
 

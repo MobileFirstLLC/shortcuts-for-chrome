@@ -26,25 +26,49 @@ import Menu from '../menu/menu';
 export default class Popup {
 
     constructor() {
-        this.pinned = [];
-        this.recent = [];
-        this.getLinks = this.getLinks.bind(this);
-        this.getRecent = this.getRecent.bind(this);
-        this.onPinToggle = this.onPinToggle.bind(this);
-        this.onPinOrderChange = this.onPinOrderChange.bind(this);
-        this.drawCurrentView = this.drawCurrentView.bind(this);
-        this.activeView = new Menu(
-            this.getLinks,
-            this.onPinToggle,
-            this.onPinOrderChange,
-            this.getRecent);
+        Popup.activeView = new Menu(
+            Popup.getLinks,
+            Popup.onPinToggle,
+            Popup.onPinOrderChange,
+            Popup.getRecent);
+
+        // load user settings and draw initial view
         RecentLinks.getRecent(list => {
             Storage.get([Storage.keys.pinned], items => {
-                this.recent = list || [];
-                this.pinned = items[Storage.keys.pinned] || [];
-                this.drawCurrentView();
+                Popup.recent = list || [];
+                Popup.pinned = items[Storage.keys.pinned] || [];
+                Popup.drawCurrentView();
             });
         });
+    }
+
+    static get pinned() {
+        return this._pinned || [];
+    }
+
+    static get unpinned() {
+        return MenuLinks.filter(link =>
+            Popup.pinned.indexOf(link) < 0);
+    }
+
+    static set pinned(value) {
+        this._pinned = value;
+    }
+
+    static get recent() {
+        return this._recent || [];
+    }
+
+    static set recent(value) {
+        this._recent = value;
+    }
+
+    static get activeView() {
+        return this._activeView;
+    }
+
+    static set activeView(view) {
+        this._activeView = view;
     }
 
     /**
@@ -52,7 +76,7 @@ export default class Popup {
      * This will also clear all existing children from that element
      */
     static get renderTarget() {
-        let tmp = document.getElementsByTagName('body')[0];
+        let tmp = document.body;
 
         while (tmp.firstChild) {
             tmp.removeChild(tmp.firstChild);
@@ -63,27 +87,27 @@ export default class Popup {
     /**
      * @description Render currently active view
      */
-    drawCurrentView() {
+    static drawCurrentView() {
         let wrapper = Popup.renderTarget;
 
-        wrapper.setAttribute('id', this.activeView.name);
-        wrapper.appendChild(this.activeView.render());
+        wrapper.setAttribute('id', Popup.activeView.name);
+        wrapper.appendChild(Popup.activeView.render());
     }
 
     /**
      * @description Handler for when user pins/unpins an item
      * @param {String} key - id of the pin that was clicked
      */
-    onPinToggle(key) {
-        const index = this.pinned.indexOf(key);
+    static onPinToggle(key) {
+        const index = Popup.pinned.indexOf(key);
 
         if (index < 0) {
-            this.pinned.push(key);
+            Popup.pinned.push(key);
         } else {
-            this.pinned.splice(index, 1);
+            Popup.pinned.splice(index, 1);
         }
 
-        this.onPinOrderChange(this.pinned.concat([]), this.drawCurrentView);
+        Popup.onPinOrderChange(Popup.pinned, Popup.drawCurrentView);
     }
 
     /**
@@ -91,21 +115,18 @@ export default class Popup {
      * @param {Array<String>} newOrder - list of link ids and their new order
      * @param {function?} cb - callback function (optional)
      */
-    onPinOrderChange(newOrder, cb) {
-        this.pinned = newOrder;
-        Storage.save(Storage.keys.pinned, this.pinned, cb);
+    static onPinOrderChange(newOrder, cb) {
+        Popup.pinned = newOrder;
+        Storage.save(Storage.keys.pinned, Popup.pinned, cb);
     }
 
     /**
      * @description Get menu links
      */
-    getLinks() {
-        const pinned = this.pinned;
-
+    static getLinks() {
         return {
-            pinned,
-            unpinned: MenuLinks.filter(link =>
-                pinned.indexOf(link) < 0)
+            pinned: Popup.pinned,
+            unpinned: Popup.unpinned
         };
     }
 
@@ -113,8 +134,8 @@ export default class Popup {
      * Get Recently used links
      * @returns {Array.<Object>}
      */
-    getRecent() {
-        return this.recent
-            .filter(x => this.pinned.indexOf(x) < 0);
+    static getRecent() {
+        return Popup.recent.filter(x =>
+            Popup.pinned.indexOf(x) < 0);
     }
 }
