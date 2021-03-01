@@ -9,8 +9,8 @@
  * Browser links menu UI and event handling
  * * * * * * * * * * * * * * * * * * * * */
 
-import appIcons from '../../modules/appIcons.js';
 import Draggable from '../../modules/dragging.js';
+import Helpers from './helpers';
 
 /**
  * Initialize menu panel instance
@@ -62,24 +62,6 @@ export default class Menu {
      */
     static get idAttr() {
         return 'data-name';
-    }
-
-    /**
-     * @static
-     * @returns {string}
-     */
-    static get unpinnedItemIcon() {
-        return appIcons.generateIcon(
-            appIcons.icons.addPin, 'pin');
-    }
-
-    /**
-     * @static
-     * @returns {string}
-     */
-    static get pinnedItemIcon() {
-        return appIcons.generateIcon(
-            appIcons.icons.removePin, 'unpin');
     }
 
     /**
@@ -160,12 +142,12 @@ export default class Menu {
         pinned.map((link) => (
             container.appendChild(
                 Menu.createLink(
-                    Menu.pinnedItemIcon,
-                    Menu.translateLabel(link),
+                    Helpers.pinnedItemIcon,
+                    Helpers.translateLabel(link),
                     link))
         ));
         panel.appendChild(container);
-        Menu.appendDivider(panel);
+        Helpers.appendDivider(panel);
 
         (() => new Draggable(
             Menu.idAttr,
@@ -184,16 +166,16 @@ export default class Menu {
         if (!recent || !recent.length) return;
         const label = document.createElement('span');
 
-        label.innerText = Menu.translateLabel('recently_used');
+        label.innerText = Helpers.translateLabel('recently_used');
         label.classList.add('category-title');
         panel.appendChild(label);
 
-        Menu.localizedSort(recent)
+        Helpers.localizedSort(recent)
             .map(([label, link]) =>
                 Menu.appendUnpinnedLink(panel, label, link));
 
         // add divider below
-        Menu.appendDivider(panel);
+        Helpers.appendDivider(panel);
     }
 
     /**
@@ -205,28 +187,14 @@ export default class Menu {
         const {unpinned} = Menu.getLinks();
         let firstLetter = null;
 
-        Menu.localizedSort(unpinned)
+        Helpers.localizedSort(unpinned)
             .map(([label, link]) => {
                 if (firstLetter && firstLetter !== label[0]) {
-                    Menu.appendDivider(panel);
+                    Helpers.appendDivider(panel);
                 }
                 firstLetter = label[0];
                 Menu.appendUnpinnedLink(panel, label, link);
             });
-    }
-
-    /**
-     * @static
-     * Sort a list of links yby localized label
-     * @param {Array.<String>} linkList - list of links
-     * @returns - sorted list where first
-     * element is localized label, second element is
-     * the original link
-     */
-    static localizedSort(linkList) {
-        return linkList.map(link =>
-            [Menu.translateLabel(link), link])
-            .sort();
     }
 
     /**
@@ -242,28 +210,6 @@ export default class Menu {
         element.getElementsByTagName('svg')[0].onclick =
             () => Menu.onPinToggle(name);
     }
-
-    /**
-     * @static
-     * Get the translated dictionary value for some link
-     * @param {String} name - link name (dictionary key)
-     */
-    static translateLabel(name) {
-        return window.chrome.i18n.getMessage(
-            name.replace(/[\-\/]/g, '_')) || name;
-    }
-
-    /**
-     * @static
-     * Create a horizontal menu divider element
-     * @param {Element} panel - DOM element where to append the divider
-     */
-    static appendDivider(panel) {
-        const div = document.createElement('div');
-
-        div.setAttribute('class', 'divider');
-        panel.appendChild(div);
-    };
 
     /**
      * @static
@@ -294,6 +240,6 @@ export default class Menu {
      */
     static appendUnpinnedLink(panel, label, name) {
         panel.appendChild(Menu.createLink(
-            Menu.unpinnedItemIcon, label, name));
+            Helpers.unpinnedItemIcon, label, name));
     }
 };
