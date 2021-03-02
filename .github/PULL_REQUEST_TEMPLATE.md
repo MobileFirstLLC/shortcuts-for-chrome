@@ -8,4 +8,4 @@
 
 #### Additional details
 
-*Any other relecant information*
+*Any other relevant information*
