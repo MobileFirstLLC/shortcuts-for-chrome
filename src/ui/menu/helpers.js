@@ -6,10 +6,10 @@
  * Website: https://mobilefirst.me
  *
  * @description
- * Helper methods for links menu
+ * Helper methods for generating links menu
  * * * * * * * * * * * * * * * * * * * * */
 
-import appIcons from '../../modules/appIcons.js';
+import {SVGIconPaths} from '../../config';
 
 /**
  * @module
@@ -19,12 +19,37 @@ import appIcons from '../../modules/appIcons.js';
 export default class Helpers {
 
     /**
+     * @description UI icons
+     */
+    static get icons() {
+        return SVGIconPaths;
+    }
+
+    /**
+     * @description Given some icon name, this function returns SVG element
+     * @param {Object} icon - one of `appIcons.icons`
+     * @param {String?} className - element class
+     * @returns {string} - icon element as HTML
+     */
+    static generateIcon(icon, className) {
+        let svg = document.createElement('svg'),
+            path = document.createElement('path');
+
+        path.setAttribute('d', icon.d);
+        svg.setAttribute('class', className);
+        svg.setAttribute('viewBox',
+            [0, 0, (icon.w || 24), (icon.h || 24)].join(' '));
+        svg.appendChild(path);
+        return svg.outerHTML;
+    }
+
+    /**
      * @static
      * @returns {string}
      */
     static get unpinnedItemIcon() {
-        return appIcons.generateIcon(
-            appIcons.icons.addPin, 'pin');
+        return Helpers.generateIcon(
+            Helpers.icons.unpinnedLink, 'pin');
     }
 
     /**
@@ -32,8 +57,8 @@ export default class Helpers {
      * @returns {string}
      */
     static get pinnedItemIcon() {
-        return appIcons.generateIcon(
-            appIcons.icons.removePin, 'unpin');
+        return Helpers.generateIcon(
+            Helpers.icons.activePin, 'unpin');
     }
 
     /**

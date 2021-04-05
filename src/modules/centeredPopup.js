@@ -20,9 +20,10 @@
 export default class CenteredPopup {
 
     /**
-     * @description Create centered popup window in the middle of user's monitor viewport.
-     * If user has multiple monitors this method launches window in the first/leftmost monitor.
-     * This method requires `system.display` permission in `manifest.json`
+     * @description Create centered popup window in the middle of user's
+     * monitor viewport. If user has multiple monitors this method launches
+     * window in the first/leftmost monitor. This method requires
+     * `system.display` permission in `manifest.json`
      * @param {number} width - width of the new window (px)
      * @param {number} height - height of the new window (px)
      * @param {String} url - url to open

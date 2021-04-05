@@ -21,7 +21,10 @@ import Helpers from './helpers';
  *
  * @module
  * @name Menu
- * @description Menu panel is a view that shows a list of links
+ * @description Menu panel is a view that shows a list of links.
+ * This menu panel is drawn dynamically by creating all menu DOM
+ * elements programmatically upon calling Menu.render(). The
+ * parent instantiating this menu will call render.
  */
 export default class Menu {
 
@@ -40,7 +43,8 @@ export default class Menu {
         Menu.onPinToggle = onPinToggle;
         Menu.onPinOrderChange = onPinOrderChange;
 
-        // return instance methods
+        // return public instance methods
+        // that are callable from outside this class
         return {
             name: Menu.name,
             idAttr: Menu.idAttr,

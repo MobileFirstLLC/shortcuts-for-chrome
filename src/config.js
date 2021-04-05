@@ -10,6 +10,36 @@
  * * * * * * * * * * * * * * * * * * * * */
 
 /**
+ * Various application configs
+ * @namespace AppConfig
+ * @type {{recentIntervalMillis: number}}
+ */
+export const AppConfig = {
+    /**
+     * When a link clicked within last X milliseconds,
+     * it is considered "recently used".
+     */
+    recentIntervalMillis: 10 * 60 * 1000 // 10 minutes
+};
+
+/**
+ * App icons svg paths
+ *
+ * @namespace SVGIconPaths
+ * @type Object.<Object>
+ */
+export const SVGIconPaths = {
+    unpinnedLink: {
+        'd': 'M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,' +
+            '5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z'
+    },
+    activePin: {
+        'd': 'M17,3A2,2 0 0,1 19,5V21L12,18L5,21V5C5,3.89 5.9,3 7,' +
+            '3H17M11,14L17.25,7.76L15.84,6.34L11,11.18L8.41,8.59L7,10L11,14Z'
+    }
+};
+
+/**
  * List of options to display in the context menu
  * Links will open in new tab when width/height
  * (ww/wh) are not specified. Otherwise links will
@@ -74,34 +104,4 @@ export const ContextMenuOptions = {
         title: 'ctx_share_copy',
         url: '{URI}'
     }
-};
-
-/**
- * App icons svg paths
- *
- * @namespace SVGIconPaths
- * @type Object.<Object>
- */
-export const SVGIconPaths = {
-    addPin: {
-        'd': 'M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,' +
-            '5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z'
-    },
-    removePin: {
-        'd': 'M17,3A2,2 0 0,1 19,5V21L12,18L5,21V5C5,3.89 5.9,3 7,' +
-            '3H17M11,14L17.25,7.76L15.84,6.34L11,11.18L8.41,8.59L7,10L11,14Z'
-    }
-};
-
-/**
- * Various application configs
- * @namespace AppConfig
- * @type {{recentInterval: number}}
- */
-export const AppConfig = {
-    /**
-     * When a link clicked within last X milliseconds,
-     * it is considered "recently used".
-     */
-    recentIntervalMillis: 10 * 60 * 1000 // 10 minutes
 };

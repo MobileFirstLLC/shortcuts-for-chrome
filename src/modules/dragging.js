@@ -16,7 +16,8 @@ let activedragSrcEl;
 /**
  * @module
  * @name Dragging
- * @classdesc This module makes childNodes of some DOM Element draggble using native HTML5 drag and drop.
+ * @classdesc This module makes childNodes of some DOM Element
+ * draggble using native HTML5 drag and drop.
  */
 export default class Dragging {
 
@@ -24,12 +25,17 @@ export default class Dragging {
      * Create element whose children can be dragged and dropped
      * @name Dragging
      *
-     * @param {String} idAttribute - for each draggble element, this attribute will provide its id, for example `id`
-     * @param {Element} container - the first parent of all draggble elements; provide DOM element reference
-     * @param {function} onElementRender - after drag events have been attached, all other action handlers still
-     * need to be attached. This callback function will allow initiator to bind additional events to draggble elements.}
-     * @param {function} onDragEndCallback - after drag is done, this callback function notifies
-     * initiator that item order has changed order
+     * @param {String} idAttribute - for each draggble element, this
+     * attribute will provide its id, for example `id`
+     * @param {Element} container - the first parent of all draggble
+     * elements; provide DOM element reference
+     * @param {function} onElementRender - after drag events have been
+     * attached, all other action handlers still need to be attached.
+     * This callback function will allow initiator to bind additional
+     * events to draggble elements.}
+     * @param {function} onDragEndCallback - after drag is done, this
+     * callback function notifies initiator that item order has changed
+     * order
      *
      @example new Draggable("id",
      containerElement,
@@ -132,7 +138,8 @@ export default class Dragging {
 
     /**
      * @ignore
-     * @description The dragstart event is fired when the user starts dragging an element or text selection.
+     * @description The dragstart event is fired when the user starts dragging an
+     * element or text selection.
      * @param {Object} e - dragStart event
      */
     handleDragStart(e) {
