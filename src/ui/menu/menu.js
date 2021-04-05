@@ -21,21 +21,22 @@ import Helpers from './helpers';
  *
  * @module
  * @name Menu
- * @description Menu panel is a view that shows a list of links.
- * This menu panel is drawn dynamically by creating all menu DOM
- * elements programmatically upon calling Menu.render(). The
- * parent instantiating this menu will call render.
+ * @description Menu panel is a DOM elements that shows a list of links.
+ * This menu panel is drawn dynamically by creating all menu
+ * elements programmatically upon calling `menuObj.render()`. The
+ * parent instantiating the menu will call render. Parent must then
+ * add the returned menu to DOM tree to display it to user.
  */
 export default class Menu {
 
     /**
      * @constructor
      * @name Menu
-     * @param getLinks
-     * @param onPinToggle
-     * @param onPinOrderChange
-     * @param getRecent
-     * @returns {{idAttr: string, name: string, render: (function(): Element)}}
+     * @param {function} getLinks - function that returns all links
+     * @param {function} onPinToggle - callback function for when link is pinned/unpinned
+     * @param {function} onPinOrderChange - callback function for when links are re-ordered
+     * @param {function} getRecent - function that returns list of recent links
+     * @returns {{idAttr: string, name: string, render: (function(): Element)}} - Menu panel reference
      */
     constructor(getLinks, onPinToggle, onPinOrderChange, getRecent) {
         Menu.getLinks = getLinks;
@@ -53,7 +54,9 @@ export default class Menu {
     }
 
     /**
+     * @public
      * @static
+     * @description name of this menu view
      * @returns {string}
      */
     static get name() {
@@ -61,7 +64,9 @@ export default class Menu {
     }
 
     /**
+     * @public
      * @static
+     * @description DOM attribute for getting the unique id of a link
      * @returns {string}
      */
     static get idAttr() {
@@ -69,7 +74,11 @@ export default class Menu {
     }
 
     /**
+     * @private
      * @static
+     * @description
+     * Function that menu will call to get all links.
+     * This function is specified at instantiation.
      * @returns {Function}
      */
     static get getLinks() {
@@ -81,7 +90,11 @@ export default class Menu {
     }
 
     /**
+     * @private
      * @static
+     * @description
+     * Function that menu will call to get recent items.
+     * This function is specified at instantiation.
      * @returns {Function}
      */
     static get getRecent() {
@@ -93,7 +106,11 @@ export default class Menu {
     }
 
     /**
+     * @private
      * @static
+     * @description
+     * Callback function when item is pinned or unpinned.
+     * This callback is specified at instantiation.
      * @returns {Function}
      */
     static get onPinToggle() {
@@ -105,7 +122,11 @@ export default class Menu {
     }
 
     /**
+     * @private
      * @static
+     * @description
+     * Callback function when pin order is changed. This callback
+     * is specified at instantiation.
      * @returns {Function}
      */
     static get onPinOrderChange() {
@@ -117,9 +138,10 @@ export default class Menu {
     }
 
     /**
+     * @public
      * @static
-     * Draws the menu panel
-     * @returns {Element} - DOM element
+     * @description Programmatically draws the menu panel and its links
+     * @returns {Element} - DOM element representing the menu.
      */
     static render() {
         const panel = document.createElement('div');
@@ -131,10 +153,11 @@ export default class Menu {
     };
 
     /**
+     * @private
      * @static
-     * When user has some pinned items, render
-     * each and make them draggable
-     * @param {Element} panel - where links will be appended
+     * @description
+     * When user has some pinned items, render each and make them draggable
+     * @param {Element} panel - DOM element where links will be appended
      */
     static renderPinnedLinks(panel) {
         const {pinned} = Menu.getLinks();
@@ -161,8 +184,13 @@ export default class Menu {
     }
 
     /**
+     * @private
      * @static
-     * @param {Element} panel - DOM reference
+     * @description
+     * If user has recently clicked on some unpinned link, render
+     * them in this special section. Recent items will expire after
+     * enough time has elapsed since user clicked on the link.
+     * @param {Element} panel - DOM element where links will be appended
      */
     static renderRecentItems(panel) {
         const recent = Menu.getRecent();
@@ -183,9 +211,11 @@ export default class Menu {
     }
 
     /**
+     * @private
      * @static
+     * @description
      * The unpinned items will be displayed in alphabetical order (localized)
-     * @param {Element} panel - DOM element where links will be added
+     * @param {Element} panel - DOM element where links will be appended
      */
     static renderUnpinnedLinks(panel) {
         const {unpinned} = Menu.getLinks();
@@ -202,7 +232,9 @@ export default class Menu {
     }
 
     /**
+     * @private
      * @static
+     * @description
      * bind the onclick events to a link
      * @param {Element} element - DOM node representing a link
      */
@@ -216,8 +248,9 @@ export default class Menu {
     }
 
     /**
+     * @private
      * @static
-     * Create link element that can be pinned
+     * @description Create link element that can be pinned
      * @param {String} icon - icon HTML as string
      * @param {String} label - link text
      * @param {String} name - className
@@ -235,8 +268,9 @@ export default class Menu {
     };
 
     /**
+     * @private
      * @static
-     * Create and append an unpinned link
+     * @description Create and append an unpinned link
      * @param {Element} panel - DOM node where to append link
      * @param {String} label - link text
      * @param {String} name - className

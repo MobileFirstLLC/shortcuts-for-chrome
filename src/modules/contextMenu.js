@@ -13,9 +13,11 @@ import CenteredPopup from './centeredPopup';
 import {ContextMenuOptions} from '../config';
 
 /**
+ * @description
  * This module adds custom options to chrome browser action context menu
  * (right click on extension icon next to address bar). `contextMenus`
- * permissions is required in`manifest.json`.
+ * permissions is required in`manifest.json`. Instantiate `new ContextMenu()`
+ * to activate this functionality.
  *
  * @module
  * @name ContextMenu
@@ -23,8 +25,8 @@ import {ContextMenuOptions} from '../config';
 export default class ContextMenu {
 
     /**
-     * Initialize the context menu
-     *
+     * @description Initialize the context menu
+     * @constructor
      * @name ContextMenu
      */
     constructor() {
@@ -48,6 +50,8 @@ export default class ContextMenu {
     }
 
     /**
+     * @static
+     * @private
      * @function
      * @description Constructs absolute shareable url then calls the
      * callback function
@@ -67,6 +71,8 @@ export default class ContextMenu {
     }
 
     /**
+     * @static
+     * @private
      * @description Copy text value to clipboard
      * @param {String} value
      */
@@ -80,6 +86,7 @@ export default class ContextMenu {
     }
 
     /**
+     * @static
      * @private
      * @description when user clicks on context menu option
      * @param {Object} info - click event details

@@ -17,17 +17,21 @@ import Menu from '../menu/menu';
 /**
  * @module
  * @name Popup
- * @description This is the main class for the popup window
- * This class is responsible for saving/restoring persistent data
- * and rendering the menu panel. This element can easily be extended
- * to display other content but currently the only content that does
- * get rendered is the menu panel.
+ * @description This is the main class for the popup window that shows
+ * when user clicks extension icon. This class is responsible for:
+ *
+ * - saving/restoring persistent data and
+ * - rendering the menu panel
+ *
+ * This popup view can easily be extended to display other content, but
+ * currently it renders the menu panel only.
  */
 export default class Popup {
 
     /**
      * @constructor
      * @name Popup
+     * @description instantiate Popup window
      */
     constructor() {
         Popup.activeView = new Menu(
@@ -47,7 +51,7 @@ export default class Popup {
     }
 
     /**
-     * Get pinned links
+     * @description Get pinned links
      * @returns {Array.<String>}
      */
     static get pinned() {
@@ -55,7 +59,7 @@ export default class Popup {
     }
 
     /**
-     * Get unpinned links
+     * @description Get unpinned links
      * @returns {Array.<String>}
      */
     static get unpinned() {
@@ -68,7 +72,7 @@ export default class Popup {
     }
 
     /**
-     * Get recent links
+     * @description Get recent links
      * @returns {Array.<String>}
      */
     static get recent() {
@@ -80,7 +84,7 @@ export default class Popup {
     }
 
     /**
-     * Get active view
+     * @description Get the view that is currently active in the Popup
      * @returns {Element}
      */
     static get activeView() {
@@ -92,9 +96,11 @@ export default class Popup {
     }
 
     /**
-     * Get DOM element where to render content
-     * This will also clear all existing children from that element
      * @static
+     * @description
+     * Get DOM element where to render content.
+     * This will also clear all existing children from that element,
+     * meaning you can always assume this element is empty.
      */
     static get renderTarget() {
         let tmp = document.body;
@@ -106,7 +112,7 @@ export default class Popup {
     }
 
     /**
-     * Render currently active view
+     * @description Draw the currently active view in the render target.
      * @static
      */
     static drawCurrentView() {
@@ -117,7 +123,7 @@ export default class Popup {
     }
 
     /**
-     * Handler for when user pins/unpins an item
+     * @description Handler for when user pins/unpins a link.
      * @param {String} key - id of the pin that was clicked
      * @static
      */
@@ -134,9 +140,10 @@ export default class Popup {
     }
 
     /**
-     * When user rearranges pins -> update and save new pin order
+     * @description Handler for when user rearranges pins, update and save new pin order.
      * @param {Array<String>} newOrder - list of link ids and their new order
-     * @param {function?} callback - callback function (optional)
+     * @param {function?} callback - callback function (optional); specify this callback
+     * if you need to perform some action after new order has been persisted.
      * @static
      */
     static onPinOrderChange(newOrder, callback) {
@@ -145,7 +152,8 @@ export default class Popup {
     }
 
     /**
-     * Get menu links
+     * @description Get menu links
+     * @returns {{pinned: Array.<String>, unpinned: Array.<String>}}
      * @static
      */
     static getLinks() {
@@ -156,8 +164,8 @@ export default class Popup {
     }
 
     /**
-     * Get Recently used links
-     * @returns {Array.<Object>}
+     * @description Get recently used links
+     * @returns {Array.<String>}
      * @static
      */
     static getRecent() {

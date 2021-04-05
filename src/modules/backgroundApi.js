@@ -13,7 +13,9 @@
 import RecentLinks from './recent';
 
 /**
+ * @description
  * Listen to incoming messages from other browser contexts.
+ * Instantiate `new BackgroundApi()` to bind this behavior.
  *
  * @module
  * @name BackgroundApi
@@ -21,13 +23,16 @@ import RecentLinks from './recent';
 export default class BackgroundApi {
 
     /**
-     * Call the constructor to register background API listeners which
+     * @constructor
+     * @name BackgroundApi
+     *
+     * @description
+     * Instantiate `new BackgroundApi()` to register background API listeners which
      * handles messaging between different parts of the extension, @see
      * {@link https://developer.chrome.com/apps/runtime#event-onMessage|onMessage}
+     * for details on message passing in chrome extensions.
      *
-     * @example chrome.runtime.sendMessage({open: "about"});
-     * will open tab at chrome://about
-     * @name BackgroundApi
+     * @example chrome.runtime.sendMessage({open: "about"}); // will open tab: chrome://about
      */
     constructor() {
         window.chrome.runtime.onMessage.addListener(

@@ -9,7 +9,7 @@
  * Helper methods for generating links menu
  * * * * * * * * * * * * * * * * * * * * */
 
-import {SVGIconPaths} from '../../config';
+import {SVGIcons} from '../../config';
 
 /**
  * @module
@@ -19,17 +19,12 @@ import {SVGIconPaths} from '../../config';
 export default class Helpers {
 
     /**
-     * @description UI icons
-     */
-    static get icons() {
-        return SVGIconPaths;
-    }
-
-    /**
      * @description Given some icon name, this function returns SVG element
-     * @param {Object} icon - one of `appIcons.icons`
+     * @param {Object} icon - one of
+     * {@link https://oss.mobilefirst.me/shortcuts-for-chrome/SVGIconPaths.html|`<constants.SVGIcons>`}
+     *
      * @param {String?} className - element class
-     * @returns {string} - icon element as HTML
+     * @returns {string} icon element as HTML
      */
     static generateIcon(icon, className) {
         let svg = document.createElement('svg'),
@@ -45,29 +40,31 @@ export default class Helpers {
 
     /**
      * @static
-     * @returns {string}
+     * @description Generate SVG icon for unpinned link.
+     * @returns {string} icon element as HTML
      */
     static get unpinnedItemIcon() {
         return Helpers.generateIcon(
-            Helpers.icons.unpinnedLink, 'pin');
+            SVGIcons.unpinnedLink, 'pin');
     }
 
     /**
      * @static
-     * @returns {string}
+     * @description Generate SVG icon for pinned link.
+     * @returns {string} icon element as HTML
      */
     static get pinnedItemIcon() {
         return Helpers.generateIcon(
-            Helpers.icons.activePin, 'unpin');
+            SVGIcons.activePin, 'unpin');
     }
 
     /**
      * @static
-     * Sort a list of links yby localized label
+     * @description Sort a list of links by localized label.
      * @param {Array.<String>} linkList - list of links
-     * @returns - sorted list where first
-     * element is localized label, second element is
-     * the original link
+     * @returns {Array.<Array.<String>>} sorted list of "tuples"
+     * (String arrays of length 2) where first element is localized
+     * label, second element is the original link.
      */
     static localizedSort(linkList) {
         return linkList.map(link =>
@@ -77,8 +74,9 @@ export default class Helpers {
 
     /**
      * @static
-     * Get the translated dictionary value for some link
+     * @description Get the translated dictionary value for some link.
      * @param {String} name - link name (dictionary key)
+     * @returns {String} translated label
      */
     static translateLabel(name) {
         return window.chrome.i18n.getMessage(
@@ -87,8 +85,11 @@ export default class Helpers {
 
     /**
      * @static
-     * Create a horizontal menu divider element
-     * @param {Element} panel - DOM element where to append the divider
+     * @description Create a horizontal menu divider element and append
+     * it to the end of the provided panel element (in place). This method
+     * returns nothing. After calling this method panel will have a divider
+     * as its last DOM child.
+     * @param {Element} panel DOM element where to append the divider
      */
     static appendDivider(panel) {
         const div = document.createElement('div');

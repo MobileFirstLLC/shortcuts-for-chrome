@@ -13,9 +13,9 @@ import {AppConfig} from '../config';
 import Storage from './storage';
 
 /**
- * Recent links were used recently (based on config).
- * They become stale after some time and then get
- * removed from the list of recent.
+ * @description
+ * Recent links were used recently (based on config). They become
+ * stale after some time and then get removed from the list of recent.
  * @module
  * @name RecentLinks
  */

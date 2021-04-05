@@ -11,8 +11,8 @@
  * * * * * * * * * * * * * * * * * * * * */
 
 /**
- * Utility class for opening popup window in
- * the middle of user's viewport
+ * @description
+ * Utility module for opening popup window in the middle of user's viewport.
  *
  * @module
  * @name CenteredPopup
@@ -20,6 +20,7 @@
 export default class CenteredPopup {
 
     /**
+     * @static
      * @description Create centered popup window in the middle of user's
      * monitor viewport. If user has multiple monitors this method launches
      * window in the first/leftmost monitor. This method requires

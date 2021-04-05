@@ -10,7 +10,7 @@
  * * * * * * * * * * * * * * * * * * * * */
 
 /**
- * Application storage for persisting data
+ * @description Application storage for persisting data
  * @module
  * @name Storage
  */
