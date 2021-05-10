@@ -19,7 +19,7 @@
     "docs": "xt-docs",
     "test": "xt-test",
     "clean": "xt-clean",
-    "sync": "xt-sync -e",
+    "sync": "xt-sync",
     "translate": "node translate"
   },
   "devDependencies": {
