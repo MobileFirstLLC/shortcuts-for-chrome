@@ -23,8 +23,7 @@ export default class CenteredPopup {
      * @static
      * @description Create centered popup window in the middle of user's
      * monitor viewport. If user has multiple monitors this method launches
-     * window in the first/leftmost monitor. This method requires
-     * `system.display` permission in `manifest.json`
+     * window in the first/leftmost monitor.
      * @param {number} width - width of the new window (px)
      * @param {number} height - height of the new window (px)
      * @param {String} url - url to open
@@ -34,29 +33,20 @@ export default class CenteredPopup {
     static open(width, height, url) {
 
         /** @private */
-        const getBounds = (callback) =>
-            window.chrome.system.display.getInfo(callback);
-
-        /** @private */
         const center = (max, size) =>
-            Math.trunc(Math.max(0, Math.round(0.5 * (max - size))));
+                Math.trunc(Math.max(0,
+                    Math.round(0.5 * (max - size)))),
+            w = window.screen.width,
+            h = window.screen.height * 0.75;
 
-        /** @private */
-        const openWindow = (info) => {
-            const [{workArea: {width: w, height: h}}] = info ||
-            [{workArea: {width: 0, height: 0}}];
-
-            window.chrome.windows.create({
-                url: url,
-                width: width,
-                height: height,
-                focused: true,
-                type: 'popup',
-                left: center(w, width),
-                top: center(h, height)
-            });
-        };
-
-        getBounds(openWindow);
+        chrome.windows.create({
+            url: url,
+            width: width,
+            height: height,
+            focused: true,
+            type: 'popup',
+            left: center(w, width),
+            top: center(h, height)
+        });
     }
 }

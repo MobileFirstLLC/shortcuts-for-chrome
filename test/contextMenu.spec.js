@@ -10,15 +10,15 @@ class DisplayStub {
 describe('Context Menu', function () {
 
     beforeEach(() => {
-        window.chrome.runtime.getManifest.returns({
+        chrome.runtime.getManifest.returns({
             browser_action: {},
             short_name: 'app',
             homepage_url: 'https://google.com'
         });
         document.oncopy = () => {};
         document.execCommand = (command) => {};
-        window.chrome.system.display = new DisplayStub();
-        window.chrome.contextMenus.removeAll.yields({});
+        chrome.system.display = new DisplayStub();
+        chrome.contextMenus.removeAll.yields({});
         new ContextMenu();
     });
 

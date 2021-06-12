@@ -11,8 +11,6 @@
  * container element.
  * * * * * * * * * * * * * * * * * * * * */
 
-let activedragSrcEl;
-
 /**
  * @module
  * @name Dragging
@@ -68,7 +66,7 @@ export default class Dragging {
      * @description get the element that is being actively dragged
      */
     static get dragSrcEl() {
-        return activedragSrcEl;
+        return this._activedragSrcEl;
     }
 
     /**
@@ -77,7 +75,7 @@ export default class Dragging {
      * @description set the element that is being actively dragged
      */
     static set dragSrcEl(value) {
-        activedragSrcEl = value;
+        this._activedragSrcEl = value;
     }
 
     /**
@@ -106,7 +104,7 @@ export default class Dragging {
      * @param {Element} elem - DOM element to which we attach event handlers
      */
     addDnDHandlers(elem) {
-        elem.setAttribute('draggable', true);
+        elem.setAttribute('draggable', 'true');
         elem.addEventListener('dragstart', this.handleDragStart, false);
         elem.addEventListener('dragover', this.handleDragOver, false);
         elem.addEventListener('dragleave', this.handleDragLeave, false);
@@ -131,7 +129,7 @@ export default class Dragging {
         let dragSrc = Dragging.dragSrcEl;
 
         if (dragSrc !== this) {
-            if (Dragging.isbefore(dragSrc, this)) {
+            if (Dragging.isBefore(dragSrc, this)) {
                 this.parentNode.insertBefore(dragSrc, this.nextSibling);
             } else {
                 this.parentNode.insertBefore(dragSrc, this);
@@ -165,7 +163,7 @@ export default class Dragging {
         e.preventDefault();
         e.dataTransfer.dropEffect = 'move';
         if (Dragging.dragSrcEl !== this) {
-            let isBefore = Dragging.isbefore(Dragging.dragSrcEl, this);
+            let isBefore = Dragging.isBefore(Dragging.dragSrcEl, this);
 
             this.classList.add(isBefore ? 'after' : 'before');
         }
@@ -202,7 +200,7 @@ export default class Dragging {
      * @param {Element} b - DOM Element
      * @returns {boolean} - true if `a` exists before `b`
      */
-    static isbefore(a, b) {
+    static isBefore(a, b) {
         for (let cur = a; cur; cur = cur.previousSibling) {
             if (cur === b) {
                 return false;
