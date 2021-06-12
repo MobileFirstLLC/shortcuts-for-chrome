@@ -30,15 +30,12 @@ export default class ContextMenu {
      * @name ContextMenu
      */
     constructor() {
-        // TODO: v3 manifest this will be "action"
-        const CONTEXT = 'browser_action';
-
         window.chrome.contextMenus.removeAll(() => {
             Object.keys(ContextMenuOptions).map(key => {
                 window.chrome.contextMenus.create({
                     title: window.chrome.i18n.getMessage(
                         ContextMenuOptions[key].title),
-                    contexts: [CONTEXT],
+                    contexts: ['action'],
                     parentId: ContextMenuOptions[key].parentId,
                     id: ContextMenuOptions[key].id || key
                 });
