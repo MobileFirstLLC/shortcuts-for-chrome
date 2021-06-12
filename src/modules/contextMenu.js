@@ -30,10 +30,10 @@ export default class ContextMenu {
      * @name ContextMenu
      */
     constructor() {
-        window.chrome.contextMenus.removeAll(() => {
+        chrome.contextMenus.removeAll(() => {
             Object.keys(ContextMenuOptions).map(key => {
-                window.chrome.contextMenus.create({
-                    title: window.chrome.i18n.getMessage(
+                chrome.contextMenus.create({
+                    title: chrome.i18n.getMessage(
                         ContextMenuOptions[key].title),
                     contexts: ['action'],
                     parentId: ContextMenuOptions[key].parentId,
@@ -42,7 +42,7 @@ export default class ContextMenu {
             });
         });
 
-        window.chrome.contextMenus.onClicked
+        chrome.contextMenus.onClicked
             .addListener(ContextMenu.contextMenuOnClick);
     }
 
@@ -58,7 +58,7 @@ export default class ContextMenu {
      */
     static generateUrl(channel) {
         const {short_name, homepage_url} =
-            window.chrome.runtime.getManifest();
+            chrome.runtime.getManifest();
         const hashtag = '%23' + ((short_name || '')
             .replace(/ /g, ''));
 
