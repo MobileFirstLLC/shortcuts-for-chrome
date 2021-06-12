@@ -24,9 +24,9 @@ export default class UpdateHandler {
      * @description Instantiate this object to register a handler
      */
     constructor() {
-        window.chrome.runtime.onInstalled.addListener(details => {
+        chrome.runtime.onInstalled.addListener(details => {
             if (details.reason === 'update') {
-                Storage.migrateStorage();
+               Storage.migrateStorage();
             }
         });
     }

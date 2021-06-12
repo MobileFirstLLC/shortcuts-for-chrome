@@ -31,7 +31,7 @@ export default class Storage {
      * This allows syncing user preferences between devices.
      */
     static migrateStorage() {
-        window.chrome.storage.local.get([Storage.keys.pinned],
+        chrome.storage.local.get([Storage.keys.pinned],
             items => {
                 const result = items[Storage.keys.pinned] || [];
 
@@ -40,7 +40,7 @@ export default class Storage {
                     Storage.save(Storage.keys.pinned,
                         result, _ => false);
                     // clear local storage
-                    window.chrome.storage.local.set({
+                    chrome.storage.local.set({
                         [Storage.keys.pinned]: []
                     }, _ => false);
                 }
@@ -58,7 +58,7 @@ export default class Storage {
      * @param {function} callback - function to call with result
      */
     static get(keys, callback) {
-        window.chrome.storage.sync.get(keys, callback);
+        chrome.storage.sync.get(keys, callback);
     };
 
     /**
@@ -69,6 +69,6 @@ export default class Storage {
      * @param {function} callback - called after save operation has completed
      */
     static save(key, value, callback = _ => false) {
-        window.chrome.storage.sync.set({[key]: value}, callback);
+        chrome.storage.sync.set({[key]: value}, callback);
     };
 }

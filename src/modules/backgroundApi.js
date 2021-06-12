@@ -35,13 +35,13 @@ export default class BackgroundApi {
      * @example chrome.runtime.sendMessage({open: "about"}); // will open tab: chrome://about
      */
     constructor() {
-        window.chrome.runtime.onMessage.addListener(
+        chrome.runtime.onMessage.addListener(
             (request) => {
                 if (request.open) {
                     const urlPath = request.open;
                     const fullURL = 'chrome://' + urlPath;
 
-                    window.chrome.tabs.create({url: fullURL});
+                    chrome.tabs.create({url: fullURL});
                     RecentLinks.addRecent(urlPath);
                 }
             });

@@ -242,7 +242,7 @@ export default class Menu {
         let name = element.getAttribute(Menu.idAttr);
 
         element.getElementsByTagName('span')[0].onclick =
-            () => window.chrome.runtime.sendMessage({open: name});
+            () => chrome.runtime.sendMessage({open: name});
         element.getElementsByTagName('svg')[0].onclick =
             () => Menu.onPinToggle(name);
     }
