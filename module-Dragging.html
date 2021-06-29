@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>Dragging</title>
+		<link rel="icon" type="image/png" href="favicon.png"/>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="data:text/css;base64,Zm9vdGVyewogICAgZGlzcGxheTpub25lIWltcG9ydGFudDsKfQ&#x3D;&#x3D;">
+			<link type="text/css" rel="stylesheet" href="data:text/css;base64,QGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9Um9ib3RvOndnaHRANDAwOzUwMDs3MDAmZGlzcGxheT1zd2FwJyk7Cgpib2R5IHsKICAgIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkOwogICAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTsKICAgIGZvbnQtc2l6ZTogMTZweDsKICAgIGxpbmUtaGVpZ2h0OiAxLjg7Cn0KCmJvZHksCi5zeW1ib2wtdGl0bGUgaDEsCi5zeW1ib2wtdGl0bGUgaDIsCi5zeW1ib2wtdGl0bGUgaDMsCi5zeW1ib2wtdGl0bGUgaDQsCi5zeW1ib2wtdGl0bGUgaDUgewogICAgZm9udC1mYW1pbHk6ICJSb2JvdG8iLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgIlNlZ29lIFVJIiwKICAgIFJvYm90bywgVWJ1bnR1LCAiSGVsdmV0aWNhIE5ldWUiLCBzYW5zLXNlcmlmICFpbXBvcnRhbnQ7Cn0KCi5yZWFkbWUtc2VjdGlvbiAuZmVhdHVyZSB7CiAgICBkaXNwbGF5OiBibG9jazsKICAgIG1hcmdpbjogNHJlbSAwOwp9CgoucmVhZG1lLXNlY3Rpb24gYSB7CiAgICBmb250LXdlaWdodDogYm9sZDsKfQoKLnRvYyAubmF2ID4gbGkgPiBhLAoudG9jIC5uYXYgLm5hdiA+IGxpID4gYSwKLmJhY2stdG8tdG9wIHsKICAgIGZvbnQtc2l6ZTogMWVtOwp9CgouY29udGVudCBwIHsKICAgIGxpbmUtaGVpZ2h0OiAxLjU7Cn0KCi5yZWFkbWUtc2VjdGlvbiBoMiwKLnJlYWRtZS1zZWN0aW9uIGgzLAoudHV0b3JpYWwtc2VjdGlvbiBoMiwKLnR1dG9yaWFsLXNlY3Rpb24gaDMgewogICAgbWFyZ2luLXRvcDogM3JlbTsKICAgIG1hcmdpbi1ib3R0b206IDJyZW07Cn0KCi50b2MgLnNpZ25hdHVyZS1uZXcsCi5wYWdlLWhlYWRlciAua2luZCwKLnRvYyAubmF2ID4gbGkgPiBhIC5uYW1lLXNpZ25hdHVyZSwKLnRvYyAubmF2ID4gbGkgPiBhIC5zaWduYXR1cmUtcGFyYW1zIHsKICAgIGRpc3BsYXk6IG5vbmU7Cn0KCi5zeW1ib2wtZGV0YWlscy5jb2xsYXBzaWJsZS1zeW1ib2wudHJhbnNpdGlvbiB7CiAgICB0cmFuc2l0aW9uOiBub25lOwp9Cgouc3ltYm9sLXRpdGxlIC5uYW1lLXN0cmluZywKLnN5bWJvbC10aXRsZSAuc2lnbmF0dXJlLXBhcmFtLAouc3ltYm9sLXRpdGxlIGg0LmV2ZW50LApjb2RlIHsKICAgIGNvbG9yOiAjQUEwMEZGOwp9Cgouc3ltYm9sLXRpdGxlIC5uYW1lLXN0cmluZywKLnN5bWJvbC10aXRsZSBoNC5ldmVudCwKY29kZSB7CiAgICBmb250LXdlaWdodDogYm9sZDsKICAgIGJhY2tncm91bmQ6ICNlZWU7Cn0KCnByZSBjb2RlIHsKICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7Cn0K">
+			<style>
+				.page-header,
+				pre.code-toolbar > .toolbar:hover {
+					background-color: #3D5AFE;
+				}
+				.callout-primary,
+				.toc .nav > li > a:hover,
+				.toc .nav > li > a:focus,
+				.toc .nav > li.active > a,
+				.toc .nav > li.active > a:hover,
+				.toc .nav > li.active > a:focus,
+				pre.code-toolbar > .toolbar:hover {
+					border-left-color: #3D5AFE;
+				}
+				pre.code-toolbar > .toolbar:hover {
+					border-bottom-color: #3D5AFE;
+				}
+				.callout-primary h5,
+				.symbol-title.collapsible-symbol .toggle-icon,
+				.breadcrumb li a,
+				.toc .nav > li > a:hover,
+				.toc .nav > li > a:focus,
+				.toc .nav > li.active > a,
+				.toc .nav > li.active > a:hover,
+				.toc .nav > li.active > a:focus {
+					color: #3D5AFE;
+				}
+			</style>
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":"true","dateFormat":"MMM YYYY","systemName":"Shortcuts for Chrome","systemSummary":"Source code documentation","systemLogo":"","systemColor":"#3D5AFE","navMembers":[{"kind":"namespace","title":"Constants","summary":"Application constants"},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"tutorial","title":"Documents","summary":"All other documents."}],"footer":"","copyright":"","linenums":"true","collapseSymbols":"true","inverseNav":"false","inlineNav":true,"outputSourceFiles":"true","sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":"true","showTableOfContents":"true","showAccessFilter":"true","analytics":{"ua":"UA-129118591-7","domain":"https://oss.mobilefirst.me/shortcuts-for-chrome"},"methodHeadingReturns":false,"sort":"linenum, longname, version, since","search":false,"favicon":"favicon.png","stylesheets":["data:text/css;base64,Zm9vdGVyewogICAgZGlzcGxheTpub25lIWltcG9ydGFudDsKfQ==","data:text/css;base64,QGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9Um9ib3RvOndnaHRANDAwOzUwMDs3MDAmZGlzcGxheT1zd2FwJyk7Cgpib2R5IHsKICAgIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkOwogICAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTsKICAgIGZvbnQtc2l6ZTogMTZweDsKICAgIGxpbmUtaGVpZ2h0OiAxLjg7Cn0KCmJvZHksCi5zeW1ib2wtdGl0bGUgaDEsCi5zeW1ib2wtdGl0bGUgaDIsCi5zeW1ib2wtdGl0bGUgaDMsCi5zeW1ib2wtdGl0bGUgaDQsCi5zeW1ib2wtdGl0bGUgaDUgewogICAgZm9udC1mYW1pbHk6ICJSb2JvdG8iLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgIlNlZ29lIFVJIiwKICAgIFJvYm90bywgVWJ1bnR1LCAiSGVsdmV0aWNhIE5ldWUiLCBzYW5zLXNlcmlmICFpbXBvcnRhbnQ7Cn0KCi5yZWFkbWUtc2VjdGlvbiAuZmVhdHVyZSB7CiAgICBkaXNwbGF5OiBibG9jazsKICAgIG1hcmdpbjogNHJlbSAwOwp9CgoucmVhZG1lLXNlY3Rpb24gYSB7CiAgICBmb250LXdlaWdodDogYm9sZDsKfQoKLnRvYyAubmF2ID4gbGkgPiBhLAoudG9jIC5uYXYgLm5hdiA+IGxpID4gYSwKLmJhY2stdG8tdG9wIHsKICAgIGZvbnQtc2l6ZTogMWVtOwp9CgouY29udGVudCBwIHsKICAgIGxpbmUtaGVpZ2h0OiAxLjU7Cn0KCi5yZWFkbWUtc2VjdGlvbiBoMiwKLnJlYWRtZS1zZWN0aW9uIGgzLAoudHV0b3JpYWwtc2VjdGlvbiBoMiwKLnR1dG9yaWFsLXNlY3Rpb24gaDMgewogICAgbWFyZ2luLXRvcDogM3JlbTsKICAgIG1hcmdpbi1ib3R0b206IDJyZW07Cn0KCi50b2MgLnNpZ25hdHVyZS1uZXcsCi5wYWdlLWhlYWRlciAua2luZCwKLnRvYyAubmF2ID4gbGkgPiBhIC5uYW1lLXNpZ25hdHVyZSwKLnRvYyAubmF2ID4gbGkgPiBhIC5zaWduYXR1cmUtcGFyYW1zIHsKICAgIGRpc3BsYXk6IG5vbmU7Cn0KCi5zeW1ib2wtZGV0YWlscy5jb2xsYXBzaWJsZS1zeW1ib2wudHJhbnNpdGlvbiB7CiAgICB0cmFuc2l0aW9uOiBub25lOwp9Cgouc3ltYm9sLXRpdGxlIC5uYW1lLXN0cmluZywKLnN5bWJvbC10aXRsZSAuc2lnbmF0dXJlLXBhcmFtLAouc3ltYm9sLXRpdGxlIGg0LmV2ZW50LApjb2RlIHsKICAgIGNvbG9yOiAjQUEwMEZGOwp9Cgouc3ltYm9sLXRpdGxlIC5uYW1lLXN0cmluZywKLnN5bWJvbC10aXRsZSBoNC5ldmVudCwKY29kZSB7CiAgICBmb250LXdlaWdodDogYm9sZDsKICAgIGJhY2tncm91bmQ6ICNlZWU7Cn0KCnByZSBjb2RlIHsKICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7Cn0K"],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
+			window.DOCLET_TOC_ENABLED = "true";
+			window.DOCLET_AFILTER_ENABLED = true;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					Shortcuts for Chrome
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+							<li><a href="list_module.html">Modules</a></li>
+							<li><a href="list_namespace.html">Constants</a></li>
+							<li><a href="list_tutorial.html">Documents</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">module</span>
+				<h1><span class="name">Dragging</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-9 main-content">
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="list_module.html">Modules</a></li>
+							<li class="active">Dragging</li>
+						</ol>
+						<div class="access-filter">
+								<label class="checkbox-inline">
+									<input class="toggle-public" type="checkbox" value="" checked>
+									Public
+								</label>
+								<label class="checkbox-inline">
+									<input class="toggle-private" type="checkbox" value="" checked>
+									Private
+								</label>
+						</div>
+					<section>
+		<dl class="symbol">
+			<dt class="symbol-title "></dt>
+			<dd class="symbol-details ">
+				<div class="symbol-details-inner">
+					<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>This module makes childNodes of some DOM Element
+					draggble using native HTML5 drag and drop.</p></div>
+					</div>					<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+									<!-- source -->
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Source</label>
+										<div class="col-sm-9">
+											<p class="form-control-static"><a href="modules_dragging.js.html">modules/dragging.js</a>, <a href="modules_dragging.js.html#line-14">line 14</a></p>
+										</div>
+									</div>
+					
+					
+					
+					
+							</form>
+					</div>				</div>
+			</dd>
+		</dl>
+							<article class="secondary">
+									<h3>Classes</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title class public">
+			<h4 id="Dragging" class="class public"><a href="module-Dragging-Dragging.html"><span class="signature-new">new&nbsp;</span><span class="name">Dragging</span><span class="signature-params">( <span class="signature-param">idAttribute</span>, <span class="signature-param">container</span>, <span class="signature-param">onElementRender</span>, <span class="signature-param">onDragEndCallback</span>&nbsp;)</span></a></h4>
+		</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+									</dl>
+									<h3>Members</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title member private collapsible-symbol">
+			<h4 id=".dragSrcEl" class="member private"><span class="signature-attribs">&lt;private, static> </span><span class="name">dragSrcEl</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details member private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>get the element that is being actively dragged</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="modules_dragging.js.html">modules/dragging.js</a>, <a href="modules_dragging.js.html#line-68">line 68</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member private collapsible-symbol">
+			<h4 id=".dragSrcEl" class="member private"><span class="signature-attribs">&lt;private, static> </span><span class="name">dragSrcEl</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details member private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>set the element that is being actively dragged</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="modules_dragging.js.html">modules/dragging.js</a>, <a href="modules_dragging.js.html#line-77">line 77</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+									</dl>
+									<h3>Methods</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title function private collapsible-symbol">
+			<h4 id=".notifyParent" class="function private"><span class="signature-attribs">&lt;private, static> </span><span class="name">notifyParent</span><span class="signature-params">()</span></h4>
+		</dt>
+<dd class="symbol-details function private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Tell the initiating module that element order
+			has changed as a result of dnd.
+			This method has some added latency to make sure the DOM
+			nodes have updated before this event fires.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="modules_dragging.js.html">modules/dragging.js</a>, <a href="modules_dragging.js.html#line-89">line 89</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function private collapsible-symbol">
+			<h4 id=".addDnDHandlers" class="function private"><span class="signature-attribs">&lt;private, static> </span><span class="name">addDnDHandlers</span><span class="signature-params">( <span class="signature-param">elem</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Attach drag and drop events to some element</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>elem</code></td>
+							<td><span class="param-type">Element</span></td>
+							<td class="last">
+									<p>DOM element to which we attach event handlers</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="modules_dragging.js.html">modules/dragging.js</a>, <a href="modules_dragging.js.html#line-106">line 106</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function private collapsible-symbol">
+			<h4 id=".handleDrop" class="function private"><span class="signature-attribs">&lt;private, static> </span><span class="name">handleDrop</span><span class="signature-params">( <span class="signature-param">e</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>The drop event is fired when an element or text selection is dropped
+			on a valid drop target.</p>
+			<p>When this event occurs we want to moved the dragged element to new DOM location</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>e</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>drop event</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="modules_dragging.js.html">modules/dragging.js</a>, <a href="modules_dragging.js.html#line-126">line 126</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function private collapsible-symbol">
+			<h4 id=".handleDragStart" class="function private"><span class="signature-attribs">&lt;private, static> </span><span class="name">handleDragStart</span><span class="signature-params">( <span class="signature-param">e</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>The dragstart event is fired when the user starts dragging an
+			element or text selection.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>e</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>dragStart event</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="modules_dragging.js.html">modules/dragging.js</a>, <a href="modules_dragging.js.html#line-148">line 148</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function private collapsible-symbol">
+			<h4 id=".handleDragOver" class="function private"><span class="signature-attribs">&lt;private, static> </span><span class="name">handleDragOver</span><span class="signature-params">( <span class="signature-param">e</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>The dragover event is fired when an element or text selection is being
+			dragged over a valid drop target (every few hundred milliseconds). The event is fired
+			on the drop target(s).</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>e</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>dragover event</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="modules_dragging.js.html">modules/dragging.js</a>, <a href="modules_dragging.js.html#line-162">line 162</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function private collapsible-symbol">
+			<h4 id=".handleDragLeave" class="function private"><span class="signature-attribs">&lt;private, static> </span><span class="name">handleDragLeave</span><span class="signature-params">( <span class="signature-param">e</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>The dragleave event is fired when a dragged element or text selection
+			leaves a valid drop target.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>e</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>dragLeave event</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="modules_dragging.js.html">modules/dragging.js</a>, <a href="modules_dragging.js.html#line-180">line 180</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function private collapsible-symbol">
+			<h4 id=".handleDragEnd" class="function private"><span class="signature-attribs">&lt;private, static> </span><span class="name">handleDragEnd</span><span class="signature-params">( <span class="signature-param">e</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>The dragend event is fired when a drag operation is being
+			ended (by releasing a mouse button or hitting the escape key).</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>e</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>dragEnd event</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="modules_dragging.js.html">modules/dragging.js</a>, <a href="modules_dragging.js.html#line-191">line 191</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function private collapsible-symbol">
+			<h4 id=".isBefore" class="function private"><span class="signature-attribs">&lt;private, static> </span><span class="name">isBefore</span><span class="signature-params">( <span class="signature-param">a</span>, <span class="signature-param">b</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Test if some node exists before another in the DOM tree</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>a</code></td>
+							<td><span class="param-type">Element</span></td>
+							<td class="last">
+									<p>DOM Element</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>b</code></td>
+							<td><span class="param-type">Element</span></td>
+							<td class="last">
+									<p>DOM Element</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">boolean</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><ul>
+			<li>true if <code>a</code> exists before <code>b</code></li>
+			</ul></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="modules_dragging.js.html">modules/dragging.js</a>, <a href="modules_dragging.js.html#line-203">line 203</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function private collapsible-symbol">
+			<h4 id=".removeClasses" class="function private"><span class="signature-attribs">&lt;private, static> </span><span class="name">removeClasses</span><span class="signature-params">( <span class="signature-param">el</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function private  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Remove classes that indicate active dragging</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>el</code></td>
+							<td><span class="param-type">Element</span></td>
+							<td class="last">
+									<p>DOM node for which classes will be removed</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="modules_dragging.js.html">modules/dragging.js</a>, <a href="modules_dragging.js.html#line-218">line 218</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+									</dl>
+							</article>
+					</section>
+			</div>
+				<div class="col-md-3 side-content">
+					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
+				</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on Jun 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-129118591-7', 'https://oss.mobilefirst.me/shortcuts-for-chrome');
+			ga('send', 'pageview');
+		</script>
+	
+</body>
+</html>

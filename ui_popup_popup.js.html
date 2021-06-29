@@ -1,0 +1,287 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>ui/popup/popup.js</title>
+		<link rel="icon" type="image/png" href="favicon.png"/>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="data:text/css;base64,Zm9vdGVyewogICAgZGlzcGxheTpub25lIWltcG9ydGFudDsKfQ&#x3D;&#x3D;">
+			<link type="text/css" rel="stylesheet" href="data:text/css;base64,QGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9Um9ib3RvOndnaHRANDAwOzUwMDs3MDAmZGlzcGxheT1zd2FwJyk7Cgpib2R5IHsKICAgIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkOwogICAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTsKICAgIGZvbnQtc2l6ZTogMTZweDsKICAgIGxpbmUtaGVpZ2h0OiAxLjg7Cn0KCmJvZHksCi5zeW1ib2wtdGl0bGUgaDEsCi5zeW1ib2wtdGl0bGUgaDIsCi5zeW1ib2wtdGl0bGUgaDMsCi5zeW1ib2wtdGl0bGUgaDQsCi5zeW1ib2wtdGl0bGUgaDUgewogICAgZm9udC1mYW1pbHk6ICJSb2JvdG8iLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgIlNlZ29lIFVJIiwKICAgIFJvYm90bywgVWJ1bnR1LCAiSGVsdmV0aWNhIE5ldWUiLCBzYW5zLXNlcmlmICFpbXBvcnRhbnQ7Cn0KCi5yZWFkbWUtc2VjdGlvbiAuZmVhdHVyZSB7CiAgICBkaXNwbGF5OiBibG9jazsKICAgIG1hcmdpbjogNHJlbSAwOwp9CgoucmVhZG1lLXNlY3Rpb24gYSB7CiAgICBmb250LXdlaWdodDogYm9sZDsKfQoKLnRvYyAubmF2ID4gbGkgPiBhLAoudG9jIC5uYXYgLm5hdiA+IGxpID4gYSwKLmJhY2stdG8tdG9wIHsKICAgIGZvbnQtc2l6ZTogMWVtOwp9CgouY29udGVudCBwIHsKICAgIGxpbmUtaGVpZ2h0OiAxLjU7Cn0KCi5yZWFkbWUtc2VjdGlvbiBoMiwKLnJlYWRtZS1zZWN0aW9uIGgzLAoudHV0b3JpYWwtc2VjdGlvbiBoMiwKLnR1dG9yaWFsLXNlY3Rpb24gaDMgewogICAgbWFyZ2luLXRvcDogM3JlbTsKICAgIG1hcmdpbi1ib3R0b206IDJyZW07Cn0KCi50b2MgLnNpZ25hdHVyZS1uZXcsCi5wYWdlLWhlYWRlciAua2luZCwKLnRvYyAubmF2ID4gbGkgPiBhIC5uYW1lLXNpZ25hdHVyZSwKLnRvYyAubmF2ID4gbGkgPiBhIC5zaWduYXR1cmUtcGFyYW1zIHsKICAgIGRpc3BsYXk6IG5vbmU7Cn0KCi5zeW1ib2wtZGV0YWlscy5jb2xsYXBzaWJsZS1zeW1ib2wudHJhbnNpdGlvbiB7CiAgICB0cmFuc2l0aW9uOiBub25lOwp9Cgouc3ltYm9sLXRpdGxlIC5uYW1lLXN0cmluZywKLnN5bWJvbC10aXRsZSAuc2lnbmF0dXJlLXBhcmFtLAouc3ltYm9sLXRpdGxlIGg0LmV2ZW50LApjb2RlIHsKICAgIGNvbG9yOiAjQUEwMEZGOwp9Cgouc3ltYm9sLXRpdGxlIC5uYW1lLXN0cmluZywKLnN5bWJvbC10aXRsZSBoNC5ldmVudCwKY29kZSB7CiAgICBmb250LXdlaWdodDogYm9sZDsKICAgIGJhY2tncm91bmQ6ICNlZWU7Cn0KCnByZSBjb2RlIHsKICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7Cn0K">
+			<style>
+				.page-header,
+				pre.code-toolbar > .toolbar:hover {
+					background-color: #3D5AFE;
+				}
+				.callout-primary,
+				.toc .nav > li > a:hover,
+				.toc .nav > li > a:focus,
+				.toc .nav > li.active > a,
+				.toc .nav > li.active > a:hover,
+				.toc .nav > li.active > a:focus,
+				pre.code-toolbar > .toolbar:hover {
+					border-left-color: #3D5AFE;
+				}
+				pre.code-toolbar > .toolbar:hover {
+					border-bottom-color: #3D5AFE;
+				}
+				.callout-primary h5,
+				.symbol-title.collapsible-symbol .toggle-icon,
+				.breadcrumb li a,
+				.toc .nav > li > a:hover,
+				.toc .nav > li > a:focus,
+				.toc .nav > li.active > a,
+				.toc .nav > li.active > a:hover,
+				.toc .nav > li.active > a:focus {
+					color: #3D5AFE;
+				}
+			</style>
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":"true","dateFormat":"MMM YYYY","systemName":"Shortcuts for Chrome","systemSummary":"Source code documentation","systemLogo":"","systemColor":"#3D5AFE","navMembers":[{"kind":"namespace","title":"Constants","summary":"Application constants"},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"tutorial","title":"Documents","summary":"All other documents."}],"footer":"","copyright":"","linenums":"true","collapseSymbols":"true","inverseNav":"false","inlineNav":true,"outputSourceFiles":"true","sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":"true","showTableOfContents":"true","showAccessFilter":"true","analytics":{"ua":"UA-129118591-7","domain":"https://oss.mobilefirst.me/shortcuts-for-chrome"},"methodHeadingReturns":false,"sort":"linenum, longname, version, since","search":false,"favicon":"favicon.png","stylesheets":["data:text/css;base64,Zm9vdGVyewogICAgZGlzcGxheTpub25lIWltcG9ydGFudDsKfQ==","data:text/css;base64,QGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9Um9ib3RvOndnaHRANDAwOzUwMDs3MDAmZGlzcGxheT1zd2FwJyk7Cgpib2R5IHsKICAgIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkOwogICAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTsKICAgIGZvbnQtc2l6ZTogMTZweDsKICAgIGxpbmUtaGVpZ2h0OiAxLjg7Cn0KCmJvZHksCi5zeW1ib2wtdGl0bGUgaDEsCi5zeW1ib2wtdGl0bGUgaDIsCi5zeW1ib2wtdGl0bGUgaDMsCi5zeW1ib2wtdGl0bGUgaDQsCi5zeW1ib2wtdGl0bGUgaDUgewogICAgZm9udC1mYW1pbHk6ICJSb2JvdG8iLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgIlNlZ29lIFVJIiwKICAgIFJvYm90bywgVWJ1bnR1LCAiSGVsdmV0aWNhIE5ldWUiLCBzYW5zLXNlcmlmICFpbXBvcnRhbnQ7Cn0KCi5yZWFkbWUtc2VjdGlvbiAuZmVhdHVyZSB7CiAgICBkaXNwbGF5OiBibG9jazsKICAgIG1hcmdpbjogNHJlbSAwOwp9CgoucmVhZG1lLXNlY3Rpb24gYSB7CiAgICBmb250LXdlaWdodDogYm9sZDsKfQoKLnRvYyAubmF2ID4gbGkgPiBhLAoudG9jIC5uYXYgLm5hdiA+IGxpID4gYSwKLmJhY2stdG8tdG9wIHsKICAgIGZvbnQtc2l6ZTogMWVtOwp9CgouY29udGVudCBwIHsKICAgIGxpbmUtaGVpZ2h0OiAxLjU7Cn0KCi5yZWFkbWUtc2VjdGlvbiBoMiwKLnJlYWRtZS1zZWN0aW9uIGgzLAoudHV0b3JpYWwtc2VjdGlvbiBoMiwKLnR1dG9yaWFsLXNlY3Rpb24gaDMgewogICAgbWFyZ2luLXRvcDogM3JlbTsKICAgIG1hcmdpbi1ib3R0b206IDJyZW07Cn0KCi50b2MgLnNpZ25hdHVyZS1uZXcsCi5wYWdlLWhlYWRlciAua2luZCwKLnRvYyAubmF2ID4gbGkgPiBhIC5uYW1lLXNpZ25hdHVyZSwKLnRvYyAubmF2ID4gbGkgPiBhIC5zaWduYXR1cmUtcGFyYW1zIHsKICAgIGRpc3BsYXk6IG5vbmU7Cn0KCi5zeW1ib2wtZGV0YWlscy5jb2xsYXBzaWJsZS1zeW1ib2wudHJhbnNpdGlvbiB7CiAgICB0cmFuc2l0aW9uOiBub25lOwp9Cgouc3ltYm9sLXRpdGxlIC5uYW1lLXN0cmluZywKLnN5bWJvbC10aXRsZSAuc2lnbmF0dXJlLXBhcmFtLAouc3ltYm9sLXRpdGxlIGg0LmV2ZW50LApjb2RlIHsKICAgIGNvbG9yOiAjQUEwMEZGOwp9Cgouc3ltYm9sLXRpdGxlIC5uYW1lLXN0cmluZywKLnN5bWJvbC10aXRsZSBoNC5ldmVudCwKY29kZSB7CiAgICBmb250LXdlaWdodDogYm9sZDsKICAgIGJhY2tncm91bmQ6ICNlZWU7Cn0KCnByZSBjb2RlIHsKICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7Cn0K"],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					Shortcuts for Chrome
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+							<li><a href="list_module.html">Modules</a></li>
+							<li><a href="list_namespace.html">Constants</a></li>
+							<li><a href="list_tutorial.html">Documents</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">ui/popup/popup.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">/** * * * * * * * * * * * * * * * * * * * *
+ * Shortcuts for Chrome
+ * Custom navigation menu for Chrome browser
+ *
+ * Author: Mobile First LLC
+ * Website: https://mobilefirst.me
+ *
+ * @description
+ * Popup window script implementation
+ * * * * * * * * * * * * * * * * * * * * */
+
+import {MenuLinks} from '../../links.json';
+import Storage from '../../modules/storage';
+import RecentLinks from '../../modules/recent';
+import Menu from '../menu/menu';
+
+/**
+ * @module
+ * @name Popup
+ * @description This is the main class for the popup window that shows
+ * when user clicks extension icon. This class is responsible for:
+ *
+ * - saving/restoring persistent data and
+ * - rendering the menu panel
+ *
+ * This popup view can easily be extended to display other content, but
+ * currently it renders the menu panel only.
+ */
+export default class Popup {
+
+    /**
+     * @constructor
+     * @name Popup
+     * @description instantiate Popup window
+     */
+    constructor() {
+        Popup.activeView = new Menu(
+            Popup.getLinks,
+            Popup.onPinToggle,
+            Popup.onPinOrderChange,
+            Popup.getRecent);
+
+        // load user settings and draw initial view
+        RecentLinks.getRecent(recentList => {
+            Popup.recent = recentList;
+            Storage.get([Storage.keys.pinned], items => {
+                Popup.pinned = items[Storage.keys.pinned] || [];
+                Popup.drawCurrentView();
+            });
+        });
+    }
+
+    /**
+     * @description Get pinned links
+     * @returns {Array.&lt;String>}
+     */
+    static get pinned() {
+        return this._pinned;
+    }
+
+    /**
+     * @description Get unpinned links
+     * @returns {Array.&lt;String>}
+     */
+    static get unpinned() {
+        return MenuLinks.filter(link =>
+            Popup.pinned.indexOf(link) &lt; 0);
+    }
+
+    static set pinned(value) {
+        this._pinned = value;
+    }
+
+    /**
+     * @description Get recent links
+     * @returns {Array.&lt;String>}
+     */
+    static get recent() {
+        return this._recent;
+    }
+
+    static set recent(value) {
+        this._recent = value;
+    }
+
+    /**
+     * @description Get the view that is currently active in the Popup
+     * @returns {Element}
+     */
+    static get activeView() {
+        return this._activeView;
+    }
+
+    static set activeView(view) {
+        this._activeView = view;
+    }
+
+    /**
+     * @static
+     * @description
+     * Get DOM element where to render content.
+     * This will also clear all existing children from that element,
+     * meaning you can always assume this element is empty.
+     */
+    static get renderTarget() {
+        let tmp = document.body;
+
+        while (tmp.firstChild) {
+            tmp.removeChild(tmp.firstChild);
+        }
+        return tmp;
+    }
+
+    /**
+     * @description Draw the currently active view in the render target.
+     * @static
+     */
+    static drawCurrentView() {
+        let wrapper = Popup.renderTarget;
+
+        wrapper.setAttribute('id', Popup.activeView.name);
+        wrapper.appendChild(Popup.activeView.render());
+    }
+
+    /**
+     * @description Handler for when user pins/unpins a link.
+     * @param {String} key - id of the pin that was clicked
+     * @static
+     */
+    static onPinToggle(key) {
+        const index = Popup.pinned.indexOf(key);
+
+        if (index &lt; 0) {
+            Popup.pinned.push(key);
+        } else {
+            Popup.pinned.splice(index, 1);
+        }
+
+        Popup.onPinOrderChange(Popup.pinned, Popup.drawCurrentView);
+    }
+
+    /**
+     * @description Handler for when user rearranges pins, update and save new pin order.
+     * @param {Array&lt;String>} newOrder - list of link ids and their new order
+     * @param {function?} callback - callback function (optional); specify this callback
+     * if you need to perform some action after new order has been persisted.
+     * @static
+     */
+    static onPinOrderChange(newOrder, callback) {
+        Popup.pinned = newOrder;
+        Storage.save(Storage.keys.pinned, Popup.pinned, callback);
+    }
+
+    /**
+     * @description Get menu links
+     * @returns {{pinned: Array.&lt;String>, unpinned: Array.&lt;String>}}
+     * @static
+     */
+    static getLinks() {
+        return {
+            pinned: Popup.pinned,
+            unpinned: Popup.unpinned
+        };
+    }
+
+    /**
+     * @description Get recently used links
+     * @returns {Array.&lt;String>}
+     * @static
+     */
+    static getRecent() {
+        return Popup.recent.filter(x =>
+            Popup.pinned.indexOf(x) &lt; 0);
+    }
+}
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on Jun 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-129118591-7', 'https://oss.mobilefirst.me/shortcuts-for-chrome');
+			ga('send', 'pageview');
+		</script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->

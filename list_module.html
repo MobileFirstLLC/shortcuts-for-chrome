@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>Modules</title>
+		<link rel="icon" type="image/png" href="favicon.png"/>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="data:text/css;base64,Zm9vdGVyewogICAgZGlzcGxheTpub25lIWltcG9ydGFudDsKfQ&#x3D;&#x3D;">
+			<link type="text/css" rel="stylesheet" href="data:text/css;base64,QGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9Um9ib3RvOndnaHRANDAwOzUwMDs3MDAmZGlzcGxheT1zd2FwJyk7Cgpib2R5IHsKICAgIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkOwogICAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTsKICAgIGZvbnQtc2l6ZTogMTZweDsKICAgIGxpbmUtaGVpZ2h0OiAxLjg7Cn0KCmJvZHksCi5zeW1ib2wtdGl0bGUgaDEsCi5zeW1ib2wtdGl0bGUgaDIsCi5zeW1ib2wtdGl0bGUgaDMsCi5zeW1ib2wtdGl0bGUgaDQsCi5zeW1ib2wtdGl0bGUgaDUgewogICAgZm9udC1mYW1pbHk6ICJSb2JvdG8iLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgIlNlZ29lIFVJIiwKICAgIFJvYm90bywgVWJ1bnR1LCAiSGVsdmV0aWNhIE5ldWUiLCBzYW5zLXNlcmlmICFpbXBvcnRhbnQ7Cn0KCi5yZWFkbWUtc2VjdGlvbiAuZmVhdHVyZSB7CiAgICBkaXNwbGF5OiBibG9jazsKICAgIG1hcmdpbjogNHJlbSAwOwp9CgoucmVhZG1lLXNlY3Rpb24gYSB7CiAgICBmb250LXdlaWdodDogYm9sZDsKfQoKLnRvYyAubmF2ID4gbGkgPiBhLAoudG9jIC5uYXYgLm5hdiA+IGxpID4gYSwKLmJhY2stdG8tdG9wIHsKICAgIGZvbnQtc2l6ZTogMWVtOwp9CgouY29udGVudCBwIHsKICAgIGxpbmUtaGVpZ2h0OiAxLjU7Cn0KCi5yZWFkbWUtc2VjdGlvbiBoMiwKLnJlYWRtZS1zZWN0aW9uIGgzLAoudHV0b3JpYWwtc2VjdGlvbiBoMiwKLnR1dG9yaWFsLXNlY3Rpb24gaDMgewogICAgbWFyZ2luLXRvcDogM3JlbTsKICAgIG1hcmdpbi1ib3R0b206IDJyZW07Cn0KCi50b2MgLnNpZ25hdHVyZS1uZXcsCi5wYWdlLWhlYWRlciAua2luZCwKLnRvYyAubmF2ID4gbGkgPiBhIC5uYW1lLXNpZ25hdHVyZSwKLnRvYyAubmF2ID4gbGkgPiBhIC5zaWduYXR1cmUtcGFyYW1zIHsKICAgIGRpc3BsYXk6IG5vbmU7Cn0KCi5zeW1ib2wtZGV0YWlscy5jb2xsYXBzaWJsZS1zeW1ib2wudHJhbnNpdGlvbiB7CiAgICB0cmFuc2l0aW9uOiBub25lOwp9Cgouc3ltYm9sLXRpdGxlIC5uYW1lLXN0cmluZywKLnN5bWJvbC10aXRsZSAuc2lnbmF0dXJlLXBhcmFtLAouc3ltYm9sLXRpdGxlIGg0LmV2ZW50LApjb2RlIHsKICAgIGNvbG9yOiAjQUEwMEZGOwp9Cgouc3ltYm9sLXRpdGxlIC5uYW1lLXN0cmluZywKLnN5bWJvbC10aXRsZSBoNC5ldmVudCwKY29kZSB7CiAgICBmb250LXdlaWdodDogYm9sZDsKICAgIGJhY2tncm91bmQ6ICNlZWU7Cn0KCnByZSBjb2RlIHsKICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7Cn0K">
+			<style>
+				.page-header,
+				pre.code-toolbar > .toolbar:hover {
+					background-color: #3D5AFE;
+				}
+				.callout-primary,
+				.toc .nav > li > a:hover,
+				.toc .nav > li > a:focus,
+				.toc .nav > li.active > a,
+				.toc .nav > li.active > a:hover,
+				.toc .nav > li.active > a:focus,
+				pre.code-toolbar > .toolbar:hover {
+					border-left-color: #3D5AFE;
+				}
+				pre.code-toolbar > .toolbar:hover {
+					border-bottom-color: #3D5AFE;
+				}
+				.callout-primary h5,
+				.symbol-title.collapsible-symbol .toggle-icon,
+				.breadcrumb li a,
+				.toc .nav > li > a:hover,
+				.toc .nav > li > a:focus,
+				.toc .nav > li.active > a,
+				.toc .nav > li.active > a:hover,
+				.toc .nav > li.active > a:focus {
+					color: #3D5AFE;
+				}
+			</style>
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":"true","dateFormat":"MMM YYYY","systemName":"Shortcuts for Chrome","systemSummary":"Source code documentation","systemLogo":"","systemColor":"#3D5AFE","navMembers":[{"kind":"namespace","title":"Constants","summary":"Application constants"},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"tutorial","title":"Documents","summary":"All other documents."}],"footer":"","copyright":"","linenums":"true","collapseSymbols":"true","inverseNav":"false","inlineNav":true,"outputSourceFiles":"true","sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":"true","showTableOfContents":"true","showAccessFilter":"true","analytics":{"ua":"UA-129118591-7","domain":"https://oss.mobilefirst.me/shortcuts-for-chrome"},"methodHeadingReturns":false,"sort":"linenum, longname, version, since","search":false,"favicon":"favicon.png","stylesheets":["data:text/css;base64,Zm9vdGVyewogICAgZGlzcGxheTpub25lIWltcG9ydGFudDsKfQ==","data:text/css;base64,QGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9Um9ib3RvOndnaHRANDAwOzUwMDs3MDAmZGlzcGxheT1zd2FwJyk7Cgpib2R5IHsKICAgIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkOwogICAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTsKICAgIGZvbnQtc2l6ZTogMTZweDsKICAgIGxpbmUtaGVpZ2h0OiAxLjg7Cn0KCmJvZHksCi5zeW1ib2wtdGl0bGUgaDEsCi5zeW1ib2wtdGl0bGUgaDIsCi5zeW1ib2wtdGl0bGUgaDMsCi5zeW1ib2wtdGl0bGUgaDQsCi5zeW1ib2wtdGl0bGUgaDUgewogICAgZm9udC1mYW1pbHk6ICJSb2JvdG8iLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgIlNlZ29lIFVJIiwKICAgIFJvYm90bywgVWJ1bnR1LCAiSGVsdmV0aWNhIE5ldWUiLCBzYW5zLXNlcmlmICFpbXBvcnRhbnQ7Cn0KCi5yZWFkbWUtc2VjdGlvbiAuZmVhdHVyZSB7CiAgICBkaXNwbGF5OiBibG9jazsKICAgIG1hcmdpbjogNHJlbSAwOwp9CgoucmVhZG1lLXNlY3Rpb24gYSB7CiAgICBmb250LXdlaWdodDogYm9sZDsKfQoKLnRvYyAubmF2ID4gbGkgPiBhLAoudG9jIC5uYXYgLm5hdiA+IGxpID4gYSwKLmJhY2stdG8tdG9wIHsKICAgIGZvbnQtc2l6ZTogMWVtOwp9CgouY29udGVudCBwIHsKICAgIGxpbmUtaGVpZ2h0OiAxLjU7Cn0KCi5yZWFkbWUtc2VjdGlvbiBoMiwKLnJlYWRtZS1zZWN0aW9uIGgzLAoudHV0b3JpYWwtc2VjdGlvbiBoMiwKLnR1dG9yaWFsLXNlY3Rpb24gaDMgewogICAgbWFyZ2luLXRvcDogM3JlbTsKICAgIG1hcmdpbi1ib3R0b206IDJyZW07Cn0KCi50b2MgLnNpZ25hdHVyZS1uZXcsCi5wYWdlLWhlYWRlciAua2luZCwKLnRvYyAubmF2ID4gbGkgPiBhIC5uYW1lLXNpZ25hdHVyZSwKLnRvYyAubmF2ID4gbGkgPiBhIC5zaWduYXR1cmUtcGFyYW1zIHsKICAgIGRpc3BsYXk6IG5vbmU7Cn0KCi5zeW1ib2wtZGV0YWlscy5jb2xsYXBzaWJsZS1zeW1ib2wudHJhbnNpdGlvbiB7CiAgICB0cmFuc2l0aW9uOiBub25lOwp9Cgouc3ltYm9sLXRpdGxlIC5uYW1lLXN0cmluZywKLnN5bWJvbC10aXRsZSAuc2lnbmF0dXJlLXBhcmFtLAouc3ltYm9sLXRpdGxlIGg0LmV2ZW50LApjb2RlIHsKICAgIGNvbG9yOiAjQUEwMEZGOwp9Cgouc3ltYm9sLXRpdGxlIC5uYW1lLXN0cmluZywKLnN5bWJvbC10aXRsZSBoNC5ldmVudCwKY29kZSB7CiAgICBmb250LXdlaWdodDogYm9sZDsKICAgIGJhY2tncm91bmQ6ICNlZWU7Cn0KCnByZSBjb2RlIHsKICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7Cn0K"],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
+			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					Shortcuts for Chrome
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+							<li><a href="list_module.html">Modules</a></li>
+							<li><a href="list_namespace.html">Constants</a></li>
+							<li><a href="list_tutorial.html">Documents</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">list</span>
+				<h1><span class="name">Modules</span></h1>
+				<div class="summary"><p>All documented modules.</p></div>			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-9 main-content">
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li class="active">Modules</li>
+						</ol>
+					<section>
+		<h2><span class="name">Modules</span></h2>
+		<article class="secondary">
+				<dl class="symbol">
+						
+						<dt class="symbol-title module public">
+			<h4 id="Background" class="module public"><a href="module-Background.html"><span class="name">Background</span></a></h4>
+</dt>
+<dd class="symbol-details module public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title module public">
+			<h4 id="BackgroundApi" class="module public"><a href="module-BackgroundApi.html"><span class="name">BackgroundApi</span></a></h4>
+</dt>
+<dd class="symbol-details module public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title module public">
+			<h4 id="CenteredPopup" class="module public"><a href="module-CenteredPopup.html"><span class="name">CenteredPopup</span></a></h4>
+</dt>
+<dd class="symbol-details module public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title module public">
+			<h4 id="ContextMenu" class="module public"><a href="module-ContextMenu.html"><span class="name">ContextMenu</span></a></h4>
+</dt>
+<dd class="symbol-details module public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title module public">
+			<h4 id="Dragging" class="module public"><a href="module-Dragging.html"><span class="name">Dragging</span></a></h4>
+</dt>
+<dd class="symbol-details module public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title module public">
+			<h4 id="Helpers" class="module public"><a href="module-Helpers.html"><span class="name">Helpers</span></a></h4>
+</dt>
+<dd class="symbol-details module public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title module public">
+			<h4 id="Menu" class="module public"><a href="module-Menu.html"><span class="name">Menu</span></a></h4>
+</dt>
+<dd class="symbol-details module public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title module public">
+			<h4 id="Popup" class="module public"><a href="module-Popup.html"><span class="name">Popup</span></a></h4>
+</dt>
+<dd class="symbol-details module public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title module public">
+			<h4 id="RecentLinks" class="module public"><a href="module-RecentLinks.html"><span class="name">RecentLinks</span></a></h4>
+</dt>
+<dd class="symbol-details module public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title module public">
+			<h4 id="Storage" class="module public"><a href="module-Storage.html"><span class="name">Storage</span></a></h4>
+</dt>
+<dd class="symbol-details module public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title module public">
+			<h4 id="UpdateHandler" class="module public"><a href="module-UpdateHandler.html"><span class="name">UpdateHandler</span></a></h4>
+</dt>
+<dd class="symbol-details module public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+				</dl>
+		</article>
+					</section>
+			</div>
+				<div class="col-md-3 side-content">
+					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
+				</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on Jun 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-129118591-7', 'https://oss.mobilefirst.me/shortcuts-for-chrome');
+			ga('send', 'pageview');
+		</script>
+	
+</body>
+</html>

@@ -1,0 +1,5253 @@
+window.lunrData = {
+  "index": {
+    "version": "1.0.0",
+    "fields": [
+      {
+        "name": "longname",
+        "boost": 1000
+      },
+      {
+        "name": "name",
+        "boost": 500
+      },
+      {
+        "name": "tags",
+        "boost": 300
+      },
+      {
+        "name": "kind",
+        "boost": 110
+      },
+      {
+        "name": "title",
+        "boost": 100
+      },
+      {
+        "name": "summary",
+        "boost": 70
+      },
+      {
+        "name": "description",
+        "boost": 50
+      },
+      {
+        "name": "body",
+        "boost": 1
+      }
+    ],
+    "ref": "id",
+    "tokenizer": "default",
+    "documentStore": {
+      "store": {
+        "index.html": [
+          "chrome",
+          "code",
+          "document",
+          "index",
+          "readm",
+          "shortcut",
+          "sourc"
+        ],
+        "global.html": [
+          "document",
+          "global"
+        ],
+        "undefined": [
+          "polici",
+          "privaci",
+          "tutori",
+          "user"
+        ],
+        "list_namespace.html": [
+          "applic",
+          "constant",
+          "list",
+          "list:namespac"
+        ],
+        "list_module.html": [
+          "document",
+          "list",
+          "list:modul",
+          "modul"
+        ],
+        "list_tutorial.html": [
+          "document",
+          "list",
+          "list:tutori"
+        ],
+        "module-UpdateHandler-UpdateHandler.html": [
+          "class",
+          "handler",
+          "instanti",
+          "module:updatehandler~updatehandl",
+          "object",
+          "regist",
+          "updatehandl",
+          "updatehandler~updatehandl"
+        ],
+        "module-BackgroundApi-BackgroundApi.html": [
+          "api",
+          "background",
+          "backgroundapi",
+          "backgroundapi~backgroundapi",
+          "between",
+          "chrome",
+          "class",
+          "detail",
+          "differ",
+          "extens",
+          "handl",
+          "instanti",
+          "listen",
+          "messag",
+          "module:backgroundapi~backgroundapi",
+          "new",
+          "onmessag",
+          "part",
+          "pass",
+          "regist",
+          "see"
+        ],
+        "module-ContextMenu-ContextMenu.html": [
+          "class",
+          "context",
+          "contextmenu",
+          "contextmenu~contextmenu",
+          "initi",
+          "menu",
+          "module:contextmenu~contextmenu"
+        ],
+        "module-Popup-Popup.html": [
+          "class",
+          "instanti",
+          "module:popup~popup",
+          "popup",
+          "popup~popup",
+          "window"
+        ],
+        "module-Dragging-Dragging.html": [
+          "children",
+          "class",
+          "creat",
+          "drag",
+          "dragging~drag",
+          "drop",
+          "element",
+          "module:dragging~drag",
+          "whose"
+        ],
+        "module-Menu-Menu.html": [
+          "class",
+          "menu",
+          "menu~menu",
+          "module:menu~menu"
+        ],
+        "module-Background-Background.html": [
+          "background",
+          "background~background",
+          "behavior",
+          "bind",
+          "class",
+          "instanti",
+          "module:background~background"
+        ],
+        "module-Storage.html": [
+          "applic",
+          "data",
+          "modul",
+          "module:storag",
+          "persist",
+          "storag"
+        ],
+        "module-CenteredPopup.html": [
+          "centeredpopup",
+          "middl",
+          "modul",
+          "module:centeredpopup",
+          "open",
+          "popup",
+          "user'",
+          "util",
+          "viewport",
+          "window"
+        ],
+        "module-Dragging.html": [
+          "childnod",
+          "dom",
+          "drag",
+          "draggbl",
+          "drop",
+          "element",
+          "html5",
+          "make",
+          "modul",
+          "module:drag",
+          "nativ",
+          "us"
+        ],
+        "module-UpdateHandler.html": [
+          "action",
+          "extens",
+          "handler",
+          "instal",
+          "instanti",
+          "modul",
+          "module:updatehandl",
+          "object",
+          "occur",
+          "regist",
+          "updat",
+          "updatehandl"
+        ],
+        "module-Helpers.html": [
+          "helper",
+          "menu",
+          "method",
+          "modul",
+          "module:help",
+          "panel"
+        ],
+        "module-BackgroundApi.html": [
+          "backgroundapi",
+          "behavior",
+          "bind",
+          "browser",
+          "context",
+          "incom",
+          "instanti",
+          "listen",
+          "messag",
+          "modul",
+          "module:backgroundapi",
+          "new"
+        ],
+        "module-ContextMenu.html": [
+          "action",
+          "activ",
+          "add",
+          "address",
+          "bar",
+          "browser",
+          "chrome",
+          "click",
+          "context",
+          "contextmenu",
+          "custom",
+          "extens",
+          "function",
+          "icon",
+          "inmanifest.json",
+          "instanti",
+          "menu",
+          "modul",
+          "module:contextmenu",
+          "new",
+          "next",
+          "option",
+          "permiss",
+          "requir",
+          "right"
+        ],
+        "module-RecentLinks.html": [
+          "base",
+          "becom",
+          "config",
+          "link",
+          "list",
+          "modul",
+          "module:recentlink",
+          "recent",
+          "recentlink",
+          "remov",
+          "stale",
+          "time",
+          "us"
+        ],
+        "module-Menu.html": [
+          "add",
+          "call",
+          "creat",
+          "display",
+          "dom",
+          "drawn",
+          "dynam",
+          "element",
+          "instanti",
+          "link",
+          "list",
+          "menu",
+          "menuobj.rend",
+          "modul",
+          "module:menu",
+          "panel",
+          "parent",
+          "programmat",
+          "render",
+          "return",
+          "show",
+          "tree",
+          "upon",
+          "user"
+        ],
+        "module-Background.html": [
+          "action",
+          "api",
+          "background",
+          "bind",
+          "context",
+          "enabl",
+          "event",
+          "extens",
+          "function",
+          "handler",
+          "happen",
+          "initi",
+          "instanti",
+          "menu",
+          "messag",
+          "modul",
+          "module:background",
+          "new",
+          "pass",
+          "respons",
+          "set",
+          "up",
+          "updatehandl"
+        ],
+        "module-Popup.html": [
+          "class",
+          "click",
+          "content",
+          "current",
+          "data",
+          "display",
+          "easili",
+          "extend",
+          "extens",
+          "icon",
+          "main",
+          "menu",
+          "modul",
+          "module:popup",
+          "panel",
+          "persist",
+          "popup",
+          "render",
+          "respons",
+          "saving/restor",
+          "show",
+          "user",
+          "view",
+          "window"
+        ],
+        "AppConfig.html": [
+          "appconfig",
+          "applic",
+          "config",
+          "namespac",
+          "variou"
+        ],
+        "AppConfig.html#.recentIntervalMillis": [
+          "appconfig.recentintervalmilli",
+          "click",
+          "consid",
+          "last",
+          "link",
+          "lt;static&gt",
+          "member",
+          "millisecond",
+          "number",
+          "recent",
+          "recentintervalmilli",
+          "us",
+          "within",
+          "x"
+        ],
+        "SVGIcons.html": [
+          "app",
+          "icon",
+          "namespac",
+          "path",
+          "svg",
+          "svgicon"
+        ],
+        "SVGIcons.html#.unpinnedLink": [
+          "icon",
+          "link",
+          "lt;static&gt",
+          "member",
+          "menu",
+          "svg",
+          "svgicons.unpinnedlink",
+          "unpin",
+          "unpinnedlink"
+        ],
+        "SVGIcons.html#.activePin": [
+          "activepin",
+          "icon",
+          "link",
+          "lt;static&gt",
+          "member",
+          "menu",
+          "pin",
+          "svg",
+          "svgicons.activepin"
+        ],
+        "ContextMenuOptions.html": [
+          "context",
+          "contextmenuopt",
+          "display",
+          "link",
+          "list",
+          "menu",
+          "namespac",
+          "new",
+          "open",
+          "option",
+          "otherwis",
+          "size",
+          "specifi",
+          "tab",
+          "width/height",
+          "window",
+          "ww/wh"
+        ]
+      },
+      "length": 30
+    },
+    "tokenStore": {
+      "root": {
+        "docs": {},
+        "c": {
+          "docs": {},
+          "h": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "m": {
+                  "docs": {},
+                  "e": {
+                    "docs": {
+                      "index.html": {
+                        "ref": "index.html",
+                        "tf": 300
+                      },
+                      "module-BackgroundApi-BackgroundApi.html": {
+                        "ref": "module-BackgroundApi-BackgroundApi.html",
+                        "tf": 2.5
+                      },
+                      "module-ContextMenu.html": {
+                        "ref": "module-ContextMenu.html",
+                        "tf": 2
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "a": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "g": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "l": {
+                      "docs": {},
+                      "o": {
+                        "docs": {},
+                        "g": {
+                          "docs": {
+                            "undefined": {
+                              "tf": 1823.3333333333333
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "i": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "d": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "n": {
+                        "docs": {
+                          "module-Dragging-Dragging.html": {
+                            "ref": "module-Dragging-Dragging.html",
+                            "tf": 8.333333333333332
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "n": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "d": {
+                        "docs": {
+                          "module-Dragging.html": {
+                            "ref": "module-Dragging.html",
+                            "tf": 4.545454545454546
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "index.html": {
+                    "ref": "index.html",
+                    "tf": 23.333333333333332
+                  }
+                }
+              }
+            },
+            "n": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "list_namespace.html": {
+                            "ref": "list_namespace.html",
+                            "tf": 635
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "i": {
+                  "docs": {},
+                  "d": {
+                    "docs": {
+                      "AppConfig.html#.recentIntervalMillis": {
+                        "ref": "AppConfig.html#.recentIntervalMillis",
+                        "tf": 5.555555555555555
+                      }
+                    }
+                  }
+                }
+              },
+              "t": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "x": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "module-ContextMenu-ContextMenu.html": {
+                          "ref": "module-ContextMenu-ContextMenu.html",
+                          "tf": 16.666666666666664
+                        },
+                        "module-BackgroundApi.html": {
+                          "ref": "module-BackgroundApi.html",
+                          "tf": 5
+                        },
+                        "module-ContextMenu.html": {
+                          "ref": "module-ContextMenu.html",
+                          "tf": 2
+                        },
+                        "module-Background.html": {
+                          "ref": "module-Background.html",
+                          "tf": 3.571428571428571
+                        },
+                        "ContextMenuOptions.html": {
+                          "ref": "ContextMenuOptions.html",
+                          "tf": 2.7777777777777777
+                        }
+                      },
+                      "m": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "n": {
+                            "docs": {},
+                            "u": {
+                              "docs": {
+                                "module-ContextMenu-ContextMenu.html": {
+                                  "ref": "module-ContextMenu-ContextMenu.html",
+                                  "tf": 500
+                                },
+                                "module-ContextMenu.html": {
+                                  "ref": "module-ContextMenu.html",
+                                  "tf": 604
+                                }
+                              },
+                              "~": {
+                                "docs": {},
+                                "c": {
+                                  "docs": {},
+                                  "o": {
+                                    "docs": {},
+                                    "n": {
+                                      "docs": {},
+                                      "t": {
+                                        "docs": {},
+                                        "e": {
+                                          "docs": {},
+                                          "x": {
+                                            "docs": {},
+                                            "t": {
+                                              "docs": {},
+                                              "m": {
+                                                "docs": {},
+                                                "e": {
+                                                  "docs": {},
+                                                  "n": {
+                                                    "docs": {},
+                                                    "u": {
+                                                      "docs": {
+                                                        "module-ContextMenu-ContextMenu.html": {
+                                                          "ref": "module-ContextMenu-ContextMenu.html",
+                                                          "tf": 100
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "o": {
+                                "docs": {},
+                                "p": {
+                                  "docs": {},
+                                  "t": {
+                                    "docs": {
+                                      "ContextMenuOptions.html": {
+                                        "ref": "ContextMenuOptions.html",
+                                        "tf": 1900
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "module-Popup.html": {
+                          "ref": "module-Popup.html",
+                          "tf": 1.8518518518518516
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "f": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "g": {
+                    "docs": {
+                      "module-RecentLinks.html": {
+                        "ref": "module-RecentLinks.html",
+                        "tf": 4.166666666666666
+                      },
+                      "AppConfig.html": {
+                        "ref": "AppConfig.html",
+                        "tf": 16.666666666666664
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "l": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "s": {
+                  "docs": {
+                    "module-UpdateHandler-UpdateHandler.html": {
+                      "ref": "module-UpdateHandler-UpdateHandler.html",
+                      "tf": 110
+                    },
+                    "module-BackgroundApi-BackgroundApi.html": {
+                      "ref": "module-BackgroundApi-BackgroundApi.html",
+                      "tf": 110
+                    },
+                    "module-ContextMenu-ContextMenu.html": {
+                      "ref": "module-ContextMenu-ContextMenu.html",
+                      "tf": 110
+                    },
+                    "module-Popup-Popup.html": {
+                      "ref": "module-Popup-Popup.html",
+                      "tf": 110
+                    },
+                    "module-Dragging-Dragging.html": {
+                      "ref": "module-Dragging-Dragging.html",
+                      "tf": 110
+                    },
+                    "module-Menu-Menu.html": {
+                      "ref": "module-Menu-Menu.html",
+                      "tf": 110
+                    },
+                    "module-Background-Background.html": {
+                      "ref": "module-Background-Background.html",
+                      "tf": 110
+                    },
+                    "module-Popup.html": {
+                      "ref": "module-Popup.html",
+                      "tf": 3.7037037037037033
+                    }
+                  }
+                }
+              }
+            },
+            "i": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "k": {
+                  "docs": {
+                    "module-ContextMenu.html": {
+                      "ref": "module-ContextMenu.html",
+                      "tf": 2
+                    },
+                    "module-Popup.html": {
+                      "ref": "module-Popup.html",
+                      "tf": 1.8518518518518516
+                    },
+                    "AppConfig.html#.recentIntervalMillis": {
+                      "ref": "AppConfig.html#.recentIntervalMillis",
+                      "tf": 5.555555555555555
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "module-Dragging-Dragging.html": {
+                      "ref": "module-Dragging-Dragging.html",
+                      "tf": 8.333333333333332
+                    },
+                    "module-Menu.html": {
+                      "ref": "module-Menu.html",
+                      "tf": 1.6129032258064515
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "d": {
+                        "docs": {},
+                        "p": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "p": {
+                              "docs": {},
+                              "u": {
+                                "docs": {},
+                                "p": {
+                                  "docs": {
+                                    "module-CenteredPopup.html": {
+                                      "ref": "module-CenteredPopup.html",
+                                      "tf": 600
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "m": {
+                    "docs": {
+                      "module-ContextMenu.html": {
+                        "ref": "module-ContextMenu.html",
+                        "tf": 2
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "r": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "module-Popup.html": {
+                          "ref": "module-Popup.html",
+                          "tf": 1.8518518518518516
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "l": {
+                "docs": {
+                  "module-Menu.html": {
+                    "ref": "module-Menu.html",
+                    "tf": 3.225806451612903
+                  }
+                }
+              }
+            }
+          }
+        },
+        "d": {
+          "docs": {},
+          "o": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "m": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "index.html": {
+                            "ref": "index.html",
+                            "tf": 23.333333333333332
+                          },
+                          "global.html": {
+                            "ref": "global.html",
+                            "tf": 35
+                          },
+                          "list_module.html": {
+                            "ref": "list_module.html",
+                            "tf": 35
+                          },
+                          "list_tutorial.html": {
+                            "ref": "list_tutorial.html",
+                            "tf": 670
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "m": {
+              "docs": {
+                "module-Dragging.html": {
+                  "ref": "module-Dragging.html",
+                  "tf": 4.545454545454546
+                },
+                "module-Menu.html": {
+                  "ref": "module-Menu.html",
+                  "tf": 3.225806451612903
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "l": {
+                    "docs": {
+                      "module-BackgroundApi-BackgroundApi.html": {
+                        "ref": "module-BackgroundApi-BackgroundApi.html",
+                        "tf": 2.5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "f": {
+              "docs": {},
+              "f": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "module-BackgroundApi-BackgroundApi.html": {
+                        "ref": "module-BackgroundApi-BackgroundApi.html",
+                        "tf": 2.5
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "l": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "y": {
+                      "docs": {
+                        "module-Menu.html": {
+                          "ref": "module-Menu.html",
+                          "tf": 1.6129032258064515
+                        },
+                        "module-Popup.html": {
+                          "ref": "module-Popup.html",
+                          "tf": 1.8518518518518516
+                        },
+                        "ContextMenuOptions.html": {
+                          "ref": "ContextMenuOptions.html",
+                          "tf": 2.7777777777777777
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "g": {
+                "docs": {
+                  "module-Dragging-Dragging.html": {
+                    "ref": "module-Dragging-Dragging.html",
+                    "tf": 508.3333333333333
+                  },
+                  "module-Dragging.html": {
+                    "ref": "module-Dragging.html",
+                    "tf": 604.5454545454545
+                  }
+                },
+                "g": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "g": {
+                        "docs": {},
+                        "~": {
+                          "docs": {},
+                          "d": {
+                            "docs": {},
+                            "r": {
+                              "docs": {},
+                              "a": {
+                                "docs": {},
+                                "g": {
+                                  "docs": {
+                                    "module-Dragging-Dragging.html": {
+                                      "ref": "module-Dragging-Dragging.html",
+                                      "tf": 100
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "b": {
+                    "docs": {},
+                    "l": {
+                      "docs": {
+                        "module-Dragging.html": {
+                          "ref": "module-Dragging.html",
+                          "tf": 4.545454545454546
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "w": {
+                "docs": {},
+                "n": {
+                  "docs": {
+                    "module-Menu.html": {
+                      "ref": "module-Menu.html",
+                      "tf": 1.6129032258064515
+                    }
+                  }
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "p": {
+                "docs": {
+                  "module-Dragging-Dragging.html": {
+                    "ref": "module-Dragging-Dragging.html",
+                    "tf": 8.333333333333332
+                  },
+                  "module-Dragging.html": {
+                    "ref": "module-Dragging.html",
+                    "tf": 4.545454545454546
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "a": {
+                "docs": {
+                  "module-Storage.html": {
+                    "ref": "module-Storage.html",
+                    "tf": 12.5
+                  },
+                  "module-Popup.html": {
+                    "ref": "module-Popup.html",
+                    "tf": 1.8518518518518516
+                  }
+                }
+              }
+            }
+          },
+          "y": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "m": {
+                  "docs": {
+                    "module-Menu.html": {
+                      "ref": "module-Menu.html",
+                      "tf": 1.6129032258064515
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "i": {
+          "docs": {},
+          "n": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "x": {
+                  "docs": {
+                    "index.html": {
+                      "ref": "index.html",
+                      "tf": 1300
+                    }
+                  }
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {},
+                      "i": {
+                        "docs": {
+                          "module-UpdateHandler-UpdateHandler.html": {
+                            "ref": "module-UpdateHandler-UpdateHandler.html",
+                            "tf": 12.5
+                          },
+                          "module-BackgroundApi-BackgroundApi.html": {
+                            "ref": "module-BackgroundApi-BackgroundApi.html",
+                            "tf": 2.5
+                          },
+                          "module-Popup-Popup.html": {
+                            "ref": "module-Popup-Popup.html",
+                            "tf": 16.666666666666664
+                          },
+                          "module-Background-Background.html": {
+                            "ref": "module-Background-Background.html",
+                            "tf": 10
+                          },
+                          "module-UpdateHandler.html": {
+                            "ref": "module-UpdateHandler.html",
+                            "tf": 5
+                          },
+                          "module-BackgroundApi.html": {
+                            "ref": "module-BackgroundApi.html",
+                            "tf": 5
+                          },
+                          "module-ContextMenu.html": {
+                            "ref": "module-ContextMenu.html",
+                            "tf": 2
+                          },
+                          "module-Menu.html": {
+                            "ref": "module-Menu.html",
+                            "tf": 1.6129032258064515
+                          },
+                          "module-Background.html": {
+                            "ref": "module-Background.html",
+                            "tf": 1.7857142857142856
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "l": {
+                    "docs": {
+                      "module-UpdateHandler.html": {
+                        "ref": "module-UpdateHandler.html",
+                        "tf": 5
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "i": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "i": {
+                  "docs": {
+                    "module-ContextMenu-ContextMenu.html": {
+                      "ref": "module-ContextMenu-ContextMenu.html",
+                      "tf": 16.666666666666664
+                    },
+                    "module-Background.html": {
+                      "ref": "module-Background.html",
+                      "tf": 1.7857142857142856
+                    }
+                  }
+                }
+              }
+            },
+            "c": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "m": {
+                  "docs": {
+                    "module-BackgroundApi.html": {
+                      "ref": "module-BackgroundApi.html",
+                      "tf": 5
+                    }
+                  }
+                }
+              }
+            },
+            "m": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "f": {
+                      "docs": {},
+                      "e": {
+                        "docs": {},
+                        "s": {
+                          "docs": {},
+                          "t": {
+                            "docs": {},
+                            ".": {
+                              "docs": {},
+                              "j": {
+                                "docs": {},
+                                "s": {
+                                  "docs": {},
+                                  "o": {
+                                    "docs": {},
+                                    "n": {
+                                      "docs": {
+                                        "module-ContextMenu.html": {
+                                          "ref": "module-ContextMenu.html",
+                                          "tf": 2
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "c": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "n": {
+                "docs": {
+                  "module-ContextMenu.html": {
+                    "ref": "module-ContextMenu.html",
+                    "tf": 2
+                  },
+                  "module-Popup.html": {
+                    "ref": "module-Popup.html",
+                    "tf": 1.8518518518518516
+                  },
+                  "SVGIcons.html": {
+                    "ref": "SVGIcons.html",
+                    "tf": 12.5
+                  },
+                  "SVGIcons.html#.unpinnedLink": {
+                    "ref": "SVGIcons.html#.unpinnedLink",
+                    "tf": 10
+                  },
+                  "SVGIcons.html#.activePin": {
+                    "ref": "SVGIcons.html#.activePin",
+                    "tf": 10
+                  }
+                }
+              }
+            }
+          }
+        },
+        "r": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "d": {
+                "docs": {},
+                "m": {
+                  "docs": {
+                    "index.html": {
+                      "ref": "index.html",
+                      "tf": 110
+                    }
+                  }
+                }
+              }
+            },
+            "l": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "s": {
+                    "docs": {
+                      "undefined": {
+                        "tf": 50
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "g": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "module-UpdateHandler-UpdateHandler.html": {
+                        "ref": "module-UpdateHandler-UpdateHandler.html",
+                        "tf": 12.5
+                      },
+                      "module-BackgroundApi-BackgroundApi.html": {
+                        "ref": "module-BackgroundApi-BackgroundApi.html",
+                        "tf": 2.5
+                      },
+                      "module-UpdateHandler.html": {
+                        "ref": "module-UpdateHandler.html",
+                        "tf": 10
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "q": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "module-ContextMenu.html": {
+                        "ref": "module-ContextMenu.html",
+                        "tf": 2
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "c": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "module-RecentLinks.html": {
+                        "ref": "module-RecentLinks.html",
+                        "tf": 12.5
+                      },
+                      "AppConfig.html#.recentIntervalMillis": {
+                        "ref": "AppConfig.html#.recentIntervalMillis",
+                        "tf": 5.555555555555555
+                      }
+                    },
+                    "l": {
+                      "docs": {},
+                      "i": {
+                        "docs": {},
+                        "n": {
+                          "docs": {},
+                          "k": {
+                            "docs": {
+                              "module-RecentLinks.html": {
+                                "ref": "module-RecentLinks.html",
+                                "tf": 600
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "i": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "t": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "r": {
+                              "docs": {},
+                              "v": {
+                                "docs": {},
+                                "a": {
+                                  "docs": {},
+                                  "l": {
+                                    "docs": {},
+                                    "m": {
+                                      "docs": {},
+                                      "i": {
+                                        "docs": {},
+                                        "l": {
+                                          "docs": {},
+                                          "l": {
+                                            "docs": {},
+                                            "i": {
+                                              "docs": {
+                                                "AppConfig.html#.recentIntervalMillis": {
+                                                  "ref": "AppConfig.html#.recentIntervalMillis",
+                                                  "tf": 683.3333333333334
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "m": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "v": {
+                  "docs": {
+                    "module-RecentLinks.html": {
+                      "ref": "module-RecentLinks.html",
+                      "tf": 4.166666666666666
+                    }
+                  }
+                }
+              }
+            },
+            "n": {
+              "docs": {},
+              "d": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "module-Menu.html": {
+                        "ref": "module-Menu.html",
+                        "tf": 1.6129032258064515
+                      },
+                      "module-Popup.html": {
+                        "ref": "module-Popup.html",
+                        "tf": 3.7037037037037033
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "module-Menu.html": {
+                        "ref": "module-Menu.html",
+                        "tf": 1.6129032258064515
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "s": {
+                      "docs": {
+                        "module-Background.html": {
+                          "ref": "module-Background.html",
+                          "tf": 1.7857142857142856
+                        },
+                        "module-Popup.html": {
+                          "ref": "module-Popup.html",
+                          "tf": 1.8518518518518516
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "g": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "module-ContextMenu.html": {
+                      "ref": "module-ContextMenu.html",
+                      "tf": 2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "s": {
+          "docs": {},
+          "h": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "c": {
+                    "docs": {},
+                    "u": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "index.html": {
+                            "ref": "index.html",
+                            "tf": 300
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "w": {
+                "docs": {
+                  "module-Menu.html": {
+                    "ref": "module-Menu.html",
+                    "tf": 1.6129032258064515
+                  },
+                  "module-Popup.html": {
+                    "ref": "module-Popup.html",
+                    "tf": 1.8518518518518516
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "u": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "c": {
+                  "docs": {
+                    "index.html": {
+                      "ref": "index.html",
+                      "tf": 23.333333333333332
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "t": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "d": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "r": {
+                      "docs": {},
+                      "d": {
+                        "docs": {
+                          "undefined": {
+                            "tf": 23.333333333333332
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "l": {
+                "docs": {},
+                "e": {
+                  "docs": {
+                    "module-RecentLinks.html": {
+                      "ref": "module-RecentLinks.html",
+                      "tf": 4.166666666666666
+                    }
+                  }
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "g": {
+                    "docs": {
+                      "module-Storage.html": {
+                        "ref": "module-Storage.html",
+                        "tf": 612.5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "e": {
+              "docs": {
+                "module-BackgroundApi-BackgroundApi.html": {
+                  "ref": "module-BackgroundApi-BackgroundApi.html",
+                  "tf": 2.5
+                }
+              }
+            },
+            "t": {
+              "docs": {
+                "module-Background.html": {
+                  "ref": "module-Background.html",
+                  "tf": 3.571428571428571
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "v": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "g": {
+                    "docs": {},
+                    "/": {
+                      "docs": {},
+                      "r": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "s": {
+                            "docs": {},
+                            "t": {
+                              "docs": {},
+                              "o": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {
+                                    "module-Popup.html": {
+                                      "ref": "module-Popup.html",
+                                      "tf": 1.8518518518518516
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "v": {
+            "docs": {},
+            "g": {
+              "docs": {
+                "SVGIcons.html": {
+                  "ref": "SVGIcons.html",
+                  "tf": 12.5
+                },
+                "SVGIcons.html#.unpinnedLink": {
+                  "ref": "SVGIcons.html#.unpinnedLink",
+                  "tf": 10
+                },
+                "SVGIcons.html#.activePin": {
+                  "ref": "SVGIcons.html#.activePin",
+                  "tf": 10
+                }
+              },
+              "i": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "o": {
+                    "docs": {},
+                    "n": {
+                      "docs": {
+                        "SVGIcons.html": {
+                          "ref": "SVGIcons.html",
+                          "tf": 1900
+                        }
+                      },
+                      "s": {
+                        "docs": {},
+                        ".": {
+                          "docs": {},
+                          "u": {
+                            "docs": {},
+                            "n": {
+                              "docs": {},
+                              "p": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {},
+                                  "n": {
+                                    "docs": {},
+                                    "n": {
+                                      "docs": {},
+                                      "e": {
+                                        "docs": {},
+                                        "d": {
+                                          "docs": {},
+                                          "l": {
+                                            "docs": {},
+                                            "i": {
+                                              "docs": {},
+                                              "n": {
+                                                "docs": {},
+                                                "k": {
+                                                  "docs": {
+                                                    "SVGIcons.html#.unpinnedLink": {
+                                                      "ref": "SVGIcons.html#.unpinnedLink",
+                                                      "tf": 1150
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "a": {
+                            "docs": {},
+                            "c": {
+                              "docs": {},
+                              "t": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {},
+                                  "v": {
+                                    "docs": {},
+                                    "e": {
+                                      "docs": {},
+                                      "p": {
+                                        "docs": {},
+                                        "i": {
+                                          "docs": {},
+                                          "n": {
+                                            "docs": {
+                                              "SVGIcons.html#.activePin": {
+                                                "ref": "SVGIcons.html#.activePin",
+                                                "tf": 1150
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "z": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "ContextMenuOptions.html": {
+                    "ref": "ContextMenuOptions.html",
+                    "tf": 2.7777777777777777
+                  }
+                }
+              }
+            }
+          },
+          "p": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "f": {
+                    "docs": {},
+                    "i": {
+                      "docs": {
+                        "ContextMenuOptions.html": {
+                          "ref": "ContextMenuOptions.html",
+                          "tf": 5.555555555555555
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "g": {
+          "docs": {},
+          "l": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "b": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "l": {
+                    "docs": {
+                      "global.html": {
+                        "ref": "global.html",
+                        "tf": 2045
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "n": {
+          "docs": {},
+          "o": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "undefined": {
+                    "tf": 50
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "w": {
+              "docs": {
+                "module-BackgroundApi-BackgroundApi.html": {
+                  "ref": "module-BackgroundApi-BackgroundApi.html",
+                  "tf": 2.5
+                },
+                "module-BackgroundApi.html": {
+                  "ref": "module-BackgroundApi.html",
+                  "tf": 5
+                },
+                "module-ContextMenu.html": {
+                  "ref": "module-ContextMenu.html",
+                  "tf": 2
+                },
+                "module-Background.html": {
+                  "ref": "module-Background.html",
+                  "tf": 1.7857142857142856
+                },
+                "ContextMenuOptions.html": {
+                  "ref": "ContextMenuOptions.html",
+                  "tf": 2.7777777777777777
+                }
+              }
+            },
+            "x": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "module-ContextMenu.html": {
+                    "ref": "module-ContextMenu.html",
+                    "tf": 2
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "v": {
+                  "docs": {
+                    "module-Dragging.html": {
+                      "ref": "module-Dragging.html",
+                      "tf": 4.545454545454546
+                    }
+                  }
+                }
+              }
+            },
+            "m": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "p": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "c": {
+                        "docs": {
+                          "AppConfig.html": {
+                            "ref": "AppConfig.html",
+                            "tf": 110
+                          },
+                          "SVGIcons.html": {
+                            "ref": "SVGIcons.html",
+                            "tf": 110
+                          },
+                          "ContextMenuOptions.html": {
+                            "ref": "ContextMenuOptions.html",
+                            "tf": 110
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "b": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "AppConfig.html#.recentIntervalMillis": {
+                        "ref": "AppConfig.html#.recentIntervalMillis",
+                        "tf": 33.33333333333333
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "t": {
+          "docs": {},
+          "u": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "i": {
+                    "docs": {
+                      "undefined": {
+                        "tf": 110
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "module-RecentLinks.html": {
+                    "ref": "module-RecentLinks.html",
+                    "tf": 4.166666666666666
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "module-Menu.html": {
+                    "ref": "module-Menu.html",
+                    "tf": 1.6129032258064515
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "b": {
+              "docs": {
+                "ContextMenuOptions.html": {
+                  "ref": "ContextMenuOptions.html",
+                  "tf": 2.7777777777777777
+                }
+              }
+            }
+          }
+        },
+        "v": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "o": {
+                    "docs": {},
+                    "n": {
+                      "docs": {
+                        "undefined": {
+                          "tf": 23.333333333333332
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "w": {
+                "docs": {
+                  "module-Popup.html": {
+                    "ref": "module-Popup.html",
+                    "tf": 1.8518518518518516
+                  }
+                },
+                "p": {
+                  "docs": {},
+                  "o": {
+                    "docs": {},
+                    "r": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "module-CenteredPopup.html": {
+                            "ref": "module-CenteredPopup.html",
+                            "tf": 6.25
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "u": {
+                    "docs": {
+                      "AppConfig.html": {
+                        "ref": "AppConfig.html",
+                        "tf": 16.666666666666664
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "p": {
+          "docs": {},
+          "o": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "i": {
+                    "docs": {
+                      "undefined": {
+                        "tf": 50
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "p": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "p": {
+                  "docs": {
+                    "module-Popup-Popup.html": {
+                      "ref": "module-Popup-Popup.html",
+                      "tf": 516.6666666666666
+                    },
+                    "module-CenteredPopup.html": {
+                      "ref": "module-CenteredPopup.html",
+                      "tf": 6.25
+                    },
+                    "module-Popup.html": {
+                      "ref": "module-Popup.html",
+                      "tf": 603.7037037037037
+                    }
+                  },
+                  "~": {
+                    "docs": {},
+                    "p": {
+                      "docs": {},
+                      "o": {
+                        "docs": {},
+                        "p": {
+                          "docs": {},
+                          "u": {
+                            "docs": {},
+                            "p": {
+                              "docs": {
+                                "module-Popup-Popup.html": {
+                                  "ref": "module-Popup-Popup.html",
+                                  "tf": 100
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "v": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "c": {
+                    "docs": {},
+                    "i": {
+                      "docs": {
+                        "undefined": {
+                          "tf": 1885
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "g": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "m": {
+                      "docs": {},
+                      "m": {
+                        "docs": {},
+                        "a": {
+                          "docs": {},
+                          "t": {
+                            "docs": {
+                              "module-Menu.html": {
+                                "ref": "module-Menu.html",
+                                "tf": 1.6129032258064515
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "module-BackgroundApi-BackgroundApi.html": {
+                    "ref": "module-BackgroundApi-BackgroundApi.html",
+                    "tf": 2.5
+                  }
+                }
+              },
+              "e": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "module-Menu.html": {
+                        "ref": "module-Menu.html",
+                        "tf": 3.225806451612903
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "s": {
+                "docs": {
+                  "module-BackgroundApi-BackgroundApi.html": {
+                    "ref": "module-BackgroundApi-BackgroundApi.html",
+                    "tf": 2.5
+                  },
+                  "module-Background.html": {
+                    "ref": "module-Background.html",
+                    "tf": 1.7857142857142856
+                  }
+                }
+              }
+            },
+            "n": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "module-Helpers.html": {
+                      "ref": "module-Helpers.html",
+                      "tf": 12.5
+                    },
+                    "module-Menu.html": {
+                      "ref": "module-Menu.html",
+                      "tf": 3.225806451612903
+                    },
+                    "module-Popup.html": {
+                      "ref": "module-Popup.html",
+                      "tf": 3.7037037037037033
+                    }
+                  }
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "h": {
+                "docs": {
+                  "SVGIcons.html": {
+                    "ref": "SVGIcons.html",
+                    "tf": 12.5
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "module-Storage.html": {
+                          "ref": "module-Storage.html",
+                          "tf": 12.5
+                        },
+                        "module-Popup.html": {
+                          "ref": "module-Popup.html",
+                          "tf": 1.8518518518518516
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "m": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "s": {
+                      "docs": {
+                        "module-ContextMenu.html": {
+                          "ref": "module-ContextMenu.html",
+                          "tf": 2
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "n": {
+              "docs": {
+                "SVGIcons.html#.activePin": {
+                  "ref": "SVGIcons.html#.activePin",
+                  "tf": 10
+                }
+              }
+            }
+          }
+        },
+        "u": {
+          "docs": {},
+          "s": {
+            "docs": {
+              "module-Dragging.html": {
+                "ref": "module-Dragging.html",
+                "tf": 4.545454545454546
+              },
+              "module-RecentLinks.html": {
+                "ref": "module-RecentLinks.html",
+                "tf": 4.166666666666666
+              },
+              "AppConfig.html#.recentIntervalMillis": {
+                "ref": "AppConfig.html#.recentIntervalMillis",
+                "tf": 5.555555555555555
+              }
+            },
+            "e": {
+              "docs": {},
+              "r": {
+                "docs": {
+                  "undefined": {
+                    "tf": 35
+                  },
+                  "module-Menu.html": {
+                    "ref": "module-Menu.html",
+                    "tf": 1.6129032258064515
+                  },
+                  "module-Popup.html": {
+                    "ref": "module-Popup.html",
+                    "tf": 1.8518518518518516
+                  }
+                },
+                "'": {
+                  "docs": {
+                    "module-CenteredPopup.html": {
+                      "ref": "module-CenteredPopup.html",
+                      "tf": 6.25
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "p": {
+            "docs": {
+              "module-Background.html": {
+                "ref": "module-Background.html",
+                "tf": 3.571428571428571
+              }
+            },
+            "d": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "module-UpdateHandler.html": {
+                      "ref": "module-UpdateHandler.html",
+                      "tf": 5
+                    }
+                  },
+                  "e": {
+                    "docs": {},
+                    "h": {
+                      "docs": {},
+                      "a": {
+                        "docs": {},
+                        "n": {
+                          "docs": {},
+                          "d": {
+                            "docs": {},
+                            "l": {
+                              "docs": {
+                                "module-UpdateHandler-UpdateHandler.html": {
+                                  "ref": "module-UpdateHandler-UpdateHandler.html",
+                                  "tf": 500
+                                },
+                                "module-UpdateHandler.html": {
+                                  "ref": "module-UpdateHandler.html",
+                                  "tf": 600
+                                },
+                                "module-Background.html": {
+                                  "ref": "module-Background.html",
+                                  "tf": 1.7857142857142856
+                                }
+                              },
+                              "e": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {},
+                                  "~": {
+                                    "docs": {},
+                                    "u": {
+                                      "docs": {},
+                                      "p": {
+                                        "docs": {},
+                                        "d": {
+                                          "docs": {},
+                                          "a": {
+                                            "docs": {},
+                                            "t": {
+                                              "docs": {},
+                                              "e": {
+                                                "docs": {},
+                                                "h": {
+                                                  "docs": {},
+                                                  "a": {
+                                                    "docs": {},
+                                                    "n": {
+                                                      "docs": {},
+                                                      "d": {
+                                                        "docs": {},
+                                                        "l": {
+                                                          "docs": {
+                                                            "module-UpdateHandler-UpdateHandler.html": {
+                                                              "ref": "module-UpdateHandler-UpdateHandler.html",
+                                                              "tf": 100
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "n": {
+                "docs": {
+                  "module-Menu.html": {
+                    "ref": "module-Menu.html",
+                    "tf": 1.6129032258064515
+                  }
+                }
+              }
+            }
+          },
+          "t": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "l": {
+                "docs": {
+                  "module-CenteredPopup.html": {
+                    "ref": "module-CenteredPopup.html",
+                    "tf": 6.25
+                  }
+                }
+              }
+            }
+          },
+          "n": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "n": {
+                  "docs": {
+                    "SVGIcons.html#.unpinnedLink": {
+                      "ref": "SVGIcons.html#.unpinnedLink",
+                      "tf": 10
+                    }
+                  },
+                  "n": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "d": {
+                        "docs": {},
+                        "l": {
+                          "docs": {},
+                          "i": {
+                            "docs": {},
+                            "n": {
+                              "docs": {},
+                              "k": {
+                                "docs": {
+                                  "SVGIcons.html#.unpinnedLink": {
+                                    "ref": "SVGIcons.html#.unpinnedLink",
+                                    "tf": 700
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "a": {
+          "docs": {},
+          "p": {
+            "docs": {},
+            "p": {
+              "docs": {
+                "SVGIcons.html": {
+                  "ref": "SVGIcons.html",
+                  "tf": 12.5
+                }
+              },
+              "l": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "c": {
+                    "docs": {
+                      "list_namespace.html": {
+                        "ref": "list_namespace.html",
+                        "tf": 35
+                      },
+                      "module-Storage.html": {
+                        "ref": "module-Storage.html",
+                        "tf": 12.5
+                      },
+                      "AppConfig.html": {
+                        "ref": "AppConfig.html",
+                        "tf": 16.666666666666664
+                      }
+                    }
+                  }
+                }
+              },
+              "c": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "f": {
+                      "docs": {},
+                      "i": {
+                        "docs": {},
+                        "g": {
+                          "docs": {
+                            "AppConfig.html": {
+                              "ref": "AppConfig.html",
+                              "tf": 1900
+                            }
+                          },
+                          ".": {
+                            "docs": {},
+                            "r": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "c": {
+                                  "docs": {},
+                                  "e": {
+                                    "docs": {},
+                                    "n": {
+                                      "docs": {},
+                                      "t": {
+                                        "docs": {},
+                                        "i": {
+                                          "docs": {},
+                                          "n": {
+                                            "docs": {},
+                                            "t": {
+                                              "docs": {},
+                                              "e": {
+                                                "docs": {},
+                                                "r": {
+                                                  "docs": {},
+                                                  "v": {
+                                                    "docs": {},
+                                                    "a": {
+                                                      "docs": {},
+                                                      "l": {
+                                                        "docs": {},
+                                                        "m": {
+                                                          "docs": {},
+                                                          "i": {
+                                                            "docs": {},
+                                                            "l": {
+                                                              "docs": {},
+                                                              "l": {
+                                                                "docs": {},
+                                                                "i": {
+                                                                  "docs": {
+                                                                    "AppConfig.html#.recentIntervalMillis": {
+                                                                      "ref": "AppConfig.html#.recentIntervalMillis",
+                                                                      "tf": 1150
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "i": {
+              "docs": {
+                "module-BackgroundApi-BackgroundApi.html": {
+                  "ref": "module-BackgroundApi-BackgroundApi.html",
+                  "tf": 2.5
+                },
+                "module-Background.html": {
+                  "ref": "module-Background.html",
+                  "tf": 1.7857142857142856
+                }
+              }
+            }
+          },
+          "c": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "module-UpdateHandler.html": {
+                        "ref": "module-UpdateHandler.html",
+                        "tf": 5
+                      },
+                      "module-ContextMenu.html": {
+                        "ref": "module-ContextMenu.html",
+                        "tf": 2
+                      },
+                      "module-Background.html": {
+                        "ref": "module-Background.html",
+                        "tf": 1.7857142857142856
+                      }
+                    }
+                  }
+                },
+                "v": {
+                  "docs": {
+                    "module-ContextMenu.html": {
+                      "ref": "module-ContextMenu.html",
+                      "tf": 2
+                    }
+                  },
+                  "e": {
+                    "docs": {},
+                    "p": {
+                      "docs": {},
+                      "i": {
+                        "docs": {},
+                        "n": {
+                          "docs": {
+                            "SVGIcons.html#.activePin": {
+                              "ref": "SVGIcons.html#.activePin",
+                              "tf": 700
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "d": {
+            "docs": {},
+            "d": {
+              "docs": {
+                "module-ContextMenu.html": {
+                  "ref": "module-ContextMenu.html",
+                  "tf": 2
+                },
+                "module-Menu.html": {
+                  "ref": "module-Menu.html",
+                  "tf": 1.6129032258064515
+                }
+              },
+              "r": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "s": {
+                      "docs": {
+                        "module-ContextMenu.html": {
+                          "ref": "module-ContextMenu.html",
+                          "tf": 2
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "l": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "list_namespace.html": {
+                    "ref": "list_namespace.html",
+                    "tf": 110
+                  },
+                  "list_module.html": {
+                    "ref": "list_module.html",
+                    "tf": 110
+                  },
+                  "list_tutorial.html": {
+                    "ref": "list_tutorial.html",
+                    "tf": 110
+                  },
+                  "module-RecentLinks.html": {
+                    "ref": "module-RecentLinks.html",
+                    "tf": 4.166666666666666
+                  },
+                  "module-Menu.html": {
+                    "ref": "module-Menu.html",
+                    "tf": 1.6129032258064515
+                  },
+                  "ContextMenuOptions.html": {
+                    "ref": "ContextMenuOptions.html",
+                    "tf": 2.7777777777777777
+                  }
+                },
+                ":": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "m": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "s": {
+                            "docs": {},
+                            "p": {
+                              "docs": {},
+                              "a": {
+                                "docs": {},
+                                "c": {
+                                  "docs": {
+                                    "list_namespace.html": {
+                                      "ref": "list_namespace.html",
+                                      "tf": 1300
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "m": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "d": {
+                        "docs": {},
+                        "u": {
+                          "docs": {},
+                          "l": {
+                            "docs": {
+                              "list_module.html": {
+                                "ref": "list_module.html",
+                                "tf": 1300
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "t": {
+                    "docs": {},
+                    "u": {
+                      "docs": {},
+                      "t": {
+                        "docs": {},
+                        "o": {
+                          "docs": {},
+                          "r": {
+                            "docs": {},
+                            "i": {
+                              "docs": {
+                                "list_tutorial.html": {
+                                  "ref": "list_tutorial.html",
+                                  "tf": 1300
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "module-BackgroundApi-BackgroundApi.html": {
+                        "ref": "module-BackgroundApi-BackgroundApi.html",
+                        "tf": 2.5
+                      },
+                      "module-BackgroundApi.html": {
+                        "ref": "module-BackgroundApi.html",
+                        "tf": 5
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "n": {
+              "docs": {},
+              "k": {
+                "docs": {
+                  "module-RecentLinks.html": {
+                    "ref": "module-RecentLinks.html",
+                    "tf": 4.166666666666666
+                  },
+                  "module-Menu.html": {
+                    "ref": "module-Menu.html",
+                    "tf": 1.6129032258064515
+                  },
+                  "AppConfig.html#.recentIntervalMillis": {
+                    "ref": "AppConfig.html#.recentIntervalMillis",
+                    "tf": 5.555555555555555
+                  },
+                  "SVGIcons.html#.unpinnedLink": {
+                    "ref": "SVGIcons.html#.unpinnedLink",
+                    "tf": 10
+                  },
+                  "SVGIcons.html#.activePin": {
+                    "ref": "SVGIcons.html#.activePin",
+                    "tf": 10
+                  },
+                  "ContextMenuOptions.html": {
+                    "ref": "ContextMenuOptions.html",
+                    "tf": 5.555555555555555
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "AppConfig.html#.recentIntervalMillis": {
+                    "ref": "AppConfig.html#.recentIntervalMillis",
+                    "tf": 5.555555555555555
+                  }
+                }
+              }
+            }
+          },
+          "t": {
+            "docs": {},
+            ";": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "t": {
+                      "docs": {},
+                      "i": {
+                        "docs": {},
+                        "c": {
+                          "docs": {},
+                          "&": {
+                            "docs": {},
+                            "g": {
+                              "docs": {},
+                              "t": {
+                                "docs": {
+                                  "AppConfig.html#.recentIntervalMillis": {
+                                    "ref": "AppConfig.html#.recentIntervalMillis",
+                                    "tf": 33.33333333333333
+                                  },
+                                  "SVGIcons.html#.unpinnedLink": {
+                                    "ref": "SVGIcons.html#.unpinnedLink",
+                                    "tf": 50
+                                  },
+                                  "SVGIcons.html#.activePin": {
+                                    "ref": "SVGIcons.html#.activePin",
+                                    "tf": 50
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "m": {
+          "docs": {},
+          "o": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "list_module.html": {
+                      "ref": "list_module.html",
+                      "tf": 635
+                    },
+                    "module-Storage.html": {
+                      "ref": "module-Storage.html",
+                      "tf": 110
+                    },
+                    "module-CenteredPopup.html": {
+                      "ref": "module-CenteredPopup.html",
+                      "tf": 116.25
+                    },
+                    "module-Dragging.html": {
+                      "ref": "module-Dragging.html",
+                      "tf": 114.54545454545455
+                    },
+                    "module-UpdateHandler.html": {
+                      "ref": "module-UpdateHandler.html",
+                      "tf": 110
+                    },
+                    "module-Helpers.html": {
+                      "ref": "module-Helpers.html",
+                      "tf": 110
+                    },
+                    "module-BackgroundApi.html": {
+                      "ref": "module-BackgroundApi.html",
+                      "tf": 110
+                    },
+                    "module-ContextMenu.html": {
+                      "ref": "module-ContextMenu.html",
+                      "tf": 112
+                    },
+                    "module-RecentLinks.html": {
+                      "ref": "module-RecentLinks.html",
+                      "tf": 110
+                    },
+                    "module-Menu.html": {
+                      "ref": "module-Menu.html",
+                      "tf": 110
+                    },
+                    "module-Background.html": {
+                      "ref": "module-Background.html",
+                      "tf": 113.57142857142857
+                    },
+                    "module-Popup.html": {
+                      "ref": "module-Popup.html",
+                      "tf": 110
+                    }
+                  },
+                  "e": {
+                    "docs": {},
+                    ":": {
+                      "docs": {},
+                      "u": {
+                        "docs": {},
+                        "p": {
+                          "docs": {},
+                          "d": {
+                            "docs": {},
+                            "a": {
+                              "docs": {},
+                              "t": {
+                                "docs": {},
+                                "e": {
+                                  "docs": {},
+                                  "h": {
+                                    "docs": {},
+                                    "a": {
+                                      "docs": {},
+                                      "n": {
+                                        "docs": {},
+                                        "d": {
+                                          "docs": {},
+                                          "l": {
+                                            "docs": {
+                                              "module-UpdateHandler.html": {
+                                                "ref": "module-UpdateHandler.html",
+                                                "tf": 1300
+                                              }
+                                            },
+                                            "e": {
+                                              "docs": {},
+                                              "r": {
+                                                "docs": {},
+                                                "~": {
+                                                  "docs": {},
+                                                  "u": {
+                                                    "docs": {},
+                                                    "p": {
+                                                      "docs": {},
+                                                      "d": {
+                                                        "docs": {},
+                                                        "a": {
+                                                          "docs": {},
+                                                          "t": {
+                                                            "docs": {},
+                                                            "e": {
+                                                              "docs": {},
+                                                              "h": {
+                                                                "docs": {},
+                                                                "a": {
+                                                                  "docs": {},
+                                                                  "n": {
+                                                                    "docs": {},
+                                                                    "d": {
+                                                                      "docs": {},
+                                                                      "l": {
+                                                                        "docs": {
+                                                                          "module-UpdateHandler-UpdateHandler.html": {
+                                                                            "ref": "module-UpdateHandler-UpdateHandler.html",
+                                                                            "tf": 1300
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "b": {
+                        "docs": {},
+                        "a": {
+                          "docs": {},
+                          "c": {
+                            "docs": {},
+                            "k": {
+                              "docs": {},
+                              "g": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {},
+                                  "o": {
+                                    "docs": {},
+                                    "u": {
+                                      "docs": {},
+                                      "n": {
+                                        "docs": {},
+                                        "d": {
+                                          "docs": {
+                                            "module-Background.html": {
+                                              "ref": "module-Background.html",
+                                              "tf": 1300
+                                            }
+                                          },
+                                          "a": {
+                                            "docs": {},
+                                            "p": {
+                                              "docs": {},
+                                              "i": {
+                                                "docs": {
+                                                  "module-BackgroundApi.html": {
+                                                    "ref": "module-BackgroundApi.html",
+                                                    "tf": 1300
+                                                  }
+                                                },
+                                                "~": {
+                                                  "docs": {},
+                                                  "b": {
+                                                    "docs": {},
+                                                    "a": {
+                                                      "docs": {},
+                                                      "c": {
+                                                        "docs": {},
+                                                        "k": {
+                                                          "docs": {},
+                                                          "g": {
+                                                            "docs": {},
+                                                            "r": {
+                                                              "docs": {},
+                                                              "o": {
+                                                                "docs": {},
+                                                                "u": {
+                                                                  "docs": {},
+                                                                  "n": {
+                                                                    "docs": {},
+                                                                    "d": {
+                                                                      "docs": {},
+                                                                      "a": {
+                                                                        "docs": {},
+                                                                        "p": {
+                                                                          "docs": {},
+                                                                          "i": {
+                                                                            "docs": {
+                                                                              "module-BackgroundApi-BackgroundApi.html": {
+                                                                                "ref": "module-BackgroundApi-BackgroundApi.html",
+                                                                                "tf": 1300
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "~": {
+                                            "docs": {},
+                                            "b": {
+                                              "docs": {},
+                                              "a": {
+                                                "docs": {},
+                                                "c": {
+                                                  "docs": {},
+                                                  "k": {
+                                                    "docs": {},
+                                                    "g": {
+                                                      "docs": {},
+                                                      "r": {
+                                                        "docs": {},
+                                                        "o": {
+                                                          "docs": {},
+                                                          "u": {
+                                                            "docs": {},
+                                                            "n": {
+                                                              "docs": {},
+                                                              "d": {
+                                                                "docs": {
+                                                                  "module-Background-Background.html": {
+                                                                    "ref": "module-Background-Background.html",
+                                                                    "tf": 1300
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "c": {
+                        "docs": {},
+                        "o": {
+                          "docs": {},
+                          "n": {
+                            "docs": {},
+                            "t": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "x": {
+                                  "docs": {},
+                                  "t": {
+                                    "docs": {},
+                                    "m": {
+                                      "docs": {},
+                                      "e": {
+                                        "docs": {},
+                                        "n": {
+                                          "docs": {},
+                                          "u": {
+                                            "docs": {
+                                              "module-ContextMenu.html": {
+                                                "ref": "module-ContextMenu.html",
+                                                "tf": 1300
+                                              }
+                                            },
+                                            "~": {
+                                              "docs": {},
+                                              "c": {
+                                                "docs": {},
+                                                "o": {
+                                                  "docs": {},
+                                                  "n": {
+                                                    "docs": {},
+                                                    "t": {
+                                                      "docs": {},
+                                                      "e": {
+                                                        "docs": {},
+                                                        "x": {
+                                                          "docs": {},
+                                                          "t": {
+                                                            "docs": {},
+                                                            "m": {
+                                                              "docs": {},
+                                                              "e": {
+                                                                "docs": {},
+                                                                "n": {
+                                                                  "docs": {},
+                                                                  "u": {
+                                                                    "docs": {
+                                                                      "module-ContextMenu-ContextMenu.html": {
+                                                                        "ref": "module-ContextMenu-ContextMenu.html",
+                                                                        "tf": 1300
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "e": {
+                          "docs": {},
+                          "n": {
+                            "docs": {},
+                            "t": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {},
+                                  "e": {
+                                    "docs": {},
+                                    "d": {
+                                      "docs": {},
+                                      "p": {
+                                        "docs": {},
+                                        "o": {
+                                          "docs": {},
+                                          "p": {
+                                            "docs": {},
+                                            "u": {
+                                              "docs": {},
+                                              "p": {
+                                                "docs": {
+                                                  "module-CenteredPopup.html": {
+                                                    "ref": "module-CenteredPopup.html",
+                                                    "tf": 1300
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "p": {
+                        "docs": {},
+                        "o": {
+                          "docs": {},
+                          "p": {
+                            "docs": {},
+                            "u": {
+                              "docs": {},
+                              "p": {
+                                "docs": {
+                                  "module-Popup.html": {
+                                    "ref": "module-Popup.html",
+                                    "tf": 1300
+                                  }
+                                },
+                                "~": {
+                                  "docs": {},
+                                  "p": {
+                                    "docs": {},
+                                    "o": {
+                                      "docs": {},
+                                      "p": {
+                                        "docs": {},
+                                        "u": {
+                                          "docs": {},
+                                          "p": {
+                                            "docs": {
+                                              "module-Popup-Popup.html": {
+                                                "ref": "module-Popup-Popup.html",
+                                                "tf": 1300
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "d": {
+                        "docs": {},
+                        "r": {
+                          "docs": {},
+                          "a": {
+                            "docs": {},
+                            "g": {
+                              "docs": {
+                                "module-Dragging.html": {
+                                  "ref": "module-Dragging.html",
+                                  "tf": 1300
+                                }
+                              },
+                              "g": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {},
+                                  "n": {
+                                    "docs": {},
+                                    "g": {
+                                      "docs": {},
+                                      "~": {
+                                        "docs": {},
+                                        "d": {
+                                          "docs": {},
+                                          "r": {
+                                            "docs": {},
+                                            "a": {
+                                              "docs": {},
+                                              "g": {
+                                                "docs": {
+                                                  "module-Dragging-Dragging.html": {
+                                                    "ref": "module-Dragging-Dragging.html",
+                                                    "tf": 1300
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "m": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "n": {
+                            "docs": {},
+                            "u": {
+                              "docs": {
+                                "module-Menu.html": {
+                                  "ref": "module-Menu.html",
+                                  "tf": 1300
+                                }
+                              },
+                              "~": {
+                                "docs": {},
+                                "m": {
+                                  "docs": {},
+                                  "e": {
+                                    "docs": {},
+                                    "n": {
+                                      "docs": {},
+                                      "u": {
+                                        "docs": {
+                                          "module-Menu-Menu.html": {
+                                            "ref": "module-Menu-Menu.html",
+                                            "tf": 1300
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "s": {
+                        "docs": {},
+                        "t": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "r": {
+                              "docs": {},
+                              "a": {
+                                "docs": {},
+                                "g": {
+                                  "docs": {
+                                    "module-Storage.html": {
+                                      "ref": "module-Storage.html",
+                                      "tf": 1300
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "h": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "l": {
+                            "docs": {},
+                            "p": {
+                              "docs": {
+                                "module-Helpers.html": {
+                                  "ref": "module-Helpers.html",
+                                  "tf": 1300
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "r": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "c": {
+                            "docs": {},
+                            "e": {
+                              "docs": {},
+                              "n": {
+                                "docs": {},
+                                "t": {
+                                  "docs": {},
+                                  "l": {
+                                    "docs": {},
+                                    "i": {
+                                      "docs": {},
+                                      "n": {
+                                        "docs": {},
+                                        "k": {
+                                          "docs": {
+                                            "module-RecentLinks.html": {
+                                              "ref": "module-RecentLinks.html",
+                                              "tf": 1300
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "g": {
+                    "docs": {
+                      "module-BackgroundApi-BackgroundApi.html": {
+                        "ref": "module-BackgroundApi-BackgroundApi.html",
+                        "tf": 5
+                      },
+                      "module-BackgroundApi.html": {
+                        "ref": "module-BackgroundApi.html",
+                        "tf": 5
+                      },
+                      "module-Background.html": {
+                        "ref": "module-Background.html",
+                        "tf": 1.7857142857142856
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "n": {
+              "docs": {},
+              "u": {
+                "docs": {
+                  "module-ContextMenu-ContextMenu.html": {
+                    "ref": "module-ContextMenu-ContextMenu.html",
+                    "tf": 16.666666666666664
+                  },
+                  "module-Menu-Menu.html": {
+                    "ref": "module-Menu-Menu.html",
+                    "tf": 500
+                  },
+                  "module-Helpers.html": {
+                    "ref": "module-Helpers.html",
+                    "tf": 12.5
+                  },
+                  "module-ContextMenu.html": {
+                    "ref": "module-ContextMenu.html",
+                    "tf": 2
+                  },
+                  "module-Menu.html": {
+                    "ref": "module-Menu.html",
+                    "tf": 608.0645161290323
+                  },
+                  "module-Background.html": {
+                    "ref": "module-Background.html",
+                    "tf": 1.7857142857142856
+                  },
+                  "module-Popup.html": {
+                    "ref": "module-Popup.html",
+                    "tf": 3.7037037037037033
+                  },
+                  "SVGIcons.html#.unpinnedLink": {
+                    "ref": "SVGIcons.html#.unpinnedLink",
+                    "tf": 10
+                  },
+                  "SVGIcons.html#.activePin": {
+                    "ref": "SVGIcons.html#.activePin",
+                    "tf": 10
+                  },
+                  "ContextMenuOptions.html": {
+                    "ref": "ContextMenuOptions.html",
+                    "tf": 2.7777777777777777
+                  }
+                },
+                "~": {
+                  "docs": {},
+                  "m": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "u": {
+                          "docs": {
+                            "module-Menu-Menu.html": {
+                              "ref": "module-Menu-Menu.html",
+                              "tf": 100
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "o": {
+                  "docs": {},
+                  "b": {
+                    "docs": {},
+                    "j": {
+                      "docs": {},
+                      ".": {
+                        "docs": {},
+                        "r": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "n": {
+                              "docs": {},
+                              "d": {
+                                "docs": {
+                                  "module-Menu.html": {
+                                    "ref": "module-Menu.html",
+                                    "tf": 1.6129032258064515
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "d": {
+                    "docs": {
+                      "module-Helpers.html": {
+                        "ref": "module-Helpers.html",
+                        "tf": 12.5
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "m": {
+              "docs": {},
+              "b": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "AppConfig.html#.recentIntervalMillis": {
+                        "ref": "AppConfig.html#.recentIntervalMillis",
+                        "tf": 110
+                      },
+                      "SVGIcons.html#.unpinnedLink": {
+                        "ref": "SVGIcons.html#.unpinnedLink",
+                        "tf": 110
+                      },
+                      "SVGIcons.html#.activePin": {
+                        "ref": "SVGIcons.html#.activePin",
+                        "tf": 110
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "d": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "module-CenteredPopup.html": {
+                      "ref": "module-CenteredPopup.html",
+                      "tf": 6.25
+                    }
+                  }
+                }
+              }
+            },
+            "l": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "c": {
+                        "docs": {},
+                        "o": {
+                          "docs": {},
+                          "n": {
+                            "docs": {},
+                            "d": {
+                              "docs": {
+                                "AppConfig.html#.recentIntervalMillis": {
+                                  "ref": "AppConfig.html#.recentIntervalMillis",
+                                  "tf": 5.555555555555555
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "k": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "module-Dragging.html": {
+                    "ref": "module-Dragging.html",
+                    "tf": 4.545454545454546
+                  }
+                }
+              }
+            },
+            "i": {
+              "docs": {},
+              "n": {
+                "docs": {
+                  "module-Popup.html": {
+                    "ref": "module-Popup.html",
+                    "tf": 1.8518518518518516
+                  }
+                }
+              }
+            }
+          }
+        },
+        "h": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "d": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "module-BackgroundApi-BackgroundApi.html": {
+                      "ref": "module-BackgroundApi-BackgroundApi.html",
+                      "tf": 2.5
+                    }
+                  },
+                  "e": {
+                    "docs": {},
+                    "r": {
+                      "docs": {
+                        "module-UpdateHandler-UpdateHandler.html": {
+                          "ref": "module-UpdateHandler-UpdateHandler.html",
+                          "tf": 12.5
+                        },
+                        "module-UpdateHandler.html": {
+                          "ref": "module-UpdateHandler.html",
+                          "tf": 5
+                        },
+                        "module-Background.html": {
+                          "ref": "module-Background.html",
+                          "tf": 1.7857142857142856
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "p": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "module-Background.html": {
+                        "ref": "module-Background.html",
+                        "tf": 1.7857142857142856
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "t": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "l": {
+                "5": {
+                  "docs": {
+                    "module-Dragging.html": {
+                      "ref": "module-Dragging.html",
+                      "tf": 4.545454545454546
+                    }
+                  }
+                },
+                "docs": {}
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "module-Helpers.html": {
+                        "ref": "module-Helpers.html",
+                        "tf": 612.5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "o": {
+          "docs": {},
+          "b": {
+            "docs": {},
+            "j": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "module-UpdateHandler-UpdateHandler.html": {
+                        "ref": "module-UpdateHandler-UpdateHandler.html",
+                        "tf": 12.5
+                      },
+                      "module-UpdateHandler.html": {
+                        "ref": "module-UpdateHandler.html",
+                        "tf": 5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "n": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "g": {
+                        "docs": {
+                          "module-BackgroundApi-BackgroundApi.html": {
+                            "ref": "module-BackgroundApi-BackgroundApi.html",
+                            "tf": 2.5
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "p": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "n": {
+                "docs": {
+                  "module-CenteredPopup.html": {
+                    "ref": "module-CenteredPopup.html",
+                    "tf": 6.25
+                  },
+                  "ContextMenuOptions.html": {
+                    "ref": "ContextMenuOptions.html",
+                    "tf": 5.555555555555555
+                  }
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "module-ContextMenu.html": {
+                        "ref": "module-ContextMenu.html",
+                        "tf": 2
+                      },
+                      "ContextMenuOptions.html": {
+                        "ref": "ContextMenuOptions.html",
+                        "tf": 2.7777777777777777
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "c": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "r": {
+                  "docs": {
+                    "module-UpdateHandler.html": {
+                      "ref": "module-UpdateHandler.html",
+                      "tf": 5
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "t": {
+            "docs": {},
+            "h": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "w": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "s": {
+                        "docs": {
+                          "ContextMenuOptions.html": {
+                            "ref": "ContextMenuOptions.html",
+                            "tf": 2.7777777777777777
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "b": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "k": {
+                "docs": {},
+                "g": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "u": {
+                        "docs": {},
+                        "n": {
+                          "docs": {},
+                          "d": {
+                            "docs": {
+                              "module-BackgroundApi-BackgroundApi.html": {
+                                "ref": "module-BackgroundApi-BackgroundApi.html",
+                                "tf": 2.5
+                              },
+                              "module-Background-Background.html": {
+                                "ref": "module-Background-Background.html",
+                                "tf": 520
+                              },
+                              "module-Background.html": {
+                                "ref": "module-Background.html",
+                                "tf": 603.5714285714286
+                              }
+                            },
+                            "a": {
+                              "docs": {},
+                              "p": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {
+                                    "module-BackgroundApi-BackgroundApi.html": {
+                                      "ref": "module-BackgroundApi-BackgroundApi.html",
+                                      "tf": 502.5
+                                    },
+                                    "module-BackgroundApi.html": {
+                                      "ref": "module-BackgroundApi.html",
+                                      "tf": 605
+                                    }
+                                  },
+                                  "~": {
+                                    "docs": {},
+                                    "b": {
+                                      "docs": {},
+                                      "a": {
+                                        "docs": {},
+                                        "c": {
+                                          "docs": {},
+                                          "k": {
+                                            "docs": {},
+                                            "g": {
+                                              "docs": {},
+                                              "r": {
+                                                "docs": {},
+                                                "o": {
+                                                  "docs": {},
+                                                  "u": {
+                                                    "docs": {},
+                                                    "n": {
+                                                      "docs": {},
+                                                      "d": {
+                                                        "docs": {},
+                                                        "a": {
+                                                          "docs": {},
+                                                          "p": {
+                                                            "docs": {},
+                                                            "i": {
+                                                              "docs": {
+                                                                "module-BackgroundApi-BackgroundApi.html": {
+                                                                  "ref": "module-BackgroundApi-BackgroundApi.html",
+                                                                  "tf": 100
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "~": {
+                              "docs": {},
+                              "b": {
+                                "docs": {},
+                                "a": {
+                                  "docs": {},
+                                  "c": {
+                                    "docs": {},
+                                    "k": {
+                                      "docs": {},
+                                      "g": {
+                                        "docs": {},
+                                        "r": {
+                                          "docs": {},
+                                          "o": {
+                                            "docs": {},
+                                            "u": {
+                                              "docs": {},
+                                              "n": {
+                                                "docs": {},
+                                                "d": {
+                                                  "docs": {
+                                                    "module-Background-Background.html": {
+                                                      "ref": "module-Background-Background.html",
+                                                      "tf": 100
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "r": {
+              "docs": {
+                "module-ContextMenu.html": {
+                  "ref": "module-ContextMenu.html",
+                  "tf": 2
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "module-RecentLinks.html": {
+                    "ref": "module-RecentLinks.html",
+                    "tf": 4.166666666666666
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "w": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "n": {
+                      "docs": {
+                        "module-BackgroundApi-BackgroundApi.html": {
+                          "ref": "module-BackgroundApi-BackgroundApi.html",
+                          "tf": 2.5
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "h": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "v": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "r": {
+                        "docs": {
+                          "module-Background-Background.html": {
+                            "ref": "module-Background-Background.html",
+                            "tf": 10
+                          },
+                          "module-BackgroundApi.html": {
+                            "ref": "module-BackgroundApi.html",
+                            "tf": 5
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "c": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "m": {
+                  "docs": {
+                    "module-RecentLinks.html": {
+                      "ref": "module-RecentLinks.html",
+                      "tf": 4.166666666666666
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "d": {
+                "docs": {
+                  "module-Background-Background.html": {
+                    "ref": "module-Background-Background.html",
+                    "tf": 10
+                  },
+                  "module-BackgroundApi.html": {
+                    "ref": "module-BackgroundApi.html",
+                    "tf": 5
+                  },
+                  "module-Background.html": {
+                    "ref": "module-Background.html",
+                    "tf": 1.7857142857142856
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "w": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "r": {
+                      "docs": {
+                        "module-BackgroundApi.html": {
+                          "ref": "module-BackgroundApi.html",
+                          "tf": 5
+                        },
+                        "module-ContextMenu.html": {
+                          "ref": "module-ContextMenu.html",
+                          "tf": 2
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "e": {
+          "docs": {},
+          "x": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "s": {
+                    "docs": {
+                      "module-BackgroundApi-BackgroundApi.html": {
+                        "ref": "module-BackgroundApi-BackgroundApi.html",
+                        "tf": 5
+                      },
+                      "module-UpdateHandler.html": {
+                        "ref": "module-UpdateHandler.html",
+                        "tf": 5
+                      },
+                      "module-ContextMenu.html": {
+                        "ref": "module-ContextMenu.html",
+                        "tf": 2
+                      },
+                      "module-Background.html": {
+                        "ref": "module-Background.html",
+                        "tf": 3.571428571428571
+                      },
+                      "module-Popup.html": {
+                        "ref": "module-Popup.html",
+                        "tf": 1.8518518518518516
+                      }
+                    }
+                  },
+                  "d": {
+                    "docs": {
+                      "module-Popup.html": {
+                        "ref": "module-Popup.html",
+                        "tf": 1.8518518518518516
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "l": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "m": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "module-Dragging-Dragging.html": {
+                          "ref": "module-Dragging-Dragging.html",
+                          "tf": 8.333333333333332
+                        },
+                        "module-Dragging.html": {
+                          "ref": "module-Dragging.html",
+                          "tf": 4.545454545454546
+                        },
+                        "module-Menu.html": {
+                          "ref": "module-Menu.html",
+                          "tf": 3.225806451612903
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "n": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "b": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "module-Background.html": {
+                      "ref": "module-Background.html",
+                      "tf": 1.7857142857142856
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "v": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "module-Background.html": {
+                      "ref": "module-Background.html",
+                      "tf": 1.7857142857142856
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "l": {
+                  "docs": {},
+                  "i": {
+                    "docs": {
+                      "module-Popup.html": {
+                        "ref": "module-Popup.html",
+                        "tf": 1.8518518518518516
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "w": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "d": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "w": {
+                    "docs": {
+                      "module-Popup-Popup.html": {
+                        "ref": "module-Popup-Popup.html",
+                        "tf": 16.666666666666664
+                      },
+                      "module-CenteredPopup.html": {
+                        "ref": "module-CenteredPopup.html",
+                        "tf": 6.25
+                      },
+                      "module-Popup.html": {
+                        "ref": "module-Popup.html",
+                        "tf": 1.8518518518518516
+                      },
+                      "ContextMenuOptions.html": {
+                        "ref": "ContextMenuOptions.html",
+                        "tf": 2.7777777777777777
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "AppConfig.html#.recentIntervalMillis": {
+                        "ref": "AppConfig.html#.recentIntervalMillis",
+                        "tf": 5.555555555555555
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "d": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "h": {
+                  "docs": {},
+                  "/": {
+                    "docs": {},
+                    "h": {
+                      "docs": {},
+                      "e": {
+                        "docs": {},
+                        "i": {
+                          "docs": {},
+                          "g": {
+                            "docs": {},
+                            "h": {
+                              "docs": {},
+                              "t": {
+                                "docs": {
+                                  "ContextMenuOptions.html": {
+                                    "ref": "ContextMenuOptions.html",
+                                    "tf": 2.7777777777777777
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "h": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "e": {
+                  "docs": {
+                    "module-Dragging-Dragging.html": {
+                      "ref": "module-Dragging-Dragging.html",
+                      "tf": 8.333333333333332
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "w": {
+            "docs": {},
+            "/": {
+              "docs": {},
+              "w": {
+                "docs": {},
+                "h": {
+                  "docs": {
+                    "ContextMenuOptions.html": {
+                      "ref": "ContextMenuOptions.html",
+                      "tf": 2.7777777777777777
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "f": {
+          "docs": {},
+          "u": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "n": {
+                        "docs": {
+                          "module-ContextMenu.html": {
+                            "ref": "module-ContextMenu.html",
+                            "tf": 2
+                          },
+                          "module-Background.html": {
+                            "ref": "module-Background.html",
+                            "tf": 1.7857142857142856
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x": {
+          "docs": {
+            "AppConfig.html#.recentIntervalMillis": {
+              "ref": "AppConfig.html#.recentIntervalMillis",
+              "tf": 5.555555555555555
+            }
+          }
+        }
+      },
+      "length": 319
+    },
+    "corpusTokens": [
+      "action",
+      "activ",
+      "activepin",
+      "add",
+      "address",
+      "api",
+      "app",
+      "appconfig",
+      "appconfig.recentintervalmilli",
+      "applic",
+      "background",
+      "backgroundapi",
+      "backgroundapi~backgroundapi",
+      "background~background",
+      "bar",
+      "base",
+      "becom",
+      "behavior",
+      "between",
+      "bind",
+      "browser",
+      "call",
+      "centeredpopup",
+      "changelog",
+      "childnod",
+      "children",
+      "chrome",
+      "class",
+      "click",
+      "code",
+      "config",
+      "consid",
+      "constant",
+      "content",
+      "context",
+      "contextmenu",
+      "contextmenuopt",
+      "contextmenu~contextmenu",
+      "creat",
+      "current",
+      "custom",
+      "data",
+      "detail",
+      "differ",
+      "display",
+      "document",
+      "dom",
+      "drag",
+      "draggbl",
+      "dragging~drag",
+      "drawn",
+      "drop",
+      "dynam",
+      "easili",
+      "element",
+      "enabl",
+      "event",
+      "extend",
+      "extens",
+      "function",
+      "global",
+      "handl",
+      "handler",
+      "happen",
+      "helper",
+      "html5",
+      "icon",
+      "incom",
+      "index",
+      "initi",
+      "inmanifest.json",
+      "instal",
+      "instanti",
+      "last",
+      "link",
+      "list",
+      "list:modul",
+      "list:namespac",
+      "list:tutori",
+      "listen",
+      "lt;static&gt",
+      "main",
+      "make",
+      "member",
+      "menu",
+      "menuobj.rend",
+      "menu~menu",
+      "messag",
+      "method",
+      "middl",
+      "millisecond",
+      "modul",
+      "module:background",
+      "module:backgroundapi",
+      "module:backgroundapi~backgroundapi",
+      "module:background~background",
+      "module:centeredpopup",
+      "module:contextmenu",
+      "module:contextmenu~contextmenu",
+      "module:drag",
+      "module:dragging~drag",
+      "module:help",
+      "module:menu",
+      "module:menu~menu",
+      "module:popup",
+      "module:popup~popup",
+      "module:recentlink",
+      "module:storag",
+      "module:updatehandl",
+      "module:updatehandler~updatehandl",
+      "namespac",
+      "nativ",
+      "new",
+      "next",
+      "note",
+      "number",
+      "object",
+      "occur",
+      "onmessag",
+      "open",
+      "option",
+      "otherwis",
+      "panel",
+      "parent",
+      "part",
+      "pass",
+      "path",
+      "permiss",
+      "persist",
+      "pin",
+      "polici",
+      "popup",
+      "popup~popup",
+      "privaci",
+      "programmat",
+      "readm",
+      "recent",
+      "recentintervalmilli",
+      "recentlink",
+      "regist",
+      "releas",
+      "remov",
+      "render",
+      "requir",
+      "respons",
+      "return",
+      "right",
+      "saving/restor",
+      "see",
+      "set",
+      "shortcut",
+      "show",
+      "size",
+      "sourc",
+      "specifi",
+      "stale",
+      "standard",
+      "storag",
+      "svg",
+      "svgicon",
+      "svgicons.activepin",
+      "svgicons.unpinnedlink",
+      "tab",
+      "time",
+      "tree",
+      "tutori",
+      "unpin",
+      "unpinnedlink",
+      "up",
+      "updat",
+      "updatehandl",
+      "updatehandler~updatehandl",
+      "upon",
+      "us",
+      "user",
+      "user'",
+      "util",
+      "variou",
+      "version",
+      "view",
+      "viewport",
+      "whose",
+      "width/height",
+      "window",
+      "within",
+      "ww/wh",
+      "x"
+    ],
+    "pipeline": [
+      "trimmer",
+      "stopWordFilter",
+      "stemmer"
+    ]
+  },
+  "store": {
+    "index.html": {
+      "id": "index.html",
+      "kind": "readme",
+      "title": "Shortcuts for Chrome",
+      "longname": "index",
+      "name": "Shortcuts for Chrome",
+      "tags": "index",
+      "summary": "Source code documentation",
+      "description": "",
+      "body": ""
+    },
+    "global.html": {
+      "id": "global.html",
+      "kind": "global",
+      "title": "Globals",
+      "longname": "global",
+      "name": "Globals",
+      "tags": "global",
+      "summary": "All documented globals.",
+      "description": "",
+      "body": ""
+    },
+    "undefined": {
+      "kind": "tutorial",
+      "title": "Privacy Policy",
+      "longname": "privacy",
+      "name": "privacy",
+      "tags": "privacy",
+      "summary": "About user privacy",
+      "description": "",
+      "body": ""
+    },
+    "list_namespace.html": {
+      "id": "list_namespace.html",
+      "kind": "list",
+      "title": "Constants",
+      "longname": "list:namespace",
+      "name": "Constants",
+      "tags": "list:namespace",
+      "summary": "Application constants",
+      "description": "",
+      "body": ""
+    },
+    "list_module.html": {
+      "id": "list_module.html",
+      "kind": "list",
+      "title": "Modules",
+      "longname": "list:module",
+      "name": "Modules",
+      "tags": "list:module",
+      "summary": "All documented modules.",
+      "description": "",
+      "body": ""
+    },
+    "list_tutorial.html": {
+      "id": "list_tutorial.html",
+      "kind": "list",
+      "title": "Documents",
+      "longname": "list:tutorial",
+      "name": "Documents",
+      "tags": "list:tutorial",
+      "summary": "All other documents.",
+      "description": "",
+      "body": ""
+    },
+    "module-UpdateHandler-UpdateHandler.html": {
+      "id": "module-UpdateHandler-UpdateHandler.html",
+      "kind": "class",
+      "title": "UpdateHandler~UpdateHandler",
+      "longname": "module:UpdateHandler~UpdateHandler",
+      "name": "UpdateHandler",
+      "tags": "module:UpdateHandler~UpdateHandler",
+      "summary": "",
+      "description": "Instantiate this object to register a handler",
+      "body": ""
+    },
+    "module-BackgroundApi-BackgroundApi.html": {
+      "id": "module-BackgroundApi-BackgroundApi.html",
+      "kind": "class",
+      "title": "BackgroundApi~BackgroundApi",
+      "longname": "module:BackgroundApi~BackgroundApi",
+      "name": "BackgroundApi",
+      "tags": "module:BackgroundApi~BackgroundApi",
+      "summary": "",
+      "description": "Instantiate new BackgroundApi() to register background API listeners which handles messaging between different parts of the extension, @see onMessage for details on message passing in chrome extensions.",
+      "body": ""
+    },
+    "module-ContextMenu-ContextMenu.html": {
+      "id": "module-ContextMenu-ContextMenu.html",
+      "kind": "class",
+      "title": "ContextMenu~ContextMenu",
+      "longname": "module:ContextMenu~ContextMenu",
+      "name": "ContextMenu",
+      "tags": "module:ContextMenu~ContextMenu",
+      "summary": "",
+      "description": "Initialize the context menu",
+      "body": ""
+    },
+    "module-Popup-Popup.html": {
+      "id": "module-Popup-Popup.html",
+      "kind": "class",
+      "title": "Popup~Popup",
+      "longname": "module:Popup~Popup",
+      "name": "Popup",
+      "tags": "module:Popup~Popup",
+      "summary": "",
+      "description": "instantiate Popup window",
+      "body": ""
+    },
+    "module-Dragging-Dragging.html": {
+      "id": "module-Dragging-Dragging.html",
+      "kind": "class",
+      "title": "Dragging~Dragging",
+      "longname": "module:Dragging~Dragging",
+      "name": "Dragging",
+      "tags": "module:Dragging~Dragging",
+      "summary": "",
+      "description": "Create element whose children can be dragged and dropped",
+      "body": ""
+    },
+    "module-Menu-Menu.html": {
+      "id": "module-Menu-Menu.html",
+      "kind": "class",
+      "title": "Menu~Menu",
+      "longname": "module:Menu~Menu",
+      "name": "Menu",
+      "tags": "module:Menu~Menu",
+      "summary": "",
+      "description": "",
+      "body": ""
+    },
+    "module-Background-Background.html": {
+      "id": "module-Background-Background.html",
+      "kind": "class",
+      "title": "Background~Background",
+      "longname": "module:Background~Background",
+      "name": "Background",
+      "tags": "module:Background~Background",
+      "summary": "",
+      "description": "Instantiate Background to bind background behavior.",
+      "body": ""
+    },
+    "module-Storage.html": {
+      "id": "module-Storage.html",
+      "kind": "module",
+      "title": "Storage",
+      "longname": "module:Storage",
+      "name": "Storage",
+      "tags": "module:Storage",
+      "summary": "",
+      "description": "Application storage for persisting data",
+      "body": ""
+    },
+    "module-CenteredPopup.html": {
+      "id": "module-CenteredPopup.html",
+      "kind": "module",
+      "title": "CenteredPopup",
+      "longname": "module:CenteredPopup",
+      "name": "CenteredPopup",
+      "tags": "module:CenteredPopup",
+      "summary": "",
+      "description": "Utility module for opening popup window in the middle of user's viewport.",
+      "body": ""
+    },
+    "module-Dragging.html": {
+      "id": "module-Dragging.html",
+      "kind": "module",
+      "title": "Dragging",
+      "longname": "module:Dragging",
+      "name": "Dragging",
+      "tags": "module:Dragging",
+      "summary": "",
+      "description": "This module makes childNodes of some DOM Element draggble using native HTML5 drag and drop.",
+      "body": ""
+    },
+    "module-UpdateHandler.html": {
+      "id": "module-UpdateHandler.html",
+      "kind": "module",
+      "title": "UpdateHandler",
+      "longname": "module:UpdateHandler",
+      "name": "UpdateHandler",
+      "tags": "module:UpdateHandler",
+      "summary": "",
+      "description": "Register action that should occur on extension install or update. Instantiate this object to register a handler",
+      "body": ""
+    },
+    "module-Helpers.html": {
+      "id": "module-Helpers.html",
+      "kind": "module",
+      "title": "Helpers",
+      "longname": "module:Helpers",
+      "name": "Helpers",
+      "tags": "module:Helpers",
+      "summary": "",
+      "description": "Menu panel helper methods",
+      "body": ""
+    },
+    "module-BackgroundApi.html": {
+      "id": "module-BackgroundApi.html",
+      "kind": "module",
+      "title": "BackgroundApi",
+      "longname": "module:BackgroundApi",
+      "name": "BackgroundApi",
+      "tags": "module:BackgroundApi",
+      "summary": "",
+      "description": "Listen to incoming messages from other browser contexts. Instantiate new BackgroundApi() to bind this behavior.",
+      "body": ""
+    },
+    "module-ContextMenu.html": {
+      "id": "module-ContextMenu.html",
+      "kind": "module",
+      "title": "ContextMenu",
+      "longname": "module:ContextMenu",
+      "name": "ContextMenu",
+      "tags": "module:ContextMenu",
+      "summary": "",
+      "description": "This module adds custom options to chrome browser action context menu (right click on extension icon next to address bar). contextMenus permissions is required inmanifest.json. Instantiate new ContextMenu() to activate this functionality.",
+      "body": ""
+    },
+    "module-RecentLinks.html": {
+      "id": "module-RecentLinks.html",
+      "kind": "module",
+      "title": "RecentLinks",
+      "longname": "module:RecentLinks",
+      "name": "RecentLinks",
+      "tags": "module:RecentLinks",
+      "summary": "",
+      "description": "Recent links were used recently (based on config). They become stale after some time and then get removed from the list of recent.",
+      "body": ""
+    },
+    "module-Menu.html": {
+      "id": "module-Menu.html",
+      "kind": "module",
+      "title": "Menu",
+      "longname": "module:Menu",
+      "name": "Menu",
+      "tags": "module:Menu",
+      "summary": "",
+      "description": "Menu panel is a DOM elements that shows a list of links. This menu panel is drawn dynamically by creating all menu elements programmatically upon calling menuObj.render(). The parent instantiating the menu will call render. Parent must then add the returned menu to DOM tree to display it to user.",
+      "body": ""
+    },
+    "module-Background.html": {
+      "id": "module-Background.html",
+      "kind": "module",
+      "title": "Background",
+      "longname": "module:Background",
+      "name": "Background",
+      "tags": "module:Background",
+      "summary": "",
+      "description": "This module is responsible for setting up all event handlers and actions that happen in the background context of the extension. This module will: initialize the message passing API sets up extension context menu bind updateHandler Instantiate new Background() to enable this functionality.",
+      "body": ""
+    },
+    "module-Popup.html": {
+      "id": "module-Popup.html",
+      "kind": "module",
+      "title": "Popup",
+      "longname": "module:Popup",
+      "name": "Popup",
+      "tags": "module:Popup",
+      "summary": "",
+      "description": "This is the main class for the popup window that shows when user clicks extension icon. This class is responsible for: saving/restoring persistent data and rendering the menu panel This popup view can easily be extended to display other content, but currently it renders the menu panel only.",
+      "body": ""
+    },
+    "AppConfig.html": {
+      "id": "AppConfig.html",
+      "kind": "namespace",
+      "title": "AppConfig",
+      "longname": "AppConfig",
+      "name": "AppConfig",
+      "tags": "AppConfig",
+      "summary": "",
+      "description": "Various application configs",
+      "body": ""
+    },
+    "AppConfig.html#.recentIntervalMillis": {
+      "id": "AppConfig.html#.recentIntervalMillis",
+      "kind": "member",
+      "title": "&lt;static&gt; recentIntervalMillis :number",
+      "longname": "AppConfig.recentIntervalMillis",
+      "name": "recentIntervalMillis",
+      "tags": "AppConfig.recentIntervalMillis recentIntervalMillis",
+      "summary": "",
+      "description": "When a link clicked within last X milliseconds, it is considered \"recently used\"."
+    },
+    "SVGIcons.html": {
+      "id": "SVGIcons.html",
+      "kind": "namespace",
+      "title": "SVGIcons",
+      "longname": "SVGIcons",
+      "name": "SVGIcons",
+      "tags": "SVGIcons",
+      "summary": "",
+      "description": "App icons svg paths",
+      "body": ""
+    },
+    "SVGIcons.html#.unpinnedLink": {
+      "id": "SVGIcons.html#.unpinnedLink",
+      "kind": "member",
+      "title": "&lt;static&gt; unpinnedLink",
+      "longname": "SVGIcons.unpinnedLink",
+      "name": "unpinnedLink",
+      "tags": "SVGIcons.unpinnedLink unpinnedLink",
+      "summary": "",
+      "description": "SVG icon for an unpinned menu link"
+    },
+    "SVGIcons.html#.activePin": {
+      "id": "SVGIcons.html#.activePin",
+      "kind": "member",
+      "title": "&lt;static&gt; activePin",
+      "longname": "SVGIcons.activePin",
+      "name": "activePin",
+      "tags": "SVGIcons.activePin activePin",
+      "summary": "",
+      "description": "SVG icon for an pinned menu link"
+    },
+    "ContextMenuOptions.html": {
+      "id": "ContextMenuOptions.html",
+      "kind": "namespace",
+      "title": "ContextMenuOptions",
+      "longname": "ContextMenuOptions",
+      "name": "ContextMenuOptions",
+      "tags": "ContextMenuOptions",
+      "summary": "",
+      "description": "List of options to display in the context menu. Links will open in new tab when width/height (ww/wh) are not specified. Otherwise links will open in a window of specified size.",
+      "body": ""
+    }
+  }
+};
