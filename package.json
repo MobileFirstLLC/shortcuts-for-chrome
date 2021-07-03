@@ -24,8 +24,9 @@
   },
   "devDependencies": {
     "csv-parser": "^3.0.0",
-    "cws-publish": "^2.0.2",
-    "extension-cli": "1.1.0"
+    "cws-publish": "^2.0.3",
+    "extension-cli": "1.1.0",
+    "foodoc": "^0.0.9"
   },
   "babel": {
     "presets": [
