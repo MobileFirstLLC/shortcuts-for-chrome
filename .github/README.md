@@ -8,7 +8,7 @@
 </h1>
 
 <h3 align="center">
-  Quick access nav for devs working with chrome browser<br/>Find all <code>chrome://</code> URLs easily!<br/><br/>
+  Navigation menu for devs working with Chrome browser
 </h3>
 
 <p align="center">
@@ -21,7 +21,7 @@
 <a href="https://codeclimate.com/github/MobileFirstLLC/shortcuts-for-chrome/maintainability"><img alt="Code Climate maintainability" src="https://img.shields.io/codeclimate/maintainability/MobileFirstLLC/shortcuts-for-chrome?style=flat-square"></a>
 </p>
 
-Default Chrome browser is optimized for non-technical users. For developers who build extensions, or web devs who want to inspect what is happening under the hood with indexedDB, service workers, or Bluetooth devices, this menu brings shortcuts to those hidden browser features. You can further customize the menu by pinning items you care about on top.
+Default Chrome browser is optimized for non-technical users. For developers who build extensions, or web devs who want to inspect what is happening under the hood with indexedDB, service workers, or Bluetooth devices, this menu brings shortcuts to those hidden browser features. This menu lists all `chrome://*` URLs in a single flat menu. You can customize the menu by pinning items you care about on top.
 
 <p align="center">
 <strong>Install at Chrome Web Store</strong><br/>
@@ -35,13 +35,13 @@ Default Chrome browser is optimized for non-technical users. For developers who 
 </p>
 
 
-## 🔥 Features
+## Primary Features
+
+#### 💯 &nbsp; Find all `chrome://` URLs in one menu
 
 #### 📍 &nbsp; Pin your favorite links for fast access
 
 #### 🖲️ &nbsp; Drag and drop to organize links
-
-#### 🔍 &nbsp; Discover rare browser features
 
 #### 🌗 &nbsp; Matches browser dark/light mode
 

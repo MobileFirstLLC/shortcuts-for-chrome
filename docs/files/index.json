@@ -3,8 +3,12 @@
     "title": "Privacy Policy",
     "summary": "About user privacy"
   },
-  "CHANGELOG": {
+  "changelog": {
     "title": "Release Notes",
     "summary": "standard version changelog"
+  },
+  "dev_guide": {
+    "title": "Developer Guide",
+    "summary": "How to work with this source code"
   }
 }
