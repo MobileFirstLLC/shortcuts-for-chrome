@@ -11,9 +11,12 @@
   Quick access nav for devs working with chrome browser<br/>Find all <code>chrome://</code> URLs easily!<br/><br/>
 </h3>
 
-<p align="center"><a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal?label=latest%20release&color=3D5AFE&style=flat-square" alt="version"/></a> <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal" ><img src="https://img.shields.io/chrome-web-store/users/jnmekaomnicdcpgdndekkmojfomifjal?style=flat-square" alt="users"></a> <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/stars/jnmekaomnicdcpgdndekkmojfomifjal?style=flat-square" alt="rating" /></a>
+<p align="center">
+<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal?label=latest%20release&color=3D5AFE&style=flat-square" alt="version"/></a> 
+<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/users/jnmekaomnicdcpgdndekkmojfomifjal?style=flat-square" alt="users"></a> 
+<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/stars/jnmekaomnicdcpgdndekkmojfomifjal?style=flat-square" alt="rating" /></a>
 <br/>
-<a href="https://travis-ci.com/github/MobileFirstLLC/shortcuts-for-chrome"><img alt="Travis (.org)" src="https://img.shields.io/travis/MobileFirstLLC/shortcuts-for-chrome?style=flat-square"></a>
+<a href="https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/build.yml"><img alt="Build" src="https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/build.yml/badge.svg"></a>
 <a href="https://coveralls.io/github/MobileFirstLLC/shortcuts-for-chrome"><img alt="Coveralls github" src="https://img.shields.io/coveralls/github/MobileFirstLLC/shortcuts-for-chrome?style=flat-square"></a>
 <a href="https://codeclimate.com/github/MobileFirstLLC/shortcuts-for-chrome/maintainability"><img alt="Code Climate maintainability" src="https://img.shields.io/codeclimate/maintainability/MobileFirstLLC/shortcuts-for-chrome?style=flat-square"></a>
 </p>
