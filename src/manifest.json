@@ -3,7 +3,6 @@
   "short_name": "__MSG_appShortName__",
   "description": "__MSG_appDesc__",
   "version": "3.3.0",
-  "version_name": "3.3.0",
   "offline_enabled": true,
   "manifest_version": 2,
   "default_locale": "en",
