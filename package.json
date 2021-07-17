@@ -20,7 +20,8 @@
     "test": "xt-test",
     "clean": "xt-clean",
     "sync": "xt-sync",
-    "translate": "node translate"
+    "translate": "node translate",
+    "coverage": "nyc --reporter=lcov npm run test"
   },
   "devDependencies": {
     "csv-parser": "^3.0.0",

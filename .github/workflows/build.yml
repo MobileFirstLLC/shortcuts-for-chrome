@@ -24,12 +24,12 @@ jobs:
         run: npm install
 
       - name: Unit test
-        run: |
-          npm run test -- "nyc report --reporter=text-lcov"
+        run: npm run coverage
 
       - name: Report coverage
         uses: coverallsapp/github-action@master
         with:
+          path-to-lcov:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build docs
