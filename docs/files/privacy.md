@@ -1,5 +1,3 @@
-# Privacy Policy
-
 This is a privacy policy regarding software applications developed by Mobile First LLC (the "developer"). This policy is applies to Shortcuts for Chrome (the "app") that was used to link to this policy. This policy also applies to people installing and using an application (the "user").
 
 ### User Accounts
@@ -16,5 +14,5 @@ This application does NOT include tracking/analytics about user behavior.
 
 By using the app the user accepts this policy.
 
-Last modified: January 29, 2021.
+Last modified: July 17, 2021.
 
