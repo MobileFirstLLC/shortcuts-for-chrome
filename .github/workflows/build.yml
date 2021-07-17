@@ -24,15 +24,16 @@ jobs:
         run: npm install
 
       - name: Unit test
-        run: npm run test -- --coverage
+        run: |
+          npm run test -- "nyc report --reporter=text-lcov"
+
+      - name: Report coverage
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build docs
         run: npm run docs
-
-#      - name: Report coverage
-#        uses: coverallsapp/github-action@master
-#        with:
-#          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy docs
         uses: JamesIves/github-pages-deploy-action@4.1.3
