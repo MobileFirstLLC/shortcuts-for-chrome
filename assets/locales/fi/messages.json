@@ -17,6 +17,24 @@
   "ctx_share": {
     "message": "Jaa..."
   },
+  "ctx_share_tw": {
+    "message": "Twitter"
+  },
+  "ctx_share_fb": {
+    "message": "Facebook"
+  },
+  "ctx_share_rd": {
+    "message": "Reddit"
+  },
+  "ctx_share_li": {
+    "message": "LinkedIn"
+  },
+  "ctx_share_wa": {
+    "message": "Whatsapp"
+  },
+  "ctx_share_pi": {
+    "message": "Pinterest"
+  },
   "ctx_share_copy": {
     "message": "Kopioi URL"
   },

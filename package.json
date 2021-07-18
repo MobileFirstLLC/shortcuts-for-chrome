@@ -20,10 +20,10 @@
     "test": "xt-test",
     "clean": "xt-clean",
     "sync": "xt-sync",
-    "coverage": "nyc --reporter=lcov npm run test"
+    "coverage": "nyc --reporter=lcov npm run test",
+    "translate": "node i18n/translate.js"
   },
   "devDependencies": {
-    "csv-parser": "^3.0.0",
     "cws-publish": "^2.0.4",
     "extension-cli": "1.1.0",
     "foodoc": "^0.0.9"
