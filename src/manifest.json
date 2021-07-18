@@ -8,7 +8,7 @@
   "default_locale": "en",
   "minimum_chrome_version": "31",
   "homepage_url": "https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal",
-  "permissions": ["storage", "contextMenus", "system.display"],
+  "permissions": ["storage", "contextMenus"],
   "icons": {
     "128": "assets/128x128.png"
   },

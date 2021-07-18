@@ -2,8 +2,7 @@
   "name": "__MSG_appName__",
   "short_name": "__MSG_appShortName__",
   "description": "__MSG_appDesc__",
-  "version": "3.0.1",
-  "version_name": "3.2.0",
+  "version": "3.3.0",
   "offline_enabled": true,
   "manifest_version": 3,
   "default_locale": "en",
@@ -11,8 +10,7 @@
   "homepage_url": "https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal",
   "permissions": [
     "storage",
-    "contextMenus",
-    "system.display"
+    "contextMenus"
   ],
   "icons": {
     "128": "icons/128x128.png"
