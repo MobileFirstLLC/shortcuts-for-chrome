@@ -20,9 +20,16 @@ with ability to pin and sort favorite links.
 This website contains source code documentation for this chrome extension. 
 <br/>
 Extension source code is available <a href='https://github.com/MobileFirstLLC/shortcuts-for-chrome'>on Github ↗</a>
-<br/>
-See <a href='list_tutorial.html'>Documents</a> for changelog, policies and developer guide.
 </p>
+
+<a class="github-button" href="https://github.com/MobileFirstLLC/shortcuts-for-chrome" data-color-scheme="dark" data-icon="octicon-star" data-size="large" aria-label="Star MobileFirstLLC/shortcuts-for-chrome on GitHub">Star</a>
+<a class="github-button" href="https://github.com/MobileFirstLLC/shortcuts-for-chrome/fork" data-color-scheme="dark" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork MobileFirstLLC/shortcuts-for-chrome on GitHub">Fork</a>
+<a class="github-button" href="https://github.com/MobileFirstLLC/shortcuts-for-chrome/subscription" data-color-scheme="dark" data-icon="octicon-eye" data-size="large" aria-label="Watch MobileFirstLLC/shortcuts-for-chrome on GitHub">Watch</a>
+<a class="github-button" href="https://github.com/MobileFirstLLC/shortcuts-for-chrome/archive/master.zip" data-color-scheme="dark" data-icon="octicon-download" data-size="large" aria-label="Download MobileFirstLLC/shortcuts-for-chrome on GitHub">Download</a>
+<a class="github-button" href="https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues" data-color-scheme="dark" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue MobileFirstLLC/shortcuts-for-chrome on GitHub">Issue</a>
+
+<br/>See <a href='list_tutorial.html'>Documents</a> for changelog, policies and developer guide.
+
 
 * * *
 

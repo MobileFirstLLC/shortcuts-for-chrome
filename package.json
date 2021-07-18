@@ -20,7 +20,6 @@
     "test": "xt-test",
     "clean": "xt-clean",
     "sync": "xt-sync",
-    "translate": "node translate",
     "coverage": "nyc --reporter=lcov npm run test"
   },
   "devDependencies": {
