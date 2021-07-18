@@ -34,10 +34,9 @@ Path | Description
 **└─ docs** | files used for generating these these docs
 **└─ src** | source code
  &nbsp; **└─ background** | background scripts
+ &nbsp; **└─ menu** | navigation menu
  &nbsp; **└─ modules** | reusable modules
- &nbsp; **└─ ui** | visible ui elements
- &nbsp; &nbsp; &nbsp; **└─ menu** | menu ui component
- &nbsp; &nbsp; &nbsp; **└─ popup** | extension popup view
+ &nbsp; **└─ popup** | extension popup view
  &nbsp; **└─ config.js** | extension config
  &nbsp; **└─ links.json** | generated list of menu links (do not edit)
  &nbsp; **└─ manifest.json** | extension manifest

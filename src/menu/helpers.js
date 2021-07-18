@@ -9,7 +9,7 @@
  * Helper methods for generating links menu
  * * * * * * * * * * * * * * * * * * * * */
 
-import {SVGIcons} from '../../config';
+import {SVGIcons} from '../config';
 
 /**
  * @module

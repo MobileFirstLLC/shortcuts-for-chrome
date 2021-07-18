@@ -9,7 +9,7 @@
  * Browser links menu UI and event handling
  * * * * * * * * * * * * * * * * * * * * */
 
-import Draggable from '../../modules/dragging.js';
+import Draggable from '../modules/dragging.js';
 import Helpers from './helpers';
 
 /**

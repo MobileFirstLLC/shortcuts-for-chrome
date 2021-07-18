@@ -9,9 +9,9 @@
  * Popup window script implementation
  * * * * * * * * * * * * * * * * * * * * */
 
-import {MenuLinks} from '../../links.json';
-import Storage from '../../modules/storage';
-import RecentLinks from '../../modules/recent';
+import {MenuLinks} from '../links.json';
+import Storage from '../modules/storage';
+import RecentLinks from '../modules/recent';
 import Menu from '../menu/menu';
 
 /**
