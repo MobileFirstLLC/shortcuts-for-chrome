@@ -1,4 +1,4 @@
-import Popup from '../src/ui/popup/popup';
+import Popup from '../src/popup/popup';
 import Storage from '../src/modules/storage';
 
 describe('Popup Window', function () {
