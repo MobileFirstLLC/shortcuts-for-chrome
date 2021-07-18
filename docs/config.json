@@ -17,6 +17,9 @@
       "ua": "UA-129118591-7",
       "domain": "https://oss.mobilefirst.me/shortcuts-for-chrome"
     },
+    "scripts": [
+      "https://buttons.github.io/buttons.js"
+    ],
     "systemName": "Shortcuts for Chrome",
     "systemSummary": "Source code documentation",
     "systemColor": "#3D5AFE",
