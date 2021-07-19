@@ -22,9 +22,6 @@ Code-wise this extension has 3 parts: `Popup`, `Menu` and `Background`.
 
 In addition, there are several utility [modules](list_module.html) that are used to implement this behavior.
 
-Menu links and their associated, localized labels are defined in `assets/dictionary.csv`.
-
-
 ## Project Source Code Organization
 
 Path | Description
