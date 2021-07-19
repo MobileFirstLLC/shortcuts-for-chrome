@@ -1,7 +1,7 @@
 {
     "appName": "Shortcuts for Chrome",
     "appShortName": "Shortcuts for Chrome",
-    "appDesc": "All Chrome browser URLs under one menu. Organize however you like.",
+    "appDesc": "Navigation menu for developers using Chrome. Organize however you like.",
     "ctx_rate": "Rate extension",
     "ctx_source": "Source code",
     "ctx_share": "Share...",
