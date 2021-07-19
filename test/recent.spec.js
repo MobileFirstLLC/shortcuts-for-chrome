@@ -1,6 +1,6 @@
 import {AppConfig} from '../src/config';
-import RecentLinks from '../src/modules/recent';
-import Storage from '../src/modules/storage';
+import RecentLinks from '../src/shared/recent';
+import Storage from '../src/shared/storage';
 
 describe('Recent links', function () {
 
@@ -18,6 +18,8 @@ describe('Recent links', function () {
     });
 
     afterEach(function () {
+        chrome.flush();
+        sandbox.restore();
         global.clock.restore();
     });
 

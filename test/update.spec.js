@@ -1,10 +1,14 @@
-import UpdateHandler from '../src/modules/onUpdate';
-import Storage from '../src/modules/storage';
+import UpdateHandler from '../src/background/update';
+import Storage from '../src/shared/storage';
 
 describe('Update Handler', function () {
 
     beforeEach(() => {
         new UpdateHandler();
+    });
+    afterEach(function () {
+        chrome.flush();
+        sandbox.restore();
     });
 
     it('It migrates storage on update', done => {

@@ -1,15 +1,3 @@
-/** * * * * * * * * * * * * * * * * * * * *
- * Shortcuts for Chrome
- * Custom navigation menu for Chrome browser
- *
- * Author: Mobile First LLC
- * Website: https://mobilefirst.me
- *
- * @description
- * Build extension context menu and handle context menu clicks
- * * * * * * * * * * * * * * * * * * * * */
-
-import CenteredPopup from './centeredPopup';
 import {ContextMenuOptions} from '../config';
 
 /**
@@ -30,15 +18,11 @@ export default class ContextMenu {
      * @name ContextMenu
      */
     constructor() {
-        // TODO: v3 manifest this will be "action"
-        const CONTEXT = 'browser_action';
-
         chrome.contextMenus.removeAll(() => {
             Object.keys(ContextMenuOptions).map(key => {
                 chrome.contextMenus.create({
-                    title: chrome.i18n.getMessage(
-                        ContextMenuOptions[key].title),
-                    contexts: [CONTEXT],
+                    title: ContextMenuOptions[key].title,
+                    contexts: ['action'],
                     parentId: ContextMenuOptions[key].parentId,
                     id: ContextMenuOptions[key].id || key
                 });
@@ -60,29 +44,13 @@ export default class ContextMenu {
      * full url returned by this function.
      */
     static generateUrl(channel) {
-        const {short_name, homepage_url} =
-            chrome.runtime.getManifest();
+        const {short_name, homepage_url} = chrome.runtime.getManifest();
         const hashtag = '%23' + ((short_name || '')
             .replace(/ /g, ''));
 
         return channel.url
             .replace('{hash}', hashtag)
             .replace('{URI}', homepage_url);
-    }
-
-    /**
-     * @static
-     * @private
-     * @description Copy text value to clipboard
-     * @param {String} value
-     */
-    static clipboardCopy(value) {
-        /** @ignore */
-        document.oncopy = (event) => {
-            event.preventDefault();
-            event.clipboardData.setData('text/plain', value);
-        };
-        document.execCommand('Copy', false, null);
     }
 
     /**
@@ -97,14 +65,7 @@ export default class ContextMenu {
         if (!option) return false;
 
         const url = ContextMenu.generateUrl(option);
-        const {ww, wh} = option;
 
-        if (option.id === ContextMenuOptions.copy.id) {
-            return ContextMenu.clipboardCopy(url);
-        }
-        if (ww && wh) {
-            return CenteredPopup.open(ww, wh, url);
-        }
-        return window.open(url);
+        return chrome.tabs.create({url});
     }
 }
