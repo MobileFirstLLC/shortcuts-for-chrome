@@ -1,13 +1,7 @@
-/** * * * * * * * * * * * * * * * * * * * *
- * Shortcuts for Chrome
- * Custom navigation menu for Chrome browser
- *
- * Author: Mobile First LLC
- * Website: https://mobilefirst.me
- *
+/**
  * @description
  * Extension configuration options
- * * * * * * * * * * * * * * * * * * * * */
+ */
 
 /**
  * Various application configs
