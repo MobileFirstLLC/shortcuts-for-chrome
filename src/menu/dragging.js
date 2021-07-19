@@ -1,21 +1,8 @@
-/** * * * * * * * * * * * * * * * * * * * *
- * Shortcuts for Chrome
- * Custom navigation menu for Chrome browser
- *
- * Author: Mobile First LLC
- * Website: https://mobilefirst.me
- *
- * @description
- * Vanilla drag and drop implementation
- * to enable dragging links within their
- * container element.
- * * * * * * * * * * * * * * * * * * * * */
-
 /**
  * @module
  * @name Dragging
  * @description This module makes childNodes of some DOM Element
- * draggble using native HTML5 drag and drop.
+ * draggable using native HTML5 drag and drop.
  *
  * @example new Draggable("id",
  containerElement,

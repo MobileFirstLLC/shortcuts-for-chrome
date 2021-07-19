@@ -54,7 +54,7 @@
     "scss_bundles": [
       {
         "src": [
-          "./src/theme.scss",
+          "./src/shared/theme.scss",
           "./src/popup/popup.scss",
           "./src/**/*.scss"
         ],

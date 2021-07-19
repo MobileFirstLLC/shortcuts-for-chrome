@@ -3,6 +3,6 @@
  * Run background scripts
  */
 
-import Background from './background/background';
+import Background from './background/index';
 
 (() => new Background())();

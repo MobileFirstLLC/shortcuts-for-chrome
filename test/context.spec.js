@@ -1,4 +1,4 @@
-import ContextMenu from '../src/modules/contextMenu';
+import ContextMenu from '../src/background/contextMenu';
 import {ContextMenuOptions} from '../src/config';
 
 class DisplayStub {

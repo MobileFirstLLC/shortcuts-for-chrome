@@ -1,16 +1,6 @@
-/** * * * * * * * * * * * * * * * * * * * *
- * Shortcuts for Chrome
- * Custom navigation menu for Chrome browser
- *
- * Author: Mobile First LLC
- * Website: https://mobilefirst.me
- *
- * @description
- * Background message listeners
- * * * * * * * * * * * * * * * * * * * * */
-
 // noinspection JSUnresolvedVariable,JSDeprecatedSymbols
-import RecentLinks from './recent';
+
+import RecentLinks from '../shared/recent';
 
 /**
  * @description
@@ -18,13 +8,13 @@ import RecentLinks from './recent';
  * Instantiate `new BackgroundApi()` to bind this behavior.
  *
  * @module
- * @name BackgroundApi
+ * @name Api
  */
-export default class BackgroundApi {
+export default class Api {
 
     /**
      * @constructor
-     * @name BackgroundApi
+     * @name Api
      *
      * @description
      * Instantiate `new BackgroundApi()` to register background API listeners which

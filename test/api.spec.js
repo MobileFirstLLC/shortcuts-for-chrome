@@ -1,5 +1,5 @@
-import BackgroundApi from '../src/modules/backgroundApi';
-import RecentLinks from '../src/modules/recent';
+import BackgroundApi from '../src/background/api';
+import RecentLinks from '../src/shared/recent';
 
 describe('Background API', function () {
 

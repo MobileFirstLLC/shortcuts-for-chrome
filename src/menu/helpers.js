@@ -1,14 +1,3 @@
-/** * * * * * * * * * * * * * * * * * * * *
- * Shortcuts for Chrome
- * Custom navigation menu for Chrome browser
- *
- * Author: Mobile First LLC
- * Website: https://mobilefirst.me
- *
- * @description
- * Helper methods for generating links menu
- * * * * * * * * * * * * * * * * * * * * */
-
 import {SVGIcons} from '../config';
 
 /**

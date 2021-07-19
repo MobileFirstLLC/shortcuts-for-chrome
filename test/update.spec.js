@@ -1,5 +1,5 @@
-import UpdateHandler from '../src/modules/onUpdate';
-import Storage from '../src/modules/storage';
+import UpdateHandler from '../src/background/update';
+import Storage from '../src/shared/storage';
 
 describe('Update Handler', function () {
 
