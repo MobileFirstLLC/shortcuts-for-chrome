@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [3.4.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.3.0...v3.4.0) (2021-07-19)
 
+
+### Bug Fixes
+
+* change font size to better match native chrome size ([9ad9dcb](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commit/9ad9dcbe8c8faad6923005c786123007a07a2307))
+* pinned icon alignment is off ([7d2520a](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commit/7d2520a0a80f5d75e6ce721409e2d69007214e51))
+
+## [3.4.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.3.0...v3.4.0) (2021-07-19)
+
 * migrate to manifest v3 [PR #12](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/12)
 * change font size to better match native chrome size [PR #11](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/11)
 * pinned icon alignment is off [PR #10](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/10)
