@@ -49,4 +49,6 @@ Chrome browser navigation is optimized for non-technical users. For developers, 
 
 **Source code docs:**  [View documentation here ↗](https://oss.mobilefirst.me/shortcuts-for-chrome/)
 
-**Issues & Feature Requests:** [Submit on Github](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/new/choose)
+**Issues & Feature Requests:** [use Github Issues](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/new/choose)
+
+**Internationalization:** [Contribute at POEditor ↗](https://poeditor.com/join/project?hash=c2ihN8duR2)
