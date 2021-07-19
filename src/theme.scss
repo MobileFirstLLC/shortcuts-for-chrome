@@ -1,5 +1,4 @@
 /** Light mode (default) **/
-
 :root {
   --body-bg: #fff;
   --link-color: #222;
@@ -26,8 +25,8 @@
     --scrollbar-track: var(--body-bg);
     --scrollbar-thumb: #404040;
     --scrollbar-thumb-hover: #484848;
-    --scrollbar-border: rgba(0, 0, 0, 0.3);
-    --divider: rgba(0, 0, 0, 0.3);
+    --divider: #393B3E;
+    --scrollbar-border: var(--divider);
     --link-hover-bg: #4B4C4F99;
     --inactive-icon:#999;
     --drag-color: #ccc9;
