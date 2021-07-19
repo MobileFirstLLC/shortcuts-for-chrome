@@ -1,4 +1,14 @@
+# Changelog
+
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [3.4.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.3.0...v3.4.0) (2021-07-19)
+
+
+### Bug Fixes
+
+* change font size to better match native chrome size ([9ad9dcb](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commit/9ad9dcbe8c8faad6923005c786123007a07a2307))
+* pinned icon alignment is off ([7d2520a](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commit/7d2520a0a80f5d75e6ce721409e2d69007214e51))
 
 ## [3.3.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.2.2...v3.3.0) (2021-02-24)
 
