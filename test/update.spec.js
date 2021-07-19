@@ -6,6 +6,10 @@ describe('Update Handler', function () {
     beforeEach(() => {
         new UpdateHandler();
     });
+    afterEach(function () {
+        chrome.flush();
+        sandbox.restore();
+    });
 
     it('It migrates storage on update', done => {
         const stub = sandbox.stub(Storage, 'migrateStorage');

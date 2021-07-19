@@ -6,6 +6,10 @@ describe('Background API', function () {
     beforeEach(() => {
         new BackgroundApi();
     });
+    afterEach(function () {
+        chrome.flush();
+        sandbox.restore();
+    });
 
     it('It opens tab on request', done => {
         expect(chrome.tabs.create.notCalled).to.be.true;

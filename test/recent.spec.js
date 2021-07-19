@@ -18,6 +18,8 @@ describe('Recent links', function () {
     });
 
     afterEach(function () {
+        chrome.flush();
+        sandbox.restore();
         global.clock.restore();
     });
 

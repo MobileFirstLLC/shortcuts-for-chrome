@@ -1,13 +1,8 @@
 import ContextMenu from '../src/background/contextMenu';
 import {ContextMenuOptions} from '../src/config';
 
-class DisplayStub {
-    getInfo(callback) {
-        callback([{workArea: {width: 1920, height: 1024}}]);
-    }
-}
 
-describe('Context Menu', function () {
+describe('Context Menu', () => {
 
     beforeEach(() => {
         chrome.runtime.getManifest.returns({
@@ -15,33 +10,30 @@ describe('Context Menu', function () {
             short_name: 'app',
             homepage_url: 'https://google.com'
         });
-        document.oncopy = () => {};
-        document.execCommand = (command) => {};
-        chrome.system.display = new DisplayStub();
+        document.oncopy = () => {
+        };
+        document.execCommand = (command) => {
+        };
         chrome.contextMenus.removeAll.yields({});
         new ContextMenu();
     });
 
+    afterEach(function () {
+        chrome.flush();
+        sandbox.restore();
+    });
+
     it('It opens source code link', done => {
-        const stub = sandbox.stub(window, 'open');
-        expect(stub.notCalled).to.be.true;
+        expect(chrome.tabs.create.withArgs({url: ContextMenuOptions.source.url}).notCalled).to.be.true;
         chrome.contextMenus.onClicked.dispatch({menuItemId: 'source'});
-        expect(stub.withArgs(ContextMenuOptions.source.url).calledOnce).to.be.true;
+        expect(chrome.tabs.create.withArgs({url: ContextMenuOptions.source.url}).calledOnce).to.be.true;
         done();
     });
 
     it('It opens social links', done => {
-        expect(chrome.windows.create.notCalled).to.be.true;
+        expect(chrome.tabs.create.withArgs({url: ContextMenuOptions.twitter.url}).notCalled).to.be.true;
         chrome.contextMenus.onClicked.dispatch({menuItemId: 'twitter'});
-        expect(chrome.windows.create.calledOnce).to.be.true;
-        done();
-    });
-
-    it('It copies URL to clipboard', done => {
-        const stub = sandbox.stub(document, 'execCommand');
-        expect(stub.notCalled).to.be.true;
-        chrome.contextMenus.onClicked.dispatch({menuItemId: 'copy'});
-        expect(stub.calledOnce).to.be.true;
+        expect(chrome.tabs.create.calledOnce).to.be.true;
         done();
     });
 
