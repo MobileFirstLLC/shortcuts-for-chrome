@@ -43,6 +43,10 @@ Chrome browser navigation is optimized for non-technical users. For developers, 
 
 #### 🌗 &nbsp; Matches browser dark/light mode
 
+<p align="center">
+<img width="700" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/assets/screenshot.png' />
+</p>
+
 * * *
 
 ### Development
