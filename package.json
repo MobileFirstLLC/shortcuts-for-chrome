@@ -1,6 +1,6 @@
 {
   "name": "shortcuts-for-chrome",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "license": "MIT",
   "author": {
     "name": "Mobile First",
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "cws-publish": "^2.0.4",
-    "extension-cli": "1.1.0",
+    "extension-cli": "^1.2.0-alpha.1",
     "foodoc": "^0.0.9"
   },
   "babel": {
@@ -54,7 +54,7 @@
     "scss_bundles": [
       {
         "src": [
-          "./src/theme.scss",
+          "./src/shared/theme.scss",
           "./src/popup/popup.scss",
           "./src/**/*.scss"
         ],

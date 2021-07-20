@@ -1,14 +1,3 @@
-/** * * * * * * * * * * * * * * * * * * * *
- * Shortcuts for Chrome
- * Custom navigation menu for Chrome browser
- *
- * Author: Mobile First LLC
- * Website: https://mobilefirst.me
- *
- * @description
- * Extension configuration options
- * * * * * * * * * * * * * * * * * * * * */
-
 /**
  * Various application configs
  * @namespace AppConfig
@@ -65,58 +54,52 @@ export const SVGIcons = {
  */
 export const ContextMenuOptions = {
     source: {
-        title: 'ctx_source',
+        title: 'Source code',
         url: 'https://github.com/mobilefirstllc/shortcuts-for-chrome'
     },
     chromeStore: {
-        title: 'ctx_rate',
+        title: 'Rate extension',
         url: '{URI}/reviews'
     },
     share: {
         id: 'share',
-        title: 'ctx_share'
+        title: 'Share...'
     },
     twitter: {
         parentId: 'share',
-        title: 'ctx_share_tw',
+        title: 'Twitter',
         ww: 600, wh: 500,
         url: 'https://twitter.com/intent/tweet?text={hash} {URI} '
     },
     facebook: {
         parentId: 'share',
-        title: 'ctx_share_fb',
+        title: 'Facebook',
         ww: 600, wh: 700,
         url: 'https://www.facebook.com/sharer/sharer.php?u={URI}&amp;src=sdkpreparse'
     },
     reddit: {
         parentId: 'share',
-        title: 'ctx_share_rd',
+        title: 'Reddit',
         url: 'https://www.reddit.com/submit?url={URI}'
     },
     linkedin: {
         parentId: 'share',
-        title: 'ctx_share_li',
+        title: 'LinkedIn',
         ww: 600, wh: 500,
         url: 'https://www.linkedin.com/sharing/share-offsite/?url={URI}'
     },
     whatsapp: {
         parentId: 'share',
-        title: 'ctx_share_wa',
+        title: 'Whatsapp',
         ww: 800, wh: 800,
         url: 'https://api.whatsapp.com/send/?phone&text={URI}'
     },
     pinterest: {
         parentId: 'share',
-        title: 'ctx_share_pi',
+        title: 'Pinterest',
         ww: 700, wh: 800,
         url: 'https://www.pinterest.com/pin/create/button/?url={URI}&media=' +
             'https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/' +
             '68bf15ddb9f263b058a10340202ac775f0f4cf8d/assets/preview.gif'
-    },
-    copy: {
-        id: 'copy',
-        parentId: 'share',
-        title: 'ctx_share_copy',
-        url: '{URI}'
     }
 };

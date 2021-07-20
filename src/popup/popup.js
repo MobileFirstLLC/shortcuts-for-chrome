@@ -1,17 +1,6 @@
-/** * * * * * * * * * * * * * * * * * * * *
- * Shortcuts for Chrome
- * Custom navigation menu for Chrome browser
- *
- * Author: Mobile First LLC
- * Website: https://mobilefirst.me
- *
- * @description
- * Popup window script implementation
- * * * * * * * * * * * * * * * * * * * * */
-
 import {MenuLinks} from '../links.json';
-import Storage from '../modules/storage';
-import RecentLinks from '../modules/recent';
+import Storage from '../shared/storage';
+import RecentLinks from '../shared/recent';
 import Menu from '../menu/menu';
 
 /**

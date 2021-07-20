@@ -1,18 +1,8 @@
 /* eslint-disable no-new */
-/** * * * * * * * * * * * * * * * * * * * *
- * Shortcuts for Chrome
- * Custom navigation menu for Chrome browser
- *
- * Author: Mobile First LLC
- * Website: https://mobilefirst.me
- *
- * @description
- * Defines which scripts run in the background context
- * * * * * * * * * * * * * * * * * * * * */
 
-import BackgroundApi from '../modules/backgroundApi';
-import ContextMenu from '../modules/contextMenu';
-import UpdateHandler from '../modules/onUpdate';
+import Api from './api';
+import ContextMenu from './contextMenu';
+import UpdateHandler from './update';
 
 /**
  * @module
@@ -37,7 +27,7 @@ export default class Background {
      * @description Instantiate Background to bind background behavior.
      */
     constructor() {
-        new BackgroundApi();
+        new Api();
         new ContextMenu();
         new UpdateHandler();
     }

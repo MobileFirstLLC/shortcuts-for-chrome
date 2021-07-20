@@ -1,14 +1,3 @@
-/** * * * * * * * * * * * * * * * * * * * *
- * Shortcuts for Chrome
- * Custom navigation menu for Chrome browser
- *
- * Author: Mobile First LLC
- * Website: https://mobilefirst.me
- *
- * @description
- * Manage recently used links
- * * * * * * * * * * * * * * * * * * * * */
-
 import {AppConfig} from '../config';
 import Storage from './storage';
 

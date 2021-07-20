@@ -1,15 +1,4 @@
-/** * * * * * * * * * * * * * * * * * * * *
- * Shortcuts for Chrome
- * Custom navigation menu for Chrome browser
- *
- * Author: Mobile First LLC
- * Website: https://mobilefirst.me
- *
- * @description
- * Browser links menu UI and event handling
- * * * * * * * * * * * * * * * * * * * * */
-
-import Draggable from '../modules/dragging.js';
+import Draggable from './dragging.js';
 import Helpers from './helpers';
 
 /**
@@ -20,18 +9,18 @@ import Helpers from './helpers';
  * @param {function} getRecent - function that returns recent links
  *
  * @module
- * @name Menu
+ * @name Index
  * @description Menu panel is a DOM elements that shows a list of links.
  * This menu panel is drawn dynamically by creating all menu
  * elements programmatically upon calling `menuObj.render()`. The
  * parent instantiating the menu will call render. Parent must then
  * add the returned menu to DOM tree to display it to user.
  */
-export default class Menu {
+export default class Index {
 
     /**
      * @constructor
-     * @name Menu
+     * @name Index
      * @param {function} getLinks - function that returns all links
      * @param {function} onPinToggle - callback function for when link is pinned/unpinned
      * @param {function} onPinOrderChange - callback function for when links are re-ordered
@@ -39,17 +28,17 @@ export default class Menu {
      * @returns {{idAttr: string, name: string, render: (function(): Element)}} - Menu panel reference
      */
     constructor(getLinks, onPinToggle, onPinOrderChange, getRecent) {
-        Menu.getLinks = getLinks;
-        Menu.getRecent = getRecent;
-        Menu.onPinToggle = onPinToggle;
-        Menu.onPinOrderChange = onPinOrderChange;
+        Index.getLinks = getLinks;
+        Index.getRecent = getRecent;
+        Index.onPinToggle = onPinToggle;
+        Index.onPinOrderChange = onPinOrderChange;
 
         // return public instance methods
         // that are callable from outside this class
         return {
-            name: Menu.name,
-            idAttr: Menu.idAttr,
-            render: Menu.render
+            name: Index.name,
+            idAttr: Index.idAttr,
+            render: Index.render
         };
     }
 
@@ -146,9 +135,9 @@ export default class Menu {
     static render() {
         const panel = document.createElement('div');
 
-        Menu.renderPinnedLinks(panel);
-        Menu.renderRecentItems(panel);
-        Menu.renderUnpinnedLinks(panel);
+        Index.renderPinnedLinks(panel);
+        Index.renderRecentItems(panel);
+        Index.renderUnpinnedLinks(panel);
         return panel;
     };
 
@@ -160,7 +149,7 @@ export default class Menu {
      * @param {Element} panel - DOM element where links will be appended
      */
     static renderPinnedLinks(panel) {
-        const {pinned} = Menu.getLinks();
+        const {pinned} = Index.getLinks();
 
         if (!pinned || !pinned.length) return;
         const container = document.createElement('div');
@@ -168,7 +157,7 @@ export default class Menu {
         container.id = 'pinned';
         pinned.map((link) => (
             container.appendChild(
-                Menu.createLink(
+                Index.createLink(
                     Helpers.pinnedItemIcon,
                     Helpers.translateLabel(link),
                     link))
@@ -177,10 +166,10 @@ export default class Menu {
         Helpers.appendDivider(panel);
 
         (() => new Draggable(
-            Menu.idAttr,
+            Index.idAttr,
             container,
-            Menu.attachClickActions,
-            Menu.onPinOrderChange))();
+            Index.attachClickActions,
+            Index.onPinOrderChange))();
     }
 
     /**
@@ -193,7 +182,7 @@ export default class Menu {
      * @param {Element} panel - DOM element where links will be appended
      */
     static renderRecentItems(panel) {
-        const recent = Menu.getRecent();
+        const recent = Index.getRecent();
 
         if (!recent || !recent.length) return;
         const label = document.createElement('span');
@@ -204,7 +193,7 @@ export default class Menu {
 
         Helpers.localizedSort(recent)
             .map(([label, link]) =>
-                Menu.appendUnpinnedLink(panel, label, link));
+                Index.appendUnpinnedLink(panel, label, link));
 
         // add divider below
         Helpers.appendDivider(panel);
@@ -218,7 +207,7 @@ export default class Menu {
      * @param {Element} panel - DOM element where links will be appended
      */
     static renderUnpinnedLinks(panel) {
-        const {unpinned} = Menu.getLinks();
+        const {unpinned} = Index.getLinks();
         let firstLetter = null;
 
         Helpers.localizedSort(unpinned)
@@ -227,7 +216,7 @@ export default class Menu {
                     Helpers.appendDivider(panel);
                 }
                 firstLetter = label[0];
-                Menu.appendUnpinnedLink(panel, label, link);
+                Index.appendUnpinnedLink(panel, label, link);
             });
     }
 
@@ -239,12 +228,12 @@ export default class Menu {
      * @param {Element} element - DOM node representing a link
      */
     static attachClickActions(element) {
-        let name = element.getAttribute(Menu.idAttr);
+        let name = element.getAttribute(Index.idAttr);
 
         element.getElementsByTagName('span')[0].onclick =
             () => chrome.runtime.sendMessage({open: name});
         element.getElementsByTagName('svg')[0].onclick =
-            () => Menu.onPinToggle(name);
+            () => Index.onPinToggle(name);
     }
 
     /**
@@ -261,9 +250,9 @@ export default class Menu {
             text = document.createElement('span');
 
         text.innerText = label;
-        a.setAttribute(Menu.idAttr, name);
+        a.setAttribute(Index.idAttr, name);
         a.innerHTML = icon + text.outerHTML;
-        Menu.attachClickActions(a);
+        Index.attachClickActions(a);
         return a;
     };
 
@@ -277,7 +266,7 @@ export default class Menu {
      * @returns {Element}
      */
     static appendUnpinnedLink(panel, label, name) {
-        panel.appendChild(Menu.createLink(
+        panel.appendChild(Index.createLink(
             Helpers.unpinnedItemIcon, label, name));
     }
 };

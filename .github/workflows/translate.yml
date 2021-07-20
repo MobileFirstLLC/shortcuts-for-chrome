@@ -1,0 +1,26 @@
+name: Translate
+
+on:
+  push:
+    branches: [ translations ]
+  workflow_dispatch:
+    branches: [ translations ]
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm run translate
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update translations
+          branch: master
+          file_pattern: 'assets/locales/*.json i18n/*.json'
+          commit_user_name: Actions Bot
+          commit_user_email: mail@example.com
+          commit_author: Actions <actions@github.com>
