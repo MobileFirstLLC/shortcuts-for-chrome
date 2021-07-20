@@ -3,6 +3,8 @@ name: Translate
 on:
   push:
     branches: [ translations ]
+  workflow_dispatch:
+    branches: [ translations ]
 
 jobs:
   translate:
@@ -22,4 +24,3 @@ jobs:
           commit_user_name: Actions Bot
           commit_user_email: mail@example.com
           commit_author: Actions <actions@github.com>
-
