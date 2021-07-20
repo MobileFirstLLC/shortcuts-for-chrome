@@ -2,7 +2,7 @@ name: Translate
 
 on:
   push:
-    branches: [ translate ]
+    branches: [ translations ]
 
 jobs:
   translate:
@@ -14,9 +14,12 @@ jobs:
           node-version: '14'
       - run: npm run translate
       - name: Commit changes
-        uses: EndBug/add-and-commit@v7
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          author_name: Github action
-          author_email: mail@example.com
-          message: 'Translate to locales'
-          add: '*.json'
+          commit_message: Update translations
+          branch: master
+          file_pattern: 'assets/locales/*.json i18n/*.json'
+          commit_user_name: Actions Bot
+          commit_user_email: mail@example.com
+          commit_author: Actions <actions@github.com>
+
