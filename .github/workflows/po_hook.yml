@@ -1,0 +1,20 @@
+name: POEditor
+
+on:
+  schedule:
+    - cron:  '0 0 * * 1'  # weekly
+  workflow_dispatch:
+    branches: [ master ]
+
+jobs:
+  POEditor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: fjogeleit/http-request-action@master
+        with:
+          url: 'https://api.poeditor.com/webhooks/163e7644bb'
+          method: 'GET'
+      - uses: fjogeleit/http-request-action@master
+        with:
+          url: 'https://api.poeditor.com/webhooks/cc2e832f8f'
+          method: 'GET'

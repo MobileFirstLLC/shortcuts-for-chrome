@@ -3,8 +3,6 @@ name: Translate
 on:
   push:
     branches: [ translations ]
-  workflow_dispatch:
-    branches: [ translations ]
 
 jobs:
   translate:
