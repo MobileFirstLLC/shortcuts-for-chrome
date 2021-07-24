@@ -6,7 +6,7 @@
   "offline_enabled": true,
   "manifest_version": 3,
   "default_locale": "en",
-  "minimum_chrome_version": "88",
+  "minimum_chrome_version": "32",
   "homepage_url": "https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal",
   "permissions": [
     "storage",
