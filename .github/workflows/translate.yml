@@ -24,4 +24,4 @@ jobs:
           skip_fetch: false
           push_options: '--force'
           commit_message: Update translations
-          file_pattern: 'assets/locales/*.json i18n/*.json'
+          file_pattern: assets/locales/*.json i18n/*.json
