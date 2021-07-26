@@ -1,11 +1,11 @@
 {
-  "appName": {
+  "app_name": {
     "message": "Shortcuts for Chrome"
   },
-  "appShortName": {
+  "app_short_name": {
     "message": "Shortcuts for Chrome"
   },
-  "appDesc": {
+  "app_desc": {
     "message": "Navigation menu for developers using Chrome. Organize however you like."
   },
   "ctx_rate": {
@@ -35,7 +35,7 @@
   "ctx_share_pi": {
     "message": "Pinterest"
   },
-  "recently_used": {
+  "ui_recently_used": {
     "message": "Recently used"
   },
   "accessibility": {

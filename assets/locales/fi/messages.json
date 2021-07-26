@@ -1,11 +1,11 @@
 {
-  "appName": {
+  "app_name": {
     "message": "Pikavalinnat Chromelle"
   },
-  "appShortName": {
+  "app_short_name": {
     "message": "Pikavalinnat Chromelle"
   },
-  "appDesc": {
+  "app_desc": {
     "message": "Kaikki chromen sisäiset osoitteet yhdessä valikossa. Järjestä mielesi mukaan."
   },
   "ctx_rate": {
@@ -35,7 +35,7 @@
   "ctx_share_pi": {
     "message": "Pinterest"
   },
-  "recently_used": {
+  "ui_recently_used": {
     "message": "Äskettäin käytetty"
   },
   "accessibility": {
