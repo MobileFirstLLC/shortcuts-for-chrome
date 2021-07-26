@@ -187,7 +187,7 @@ export default class Index {
         if (!recent || !recent.length) return;
         const label = document.createElement('span');
 
-        label.innerText = Helpers.translateLabel('recently_used');
+        label.innerText = Helpers.translateLabel('ui_recently_used');
         label.classList.add('category-title');
         panel.appendChild(label);
 

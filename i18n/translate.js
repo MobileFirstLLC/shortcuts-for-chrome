@@ -8,13 +8,14 @@ const path = require('path');
 const inDirectory = './i18n/';
 const outDirectory = './assets/locales/';
 const outFileName = 'messages.json';
-const firstLink = 'accessibility';
 const menuLinksDir = './src/';
 const menuLinksFile = 'links.json';
 
 const ensureDirectoryExists = (dirPath) => fs.existsSync(dirPath) || fs.mkdirSync(dirPath);
 
 const sanitizedKey = key => key.replace(/[-\/]/g, '_');
+
+const isChromeUrl = key => !(key.startsWith('app_') || key.startsWith('ui_') || key.startsWith('ctx_'));
 
 const writeJSONFile = function (dirPath, filename, obj) {
     ensureDirectoryExists(dirPath);
@@ -38,7 +39,8 @@ const clearDirectory = function (directory) {
 
 const writeMenuLinks = content => {
     const keysArray = Object.keys(content);
-    const allLinks = {'MenuLinks': keysArray.splice(keysArray.indexOf(firstLink))};
+    const chromeURLs = keysArray.filter(k => isChromeUrl(k)).sort();
+    const allLinks = {'MenuLinks': chromeURLs};
 
     writeJSONFile(menuLinksDir, menuLinksFile, allLinks);
     console.log('Updated menu links: ', Object.keys(allLinks.MenuLinks).length);

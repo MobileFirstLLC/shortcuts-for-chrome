@@ -1,6 +1,9 @@
 {
   "MenuLinks": [
     "accessibility",
+    "appDesc",
+    "appName",
+    "appShortName",
     "appcache-internals",
     "apps",
     "autofill-internals",
@@ -38,7 +41,9 @@
     "media-internals",
     "nacl",
     "net-export",
+    "net-internals",
     "network-errors",
+    "new-tab-page-third-party",
     "newtab",
     "ntp-tiles-internals",
     "omnibox",
@@ -49,13 +54,16 @@
     "print",
     "process-internals",
     "quota-internals",
+    "recently_used",
     "safe-browsing",
     "serviceworker-internals",
+    "session-service-internals",
     "settings",
     "settings/accessibility",
     "settings/appearance",
     "settings/autofill",
     "settings/clearBrowserData",
+    "settings/cookies",
     "settings/defaultBrowser",
     "settings/importData",
     "settings/languages",
@@ -80,10 +88,6 @@
     "user-actions",
     "version",
     "webrtc-internals",
-    "webrtc-logs",
-    "net-internals",
-    "new-tab-page-third-party",
-    "session-service-internals",
-    "settings/cookies"
+    "webrtc-logs"
   ]
 }
