@@ -1,18 +1,12 @@
 {
-  "application name; (maximum of 45 characters) is the primary identifier of the extension and is a required field.": {
-    "message": {
-      "appName": "Pikavalinnat Chromelle"
-    }
+  "appName": {
+    "message": "Pikavalinnat Chromelle"
   },
-  "The short_name (maximum of 12 characters recommended) is a short version of the extension's name.": {
-    "message": {
-      "appShortName": "Pikavalinnat Chromelle"
-    }
+  "appShortName": {
+    "message": "Pikavalinnat Chromelle"
   },
-  "A plain text string (no HTML or other formatting; no more than 132 characters) that describes the extension.": {
-    "message": {
-      "appDesc": "Kaikki chromen sisäiset osoitteet yhdessä valikossa. Järjestä mielesi mukaan."
-    }
+  "appDesc": {
+    "message": "Kaikki chromen sisäiset osoitteet yhdessä valikossa. Järjestä mielesi mukaan."
   },
   "ctx_rate": {
     "message": "Arvostele laajennus"
