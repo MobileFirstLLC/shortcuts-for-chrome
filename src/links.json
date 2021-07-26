@@ -1,9 +1,6 @@
 {
   "MenuLinks": [
     "accessibility",
-    "appDesc",
-    "appName",
-    "appShortName",
     "appcache-internals",
     "apps",
     "autofill-internals",
@@ -54,7 +51,6 @@
     "print",
     "process-internals",
     "quota-internals",
-    "recently_used",
     "safe-browsing",
     "serviceworker-internals",
     "session-service-internals",
