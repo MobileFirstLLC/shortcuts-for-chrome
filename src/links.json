@@ -13,13 +13,12 @@
     "crashes",
     "credits",
     "device-log",
-    "devices",
     "dino",
     "discards",
     "download-internals",
     "downloads",
     "extensions",
-    "extensions/configureCommands",
+    "extensions/shortcuts",
     "flags",
     "gcm-internals",
     "gpu",
@@ -32,7 +31,6 @@
     "inspect",
     "internals/web-app",
     "interstitials",
-    "interventions-internals",
     "invalidations",
     "local-state",
     "management",
@@ -64,7 +62,6 @@
     "settings/onStartup",
     "settings/passwords",
     "settings/people",
-    "settings/printing",
     "settings/privacy",
     "settings/reset",
     "settings/search",
@@ -83,6 +80,10 @@
     "user-actions",
     "version",
     "webrtc-internals",
-    "webrtc-logs"
+    "webrtc-logs",
+    "net-internals",
+    "new-tab-page-third-party",
+    "session-service-internals",
+    "settings/cookies"
   ]
 }
