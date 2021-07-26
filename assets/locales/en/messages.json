@@ -1,12 +1,18 @@
 {
-  "appName": {
-    "message": "Shortcuts for Chrome"
+  "application name; (maximum of 45 characters) is the primary identifier of the extension and is a required field.": {
+    "message": {
+      "appName": "Shortcuts for Chrome"
+    }
   },
-  "appShortName": {
-    "message": "Shortcuts for Chrome"
+  "The short_name (maximum of 12 characters recommended) is a short version of the extension's name.": {
+    "message": {
+      "appShortName": "Shortcuts for Chrome"
+    }
   },
-  "appDesc": {
-    "message": "Navigation menu for developers using Chrome. Organize however you like."
+  "A plain text string (no HTML or other formatting; no more than 132 characters) that describes the extension.": {
+    "message": {
+      "appDesc": "Navigation menu for developers using Chrome. Organize however you like."
+    }
   },
   "ctx_rate": {
     "message": "Rate extension"
@@ -34,9 +40,6 @@
   },
   "ctx_share_pi": {
     "message": "Pinterest"
-  },
-  "ctx_share_copy": {
-    "message": "Copy URL"
   },
   "recently_used": {
     "message": "Recently used"
@@ -80,9 +83,6 @@
   "device_log": {
     "message": "Device Logs"
   },
-  "devices": {
-    "message": "Devices"
-  },
   "dino": {
     "message": "Dino"
   },
@@ -98,7 +98,7 @@
   "extensions": {
     "message": "Extensions"
   },
-  "extensions_configureCommands": {
+  "extensions_shortcuts": {
     "message": "Keyboard Shortcuts"
   },
   "flags": {
@@ -136,9 +136,6 @@
   },
   "interstitials": {
     "message": "Interstitials"
-  },
-  "interventions_internals": {
-    "message": "Interventions Internals"
   },
   "invalidations": {
     "message": "Invalidations"
@@ -233,9 +230,6 @@
   "settings_people": {
     "message": "People"
   },
-  "settings_printing": {
-    "message": "Printing Settings"
-  },
   "settings_privacy": {
     "message": "Privacy and Security Settings"
   },
@@ -292,5 +286,17 @@
   },
   "webrtc_logs": {
     "message": "WebRTC Logs"
+  },
+  "net_internals": {
+    "message": "Net Internals"
+  },
+  "new_tab_page_third_party": {
+    "message": "New Tab (3rd party)"
+  },
+  "session_service_internals": {
+    "message": "Session Internals"
+  },
+  "settings_cookies": {
+    "message": "Cookies"
   }
 }
