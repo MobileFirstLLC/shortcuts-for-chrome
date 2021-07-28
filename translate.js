@@ -47,7 +47,6 @@ const writeMenuLinks = content => {
 };
 
 for (const file of fs.readdirSync(inDirectory)) {
-    if (!file.endsWith('.json')) continue;
     const lang = file.split('.json', 1).shift(),
         inPath = path.join(inDirectory, file),
         outPath = path.join(outDirectory, lang),

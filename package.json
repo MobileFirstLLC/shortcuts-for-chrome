@@ -21,7 +21,7 @@
     "clean": "xt-clean",
     "sync": "xt-sync",
     "coverage": "nyc --reporter=lcov npm run test",
-    "translate": "node i18n/translate.js"
+    "translate": "node translate.js"
   },
   "devDependencies": {
     "cws-publish": "^2.0.5",
