@@ -11,13 +11,13 @@ const outFileName = 'messages.json';
 const menuLinksDir = './src/';
 const menuLinksFile = 'links.json';
 
-const ensureDirectoryExists = (dirPath) => fs.existsSync(dirPath) || fs.mkdirSync(dirPath);
+const ensureDirectoryExists = dirPath => fs.existsSync(dirPath) || fs.mkdirSync(dirPath);
 
 const sanitizedKey = key => key.replace(/[-\/]/g, '_');
 
-const isChromeUrl = key => !(key.startsWith('app_') || key.startsWith('ui_') || key.startsWith('ctx_'));
+const isChromeUrl = key => key.indexOf('_') < 0;
 
-const writeJSONFile = function (dirPath, filename, obj) {
+const writeJSONFile = (dirPath, filename, obj) => {
     ensureDirectoryExists(dirPath);
     fs.writeFileSync(
         path.join(dirPath, filename),
@@ -25,7 +25,7 @@ const writeJSONFile = function (dirPath, filename, obj) {
     );
 };
 
-const clearDirectory = function (directory) {
+const clearDirectory = directory => {
     for (const file of fs.readdirSync(directory)) {
         const p = path.join(directory, file);
 
@@ -43,11 +43,11 @@ const writeMenuLinks = content => {
     const allLinks = {'MenuLinks': chromeURLs};
 
     writeJSONFile(menuLinksDir, menuLinksFile, allLinks);
-    console.log('Updated menu links: ', Object.keys(allLinks.MenuLinks).length);
+    console.log('Updated menu links: ', chromeURLs.length);
 };
 
 for (const file of fs.readdirSync(inDirectory)) {
-    if (file.indexOf('.json') < 0) continue;
+    if (!file.endsWith('.json')) continue;
     const lang = file.split('.json', 1).shift(),
         inPath = path.join(inDirectory, file),
         outPath = path.join(outDirectory, lang),
@@ -56,9 +56,10 @@ for (const file of fs.readdirSync(inDirectory)) {
 
     if (lang === 'en') writeMenuLinks(content);
 
-    Object.keys(content)
-        .filter(key => content[key])
-        .map(key => (obj[sanitizedKey(key)] = {'message': content[key]}));
+    Object.entries(content)
+        .filter(([_, value]) => !!value)
+        .map(([key, value]) =>
+            (obj[sanitizedKey(key)] = {'message': value}));
 
     clearDirectory(outPath);
     writeJSONFile(outPath, outFileName, obj);

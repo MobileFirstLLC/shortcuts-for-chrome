@@ -24,8 +24,8 @@
     "translate": "node i18n/translate.js"
   },
   "devDependencies": {
-    "cws-publish": "^2.0.5-alpha.1",
-    "extension-cli": "^1.2.0-beta.1",
+    "cws-publish": "^2.0.5",
+    "extension-cli": "^1.2.0",
     "foodoc": "^0.0.9"
   },
   "babel": {
