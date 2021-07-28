@@ -1,4 +1,4 @@
-name: POEditor
+name: Update translations
 
 on:
   schedule:
@@ -7,14 +7,14 @@ on:
     branches: [ master ]
 
 jobs:
-  POEditor:
+  i18n:
     runs-on: ubuntu-latest
     steps:
       - uses: fjogeleit/http-request-action@master
         with:
-          url: 'https://api.poeditor.com/webhooks/163e7644bb'
+          url: 'https://api.poeditor.com/webhooks/2324b7a234'
           method: 'GET'
       - uses: fjogeleit/http-request-action@master
         with:
-          url: 'https://api.poeditor.com/webhooks/cc2e832f8f'
+          url: 'https://api.poeditor.com/webhooks/9f1e98adc5'
           method: 'GET'

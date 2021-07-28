@@ -15,7 +15,7 @@
   "homepage": "https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal",
   "scripts": {
     "start": "xt-build -e dev -w",
-    "build": "xt-build -e prod",
+    "build": "npm run translate && xt-build -e prod",
     "docs": "xt-docs -c docs/config.json",
     "test": "xt-test",
     "clean": "xt-clean",
