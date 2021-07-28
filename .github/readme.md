@@ -10,13 +10,13 @@
 <h3 align="center">Navigation menu for developers using Chrome</h3>
 
 <p align="center">
-<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal?label=latest%20release&color=3D5AFE&style=flat-square" alt="version"/></a> 
-<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/users/jnmekaomnicdcpgdndekkmojfomifjal?style=flat-square" alt="users"></a> 
-<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/stars/jnmekaomnicdcpgdndekkmojfomifjal?style=flat-square" alt="rating" /></a>
+<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal?label=latest%20release&color=2196F3&style=flat" alt="version"/></a> 
+<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/users/jnmekaomnicdcpgdndekkmojfomifjal?style=flat" alt="users"></a> 
+<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/stars/jnmekaomnicdcpgdndekkmojfomifjal?style=flat" alt="rating" /></a>
 <br/>
 <a href="https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/build.yml"><img alt="Build" src="https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/build.yml/badge.svg"></a>
-<a href="https://coveralls.io/github/MobileFirstLLC/shortcuts-for-chrome"><img alt="Coveralls github" src="https://img.shields.io/coveralls/github/MobileFirstLLC/shortcuts-for-chrome?style=flat-square"></a>
-<a href="https://codeclimate.com/github/MobileFirstLLC/shortcuts-for-chrome/maintainability"><img alt="Code Climate maintainability" src="https://img.shields.io/codeclimate/maintainability/MobileFirstLLC/shortcuts-for-chrome?style=flat-square"></a>
+<a href="https://coveralls.io/github/MobileFirstLLC/shortcuts-for-chrome"><img alt="Coveralls github" src="https://img.shields.io/coveralls/github/MobileFirstLLC/shortcuts-for-chrome?style=flat"></a>
+<a href="https://codeclimate.com/github/MobileFirstLLC/shortcuts-for-chrome/maintainability"><img alt="Code Climate maintainability" src="https://img.shields.io/codeclimate/maintainability/MobileFirstLLC/shortcuts-for-chrome?style=flat"></a>
 </p>
 
 Chrome browser navigation is optimized for non-technical users. For developers, who want to inspect what is happening under the hood with e.g. indexedDB, service workers, or Bluetooth devices, this menu brings shortcuts to those otherwise hard-to-find browser dev tools. This menu lists all `chrome://*` URLs in a single, flat list, customizable menu.
@@ -57,4 +57,4 @@ Chrome browser navigation is optimized for non-technical users. For developers, 
 
 **Issues & Feature Requests:** [Use Github Issues](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/new/choose)
 
-**Internationalization:** [Contribute at POEditor ↗](https://poeditor.com/join/project?hash=c2ihN8duR2)
+**Translation:** [Contribute at POEditor ↗](https://poeditor.com/join/project?hash=c2ihN8duR2)
