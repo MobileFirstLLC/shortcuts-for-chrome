@@ -8,8 +8,8 @@ const path = require('path');
 const inDirectory = './i18n/';
 const outDirectory = './assets/locales/';
 const outFileName = 'messages.json';
-const menuLinksDir = './src/';
-const menuLinksFile = 'links.json';
+const linksDir = './src/';
+const linksFileName = 'links.json';
 
 const ensureDirectoryExists = dirPath => fs.existsSync(dirPath) || fs.mkdirSync(dirPath);
 
@@ -38,11 +38,9 @@ const clearDirectory = directory => {
 };
 
 const writeMenuLinks = content => {
-    const keysArray = Object.keys(content);
-    const chromeURLs = keysArray.filter(k => isChromeUrl(k)).sort();
-    const allLinks = {'MenuLinks': chromeURLs};
+    const chromeURLs = Object.keys(content).filter(k => isChromeUrl(k)).sort();
 
-    writeJSONFile(menuLinksDir, menuLinksFile, allLinks);
+    writeJSONFile(linksDir, linksFileName, {'MenuLinks': chromeURLs});
     console.log('Updated menu links: ', chromeURLs.length);
 };
 
@@ -57,8 +55,7 @@ for (const file of fs.readdirSync(inDirectory)) {
 
     Object.entries(content)
         .filter(([_, value]) => !!value)
-        .map(([key, value]) =>
-            (obj[sanitizedKey(key)] = {'message': value}));
+        .map(([key, message]) => (obj[sanitizedKey(key)] = {message}));
 
     clearDirectory(outPath);
     writeJSONFile(outPath, outFileName, obj);
