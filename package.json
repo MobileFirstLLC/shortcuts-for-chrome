@@ -62,11 +62,12 @@
       }
     ],
     "locales_list": [
-      "en",
-      "fi",
+      "ca",
+      "cs",
       "de",
+      "en",
       "es",
-      "cs"
+      "fi"
     ]
   }
 }

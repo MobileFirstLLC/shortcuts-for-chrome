@@ -1,21 +1,21 @@
 {
   "app_name": {
-    "message": "Accesos directos para Chrome"
+    "message": "Zkratky pro Chrome"
   },
   "app_short_name": {
-    "message": "Accesos directos para Chrome"
+    "message": "Zkratky pro Chrome"
   },
   "app_desc": {
-    "message": "Menú de navegación para desarrolladores que utilizan Chrome. Organízala como quieras"
+    "message": "Navigační nabídka pro vývojáře používající Chrome. Uspořádejte si, jak chcete."
   },
   "ctx_rate": {
-    "message": "Extensión de tarifas"
+    "message": "Rozšíření sazby"
   },
   "ctx_source": {
-    "message": "Ver código fuente"
+    "message": "Zobrazit zdrojový kód"
   },
   "ctx_share": {
-    "message": "Compartir ..."
+    "message": "Sdílet ..."
   },
   "ctx_share_tw": {
     "message": "Twitter"
@@ -36,67 +36,67 @@
     "message": "Pinterest"
   },
   "ui_recently_used": {
-    "message": "Usado recientemente"
+    "message": "Nedávno použité"
   },
   "accessibility": {
-    "message": "Aspectos internos de accesibilidad"
+    "message": "Interiéry přístupnosti"
   },
   "appcache_internals": {
-    "message": "Caché de la aplicación"
+    "message": "Mezipaměť aplikací"
   },
   "apps": {
-    "message": "Aplicaciones"
+    "message": "Apps"
   },
   "autofill_internals": {
-    "message": "Autofill-internals"
+    "message": "Autofill Internals"
   },
   "blob_internals": {
     "message": "Blob Internals"
   },
   "bluetooth_internals": {
-    "message": "Bluetooth Internals"
+    "message": "Interní zařízení Bluetooth"
   },
   "bookmarks": {
-    "message": "Marcadores"
+    "message": "Záložky"
   },
   "chrome_urls": {
-    "message": "URL de Chrome"
+    "message": "Chrome URL"
   },
   "components": {
-    "message": "Componentes"
+    "message": "Components"
   },
   "conversion_internals": {
-    "message": "Conversiones internas"
+    "message": "Conversion Internals"
   },
   "crashes": {
     "message": "Crashes"
   },
   "credits": {
-    "message": "Créditos"
+    "message": "Kredity"
   },
   "device_log": {
-    "message": "Registros del dispositivo"
+    "message": "Protokoly zařízení"
   },
   "dino": {
     "message": "Dino"
   },
   "discards": {
-    "message": "Pestañas descartadas"
+    "message": "Vyřazené karty"
   },
   "download_internals": {
-    "message": "Download Internals"
+    "message": "Stáhnout interně"
   },
   "downloads": {
-    "message": "Descargas"
+    "message": "Downloads"
   },
   "extensions": {
-    "message": "Extensiones"
+    "message": "Extensions"
   },
   "extensions_shortcuts": {
-    "message": "Atajos de teclado"
+    "message": "Klávesové zkratky"
   },
   "flags": {
-    "message": "Banderas"
+    "message": "Vlajky"
   },
   "gcm_internals": {
     "message": "GCM Internals"
@@ -105,43 +105,43 @@
     "message": "GPU"
   },
   "help": {
-    "message": "Ayuda"
+    "message": "Pomoc"
   },
   "histograms": {
-    "message": "Histogramas"
+    "message": "Histograms"
   },
   "history": {
-    "message": "Historia"
+    "message": "Historie"
   },
   "history_syncedTabs": {
-    "message": "Pestañas de otros dispositivos"
+    "message": "Karty z jiných zařízení"
   },
   "identity_internals": {
-    "message": "Caché de token de API de identidad"
+    "message": "Identity API Token Cache"
   },
   "indexeddb_internals": {
     "message": "IndexedDB"
   },
   "inspect": {
-    "message": "Inspeccionar"
+    "message": "Inspect"
   },
   "internals_web_app": {
     "message": "Web App Internals"
   },
   "interstitials": {
-    "message": "Intersticiales"
+    "message": "Vsunuté reklamy"
   },
   "invalidations": {
-    "message": "Invalidaciones"
+    "message": "Invalidations"
   },
   "local_state": {
-    "message": "Estado local"
+    "message": "Místní stát"
   },
   "management": {
-    "message": "Gestión"
+    "message": "Management"
   },
   "media_engagement": {
-    "message": "Interacción con los medios"
+    "message": "Media Engagement"
   },
   "media_internals": {
     "message": "Media Internals"
@@ -150,145 +150,145 @@
     "message": "NaCl"
   },
   "net_export": {
-    "message": "Exportación de registros de red"
+    "message": "Export protokolu sítě"
   },
   "network_errors": {
-    "message": "Errores de red"
+    "message": "Network Errors"
   },
   "newtab": {
-    "message": "Nueva pestaña"
+    "message": "Nová karta"
   },
   "ntp_tiles_internals": {
-    "message": "NTP Tiles Internals"
+    "message": "Interní dlaždice NTP"
   },
   "omnibox": {
     "message": "Omnibox"
   },
   "password_manager_internals": {
-    "message": "Funciones internas del administrador de contraseñas"
+    "message": "Interní správce hesel"
   },
   "policy": {
-    "message": "Políticas"
+    "message": "Policies"
   },
   "predictors": {
-    "message": "Predictores"
+    "message": "Prediktory"
   },
   "prefs_internals": {
     "message": "Pref Internals"
   },
   "print": {
-    "message": "Imprimir"
+    "message": "Tisk"
   },
   "process_internals": {
-    "message": "Procesos internos"
+    "message": "Process Internals"
   },
   "quota_internals": {
     "message": "Quota Internals"
   },
   "safe_browsing": {
-    "message": "Navegación segura"
+    "message": "Safe Browsing"
   },
   "serviceworker_internals": {
     "message": "ServiceWorker"
   },
   "settings": {
-    "message": "Configuración"
+    "message": "Settings"
   },
   "settings_accessibility": {
-    "message": "Configuración de accesibilidad"
+    "message": "Nastavení přístupnosti"
   },
   "settings_appearance": {
-    "message": "Configuración de apariencia"
+    "message": "Nastavení vzhledu"
   },
   "settings_autofill": {
-    "message": "Configuración de autocompletar"
+    "message": "Nastavení automatického vyplňování"
   },
   "settings_clearBrowserData": {
-    "message": "Borrar datos de navegación"
+    "message": "Vymazat údaje o prohlížení"
   },
   "settings_defaultBrowser": {
-    "message": "Configuración predeterminada del navegador"
+    "message": "Výchozí nastavení prohlížeče"
   },
   "settings_importData": {
-    "message": "Importar marcadores y configuraciones"
+    "message": "Importovat záložky a nastavení"
   },
   "settings_languages": {
-    "message": "Configuración de idioma"
+    "message": "Nastavení jazyka"
   },
   "settings_onStartup": {
-    "message": "En la configuración de inicio"
+    "message": "Při spuštění nastavení"
   },
   "settings_passwords": {
-    "message": "Contraseñas"
+    "message": "Hesla"
   },
   "settings_people": {
-    "message": "Personas"
+    "message": "Lidé"
   },
   "settings_privacy": {
-    "message": "Configuración de privacidad y seguridad"
+    "message": "Privacy and Security Settings"
   },
   "settings_reset": {
     "message": "Reset"
   },
   "settings_search": {
-    "message": "Configuración del motor de búsqueda"
+    "message": "Nastavení vyhledávače"
   },
   "settings_syncSetup": {
-    "message": "Configuración de sincronización avanzada"
+    "message": "Pokročilá nastavení synchronizace"
   },
   "settings_system": {
-    "message": "Configuración del sistema"
+    "message": "System Settings"
   },
   "signin_internals": {
     "message": "Signin Internals"
   },
   "site_engagement": {
-    "message": "Interacción con el sitio"
+    "message": "Site Engagement"
   },
   "suggestions": {
-    "message": "Sugerencias"
+    "message": "Návrhy"
   },
   "sync_internals": {
     "message": "Sync Internals"
   },
   "system": {
-    "message": "Sistema"
+    "message": "System"
   },
   "terms": {
-    "message": "Condiciones de servicio"
+    "message": "Podmínky služby"
   },
   "tracing": {
-    "message": "Tracing"
+    "message": "Trasování"
   },
   "translate_internals": {
-    "message": "Traducir internos"
+    "message": "Translate Internals"
   },
   "ukm": {
-    "message": "Página de depuración de UKM"
+    "message": "Stránka ladění UKM"
   },
   "usb_internals": {
-    "message": "USB Internals"
+    "message": "USB interní"
   },
   "user_actions": {
-    "message": "Acciones del usuario"
+    "message": "User Actions"
   },
   "version": {
-    "message": "Versión"
+    "message": "Verze"
   },
   "webrtc_internals": {
     "message": "WebRTC Internals"
   },
   "webrtc_logs": {
-    "message": "Registros de WebRTC"
+    "message": "Protokoly WebRTC"
   },
   "net_internals": {
     "message": "Net Internals"
   },
   "new_tab_page_third_party": {
-    "message": "Nueva pestaña (de terceros)"
+    "message": "New Tab (3rd party)"
   },
   "session_service_internals": {
-    "message": "Session Internals"
+    "message": "Interní relace"
   },
   "settings_cookies": {
     "message": "Cookies"
