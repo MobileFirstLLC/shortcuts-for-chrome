@@ -1,0 +1,296 @@
+{
+  "app_name": {
+    "message": "Accesos directos para Chrome"
+  },
+  "app_short_name": {
+    "message": "Accesos directos para Chrome"
+  },
+  "app_desc": {
+    "message": "Menú de navegación para desarrolladores que utilizan Chrome. Organízala como quieras"
+  },
+  "ctx_rate": {
+    "message": "Extensión de tarifas"
+  },
+  "ctx_source": {
+    "message": "Ver código fuente"
+  },
+  "ctx_share": {
+    "message": "Compartir ..."
+  },
+  "ctx_share_tw": {
+    "message": "Twitter"
+  },
+  "ctx_share_fb": {
+    "message": "Facebook"
+  },
+  "ctx_share_rd": {
+    "message": "Reddit"
+  },
+  "ctx_share_li": {
+    "message": "LinkedIn"
+  },
+  "ctx_share_wa": {
+    "message": "Whatsapp"
+  },
+  "ctx_share_pi": {
+    "message": "Pinterest"
+  },
+  "ui_recently_used": {
+    "message": "Usado recientemente"
+  },
+  "accessibility": {
+    "message": "Aspectos internos de accesibilidad"
+  },
+  "appcache_internals": {
+    "message": "Caché de la aplicación"
+  },
+  "apps": {
+    "message": "Aplicaciones"
+  },
+  "autofill_internals": {
+    "message": "Autofill-internals"
+  },
+  "blob_internals": {
+    "message": "Blob Internals"
+  },
+  "bluetooth_internals": {
+    "message": "Bluetooth Internals"
+  },
+  "bookmarks": {
+    "message": "Marcadores"
+  },
+  "chrome_urls": {
+    "message": "URL de Chrome"
+  },
+  "components": {
+    "message": "Componentes"
+  },
+  "conversion_internals": {
+    "message": "Conversiones internas"
+  },
+  "crashes": {
+    "message": "Crashes"
+  },
+  "credits": {
+    "message": "Créditos"
+  },
+  "device_log": {
+    "message": "Registros del dispositivo"
+  },
+  "dino": {
+    "message": "Dino"
+  },
+  "discards": {
+    "message": "Pestañas descartadas"
+  },
+  "download_internals": {
+    "message": "Download Internals"
+  },
+  "downloads": {
+    "message": "Descargas"
+  },
+  "extensions": {
+    "message": "Extensiones"
+  },
+  "extensions _ shortcuts": {
+    "message": "Atajos de teclado"
+  },
+  "flags": {
+    "message": "Banderas"
+  },
+  "gcm_internals": {
+    "message": "GCM Internals"
+  },
+  "gpu": {
+    "message": "GPU"
+  },
+  "help": {
+    "message": "Ayuda"
+  },
+  "histograms": {
+    "message": "Histogramas"
+  },
+  "history": {
+    "message": "Historia"
+  },
+  "history_syncedTabs": {
+    "message": "Pestañas de otros dispositivos"
+  },
+  "identity_internals": {
+    "message": "Caché de token de API de identidad"
+  },
+  "indexeddb_internals": {
+    "message": "IndexedDB"
+  },
+  "inspect": {
+    "message": "Inspeccionar"
+  },
+  "internals_web_app": {
+    "message": "Web App Internals"
+  },
+  "interstitials": {
+    "message": "Intersticiales"
+  },
+  "invalidations": {
+    "message": "Invalidaciones"
+  },
+  "local_state": {
+    "message": "Estado local"
+  },
+  "management": {
+    "message": "Gestión"
+  },
+  "media_engagement": {
+    "message": "Interacción con los medios"
+  },
+  "media_internals": {
+    "message": "Media Internals"
+  },
+  "nacl": {
+    "message": "NaCl"
+  },
+  "net_export": {
+    "message": "Exportación de registros de red"
+  },
+  "network_errors": {
+    "message": "Errores de red"
+  },
+  "newtab": {
+    "message": "Nueva pestaña"
+  },
+  "ntp_tiles_internals": {
+    "message": "NTP Tiles Internals"
+  },
+  "omnibox": {
+    "message": "Omnibox"
+  },
+  "password_manager_internals": {
+    "message": "Funciones internas del administrador de contraseñas"
+  },
+  "policy": {
+    "message": "Políticas"
+  },
+  "predictors": {
+    "message": "Predictores"
+  },
+  "prefs_internals": {
+    "message": "Pref Internals"
+  },
+  "print": {
+    "message": "Imprimir"
+  },
+  "process_internals": {
+    "message": "Procesos internos"
+  },
+  "quota_internals": {
+    "message": "Quota Internals"
+  },
+  "safe_browsing": {
+    "message": "Navegación segura"
+  },
+  "serviceworker_internals": {
+    "message": "ServiceWorker"
+  },
+  "settings": {
+    "message": "Configuración"
+  },
+  "settings_accessibility": {
+    "message": "Configuración de accesibilidad"
+  },
+  "settings_appearance": {
+    "message": "Configuración de apariencia"
+  },
+  "settings_autofill": {
+    "message": "Configuración de autocompletar"
+  },
+  "settings_clearBrowserData": {
+    "message": "Borrar datos de navegación"
+  },
+  "settings_defaultBrowser": {
+    "message": "Configuración predeterminada del navegador"
+  },
+  "settings_importData": {
+    "message": "Importar marcadores y configuraciones"
+  },
+  "settings_languages": {
+    "message": "Configuración de idioma"
+  },
+  "settings_onStartup": {
+    "message": "En la configuración de inicio"
+  },
+  "settings_passwords": {
+    "message": "Contraseñas"
+  },
+  "settings_people": {
+    "message": "Personas"
+  },
+  "settings_privacy": {
+    "message": "Configuración de privacidad y seguridad"
+  },
+  "settings_reset": {
+    "message": "Reset"
+  },
+  "settings_search": {
+    "message": "Configuración del motor de búsqueda"
+  },
+  "settings_syncSetup": {
+    "message": "Configuración de sincronización avanzada"
+  },
+  "settings_system": {
+    "message": "Configuración del sistema"
+  },
+  "signin_internals": {
+    "message": "Signin Internals"
+  },
+  "site_engagement": {
+    "message": "Interacción con el sitio"
+  },
+  "suggestions": {
+    "message": "Sugerencias"
+  },
+  "sync_internals": {
+    "message": "Sync Internals"
+  },
+  "system": {
+    "message": "Sistema"
+  },
+  "terms": {
+    "message": "Condiciones de servicio"
+  },
+  "tracing": {
+    "message": "Tracing"
+  },
+  "translate_internals": {
+    "message": "Traducir internos"
+  },
+  "ukm": {
+    "message": "Página de depuración de UKM"
+  },
+  "usb_internals": {
+    "message": "USB Internals"
+  },
+  "user_actions": {
+    "message": "Acciones del usuario"
+  },
+  "version": {
+    "message": "Versión"
+  },
+  "webrtc_internals": {
+    "message": "WebRTC Internals"
+  },
+  "webrtc_logs": {
+    "message": "Registros de WebRTC"
+  },
+  "net_internals": {
+    "message": "Net Internals"
+  },
+  "new_tab_page_third_party": {
+    "message": "Nueva pestaña (de terceros)"
+  },
+  "session_service_internals": {
+    "message": "Session Internals"
+  },
+  "settings_cookies": {
+    "message": "Cookies"
+  }
+}

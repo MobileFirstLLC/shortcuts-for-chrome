@@ -63,7 +63,10 @@
     ],
     "locales_list": [
       "en",
-      "fi"
+      "fi",
+      "de",
+      "es",
+      "cs"
     ]
   }
 }

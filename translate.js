@@ -26,13 +26,15 @@ const writeJSONFile = (dirPath, filename, obj) => {
 };
 
 const clearDirectory = directory => {
-    for (const file of fs.readdirSync(directory)) {
-        const p = path.join(directory, file);
+    if (fs.existsSync(directory)) {
+        for (const file of fs.readdirSync(directory)) {
+            const p = path.join(directory, file);
 
-        if (fs.lstatSync(p).isDirectory()) {
-            clearDirectory(p);
-        } else {
-            fs.unlinkSync(p);
+            if (fs.lstatSync(p).isDirectory()) {
+                clearDirectory(p);
+            } else {
+                fs.unlinkSync(p);
+            }
         }
     }
 };
