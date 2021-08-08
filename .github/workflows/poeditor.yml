@@ -12,7 +12,31 @@ jobs:
     steps:
       - uses: fjogeleit/http-request-action@master
         with:
-          url: 'https://api.poeditor.com/webhooks/2324b7a234'
+          url: 'https://api.poeditor.com/webhooks/6282dffd3f'
+          method: 'GET'
+      - uses: fjogeleit/http-request-action@master
+        with:
+          url: 'https://api.poeditor.com/webhooks/ff57b1ca5b'
+          method: 'GET'
+      - uses: fjogeleit/http-request-action@master
+        with:
+          url: 'https://api.poeditor.com/webhooks/fc85fbaa69'
+          method: 'GET'
+      - uses: fjogeleit/http-request-action@master
+        with:
+          url: 'https://api.poeditor.com/webhooks/088929ab7e'
+          method: 'GET'
+      - uses: fjogeleit/http-request-action@master
+        with:
+          url: 'https://api.poeditor.com/webhooks/a91e15fab0'
+          method: 'GET'
+      - uses: fjogeleit/http-request-action@master
+        with:
+          url: 'https://api.poeditor.com/webhooks/2dff647c80'
+          method: 'GET'
+      - uses: fjogeleit/http-request-action@master
+        with:
+          url: 'https://api.poeditor.com/webhooks/d38ae04365'
           method: 'GET'
       - uses: fjogeleit/http-request-action@master
         with:
@@ -20,5 +44,5 @@ jobs:
           method: 'GET'
       - uses: fjogeleit/http-request-action@master
         with:
-          url: 'https://api.poeditor.com/webhooks/d38ae04365'
+          url: 'https://api.poeditor.com/webhooks/2324b7a234'
           method: 'GET'

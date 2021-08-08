@@ -44,7 +44,7 @@
   "appcache_internals": {
     "message": "Cache dell'applicazione"
   },
-  "app": {
+  "apps": {
     "message": "App"
   },
   "autofill_internals": {
@@ -68,7 +68,7 @@
   "conversion_internals": {
     "message": "Conversion Internals"
   },
-  "crash": {
+  "crashes": {
     "message": "crash"
   },
   "credits": {
@@ -86,7 +86,7 @@
   "download_internals": {
     "message": "Download Internals"
   },
-  "download": {
+  "downloads": {
     "message": "Download"
   },
   "extensions": {
@@ -173,7 +173,7 @@
   "predictors": {
     "message": "predittori"
   },
-  "pref_internals": {
+  "prefs_internals": {
     "message": "Pref Internals"
   },
   "print": {
@@ -218,7 +218,7 @@
   "settings_onStartup": {
     "message": "Impostazioni all'avvio"
   },
-  "settings_password": {
+  "settings_passwords": {
     "message": "Password"
   },
   "settings_people": {
@@ -254,7 +254,7 @@
   "system": {
     "message": "Sistema"
   },
-  "termini": {
+  "terms": {
     "message": "Termini di servizio"
   },
   "tracing": {
@@ -284,7 +284,7 @@
   "net_internals": {
     "message": "Net Internals"
   },
-  "new_tab_page_three_party": {
+  "new_tab_page_third_party": {
     "message": "Nuova scheda (terze parti)"
   },
   "session_service_internals": {

@@ -80,7 +80,7 @@
   "dino": {
     "message": "Ντίνο"
   },
-  "απορρίπτει": {
+  "discards": {
     "message": "Απορριμμένες καρτέλες"
   },
   "download_internals": {
@@ -116,7 +116,7 @@
   "history_syncedTabs": {
     "message": "Καρτέλες από άλλες συσκευές"
   },
-  "Identity_internals": {
+  "identity_internals": {
     "message": "Identity API Token Cache"
   },
   "indexeddb_internals": {
@@ -152,13 +152,13 @@
   "net_export": {
     "message": "Εξαγωγή καταγραφής δικτύου"
   },
-  "network_error": {
+  "network_errors": {
     "message": "Σφάλματα δικτύου"
   },
   "newtab": {
     "message": "Νέα καρτέλα"
   },
-  "ntp_tile_internals": {
+  "ntp_tiles_internals": {
     "message": "NTP Tiles Internals"
   },
   "omnibox": {
@@ -269,7 +269,7 @@
   "usb_internals": {
     "message": "USB Internals"
   },
-  "user _actions": {
+  "user_actions": {
     "message": "Ενέργειες χρήστη"
   },
   "version": {

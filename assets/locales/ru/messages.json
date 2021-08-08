@@ -89,10 +89,10 @@
   "downloads": {
     "message": "Загрузки"
   },
-  "extension": {
+  "extensions": {
     "message": "Расширения"
   },
-  "extension_shortcuts": {
+  "extensions_shortcuts": {
     "message": "Сочетания клавиш"
   },
   "flags": {
@@ -140,7 +140,7 @@
   "management": {
     "message": "Менеджмент"
   },
-  "media_Engagement": {
+  "media_engagement": {
     "message": "Взаимодействие со СМИ"
   },
   "media_internals": {
@@ -158,7 +158,7 @@
   "newtab": {
     "message": "Новая вкладка"
   },
-  "ntp_tile_internals": {
+  "ntp_tiles_internals": {
     "message": "Внутреннее устройство плиток NTP"
   },
   "omnibox": {
@@ -242,7 +242,7 @@
   "signin_internals": {
     "message": "Signin Internals"
   },
-  "site_Engagement": {
+  "site_engagement": {
     "message": "Взаимодействие с сайтом"
   },
   "suggestions": {
