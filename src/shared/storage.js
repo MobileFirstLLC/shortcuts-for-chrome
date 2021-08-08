@@ -16,27 +16,6 @@ export default class Storage {
     };
 
     /**
-     * @description Migrate storage from local to sync storage
-     * This allows syncing user preferences between devices.
-     */
-    static migrateStorage() {
-        chrome.storage.local.get([Storage.keys.pinned],
-            items => {
-                const result = items[Storage.keys.pinned] || [];
-
-                // do not overwrite sync storage if already done
-                if (result.length) {
-                    Storage.save(Storage.keys.pinned,
-                        result, _ => false);
-                    // clear local storage
-                    chrome.storage.local.set({
-                        [Storage.keys.pinned]: []
-                    }, _ => false);
-                }
-            });
-    }
-
-    /**
      * @function
      * @description get some property from storage
      * @param {String|Array<String>|Object} keys must be one of:

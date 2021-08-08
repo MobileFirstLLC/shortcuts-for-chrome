@@ -2,7 +2,6 @@
 
 import Api from './api';
 import ContextMenu from './contextMenu';
-import UpdateHandler from './update';
 
 /**
  * @module
@@ -15,7 +14,6 @@ import UpdateHandler from './update';
  *
  * 1. initialize the message passing API
  * 2. sets up extension context menu
- * 3. bind updateHandler
  *
  * Instantiate `new Background()` to enable this functionality.
  */
@@ -29,6 +27,5 @@ export default class Background {
     constructor() {
         new Api();
         new ContextMenu();
-        new UpdateHandler();
     }
 }
