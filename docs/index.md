@@ -7,7 +7,7 @@ with ability to pin and sort favorite links.
 </p>
 
 <a style="margin:4rem auto; display:table;" href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
-<img alt="install at chrome web store" style="max-width: 100%; width: 350px;" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/.github/badge.png"/>
+<img alt="install at chrome web store" style="max-width: 100%; width: 280px;" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/master/.github/badge.png"/>
 </a>
 
 <p align="center">

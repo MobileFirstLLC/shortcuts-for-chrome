@@ -1,4 +1,4 @@
-import {SVGIcons} from '../config';
+import {AppConfig} from '../config';
 
 /**
  * @module
@@ -34,7 +34,7 @@ export default class Helpers {
      */
     static get unpinnedItemIcon() {
         return Helpers.generateIcon(
-            SVGIcons.unpinnedLink, 'pin');
+            AppConfig.SVGIcons.unpinnedLink, 'pin');
     }
 
     /**
@@ -44,7 +44,7 @@ export default class Helpers {
      */
     static get pinnedItemIcon() {
         return Helpers.generateIcon(
-            SVGIcons.activePin, 'unpin');
+            AppConfig.SVGIcons.activePin, 'unpin');
     }
 
     /**

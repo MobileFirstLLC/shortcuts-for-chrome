@@ -1,4 +1,4 @@
-import {ContextMenuOptions} from '../config';
+import {AppConfig} from '../config';
 
 /**
  * @description
@@ -18,6 +18,8 @@ export default class ContextMenu {
      * @name ContextMenu
      */
     constructor() {
+        const {ContextMenuOptions} = AppConfig;
+
         chrome.contextMenus.removeAll(() => {
             Object.keys(ContextMenuOptions).map(key => {
                 chrome.contextMenus.create({
@@ -60,7 +62,7 @@ export default class ContextMenu {
      * @param {Object} info - click event details
      */
     static contextMenuOnClick(info) {
-        const option = ContextMenuOptions[info.menuItemId];
+        const option = AppConfig.ContextMenuOptions[info.menuItemId];
 
         if (!option) return false;
 

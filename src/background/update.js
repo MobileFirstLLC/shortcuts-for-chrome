@@ -1,4 +1,4 @@
-import Storage from '../shared/storage';
+import {Storage} from '../shared';
 
 /**
  * @module

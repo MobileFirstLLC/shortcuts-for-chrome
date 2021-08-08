@@ -1,6 +1,5 @@
+import {Storage, RecentLinks} from '../shared';
 import {MenuLinks} from '../links.json';
-import Storage from '../shared/storage';
-import RecentLinks from '../shared/recent';
 import Menu from '../menu/menu';
 
 /**
