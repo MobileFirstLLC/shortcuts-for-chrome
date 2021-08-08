@@ -1,0 +1,296 @@
+{
+  "app_name": {
+    "message": "Scorciatoie per Chrome"
+  },
+  "app_short_name": {
+    "message": "Scorciatoie per Chrome"
+  },
+  "app_desc": {
+    "message": "Menu di navigazione per sviluppatori che utilizzano Chrome. Organizza come preferisci."
+  },
+  "ctx_rate": {
+    "message": "Estensione tariffa"
+  },
+  "ctx_source": {
+    "message": "Visualizza codice sorgente"
+  },
+  "ctx_share": {
+    "message": "Condividi..."
+  },
+  "ctx_share_tw": {
+    "message": "Twitter"
+  },
+  "ctx_share_fb": {
+    "message": "Facebook"
+  },
+  "ctx_share_rd": {
+    "message": "Reddit"
+  },
+  "ctx_share_li": {
+    "message": "LinkedIn"
+  },
+  "ctx_share_wa": {
+    "message": "Whatsapp"
+  },
+  "ctx_share_pi": {
+    "message": "Pinterest"
+  },
+  "ui_recently_used": {
+    "message": "Usato di recente"
+  },
+  "accessibility": {
+    "message": "Accessibilità interna"
+  },
+  "appcache_internals": {
+    "message": "Cache dell'applicazione"
+  },
+  "app": {
+    "message": "App"
+  },
+  "autofill_internals": {
+    "message": "Autofill-internals"
+  },
+  "blob_internals": {
+    "message": "Blob Internals"
+  },
+  "bluetooth_internals": {
+    "message": "Interni Bluetooth"
+  },
+  "bookmarks": {
+    "message": "segnalibri"
+  },
+  "chrome_urls": {
+    "message": "URL di Chrome"
+  },
+  "components": {
+    "message": "Componenti"
+  },
+  "conversion_internals": {
+    "message": "Conversion Internals"
+  },
+  "crash": {
+    "message": "crash"
+  },
+  "credits": {
+    "message": "crediti"
+  },
+  "device_log": {
+    "message": "Registri dispositivo"
+  },
+  "dino": {
+    "message": "Din"
+  },
+  "discards": {
+    "message": "Schede scartate"
+  },
+  "download_internals": {
+    "message": "Download Internals"
+  },
+  "download": {
+    "message": "Download"
+  },
+  "extensions": {
+    "message": "estensioni"
+  },
+  "extensions_shortcuts": {
+    "message": "Scorciatoie da tastiera"
+  },
+  "flags": {
+    "message": "bandiere"
+  },
+  "gcm_internals": {
+    "message": "GCM Internals"
+  },
+  "gpu": {
+    "message": "GPU"
+  },
+  "help": {
+    "message": "Aiuto"
+  },
+  "histograms": {
+    "message": "Istogrammi"
+  },
+  "history": {
+    "message": "Storia"
+  },
+  "history_syncedTabs": {
+    "message": "Schede da altri dispositivi"
+  },
+  "identity_internals": {
+    "message": "Cache token API identità"
+  },
+  "indexeddb_internals": {
+    "message": "IndexedDB"
+  },
+  "inspect": {
+    "message": "Ispeziona"
+  },
+  "internals_web_app": {
+    "message": "Web App Internals"
+  },
+  "interstitials": {
+    "message": "Interstitial"
+  },
+  "invalidations": {
+    "message": "invalidazioni"
+  },
+  "local_state": {
+    "message": "Local State"
+  },
+  "management": {
+    "message": "gestione"
+  },
+  "media_engagement": {
+    "message": "coinvolgimento con i media"
+  },
+  "media_internals": {
+    "message": "Media Internals"
+  },
+  "nacl": {
+    "message": "NaCl"
+  },
+  "net_export": {
+    "message": "Esportazione registro di rete"
+  },
+  "network_errors": {
+    "message": "Errori di rete"
+  },
+  "newtab": {
+    "message": "Nuova scheda"
+  },
+  "ntp_tiles_internals": {
+    "message": "NTP Tiles Internals"
+  },
+  "omnibox": {
+    "message": "omnibox"
+  },
+  "password_manager_internals": {
+    "message": "Password Manager Internals"
+  },
+  "policy": {
+    "message": "Politiche"
+  },
+  "predictors": {
+    "message": "predittori"
+  },
+  "pref_internals": {
+    "message": "Pref Internals"
+  },
+  "print": {
+    "message": "Stampa"
+  },
+  "process_internals": {
+    "message": "processi interni"
+  },
+  "quota_internals": {
+    "message": "Quota Internals"
+  },
+  "safe_browsing": {
+    "message": "Navigazione sicura"
+  },
+  "serviceworker_internals": {
+    "message": "ServiceWorker"
+  },
+  "settings": {
+    "message": "Impostazioni"
+  },
+  "settings_accessibility": {
+    "message": "Impostazioni accessibilità"
+  },
+  "settings_appearance": {
+    "message": "Impostazioni aspetto"
+  },
+  "settings_autofill": {
+    "message": "Impostazioni di riempimento automatico"
+  },
+  "settings_clearBrowserData": {
+    "message": "Cancella dati di navigazione"
+  },
+  "settings_defaultBrowser": {
+    "message": "Impostazioni browser predefinite"
+  },
+  "settings_importData": {
+    "message": "Importa segnalibri e impostazioni"
+  },
+  "settings_languages": {
+    "message": "Impostazioni lingua"
+  },
+  "settings_onStartup": {
+    "message": "Impostazioni all'avvio"
+  },
+  "settings_password": {
+    "message": "Password"
+  },
+  "settings_people": {
+    "message": "Persone"
+  },
+  "settings_privacy": {
+    "message": "Impostazioni privacy e sicurezza"
+  },
+  "settings_reset": {
+    "message": "Reset"
+  },
+  "settings_search": {
+    "message": "Impostazioni motore di ricerca"
+  },
+  "settings_syncSetup": {
+    "message": "Impostazioni di sincronizzazione avanzate"
+  },
+  "settings_system": {
+    "message": "Impostazioni di sistema"
+  },
+  "signin_internals": {
+    "message": "Signin Internals"
+  },
+  "site_engagement": {
+    "message": "coinvolgimento nel sito"
+  },
+  "suggestions": {
+    "message": "suggerimenti"
+  },
+  "sync_internals": {
+    "message": "Sync Internals"
+  },
+  "system": {
+    "message": "Sistema"
+  },
+  "termini": {
+    "message": "Termini di servizio"
+  },
+  "tracing": {
+    "message": "traccia"
+  },
+  "translate_internals": {
+    "message": "Translate Internals"
+  },
+  "ukm": {
+    "message": "Pagina di debug UKM"
+  },
+  "usb_internals": {
+    "message": "USB Internals"
+  },
+  "user_actions": {
+    "message": "Azioni utente"
+  },
+  "version": {
+    "message": "versione"
+  },
+  "webrtc_internals": {
+    "message": "WebRTC Internals"
+  },
+  "webrtc_logs": {
+    "message": "Registri WebRTC"
+  },
+  "net_internals": {
+    "message": "Net Internals"
+  },
+  "new_tab_page_three_party": {
+    "message": "Nuova scheda (terze parti)"
+  },
+  "session_service_internals": {
+    "message": "Session Internals"
+  },
+  "settings_cookies": {
+    "message": "cookie"
+  }
+}

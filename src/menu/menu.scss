@@ -21,8 +21,11 @@
     padding-right: 10px;
 
     span {
-      display: table;
       min-width: 60%;
+      width: 220px;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     svg.pin,
