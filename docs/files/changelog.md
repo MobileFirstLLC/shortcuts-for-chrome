@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [3.4.1](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.4.0...v3.4.1) (2021-08-08)
+## [3.4.1](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.4.0...v3.4.1) (2021-08-08)
 
-* added translations
+* added translations for 8 more languages (ca, cs, de, el, es, it, ru, sv)
 
 ## [3.4.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.3.0...v3.4.0) (2021-07-19)
 
@@ -15,20 +15,13 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [3.3.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.2.2...v3.3.0) (2021-02-24)
 
-#### Features
-
 * [add recent links](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/7)
 
 ## [3.2.2](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.2.1...v3.2.2) (2021-01-09)
 
-#### Features
-
 * add more share options ([3ccbc63](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commit/3ccbc63cd09d587dda5eb91244c62f9cefd1b315))
 * add v3 manifest ([e48df73](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commit/e48df73c30e6cbd14141648e33194923788a2d4d))
 * locales ([55a97b6](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commit/55a97b64f92fa418efdd5191dde4d6d932555694))
-
-#### Bug Fixes
-
 * adjust dark color scheme ([183d6aa](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commit/183d6aaaeb63b2bd2353865222397064b7922008))
 
 ## [3.2.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.1.1...v3.2.0) (2020-12-15)
@@ -40,12 +33,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [3.1.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.0.1...v3.1.0) (2020-12-06)
 
-#### Features
-
 * migrate storage to use chrome sync storage over local ([b898df7](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commit/b898df7710a55669e857bc6cee9c56aff416a54a))
-
-#### Bug Fixes
-
 * lint ([57fcef6](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commit/57fcef6b285f2268c99ad33f3b7e96c57111ef3b))
 * **link:** fix typo ([eea986b](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commit/eea986bdf45e875c48146823a4fb11217e667a9b))
 * **test:** change unit test to sync storage ([41fcfed](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commit/41fcfedc93ab24794d292e98512afa547f632ad5))
