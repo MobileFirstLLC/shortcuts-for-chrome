@@ -11,7 +11,7 @@ const outFileName = 'messages.json';
 const linksDir = './src/';
 const linksFileName = 'links.json';
 
-const ensureDirectoryExists = dirPath => fs.existsSync(dirPath) || fs.mkdirSync(dirPath);
+const ensureDirectoryExists = dirPath => fs.existsSync(dirPath) || fs.mkdirSync(dirPath, {recursive: true});
 
 const sanitizedKey = key => key.replace(/[-\/]/g, '_');
 
