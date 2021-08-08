@@ -18,28 +18,28 @@ const isChromeUrl = key => key.indexOf('_') < 0;
 
 const format = ([key, message]) => [key.replace(/[-\/]/g, '_'), {message}];
 
-const ensureDir = dirPath => fs.mkdirSync(dirPath, {recursive: true});
+const linksObj = json => ({[menuLinks]: Object.keys(json).filter(isChromeUrl).sort()});
+
+const localesObj = json => Object.fromEntries(Object.entries(json).filter(hasValue).map(format));
+
+const makeObjects = json => [localesObj(json), linksObj(json)];
 
 const log = (path, obj, prop) => console.log(path, Object.keys(prop ? obj[prop] : obj).length);
 
+const ensureDir = dir => fs.mkdirSync(dir, {recursive: true});
+
 const readJson = path => JSON.parse(fs.readFileSync(path, 'utf-8'));
 
-const writeJson = (path, obj, prop) => fs.writeFileSync(path, JSON.stringify(obj)) & log(path, obj, prop);
+const saveJson = (path, obj, prop) => fs.writeFileSync(path, JSON.stringify(obj)) & log(path, obj, prop);
 
-const write = (dir, file, obj, prop) => ensureDir(dir) & writeJson(path.join(dir, file), obj, prop);
+const write = (dir, file, obj, prop) => ensureDir(dir) & saveJson(path.join(dir, file), obj, prop);
 
-const writeLocale = (lang, obj) => write(path.join(outDir, lang), outFile, obj);
+const saveLinks = (lang, links) => lang === 'en' && write(linksDir, linksFile, links, menuLinks);
 
-const writeLinks = (lang, links) => lang === 'en' && write(linksDir, linksFile, links, menuLinks);
+const saveLocale = (lang, obj) => write(path.join(outDir, lang), outFile, obj);
 
-const linksObj = content => ({[menuLinks]: Object.keys(content).filter(isChromeUrl).sort()});
-
-const localesObj = content => Object.fromEntries(Object.entries(content).filter(hasValue).map(format));
-
-const makeObjects = content => [localesObj(content), linksObj(content)];
-
-const save = (obj, links, lang) => writeLocale(lang, obj) & writeLinks(lang, links);
+const save = (lang, [obj, links]) => saveLocale(lang, obj) & saveLinks(lang, links);
 
 for (const file of fs.readdirSync(inDir)) {
-    save(...makeObjects(readJson(path.join(inDir, file))), path.parse(file).name);
+    save(path.parse(file).name, makeObjects(readJson(path.join(inDir, file))));
 }
