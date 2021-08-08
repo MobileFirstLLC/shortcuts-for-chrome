@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.4.1](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.4.0...v3.4.1) (2021-08-08)
+
 ## [3.4.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.3.0...v3.4.0) (2021-07-19)
 
 * migrate to manifest v3 [PR #12](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/12)
