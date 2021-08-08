@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 
 const inDirectory = './i18n/';
-const outDirectory = './assets/locales/';
+const outDirectory = './locales/';
 const outFileName = 'messages.json';
 const linksDir = './src/';
 const linksFileName = 'links.json';
