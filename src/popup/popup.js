@@ -1,5 +1,5 @@
 import {Storage, RecentLinks} from '../shared';
-import {MenuLinks} from '../links.json';
+import {MenuLinks} from './links.json';
 import Menu from '../menu/menu';
 
 /**

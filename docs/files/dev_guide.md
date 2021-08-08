@@ -39,7 +39,6 @@ Path | Description
  &nbsp; &nbsp; **└─ popup** | extension popup view
  &nbsp; &nbsp; **└─ shared** | shared modules for use by popup/background
  &nbsp; &nbsp; &nbsp; **config.js** | extension config
- &nbsp; &nbsp; &nbsp; **links.json** | generated list of menu links (do not edit)
  &nbsp; &nbsp; &nbsp; **manifest.json** | extension manifest
 **└─ test** | unit tests
 **/ (root)** | config and utility files
@@ -71,7 +70,7 @@ Refer to [extension-cli user guide](https://oss.mobilefirst.me/extension-cli/) f
 | `npm run clean` | clean generated files |
 | `npm run sync` | update config files |
 | `npm run coverage` | unit test coverage report |
-| `npm run translate` | generate locales dictionaries and links.json |
+| `npm run translate` | generate locales |
 
 ### Debugging
 

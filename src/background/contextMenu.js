@@ -47,8 +47,7 @@ export default class ContextMenu {
      */
     static generateUrl(channel) {
         const {short_name, homepage_url} = chrome.runtime.getManifest();
-        const hashtag = '%23' + ((short_name || '')
-            .replace(/ /g, ''));
+        const hashtag = `%23${short_name}`.replace(/ /g, '');
 
         return channel.url
             .replace('{hash}', hashtag)
