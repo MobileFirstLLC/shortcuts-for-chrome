@@ -1,6 +1,7 @@
 import ContextMenu from '../src/background/contextMenu';
-import {ContextMenuOptions} from '../src/config';
+import {AppConfig} from '../src/config';
 
+const {ContextMenuOptions} = AppConfig;
 
 describe('Context Menu', () => {
 
