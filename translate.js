@@ -1,45 +1,41 @@
 /**
- * Utility script that formats PO Editor files as extension locales files
+ * Utility script that converts PO Editor export files to Chrome extension locales files.
  */
 
 const fs = require('fs');
-const path = require('path');
+const {join, parse, dirname} = require('path');
+const {fromEntries, entries, keys} = Object;
 
 const inDir = './i18n/';
 const outDir = './locales/';
 const outFile = 'messages.json';
-const linksDir = './src/popup/';
-const linksFile = 'links.json';
-const menuLinks = 'MenuLinks';
+const linksFile = './src/popup/links.json';
+const menu = 'MenuLinks';
 
 const hasValue = ([_, value]) => !!value;
 
-const isChromeUrl = key => key.indexOf('_') < 0;
+const chromeUrl = key => key.indexOf('_') === -1;
 
 const format = ([key, message]) => [key.replace(/[-\/]/g, '_'), {message}];
 
-const linksObj = json => ({[menuLinks]: Object.keys(json).filter(isChromeUrl).sort()});
+const log = (file, obj, prop) => console.log(file, keys(prop ? obj[prop] : obj).length);
 
-const localesObj = json => Object.fromEntries(Object.entries(json).filter(hasValue).map(format));
+const locales = json => fromEntries(entries(json).filter(hasValue).map(format));
 
-const makeObjects = json => [localesObj(json), linksObj(json)];
+const links = json => ({[menu]: keys(json).filter(chromeUrl).sort()});
 
-const log = (path, obj, prop) => console.log(path, Object.keys(prop ? obj[prop] : obj).length);
+const ensureDir = file => fs.mkdirSync(dirname(file), {recursive: true});
 
-const ensureDir = dir => fs.mkdirSync(dir, {recursive: true});
+const read = file => JSON.parse(fs.readFileSync(file, 'utf-8'));
 
-const readJson = path => JSON.parse(fs.readFileSync(path, 'utf-8'));
+const write = (file, obj) => fs.writeFileSync(file, JSON.stringify(obj));
 
-const saveJson = (path, obj, prop) => fs.writeFileSync(path, JSON.stringify(obj)) & log(path, obj, prop);
+const saveFile = (file, obj, prop) => ensureDir(file) & write(file, obj) & log(file, obj, prop);
 
-const write = (dir, file, obj, prop) => ensureDir(dir) & saveJson(path.join(dir, file), obj, prop);
+const saveLocale = (lang, json) => saveFile(join(outDir, lang, outFile), locales(json));
 
-const saveLinks = (lang, links) => lang === 'en' && write(linksDir, linksFile, links, menuLinks);
+const saveLinks = (lang, json) => lang !== 'en' || saveFile(linksFile, links(json), menu);
 
-const saveLocale = (lang, obj) => write(path.join(outDir, lang), outFile, obj);
+const save = (lang, json) => saveLocale(lang, json) & saveLinks(lang, json);
 
-const save = (lang, [obj, links]) => saveLocale(lang, obj) & saveLinks(lang, links);
-
-for (const file of fs.readdirSync(inDir)) {
-    save(path.parse(file).name, makeObjects(readJson(path.join(inDir, file))));
-}
+fs.readdirSync(inDir).map(file => save(parse(file).name, read(join(inDir, file))));
