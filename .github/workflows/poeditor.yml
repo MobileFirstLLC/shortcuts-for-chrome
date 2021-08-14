@@ -12,6 +12,10 @@ jobs:
     steps:
       - uses: fjogeleit/http-request-action@master
         with:
+          url: 'https://api.poeditor.com/webhooks/48b291fde8'
+          method: 'GET'
+      - uses: fjogeleit/http-request-action@master
+        with:
           url: 'https://api.poeditor.com/webhooks/6282dffd3f'
           method: 'GET'
       - uses: fjogeleit/http-request-action@master

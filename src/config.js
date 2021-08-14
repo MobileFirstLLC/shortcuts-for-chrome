@@ -60,6 +60,10 @@ export const AppConfig = {
             title: 'Rate extension',
             url: '{URI}/reviews'
         },
+        translate: {
+            title: 'Help translate',
+            url: 'https://poeditor.com/join/project?hash=c2ihN8duR2'
+        },
         share: {
             id: 'share',
             title: 'Share...'
