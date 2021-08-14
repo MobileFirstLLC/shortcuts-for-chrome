@@ -38,4 +38,8 @@ const saveLinks = (lang, json) => lang !== 'en' || saveFile(linksFile, links(jso
 
 const save = (lang, json) => saveLocale(lang, json) & saveLinks(lang, json);
 
-fs.readdirSync(inDir).map(file => save(parse(file).name, read(join(inDir, file))));
+const translate = file => save(parse(file).name, read(join(inDir, file)));
+
+const processFiles = files => files.map(translate) & console.log('translated', files.length, 'languages');
+
+processFiles(fs.readdirSync(inDir));
