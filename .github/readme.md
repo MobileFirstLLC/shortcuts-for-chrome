@@ -57,4 +57,4 @@ Chrome browser navigation is optimized for non-technical users. For developers, 
 
 **Issues & Feature Requests:** [Use Github Issues](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/new/choose)
 
-**Translation:** [Contribute at POEditor ↗](https://poeditor.com/join/project?hash=c2ihN8duR2)
+**Internationalization:** [Help translate this extension ↗](https://poeditor.com/join/project?hash=c2ihN8duR2)
