@@ -4,42 +4,32 @@
 
 const fs = require('fs');
 const {join, parse, dirname} = require('path');
-const {fromEntries, entries, keys} = Object;
 
 const inDir = './i18n/';
-const outDir = './locales/';
-const outFile = 'messages.json';
+const out = './locales/';
+const fn = 'messages.json';
 const linksFile = './src/popup/links.json';
-const menu = 'MenuLinks';
 
-const hasValue = ([_, value]) => !!value;
+const hasValue = ([_, value]) => !!value.length;
 
 const chromeUrl = key => key.indexOf('_') === -1;
 
 const format = ([key, message]) => [key.replace(/[-\/]/g, '_'), {message}];
 
-const log = (file, obj, prop) => console.log(file, keys(prop ? obj[prop] : obj).length);
+const locales = json => Object.fromEntries(Object.entries(json).filter(hasValue).map(format));
 
-const locales = json => fromEntries(entries(json).filter(hasValue).map(format));
-
-const links = json => ({[menu]: keys(json).filter(chromeUrl).sort()});
+const links = json => ({['MenuLinks']: Object.keys(json).filter(chromeUrl).sort()});
 
 const ensureDir = file => fs.mkdirSync(dirname(file), {recursive: true});
 
 const read = file => JSON.parse(fs.readFileSync(file, 'utf-8'));
 
-const write = (file, obj) => fs.writeFileSync(file, JSON.stringify(obj));
+const write = (file, obj) => ensureDir(file) & fs.writeFileSync(file, JSON.stringify(obj));
 
-const saveFile = (file, obj, prop) => ensureDir(file) & write(file, obj) & log(file, obj, prop);
+const save = (n, fn, json) => (n || write(linksFile, links(json))) & write(fn, locales(json));
 
-const saveLocale = (lang, json) => saveFile(join(outDir, lang, outFile), locales(json));
+const translate = (file, n) => save(n, join(out, parse(file).name, fn), read(join(inDir, file)));
 
-const saveLinks = (lang, json) => lang !== 'en' || saveFile(linksFile, links(json), menu);
-
-const save = (lang, json) => saveLocale(lang, json) & saveLinks(lang, json);
-
-const translate = file => save(parse(file).name, read(join(inDir, file)));
-
-const processFiles = files => files.map(translate) & console.log('translated', files.length, 'languages');
+const processFiles = files => files.map(translate) & console.log('languages:', files.length);
 
 processFiles(fs.readdirSync(inDir));
