@@ -64,7 +64,7 @@
     "locales_dir": "./locales/",
     "locales_list": [
       "ca", "cs", "de", "el", "en", "es", "fi", "it", "ru", "sv",
-      "hi", "sw", "nl", "ms", "th", "ko", "iw", "pl", "ja", "zh",
+      "hi", "sw", "nl", "ms", "th", "ko", "he", "pl", "ja", "zh",
       "ar", "da", "no", "id", "et", "bg", "tr", "pt", "fr", "uk",
       "vi", "ta", "fil", "hr", "hu", "ro", "sk", "sl", "sr", "lt"
     ]
