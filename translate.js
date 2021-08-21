@@ -20,6 +20,8 @@ const locales = json => Object.fromEntries(Object.entries(json).filter(hasValue)
 
 const links = json => ({['MenuLinks']: Object.keys(json).filter(chromeUrl).sort()});
 
+const printLocales = files => files.map(f => `"${parse(f).name}"`).join(',');
+
 const ensureDir = file => fs.mkdirSync(dirname(file), {recursive: true});
 
 const read = file => JSON.parse(fs.readFileSync(file, 'utf-8'));
@@ -30,6 +32,6 @@ const save = (n, fn, json) => (n || write(linksFile, links(json))) & write(fn, l
 
 const translate = (file, n) => save(n, join(out, parse(file).name, fn), read(join(inDir, file)));
 
-const processFiles = files => files.map(translate) & console.log('languages:', files.length);
+const processFiles = files => files.map(translate) & console.log(files.length, ':', printLocales(files));
 
 processFiles(fs.readdirSync(inDir));

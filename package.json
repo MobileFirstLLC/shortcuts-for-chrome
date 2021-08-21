@@ -63,10 +63,11 @@
     ],
     "locales_dir": "./locales/",
     "locales_list": [
-      "ca", "cs", "de", "el", "en", "es", "fi", "it", "ru", "sv",
-      "hi", "sw", "nl", "ms", "th", "ko", "he", "pl", "ja", "zh",
-      "ar", "da", "no", "id", "et", "bg", "tr", "pt", "fr", "uk",
-      "vi", "ta", "fil", "hr", "hu", "ro", "sk", "sl", "sr", "lt"
+      "am","ar","bg","bn","ca","cs","da","de","el","en","en_GB","es",
+      "et","fa","fi","fil","fr","gu","he","hi","hr","hu","id","it",
+      "ja","kn","ko","lt","lv","ml","mr","ms","nl","no","pl","pt",
+      "ro","ru","sk","sl","sr","sv","sw","ta","te","th","tr",
+      "uk","vi","zh"
     ]
   }
 }
