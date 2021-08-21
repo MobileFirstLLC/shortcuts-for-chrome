@@ -25,7 +25,7 @@
     "flags": "דגלים",
     "gcm-internals": "פנימי GCM",
     "gpu": "GPU",
-    "help":"עזרה",
+    "help": "עזרה",
     "histograms": "היסטוגרמות",
     "history": "היסטוריה",
     "history/syncedTabs": "כרטיסיות ממכשירים אחרים",
@@ -87,5 +87,5 @@
     "net-internals": "רשתות פנימיות",
     "new-tab-page-third-party": "כרטיסייה חדשה (צד שלישי)",
     "session-service-internals": "פנימי הפעלה",
-    "settings/cookies": "Cookies"
+    "settings/cookies": "עוגייה"
 }
