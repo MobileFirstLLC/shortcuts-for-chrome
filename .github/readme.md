@@ -7,7 +7,7 @@
   <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">Shortcuts for Chrome</a>
 </h1>
 
-<h3 align="center">Navigation menu for developers using Chrome</h3>
+<h3 align="center">Navigation menu of Chrome URLs for technical users</h3>
 
 <p align="center">
 <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal"><img src="https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal?label=latest%20release&color=2196F3&style=flat" alt="version"/></a> 
@@ -19,7 +19,7 @@
 <a href="https://codeclimate.com/github/MobileFirstLLC/shortcuts-for-chrome/maintainability"><img alt="Code Climate maintainability" src="https://img.shields.io/codeclimate/maintainability/MobileFirstLLC/shortcuts-for-chrome?style=flat"></a>
 </p>
 
-Chrome browser navigation is optimized for non-technical users. For developers, who want to inspect what is happening under the hood with e.g. indexedDB, service workers, or Bluetooth devices, this menu brings shortcuts to those otherwise hard-to-find browser dev tools. This menu lists all `chrome://*` URLs in a single, flat list, customizable menu.
+Chrome browser navigation is optimized for non-technical users. For users who want to inspect what is happening with indexedDB, service workers, or Bluetooth devices etc., this menu brings shortcuts to those otherwise hard-to-find, internal browser pages. This menu lists all Chrome URLs in a single, flat list, customizable menu.
 
 <br/>
 
