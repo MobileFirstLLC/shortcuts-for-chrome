@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [3.5.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.4.1...v3.5.0) (2021-08-21)
+### [3.5.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.4.1...v3.5.0) (2021-08-21)
 
-* added translations to all Chrome locales
+* added translations for all Chrome locales [changeset](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.4.1...v3.5.0)
 
 ### [3.4.1](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.4.0...v3.4.1) (2021-08-08)
 

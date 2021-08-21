@@ -8,11 +8,11 @@ Application does not require users to create login credentials nor to provide an
 
 App may use third party libraries for purposes of implementing specific features needed by the app to function as intended. This privacy policy does not cover 3rd party libraries.
 
-This application does NOT include tracking/analytics about user behavior.
+This application does not contain any ads, tracking or analytics packages.
 
 ### Acknowledgement
 
 By using the app the user accepts this policy.
 
-Last modified: July 17, 2021.
+Last modified: August 21, 2021. [Changelog](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commits/main/docs/files/privacy.md) 
 
