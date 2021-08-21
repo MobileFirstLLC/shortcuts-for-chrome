@@ -3,7 +3,8 @@ name: Test PR
 on:
   pull_request:
     branches: [ main ]
-
+    branches-ignore: [ i18n ]
+    
 jobs:
   test-pr:
     runs-on: ubuntu-latest
