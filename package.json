@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "cws-publish": "^2.0.6",
-    "extension-cli": "^1.2.0",
+    "extension-cli": "^1.2.2",
     "foodoc": "^0.0.9"
   },
   "babel": {
