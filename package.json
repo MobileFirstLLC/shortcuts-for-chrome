@@ -24,9 +24,9 @@
     "translate": "node translate.js"
   },
   "devDependencies": {
-    "cws-publish": "^2.0.6",
-    "extension-cli": "^1.2.2",
-    "foodoc": "^0.0.9"
+    "cws-publish": "2.0.6",
+    "extension-cli": "1.2.2",
+    "foodoc": "0.0.9"
   },
   "babel": {
     "presets": [
