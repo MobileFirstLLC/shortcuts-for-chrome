@@ -21,7 +21,10 @@
     "clean": "xt-clean",
     "sync": "xt-sync",
     "coverage": "nyc --reporter=lcov npm run test",
-    "translate": "node translate.js"
+    "translate": "node translate.js",
+    "push_tags": "git push --follow-tags origin main",
+    "patch": "npx standard-version --release-as patch && npm run push_tags",
+    "minor": "npx standard-version --release-as minor && npm run push_tags"
   },
   "devDependencies": {
     "cws-publish": "2.0.6",
