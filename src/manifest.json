@@ -4,7 +4,7 @@
   "description": "__MSG_app_desc__",
   "version": "0.0.0",
   "offline_enabled": true,
-  "manifest_version": 3,
+  "manifest_version": 2,
   "default_locale": "en",
   "minimum_chrome_version": "88",
   "homepage_url": "https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal",
@@ -16,9 +16,12 @@
     "128": "assets/128x128.png"
   },
   "background": {
-    "service_worker": "background.js"
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
   },
-  "action": {
+  "browser_action": {
     "default_icon": {
       "16": "assets/16x16.png",
       "24": "assets/24x24.png",
