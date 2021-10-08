@@ -59,7 +59,7 @@ Chrome browser navigation is optimized for non-technical users. For users who wa
 </p>
 
 <p align="center">
-<img width="700" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/screenshot.png' />
+<img width="650" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/screenshot.png' />
 </p>
 
 <br/>
