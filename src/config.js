@@ -103,7 +103,7 @@ export const AppConfig = {
             ww: 700, wh: 800,
             url: 'https://www.pinterest.com/pin/create/button/?url={URI}&media=' +
                 'https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/' +
-                '68bf15ddb9f263b058a10340202ac775f0f4cf8d/assets/preview.gif'
+                '44c233bc8ad8515c3e89303e9465a520142ad9de/assets/preview.gif'
         }
     }
 };
