@@ -1,5 +1,6 @@
 import Popup from '../src/popup/popup';
 import Storage from '../src/shared/storage';
+import RecentLinks from '../src/shared/recent';
 
 describe('Popup Window', function () {
 
@@ -98,12 +99,19 @@ describe('Popup Window', function () {
     });
 
     it('Clicking link text opens a tab', () => {
-        let link = getLink(0),
-            label = getLinkText(link),
-            url = getLinkName(link);
-        expect(chrome.runtime.sendMessage.withArgs({open: url}).notCalled, 'before click').to.be.true;
+        chrome.storage.sync.set.yields(null);
+        const link = getLink(0), label = getLinkText(link);
+        const fullURL = 'chrome://' + getLinkName(link);
+        expect(chrome.tabs.create.withArgs({url: fullURL}).notCalled, 'before click').to.be.true;
         label.onclick();
-        expect(chrome.runtime.sendMessage.withArgs({open: url}).calledOnce, 'after click').to.be.true;
+        expect(chrome.tabs.create.withArgs({url: fullURL}).calledOnce, 'after click').to.be.true;
+    });
+
+    it('Clicking link  adds opened links to recent links', () => {
+        let link = getLink(0), label = getLinkText(link), url = getLinkName(link);
+        const stub = sandbox.stub(RecentLinks, 'addRecent');
+        label.onclick();
+        expect(stub.withArgs(url).calledOnce).to.be.true;
     });
 
     describe('Link dragging', () => {

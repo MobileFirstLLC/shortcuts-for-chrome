@@ -1,5 +1,6 @@
 import Draggable from './dragging.js';
 import Helpers from './helpers';
+import {RecentLinks} from '../shared';
 
 /**
  * Initialize menu panel instance
@@ -236,13 +237,21 @@ export default class Menu {
             () => Menu.onPinToggle(name);
     }
 
-    static onOpen(urlPath){
+    /**
+     * @private
+     * @static
+     * @description
+     * Open selected URL and record "recent use" of that URL.
+     * Recent use is recorded in the background to enable
+     * capturing it before the popup closes; attempting to do
+     * it in the foreground leads to a race.
+     * @param {string} urlPath - chrome URL to open
+     */
+    static onOpen(urlPath) {
         const fullURL = 'chrome://' + urlPath;
 
-        // do this in the background to avoid popup being
-        // destroyed before change is saved
-        chrome.runtime.sendMessage({open: urlPath});
-        chrome.tabs.create({url: fullURL});
+        RecentLinks.addRecent(urlPath,
+            () => chrome.tabs.create({url: fullURL}));
     }
 
     /**
