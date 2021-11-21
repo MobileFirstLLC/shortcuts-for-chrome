@@ -67,7 +67,6 @@ export default class RecentLinks {
                 // returns urs only
                 .map(({url}) => url);
 
-            console.log('recent:', recent);
             callback(recent);
         });
     }
