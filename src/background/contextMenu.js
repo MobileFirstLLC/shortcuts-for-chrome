@@ -19,13 +19,12 @@ export default class ContextMenu {
      */
     constructor() {
         const {ContextMenuOptions} = AppConfig;
-        const {browser_action} = chrome.runtime.getManifest();
 
         chrome.contextMenus.removeAll(() => {
             Object.keys(ContextMenuOptions).map(key => {
                 chrome.contextMenus.create({
                     title: ContextMenuOptions[key].title,
-                    contexts: [browser_action ? 'browser_action' : 'action'],
+                    contexts: ['action'],
                     parentId: ContextMenuOptions[key].parentId,
                     id: ContextMenuOptions[key].id || key
                 });
