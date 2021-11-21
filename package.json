@@ -30,7 +30,7 @@
     "cws-publish": "2.0.7-beta.0",
     "extension-cli": "1.2.4",
     "foodoc": "0.0.9",
-    "webpack": "^5.21.2"
+    "webpack": "5.64.2"
   },
   "babel": {
     "presets": [
