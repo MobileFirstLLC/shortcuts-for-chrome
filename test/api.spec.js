@@ -11,13 +11,6 @@ describe('Background API', function () {
         sandbox.restore();
     });
 
-    it('It opens tab on request', done => {
-        expect(chrome.tabs.create.notCalled).to.be.true;
-        chrome.runtime.onMessage.dispatch({open: 'history'});
-        expect(chrome.tabs.create.withArgs({url: 'chrome://history'}).calledOnce).to.be.true;
-        done();
-    });
-
     it('It adds opened links to recent links', done => {
         const stub = sandbox.stub(RecentLinks, 'addRecent');
         chrome.runtime.onMessage.dispatch({open: 'about'});

@@ -85,6 +85,5 @@ export default class Helpers {
 
         div.setAttribute('class', 'divider');
         panel.appendChild(div);
-    };
-
-};
+    }
+}
