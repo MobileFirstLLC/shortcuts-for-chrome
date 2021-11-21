@@ -139,7 +139,7 @@ export default class Menu {
         Menu.renderRecentItems(panel);
         Menu.renderUnpinnedLinks(panel);
         return panel;
-    };
+    }
 
     /**
      * @private
@@ -231,9 +231,18 @@ export default class Menu {
         let name = element.getAttribute(Menu.idAttr);
 
         element.getElementsByTagName('span')[0].onclick =
-            () => chrome.runtime.sendMessage({open: name});
+            () => Menu.onOpen(name);
         element.getElementsByTagName('svg')[0].onclick =
             () => Menu.onPinToggle(name);
+    }
+
+    static onOpen(urlPath){
+        const fullURL = 'chrome://' + urlPath;
+
+        // do this in the background to avoid popup being
+        // destroyed before change is saved
+        chrome.runtime.sendMessage({open: urlPath});
+        chrome.tabs.create({url: fullURL});
     }
 
     /**
@@ -254,7 +263,7 @@ export default class Menu {
         a.innerHTML = icon + text.outerHTML;
         Menu.attachClickActions(a);
         return a;
-    };
+    }
 
     /**
      * @private
@@ -269,4 +278,4 @@ export default class Menu {
         panel.appendChild(Menu.createLink(
             Helpers.unpinnedItemIcon, label, name));
     }
-};
+}

@@ -22,18 +22,12 @@ export default class Api {
      * {@link https://developer.chrome.com/apps/runtime#event-onMessage|onMessage}
      * for details on message passing in chrome extensions.
      *
-     * @example chrome.runtime.sendMessage({open: "about"}); // will open tab: chrome://about
+     * This module records recently opened tabs.
+     *
+     * @example chrome.runtime.sendMessage({open: "about"}); // will record "about" as recently used
      */
     constructor() {
         chrome.runtime.onMessage.addListener(
-            (request) => {
-                if (request.open) {
-                    const urlPath = request.open;
-                    const fullURL = 'chrome://' + urlPath;
-
-                    chrome.tabs.create({url: fullURL});
-                    RecentLinks.addRecent(urlPath);
-                }
-            });
+            (request) => request.open && RecentLinks.addRecent(request.open));
     }
 }

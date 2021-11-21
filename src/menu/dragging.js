@@ -21,7 +21,7 @@ export default class Dragging {
      * @name Dragging
      * @description Create element whose children can be dragged and dropped
      *
-     * @param {String} idAttribute - for each draggble element, this
+     * @param {String} idAttribute - for each draggable element, this
      * attribute will provide its id, for example `id`
      * @param {Element} container - the first parent of all draggable
      * elements -> provide a DOM element reference
@@ -99,7 +99,7 @@ export default class Dragging {
         elem.addEventListener('drop', this.handleDrop, false);
         elem.addEventListener('drop', this.notifyParent, false);
         this.onElementRender(elem);
-    };
+    }
 
     /**
      * @private
@@ -123,7 +123,7 @@ export default class Dragging {
             }
         }
         return false;
-    };
+    }
 
     /**
      * @private
@@ -136,7 +136,7 @@ export default class Dragging {
         Dragging.dragSrcEl = this;
         e.dataTransfer.effectAllowed = 'move';
         e.dataTransfer.setData('text/html', this.outerHTML);
-    };
+    }
 
     /**
      * @private
@@ -155,7 +155,7 @@ export default class Dragging {
             this.classList.add(isBefore ? 'after' : 'before');
         }
         return false;
-    };
+    }
 
     /**
      * @private
@@ -166,7 +166,7 @@ export default class Dragging {
      */
     handleDragLeave(e) {
         Dragging.removeClasses(this);
-    };
+    }
 
     /**
      * @private
@@ -177,7 +177,7 @@ export default class Dragging {
      */
     handleDragEnd(e) {
         Dragging.removeClasses(this);
-    };
+    }
 
     /**
      * @private
@@ -194,7 +194,7 @@ export default class Dragging {
             }
         }
         return true;
-    };
+    }
 
     /**
      * @private

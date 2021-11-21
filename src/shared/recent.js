@@ -28,7 +28,7 @@ export default class RecentLinks {
      * @param {string} url - link URL
      * @param {function} callback - handler for when function is done
      */
-    static addRecent(url, callback = _ => false) {
+    static addRecent(url, callback = () => false) {
         Storage.get([Storage.keys.recent], items => {
             let found = false;
             const recent = (items[Storage.keys.recent] || [])
@@ -62,11 +62,12 @@ export default class RecentLinks {
         Storage.get(null, items => {
             const recent = (items[Storage.keys.recent] || [])
                 // filter out unwanted matches
-                .filter(({url, ts}) =>
+                .filter(({ts}) =>
                     RecentLinks.isStillRecent(ts))
                 // returns urs only
                 .map(({url}) => url);
 
+            console.log('recent:', recent);
             callback(recent);
         });
     }
