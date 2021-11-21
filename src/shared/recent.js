@@ -3,8 +3,8 @@ import Storage from './storage';
 
 /**
  * @description
- * Recent links were used recently (based on config). They become
- * stale after some time and then get removed from the list of recent.
+ * Recent links is a list of URL that were used recently (based on config).
+ * They become stale after some time and then get removed from the recent list.
  * @module
  * @name RecentLinks
  */

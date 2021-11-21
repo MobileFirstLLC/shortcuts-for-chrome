@@ -1,8 +1,8 @@
 <p style="font-size: 120%; line-height: 2; margin-top:3rem; margin-bottom: 3rem;">
 <strong>Shortcuts for Chrome</strong> is a customizable browser navigation menu you can add to Chrome browser
 by installing it <a rel="nofollow noreferrer" href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal" target="_blank">from Chrome Web Store</a>.
-It gives you a flat menu of all internal <code>chrome://</code> browser URLs which are otherwise hard to find
-or require typing and prior knowledge to access. This application provides a graphical point-and-click alternative,
+It gives you a flat menu of all internal <code>chrome://</code> browser URLs, which are otherwise hard to find
+or require typing and prior knowledge of their existence. This application provides a graphical point-and-click alternative,
 with ability to pin and sort favorite links. 
 </p>
 

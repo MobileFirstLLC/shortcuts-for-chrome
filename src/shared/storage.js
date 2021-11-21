@@ -1,5 +1,13 @@
 /**
- * @description Application storage for persisting data
+ * @description Application storage for persisting data.
+ * Currently persisted data includes:
+ *
+ * 1. pinned links (user preference)
+ * 2. recently used links (based on user behavior)
+ *
+ * This storage is stored in chrome sync storage, which is specific to current
+ * user, and will sync between devices if user is signed in and sync is enabled.
+ * {@link https://developer.chrome.com/docs/extensions/reference/storage/#usage}
  * @module
  * @name Storage
  */
@@ -13,7 +21,7 @@ export default class Storage {
      */
     static get keys() {
         return {pinned: 'pinned', recent: 'recent'};
-    };
+    }
 
     /**
      * @function
@@ -27,7 +35,7 @@ export default class Storage {
      */
     static get(keys, callback) {
         chrome.storage.sync.get(keys, callback);
-    };
+    }
 
     /**
      * @function
@@ -38,5 +46,5 @@ export default class Storage {
      */
     static save(key, value, callback = _ => false) {
         chrome.storage.sync.set({[key]: value}, callback);
-    };
+    }
 }

@@ -3,7 +3,7 @@ import {AppConfig} from '../config';
 /**
  * @module
  * @name Helpers
- * @description Menu panel helper methods
+ * @description This module contains various menu panel (static) helper methods.
  */
 export default class Helpers {
 
