@@ -20,8 +20,8 @@
 <img src="https://img.shields.io/chrome-web-store/stars/jnmekaomnicdcpgdndekkmojfomifjal?style=flat" alt="rating" />
 </a>
 <br/>
-<a href="https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/build.yml">
-<img alt="Build" src="https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/build.yml/badge.svg">
+<a href="https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/test.yml">
+<img alt="Build" src="https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/test.yml/badge.svg">
 </a>
 <a href="https://coveralls.io/github/MobileFirstLLC/shortcuts-for-chrome">
 <img alt="Coveralls github" src="https://img.shields.io/coveralls/github/MobileFirstLLC/shortcuts-for-chrome?style=flat">
