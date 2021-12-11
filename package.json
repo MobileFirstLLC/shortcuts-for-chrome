@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "cws-publish": "2.0.7",
-    "jsdoc-to-markdown": "^7.1.0",
+    "jsdoc-to-markdown": "7.1.0",
     "extension-cli": "1.2.4",
     "webpack": "5.65.0"
   },
