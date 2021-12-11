@@ -61,16 +61,3 @@ Chrome browser navigation is optimized for non-technical users. For users who wa
 <p align="center">
 <img width="650" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/screenshot.png' />
 </p>
-
-<br/>
-
-### Development
-
-- **Issues & Feature Requests:** [see Issues ↗](https://github.com/MobileFirstLLC/shortcuts-for-chrome/issues/new/choose)
-
-- **Source code documentation:**  [view documentation ↗](https://oss.mobilefirst.me/shortcuts-for-chrome/)
-
-- **Internationalization:** [help improve translations ↗](https://poeditor.com/join/project?hash=c2ihN8duR2)
-
-    This extension is auto-translated to all languages supported by Chrome (these translations may not be great by default).
-    Please contribute to improving translations if you discover issues or want to improve translation quality.
