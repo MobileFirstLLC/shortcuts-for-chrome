@@ -1,0 +1,52 @@
+site_name: Shortcuts for Chrome
+site_description:
+site_author: '@mobilefirstllc'
+docs_dir: ./docs
+site_url: https://oss.mobilefirst.me/shortcuts-for-chrome/
+repo_url: https://github.com/MobileFirstLLC/shortcuts-for-chrome
+repo_name: "shortcuts-for-chrome"
+edit_uri: blob/master/docs/
+use_directory_urls: true
+
+nav:
+  - Introduction: index.md
+  - Changelog: changelog.md
+  - Development:
+    - Guide: dev_guide.md
+    - Source Docs: api.md
+  - Privacy: privacy.md
+  - "Translate 🌏": https://poeditor.com/join/project?hash=c2ihN8duR2
+  - Install: https://chrome.google.com/webstore/detail/shortcuts-for-chrome/jnmekaomnicdcpgdndekkmojfomifjal
+  - Source Code: https://github.com/MobileFirstLLC/shortcuts-for-chrome
+
+extra_css:
+  - style.css
+extra_javascript:
+  - "https://buttons.github.io/buttons.js"
+  - "https://www.googletagmanager.com/gtag/js?id=G-6XB4XDVPX3"
+
+theme:
+  name: material
+  logo: '/shortcuts-for-chrome/assets/img/128x128.png'
+  favicon: '/shortcuts-for-chrome/assets/img/32x32.png'
+  features:
+    - navigation.expand
+  palette:
+    scheme: light
+    primary: green
+    accent: green
+  font:
+    text: Inter
+
+markdown_extensions:
+  - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: true
+      linenums_style: pymdownx.inline
+  - meta

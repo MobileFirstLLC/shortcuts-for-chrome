@@ -1,4 +1,4 @@
-name: Build
+name: Test
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Unit test
         run: npm run coverage
@@ -36,11 +36,11 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build docs
-        run: npm run docs
-
-      - name: Deploy docs
-        uses: JamesIves/github-pages-deploy-action@4.1.7
-        with:
-          branch: gh-pages
-          folder: pages
+#      - name: Build docs
+#        run: npm run docs
+#
+#      - name: Deploy docs
+#        uses: JamesIves/github-pages-deploy-action@4.1.7
+#        with:
+#          branch: gh-pages
+#          folder: pages

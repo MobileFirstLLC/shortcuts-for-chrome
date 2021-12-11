@@ -24,12 +24,13 @@
     "translate": "node translate.js",
     "push_tags": "git push --follow-tags origin main",
     "patch": "npx standard-version --release-as patch && npm run push_tags",
-    "minor": "npx standard-version --release-as minor && npm run push_tags"
+    "minor": "npx standard-version --release-as minor && npm run push_tags",
+    "mkdocs": "jsdoc2md ./src/**/*.js > docs/api.md"
   },
   "devDependencies": {
     "cws-publish": "2.0.7",
+    "jsdoc-to-markdown": "^7.1.0",
     "extension-cli": "1.2.4",
-    "foodoc": "0.0.9",
     "webpack": "5.65.0"
   },
   "babel": {
@@ -41,7 +42,7 @@
     "test/**/*"
   ],
   "standard-version": {
-    "infile": "docs/files/changelog.md"
+    "infile": "docs/changelog.md"
   },
   "xtbuild": {
     "assets": "assets/img/*",
