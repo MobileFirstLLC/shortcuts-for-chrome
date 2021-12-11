@@ -27,14 +27,14 @@ extra_javascript:
 
 theme:
   name: material
-  logo: '/shortcuts-for-chrome/assets/img/128x128.png'
-  favicon: '/shortcuts-for-chrome/assets/img/32x32.png'
+  logo: '/shortcuts-for-chrome/favicon.png'
+  favicon: '/shortcuts-for-chrome/favicon.png'
   features:
     - navigation.expand
   palette:
     scheme: light
-    primary: green
-    accent: green
+    primary: "blue grey"
+    accent: blue
   font:
     text: Inter
 
