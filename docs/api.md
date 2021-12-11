@@ -2,39 +2,35 @@
 
 <dl>
 <dt><a href="#module_ContextMenu">ContextMenu</a></dt>
-<dd><p>This module adds custom options to chrome browser action context menu
-(right click on extension icon next to address bar). <code>contextMenus</code>
-permissions is required in<code>manifest.json</code>. Instantiate <code>new ContextMenu()</code>
+<dd><p>This module adds custom options to Chrome browser action context menu
+(right click on extension icon next to address bar). Instantiate ContextMenu
 to activate this functionality.</p>
 </dd>
 <dt><a href="#module_Background">Background</a></dt>
-<dd><p>This module is responsible for setting up all event handlers
-and actions that happen in the background context of the extension.
-Currently, this module sets up extension context menu.
-Instantiate <code>new Background()</code> to enable this functionality.</p>
+<dd><p>This module sets up all functionality and event handlers
+in the background context of the extension. Currently, this module sets
+up extension context menu. Instantiate background to enable this
+functionality.</p>
 </dd>
 <dt><a href="#module_Dragging">Dragging</a></dt>
-<dd><p>This module makes childNodes of some DOM Element
-draggable using native HTML5 drag and drop.</p>
+<dd><p>This module makes childNodes of some DOM Element draggable,
+using native HTML drag and drop.</p>
 </dd>
 <dt><a href="#module_Helpers">Helpers</a></dt>
-<dd><p>This module contains various menu panel (static) helper methods.</p>
+<dd><p>This module contains various, static menu panel helper methods.</p>
 </dd>
-<dt><a href="#module_Menu">Menu</a></dt>
+<dt><a href="#module_Menu">Menu</a> ⇒ <code>Object</code></dt>
 <dd><p>Menu panel is a DOM elements that shows a list of links.
-This menu panel is drawn dynamically by creating all menu
-elements programmatically upon calling <code>menuObj.render()</code>. The
-parent instantiating the menu will call render. Parent must then
-add the returned menu to DOM tree to display it to user.</p>
+This menu panel is drawn dynamically by creating all menu elements
+programmatically on <code>render()</code>. The parent instantiating the menu will
+call render. Parent must then add the returned menu to DOM tree to display
+it to user.</p>
 </dd>
 <dt><a href="#module_Popup">Popup</a></dt>
 <dd><p>This is the main class for the popup window that shows
-when user clicks extension icon. This class is responsible for:</p>
-<ul>
-<li>saving/restoring persistent data and</li>
-<li>rendering the menu panel</li>
-</ul>
-<p>This popup view can easily be extended to display other content, but
+when user clicks extension icon. This class is responsible for:
+(1) saving/restoring persistent data and (2) rendering the menu panel.
+This popup view can easily be extended to display other content, but
 currently it renders the menu panel only.</p>
 </dd>
 <dt><a href="#module_RecentLinks">RecentLinks</a></dt>
@@ -57,100 +53,63 @@ user, and will sync between devices if user is signed in and sync is enabled.
 <a name="module_ContextMenu"></a>
 
 ## ContextMenu
-This module adds custom options to chrome browser action context menu
-(right click on extension icon next to address bar). `contextMenus`
-permissions is required in`manifest.json`. Instantiate `new ContextMenu()`
+This module adds custom options to Chrome browser action context menu
+(right click on extension icon next to address bar). Instantiate ContextMenu
 to activate this functionality.
 
+**Example**  
+```
+new ContextMenu()
+```
 
-* [ContextMenu](#module_ContextMenu)
-    * [~ContextMenu](#module_ContextMenu..ContextMenu)
-        * [new ContextMenu()](#new_module_ContextMenu..ContextMenu_new)
-
-<a name="module_ContextMenu..ContextMenu"></a>
-
-### ContextMenu~ContextMenu
-**Kind**: inner class of [<code>ContextMenu</code>](#module_ContextMenu)  
-<a name="new_module_ContextMenu..ContextMenu_new"></a>
-
-#### new ContextMenu()
-Initialize the context menu
-
+!!! info
+    This feature requires `contextMenus` permission in extension manifest
 <a name="module_Background"></a>
 
 ## Background
-This module is responsible for setting up all event handlers
-and actions that happen in the background context of the extension.
-Currently, this module sets up extension context menu.
-Instantiate `new Background()` to enable this functionality.
+This module sets up all functionality and event handlers
+in the background context of the extension. Currently, this module sets
+up extension context menu. Instantiate background to enable this
+functionality.
 
-
-* [Background](#module_Background)
-    * [~Background](#module_Background..Background)
-        * [new Background()](#new_module_Background..Background_new)
-
-<a name="module_Background..Background"></a>
-
-### Background~Background
-**Kind**: inner class of [<code>Background</code>](#module_Background)  
-<a name="new_module_Background..Background_new"></a>
-
-#### new Background()
-Instantiate Background to bind background behavior.
-
+**Example**  
+```
+new Background()
+```
 <a name="module_Dragging"></a>
 
 ## Dragging
-This module makes childNodes of some DOM Element
-draggable using native HTML5 drag and drop.
-
-**Example**  
-```js
-new Draggable(
-     "id",
-     containerElement,
-     onElementRender(Element element) {
-        // attach other event handlers to element
-     },
-     onDragEndCallback(Array<String> ids) {
-         // do something with ids after drag even has completed
-     }
- );
-```
-
-* [Dragging](#module_Dragging)
-    * [~Dragging](#module_Dragging..Dragging)
-        * [new Dragging(idAttribute, container, onElementRender, onDragEndCallback)](#new_module_Dragging..Dragging_new)
-
-<a name="module_Dragging..Dragging"></a>
-
-### Dragging~Dragging
-**Kind**: inner class of [<code>Dragging</code>](#module_Dragging)  
-<a name="new_module_Dragging..Dragging_new"></a>
-
-#### new Dragging(idAttribute, container, onElementRender, onDragEndCallback)
-Create element whose children can be dragged and dropped
+This module makes childNodes of some DOM Element draggable,
+using native HTML drag and drop.
 
 
 | Param | Type | Description |
 | --- | --- | --- |
-| idAttribute | <code>String</code> | for each draggable element, this attribute will provide its id, for example `id` |
-| container | <code>Element</code> | the first parent of all draggable elements -> provide a DOM element reference |
-| onElementRender | <code>function</code> | after drag events have been attached, all other action handlers still need to be attached. This callback function will allow initiator to bind additional events to draggable elements. |
-| onDragEndCallback | <code>function</code> | after drag is done, this callback function notifies initiator that item order within draggable area has changed order |
+| idAttribute | <code>string</code> | for each draggable element, this attribute will provide its id, for example `id123`. |
+| container | <code>Element</code> | the first parent of all draggable elements -> provide a DOM element reference. |
+| onElementRender | <code>function</code> | after drag events have been attached, other remaining action handlers still need to be attached. This callback function will allow initiator to bind additional events to draggable elements. |
+| onDragEndCallback | <code>function</code> | after drag is done, this callback function notifies initiator that the item order within the draggable area has changed. |
 
+**Example**  
+```js
+new Draggable(
+   "id",
+   containerElement,
+   onElementRender(element: Element) { ... },
+   onDragEndCallback(ids: Array<String>) { ... }
+);
+```
 <a name="module_Helpers"></a>
 
 ## Helpers
-This module contains various menu panel (static) helper methods.
+This module contains various, static menu panel helper methods.
 
 
 * [Helpers](#module_Helpers)
     * [.unpinnedItemIcon](#module_Helpers.unpinnedItemIcon) ⇒ <code>string</code>
     * [.pinnedItemIcon](#module_Helpers.pinnedItemIcon) ⇒ <code>string</code>
-    * [.generateIcon(icon, className)](#module_Helpers.generateIcon) ⇒ <code>string</code>
     * [.localizedSort(linkList)](#module_Helpers.localizedSort) ⇒ <code>Array.&lt;Array.&lt;String&gt;&gt;</code>
-    * [.translateLabel(name)](#module_Helpers.translateLabel) ⇒ <code>String</code>
+    * [.translateLabel(name)](#module_Helpers.translateLabel) ⇒ <code>string</code>
     * [.appendDivider(panel)](#module_Helpers.appendDivider)
 
 <a name="module_Helpers.unpinnedItemIcon"></a>
@@ -167,44 +126,36 @@ Generate SVG icon for pinned link.
 
 **Kind**: static property of [<code>Helpers</code>](#module_Helpers)  
 **Returns**: <code>string</code> - icon element as HTML  
-<a name="module_Helpers.generateIcon"></a>
-
-### Helpers.generateIcon(icon, className) ⇒ <code>string</code>
-Given some icon name, this function returns SVG element
-
-**Kind**: static method of [<code>Helpers</code>](#module_Helpers)  
-**Returns**: <code>string</code> - icon element as HTML  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| icon | <code>Object</code> | one of [`<constants.SVGIcons>`](https://oss.mobilefirst.me/shortcuts-for-chrome/SVGIconPaths.html) |
-| className | <code>String</code> | element class |
-
 <a name="module_Helpers.localizedSort"></a>
 
 ### Helpers.localizedSort(linkList) ⇒ <code>Array.&lt;Array.&lt;String&gt;&gt;</code>
-Sort a list of links by localized label.
+Sort a list of links by their localized label.
 
 **Kind**: static method of [<code>Helpers</code>](#module_Helpers)  
-**Returns**: <code>Array.&lt;Array.&lt;String&gt;&gt;</code> - sorted list of "tuples"
-(String arrays of length 2) where first element is localized
-label, second element is the original link.  
+**Returns**: <code>Array.&lt;Array.&lt;String&gt;&gt;</code> - sorted list of tuples, where first
+element is localized label, second element is the original link.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| linkList | <code>Array.&lt;String&gt;</code> | list of links |
+| linkList | <code>Array.&lt;string&gt;</code> | list of links |
 
+**Example**  
+```js
+const sortedLinks = Helpers.localizedSort(["cache", "apps"]);
+
+// sortedLinks value is [["Apps", 'apps'], ["Cache", 'cache']]
+```
 <a name="module_Helpers.translateLabel"></a>
 
-### Helpers.translateLabel(name) ⇒ <code>String</code>
+### Helpers.translateLabel(name) ⇒ <code>string</code>
 Get the translated dictionary value for some link.
 
 **Kind**: static method of [<code>Helpers</code>](#module_Helpers)  
-**Returns**: <code>String</code> - translated label  
+**Returns**: <code>string</code> - translated label  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| name | <code>String</code> | link name (dictionary key) |
+| name | <code>string</code> | link name (dictionary key) |
 
 <a name="module_Helpers.appendDivider"></a>
 
@@ -222,30 +173,35 @@ as its last DOM child.
 
 <a name="module_Menu"></a>
 
-## Menu
+## Menu ⇒ <code>Object</code>
 Menu panel is a DOM elements that shows a list of links.
-This menu panel is drawn dynamically by creating all menu
-elements programmatically upon calling `menuObj.render()`. The
-parent instantiating the menu will call render. Parent must then
-add the returned menu to DOM tree to display it to user.
+This menu panel is drawn dynamically by creating all menu elements
+programmatically on `render()`. The parent instantiating the menu will
+call render. Parent must then add the returned menu to DOM tree to display
+it to user.
 
+**Returns**: <code>Object</code> - Menu panel reference  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| getLinks | <code>function</code> | function that returns currently pinned/unpinned links |
-| onPinToggle | <code>function</code> | callback when pin is turned on/off |
-| onPinOrderChange | <code>function</code> | callback when pins are rearranged |
-| getRecent | <code>function</code> | function that returns recent links |
+| getLinks | <code>function</code> | function that returns all links |
+| onPinToggle | <code>function</code> | callback function for when link is pinned/unpinned |
+| onPinOrderChange | <code>function</code> | callback function for when links are re-ordered |
+| getRecent | <code>function</code> | function that returns list of recent links |
 
+**Example**  
+```js
+// create a menu
+const menu = new Menu(getLinks, onPinToggle, onPinOrderChange, getRecent);
 
-* [Menu](#module_Menu)
-    * _static_
-        * [.name](#module_Menu.name) ⇒ <code>string</code>
-        * [.idAttr](#module_Menu.idAttr) ⇒ <code>string</code>
-        * [.render()](#module_Menu.render) ⇒ <code>Element</code>
-    * _inner_
-        * [~Menu](#module_Menu..Menu)
-            * [new Menu(getLinks, onPinToggle, onPinOrderChange, getRecent)](#new_module_Menu..Menu_new)
+// render the menu, then append to document body
+body.append(menu.render());
+```
+
+* [Menu](#module_Menu) ⇒ <code>Object</code>
+    * [.name](#module_Menu.name) ⇒ <code>string</code>
+    * [.idAttr](#module_Menu.idAttr) ⇒ <code>string</code>
+    * [.render()](#module_Menu.render) ⇒ <code>Element</code>
 
 <a name="module_Menu.name"></a>
 
@@ -267,52 +223,29 @@ DOM attribute for getting the unique id of a link
 Programmatically draws the menu panel and its links
 
 **Kind**: static method of [<code>Menu</code>](#module_Menu)  
-**Returns**: <code>Element</code> - - DOM element representing the menu.  
+**Returns**: <code>Element</code> - DOM element representing the menu.  
 **Access**: public  
-<a name="module_Menu..Menu"></a>
-
-### Menu~Menu
-**Kind**: inner class of [<code>Menu</code>](#module_Menu)  
-<a name="new_module_Menu..Menu_new"></a>
-
-#### new Menu(getLinks, onPinToggle, onPinOrderChange, getRecent)
-**Returns**: <code>Object</code> - - Menu panel reference  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| getLinks | <code>function</code> | function that returns all links |
-| onPinToggle | <code>function</code> | callback function for when link is pinned/unpinned |
-| onPinOrderChange | <code>function</code> | callback function for when links are re-ordered |
-| getRecent | <code>function</code> | function that returns list of recent links |
-
 <a name="module_Popup"></a>
 
 ## Popup
 This is the main class for the popup window that shows
 when user clicks extension icon. This class is responsible for:
-
-- saving/restoring persistent data and
-- rendering the menu panel
-
+(1) saving/restoring persistent data and (2) rendering the menu panel.
 This popup view can easily be extended to display other content, but
 currently it renders the menu panel only.
 
 
 * [Popup](#module_Popup)
-    * _static_
-        * [.pinned](#module_Popup.pinned) ⇒ <code>Array.&lt;String&gt;</code>
-        * [.unpinned](#module_Popup.unpinned) ⇒ <code>Array.&lt;String&gt;</code>
-        * [.recent](#module_Popup.recent) ⇒ <code>Array.&lt;String&gt;</code>
-        * [.activeView](#module_Popup.activeView) ⇒ <code>Element</code>
-        * [.renderTarget](#module_Popup.renderTarget)
-        * [.drawCurrentView()](#module_Popup.drawCurrentView)
-        * [.onPinToggle(key)](#module_Popup.onPinToggle)
-        * [.onPinOrderChange(newOrder, callback)](#module_Popup.onPinOrderChange)
-        * [.getLinks()](#module_Popup.getLinks) ⇒ <code>Object</code>
-        * [.getRecent()](#module_Popup.getRecent) ⇒ <code>Array.&lt;String&gt;</code>
-    * _inner_
-        * [~Popup](#module_Popup..Popup)
-            * [new Popup()](#new_module_Popup..Popup_new)
+    * [.pinned](#module_Popup.pinned) ⇒ <code>Array.&lt;String&gt;</code>
+    * [.unpinned](#module_Popup.unpinned) ⇒ <code>Array.&lt;String&gt;</code>
+    * [.recent](#module_Popup.recent) ⇒ <code>Array.&lt;String&gt;</code>
+    * [.activeView](#module_Popup.activeView) ⇒ <code>Element</code>
+    * [.renderTarget](#module_Popup.renderTarget)
+    * [.drawCurrentView()](#module_Popup.drawCurrentView)
+    * [.onPinToggle(key)](#module_Popup.onPinToggle)
+    * [.onPinOrderChange(newOrder, callback)](#module_Popup.onPinOrderChange)
+    * [.getLinks()](#module_Popup.getLinks) ⇒ <code>Object</code>
+    * [.getRecent()](#module_Popup.getRecent) ⇒ <code>Array.&lt;String&gt;</code>
 
 <a name="module_Popup.pinned"></a>
 
@@ -387,15 +320,6 @@ Get menu links
 Get recently used links
 
 **Kind**: static method of [<code>Popup</code>](#module_Popup)  
-<a name="module_Popup..Popup"></a>
-
-### Popup~Popup
-**Kind**: inner class of [<code>Popup</code>](#module_Popup)  
-<a name="new_module_Popup..Popup_new"></a>
-
-#### new Popup()
-instantiate Popup window
-
 <a name="module_RecentLinks"></a>
 
 ## RecentLinks

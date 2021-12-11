@@ -6,3 +6,4 @@ article h2{font-weight: 500;}
 
 article.md-content__inner > h2::before {content:' '; border-top:1px solid #ddd; display:block; margin: 3rem auto; width:100%;}
 article.md-content__inner > h1 + h2::before{display:none!important;}
+article.md-content__inner > h3 {margin-top: 2rem;}

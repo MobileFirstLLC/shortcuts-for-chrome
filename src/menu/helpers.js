@@ -3,16 +3,15 @@ import {AppConfig} from '../config';
 /**
  * @module
  * @name Helpers
- * @description This module contains various menu panel (static) helper methods.
+ * @description This module contains various, static menu panel helper methods.
  */
 export default class Helpers {
 
     /**
+     * @private
      * @description Given some icon name, this function returns SVG element
-     * @param {Object} icon - one of
-     * {@link https://oss.mobilefirst.me/shortcuts-for-chrome/SVGIconPaths.html|`<constants.SVGIcons>`}
-     *
-     * @param {String?} className - element class
+     * @param {Object} icon - one of {@link https://oss.mobilefirst.me/shortcuts-for-chrome/SVGIconPaths.html|`<constants.SVGIcons>`}
+     * @param {string?} className - element class
      * @returns {string} icon element as HTML
      */
     static generateIcon(icon, className) {
@@ -49,11 +48,17 @@ export default class Helpers {
 
     /**
      * @static
-     * @description Sort a list of links by localized label.
-     * @param {Array.<String>} linkList - list of links
-     * @returns {Array.<Array.<String>>} sorted list of "tuples"
-     * (String arrays of length 2) where first element is localized
-     * label, second element is the original link.
+     * @description Sort a list of links by their localized label.
+     * @param {string[]} linkList - list of links
+     * @returns {Array.<Array.<String>>} sorted list of tuples, where first
+     * element is localized label, second element is the original link.
+     *
+     * @example
+     * ```js
+     * const sortedLinks = Helpers.localizedSort(["cache", "apps"]);
+     *
+     * // sortedLinks value is [["Apps", 'apps'], ["Cache", 'cache']]
+     * ```
      */
     static localizedSort(linkList) {
         return linkList.map(link =>
@@ -64,12 +69,12 @@ export default class Helpers {
     /**
      * @static
      * @description Get the translated dictionary value for some link.
-     * @param {String} name - link name (dictionary key)
-     * @returns {String} translated label
+     * @param {string} name - link name (dictionary key)
+     * @returns {string} translated label
      */
     static translateLabel(name) {
         return chrome.i18n.getMessage(
-            name.replace(/[\-\/]/g, '_')) || name;
+            name.replace(/[-/]/g, '_')) || name;
     }
 
     /**

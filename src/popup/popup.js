@@ -3,24 +3,17 @@ import {MenuLinks} from './links.json';
 import Menu from '../menu/menu';
 
 /**
- * @module
- * @name Popup
  * @description This is the main class for the popup window that shows
  * when user clicks extension icon. This class is responsible for:
- *
- * - saving/restoring persistent data and
- * - rendering the menu panel
- *
+ * (1) saving/restoring persistent data and (2) rendering the menu panel.
  * This popup view can easily be extended to display other content, but
  * currently it renders the menu panel only.
+ *
+ * @class Popup
+ * @kind module
  */
 export default class Popup {
 
-    /**
-     * @constructor
-     * @name Popup
-     * @description instantiate Popup window
-     */
     constructor() {
         Popup.activeView = new Menu(
             Popup.getLinks,

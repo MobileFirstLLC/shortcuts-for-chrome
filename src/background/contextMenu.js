@@ -2,35 +2,28 @@ import {AppConfig} from '../config';
 
 /**
  * @description
- * This module adds custom options to chrome browser action context menu
- * (right click on extension icon next to address bar). `contextMenus`
- * permissions is required in`manifest.json`. Instantiate `new ContextMenu()`
+ * This module adds custom options to Chrome browser action context menu
+ * (right click on extension icon next to address bar). Instantiate ContextMenu
  * to activate this functionality.
  *
- * @module
- * @name ContextMenu
+ * @example
+ * ```
+ * new ContextMenu()
+ * ```
+ *
+ * !!! info
+ *     This feature requires `contextMenus` permission in extension manifest
+ *
+ * @class ContextMenu
+ * @kind module
  */
 export default class ContextMenu {
 
-    /**
-     * @description Initialize the context menu
-     * @constructor
-     * @name ContextMenu
-     */
     constructor() {
-        const {ContextMenuOptions} = AppConfig;
-
         chrome.contextMenus.removeAll(() => {
-            Object.keys(ContextMenuOptions).map(key => {
-                chrome.contextMenus.create({
-                    title: ContextMenuOptions[key].title,
-                    contexts: ['action'],
-                    parentId: ContextMenuOptions[key].parentId,
-                    id: ContextMenuOptions[key].id || key
-                });
-            });
+            Object.entries(AppConfig.ContextMenuOptions)
+                .map(ContextMenu.generateOption);
         });
-
         chrome.contextMenus.onClicked
             .addListener(ContextMenu.contextMenuOnClick);
     }
@@ -38,18 +31,25 @@ export default class ContextMenu {
     /**
      * @static
      * @private
-     * @function
-     * @description Constructs absolute shareable url then calls the
-     * callback function
-     * @param {Object} channel - one of `share.options`
-     * has been resolved. The first param of the callback function is the
-     * full url returned by this function.
+     * @description Make context menu option.
      */
-    static generateUrl(channel) {
+    static generateOption([key, {title, parentId, id}]) {
+        return chrome.contextMenus.create({
+            title, parentId, id: id || key, contexts: ['action']
+        });
+    }
+
+    /**
+     * @static
+     * @private
+     * @description Generates an absolute url for a menu option.
+     * @param {string} url - url of context menu link.
+     */
+    static generateUrl({url}) {
         const {short_name, homepage_url} = chrome.runtime.getManifest();
         const hashtag = `%23${short_name}`.replace(/ /g, '');
 
-        return channel.url
+        return url
             .replace('{hash}', hashtag)
             .replace('{URI}', homepage_url);
     }
@@ -57,16 +57,14 @@ export default class ContextMenu {
     /**
      * @static
      * @private
-     * @description when user clicks on context menu option
-     * @param {Object} info - click event details
+     * @description Handles context menu option click
+     * @see {@link https://developer.chrome.com/docs/extensions/reference/contextMenus/#event-onClicked | onClicked}
+     * @param {string|number} menuItemId - The ID of the menu item that was clicked.
      */
-    static contextMenuOnClick(info) {
-        const option = AppConfig.ContextMenuOptions[info.menuItemId];
+    static contextMenuOnClick({menuItemId}) {
+        const option = AppConfig.ContextMenuOptions[menuItemId];
 
-        if (!option) return false;
-
-        const url = ContextMenu.generateUrl(option);
-
-        return chrome.tabs.create({url});
+        return (!option || !option.url) ? false :
+            chrome.tabs.create({url: ContextMenu.generateUrl(option)});
     }
 }
