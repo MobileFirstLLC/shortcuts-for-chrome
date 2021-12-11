@@ -9,9 +9,9 @@ to activate this functionality.</p>
 </dd>
 <dt><a href="#module_Background">Background</a></dt>
 <dd><p>This module is responsible for setting up all event handlers
-and actions that happen in the background context of the extension.</p>
-<p>Currently this module sets up extension context menu.</p>
-<p>Instantiate <code>new Background()</code> to enable this functionality.</p>
+and actions that happen in the background context of the extension.
+Currently, this module sets up extension context menu.
+Instantiate <code>new Background()</code> to enable this functionality.</p>
 </dd>
 <dt><a href="#module_Dragging">Dragging</a></dt>
 <dd><p>This module makes childNodes of some DOM Element
@@ -81,9 +81,7 @@ Initialize the context menu
 ## Background
 This module is responsible for setting up all event handlers
 and actions that happen in the background context of the extension.
-
-Currently this module sets up extension context menu.
-
+Currently, this module sets up extension context menu.
 Instantiate `new Background()` to enable this functionality.
 
 
