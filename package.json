@@ -16,7 +16,7 @@
   "scripts": {
     "start": "npm run translate && xt-build -e dev -w",
     "build": "npm run translate && xt-build -e prod",
-    "docs": "xt-docs -c docs/config.json",
+    "docs": "jsdoc2md ./src/**/*.js > docs/api.md",
     "test": "xt-test",
     "clean": "xt-clean",
     "sync": "xt-sync",
@@ -24,8 +24,7 @@
     "translate": "node translate.js",
     "push_tags": "git push --follow-tags origin main",
     "patch": "npx standard-version --release-as patch && npm run push_tags",
-    "minor": "npx standard-version --release-as minor && npm run push_tags",
-    "mkdocs": "jsdoc2md ./src/**/*.js > docs/api.md"
+    "minor": "npx standard-version --release-as minor && npm run push_tags"
   },
   "devDependencies": {
     "cws-publish": "2.0.7",

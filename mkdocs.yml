@@ -1,5 +1,5 @@
 site_name: Shortcuts for Chrome
-site_description:
+site_description: Chrome extension that adds a handy menu of Chrome URLs
 site_author: '@mobilefirstllc'
 docs_dir: ./docs
 site_url: https://oss.mobilefirst.me/shortcuts-for-chrome/
@@ -9,15 +9,16 @@ edit_uri: blob/master/docs/
 use_directory_urls: true
 
 nav:
-  - Introduction: index.md
-  - Changelog: changelog.md
+  - About: index.md
+  - Help Translate: https://poeditor.com/join/project?hash=c2ihN8duR2
+  - Installation:
+    - "👉 Download": https://chrome.google.com/webstore/detail/shortcuts-for-chrome/jnmekaomnicdcpgdndekkmojfomifjal
   - Development:
-    - Guide: dev_guide.md
-    - Source Docs: api.md
+    - Getting started: dev_guide.md
+    - Documentation: api.md
+    - Source code: https://github.com/MobileFirstLLC/shortcuts-for-chrome
+  - Release Notes: changelog.md
   - Privacy: privacy.md
-  - "Translate 🌏": https://poeditor.com/join/project?hash=c2ihN8duR2
-  - Install: https://chrome.google.com/webstore/detail/shortcuts-for-chrome/jnmekaomnicdcpgdndekkmojfomifjal
-  - Source Code: https://github.com/MobileFirstLLC/shortcuts-for-chrome
 
 extra_css:
   - style.css
@@ -31,14 +32,23 @@ theme:
   favicon: '/shortcuts-for-chrome/favicon.png'
   features:
     - navigation.expand
+    - navigation.sections
+    - navigation.top
+    - content.code.annotate
+    - navigation.toc
+    - toc.integrate
   palette:
     scheme: light
     primary: "blue grey"
     accent: blue
   font:
     text: Inter
+    code: 'Roboto Mono'
 
 markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 2
   - admonition
   - pymdownx.inlinehilite
   - pymdownx.superfences

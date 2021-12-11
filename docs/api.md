@@ -108,14 +108,15 @@ draggable using native HTML5 drag and drop.
 
 **Example**  
 ```js
-new Draggable("id",
- containerElement,
- onElementRender(Element element) {
-            // attach other event handlers to element
-         },
- onDradEndCallback(Array<String> ids) {
-             // do something with ids after drag even has completed
-         })
+new Draggable(
+     "id",
+     containerElement,
+     onElementRender(Element element) {
+        // attach other event handlers to element
+     },
+     onDragEndCallback(Array<String> ids) {
+         // do something with ids after drag even has completed
+     }
  );
 ```
 
@@ -137,7 +138,7 @@ Create element whose children can be dragged and dropped
 | --- | --- | --- |
 | idAttribute | <code>String</code> | for each draggable element, this attribute will provide its id, for example `id` |
 | container | <code>Element</code> | the first parent of all draggable elements -> provide a DOM element reference |
-| onElementRender | <code>function</code> | after drag events have been attached, all other action handlers still need to be attached. This callback function will allow initiator to bind additional events to draggble elements. |
+| onElementRender | <code>function</code> | after drag events have been attached, all other action handlers still need to be attached. This callback function will allow initiator to bind additional events to draggable elements. |
 | onDragEndCallback | <code>function</code> | after drag is done, this callback function notifies initiator that item order within draggable area has changed order |
 
 <a name="module_Helpers"></a>

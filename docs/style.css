@@ -1,4 +1,8 @@
-.md-main__inner{padding-bottom: 3em}
-.page-intro{font-size:1.3em;line-height:1.7;}
+.md-main__inner{padding-bottom: 3rem}
 .highlighttable td pre {line-height: 1.9;}
-.md-nav__item{font-weight: bold}
+
+.md-typeset table:not([class]) {font-size: .70rem;}
+article h2{font-weight: 500;}
+
+article.md-content__inner > h2::before {content:' '; border-top:1px solid #ddd; display:block; margin: 3rem auto; width:100%;}
+article.md-content__inner > h1 + h2::before{display:none!important;}

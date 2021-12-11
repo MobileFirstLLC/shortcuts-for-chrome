@@ -4,14 +4,15 @@
  * @description This module makes childNodes of some DOM Element
  * draggable using native HTML5 drag and drop.
  *
- * @example new Draggable("id",
- containerElement,
- onElementRender(Element element) {
-            // attach other event handlers to element
-         },
- onDradEndCallback(Array<String> ids) {
-             // do something with ids after drag even has completed
-         })
+ * @example new Draggable(
+     "id",
+     containerElement,
+     onElementRender(Element element) {
+        // attach other event handlers to element
+     },
+     onDragEndCallback(Array<String> ids) {
+         // do something with ids after drag even has completed
+     }
  );
  */
 export default class Dragging {
@@ -28,7 +29,7 @@ export default class Dragging {
      * @param {function} onElementRender - after drag events have been
      * attached, all other action handlers still need to be attached.
      * This callback function will allow initiator to bind additional
-     * events to draggble elements.
+     * events to draggable elements.
      * @param {function} onDragEndCallback - after drag is done, this
      * callback function notifies initiator that item order within
      * draggable area has changed order
