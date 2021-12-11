@@ -1,5 +1,5 @@
 site_name: Shortcuts for Chrome
-site_description: Chrome extension that adds a handy menu of Chrome URLs
+site_description: Chrome navigation menu for technical users.
 site_author: '@mobilefirstllc'
 docs_dir: ./docs
 site_url: https://oss.mobilefirst.me/shortcuts-for-chrome/
@@ -10,13 +10,14 @@ use_directory_urls: true
 
 nav:
   - About: index.md
-  - Help Translate: https://poeditor.com/join/project?hash=c2ihN8duR2
   - Installation:
     - "👉 Download": https://chrome.google.com/webstore/detail/shortcuts-for-chrome/jnmekaomnicdcpgdndekkmojfomifjal
   - Development:
     - Getting started: dev_guide.md
     - Documentation: api.md
     - Source code: https://github.com/MobileFirstLLC/shortcuts-for-chrome
+  - Help Translate:
+    - "👉 Start now": https://poeditor.com/join/project?hash=c2ihN8duR2
   - Release Notes: changelog.md
   - Privacy: privacy.md
 

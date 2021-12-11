@@ -27,7 +27,7 @@ jobs:
           npm ci
 
       - name: Build source code doc
-        run: npm run mkdocs
+        run: npm run docs
 
       - name: Build & Deploy Pages
         run: mkdocs gh-deploy --force
