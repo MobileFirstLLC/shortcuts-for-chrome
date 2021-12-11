@@ -5,7 +5,7 @@ docs_dir: ./docs
 site_url: https://oss.mobilefirst.me/shortcuts-for-chrome/
 repo_url: https://github.com/MobileFirstLLC/shortcuts-for-chrome
 repo_name: "shortcuts-for-chrome"
-edit_uri: blob/master/docs/
+edit_uri: blob/main/docs/
 use_directory_urls: true
 
 nav:
