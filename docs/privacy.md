@@ -1,3 +1,8 @@
+---
+hide:
+- toc
+---
+
 This is a privacy policy regarding software applications developed by Mobile First LLC (the "developer"). This policy is applies to Shortcuts for Chrome (the "app") that was used to link to this policy. This policy also applies to people installing and using an application (the "user").
 
 ### User Accounts
@@ -14,5 +19,7 @@ This application does not contain any ads, tracking or analytics packages.
 
 By using the app the user accepts this policy.
 
-Last modified: August 21, 2021. [Changelog](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commits/main/docs/files/privacy.md) 
+***
+
+Last modified: December 11, 2021. &nbsp; [(Changelog)](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commits/main/docs/files/privacy.md) 
 

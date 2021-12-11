@@ -9,3 +9,4 @@ release.zip
 yarn-error.log
 pages
 locales/
+venv

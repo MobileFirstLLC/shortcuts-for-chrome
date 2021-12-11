@@ -26,6 +26,8 @@ In source code, this behavior is implemented by following 3 components:
 3. **`src/background`** has no visual interface; it runs in the background of the browser
     - it creates and manages extension context menu
 
+!!! info
+    See [documentation](api.md) for more detailed description of source code modules.
 
 ## Source Code Organization
 
@@ -51,14 +53,12 @@ Building this application from source requires Node.js and some web IDE.
 
 Run these commands to build a locally debuggable version:
 
-```
+```bash
 git clone https://github.com/MobileFirstLLC/shortcuts-for-chrome.git
-
 npm install
-
 npm run build
 ```
-### Available Commands
+## Available Commands
 
 This extension is build with [extension-cli](https://oss.mobilefirst.me/extension-cli/).
 Refer to [extension-cli user guide](https://oss.mobilefirst.me/extension-cli/) for further details on each command.
@@ -74,7 +74,7 @@ Refer to [extension-cli user guide](https://oss.mobilefirst.me/extension-cli/) f
 | `npm run coverage` | unit test coverage report |
 | `npm run translate` | generate locales |
 
-### Debugging
+## Debugging
 
 1. Go to `chrome://extensions`
 2. Enable developer mode

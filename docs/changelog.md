@@ -1,8 +1,14 @@
+---
+hide:
+- toc
+---
+
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. 
 
-## [3.6.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.5.1...v3.6.0) (2021-11-21)
+
+### [3.6.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.5.1...v3.6.0) (2021-11-21)
 
 * Update Japanese translation in [33](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/33)
 * Open links in the foreground in [36](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/36)

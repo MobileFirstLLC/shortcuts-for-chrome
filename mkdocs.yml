@@ -1,0 +1,63 @@
+site_name: Shortcuts for Chrome
+site_description: Chrome navigation menu for technical users.
+site_author: '@mobilefirstllc'
+docs_dir: ./docs
+site_url: https://oss.mobilefirst.me/shortcuts-for-chrome/
+repo_url: https://github.com/MobileFirstLLC/shortcuts-for-chrome
+repo_name: "shortcuts-for-chrome"
+edit_uri: blob/master/docs/
+use_directory_urls: true
+
+nav:
+  - About: index.md
+  - Installation:
+    - "👉 Download": https://chrome.google.com/webstore/detail/shortcuts-for-chrome/jnmekaomnicdcpgdndekkmojfomifjal
+  - Development:
+    - Getting started: dev_guide.md
+    - Documentation: api.md
+    - Source code: https://github.com/MobileFirstLLC/shortcuts-for-chrome
+  - Help Translate:
+    - "👉 Start now": https://poeditor.com/join/project?hash=c2ihN8duR2
+  - Release Notes: changelog.md
+  - Privacy: privacy.md
+
+extra_css:
+  - style.css
+extra_javascript:
+  - "https://buttons.github.io/buttons.js"
+  - "https://www.googletagmanager.com/gtag/js?id=G-6XB4XDVPX3"
+
+theme:
+  name: material
+  logo: '/shortcuts-for-chrome/favicon.png'
+  favicon: '/shortcuts-for-chrome/favicon.png'
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.top
+    - content.code.annotate
+    - navigation.toc
+    - toc.integrate
+  palette:
+    scheme: light
+    primary: "blue grey"
+    accent: blue
+  font:
+    text: Inter
+    code: 'Roboto Mono'
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 2
+  - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: true
+      linenums_style: pymdownx.inline
+  - meta
