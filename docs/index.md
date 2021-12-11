@@ -20,11 +20,10 @@
 </div>
 
 <p style="font-size: 120%; line-height: 2; margin: 1rem 0 3rem 0;">
-<strong>Shortcuts for Chrome</strong> is a customizable browser navigation menu you can add to Chrome browser
+<strong>Shortcuts for Chrome</strong> is a customizable browser navigation menu. Add it to Chrome browser
 by installing it <a rel="nofollow noreferrer" href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal" target="_blank">from Chrome Web Store</a>.
-It gives you a flat menu of all internal <code>chrome://</code> browser URLs, which are otherwise hard to find
-or require typing and prior knowledge of their existence. This application provides a graphical point-and-click alternative,
-with ability to pin and sort favorite links. 
+Shortcuts for Chrome adds a flat menu of all internal <code>chrome://</code> browser URLs, which are otherwise hard to find. 
+You can also to pin and sort your favorite links. 
 </p>
 
 <a style="margin:1rem auto 2rem auto; display:table; text-align: center"
