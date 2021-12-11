@@ -31,7 +31,7 @@
 </a>
 </p>
 
-Chrome browser navigation is optimized for non-technical users. For users who want to inspect what is happening with indexedDB, service workers, or Bluetooth devices etc., this menu brings shortcuts to those otherwise hard-to-find, internal browser pages. This menu lists all Chrome URLs in a single, flat list, customizable menu.
+Chrome browser navigation is optimized for non-technical users. For technical users, who want to inspect what is happening with indexedDB, service workers, Bluetooth devices etc., this menu adds shortcuts to those hard-to-find browser pages. This menu lists all Chrome URLs in a single, flat list, customizable menu.
 
 ### Primary Features:
 
