@@ -1,8 +1,3 @@
-/**
- * @description
- * Runner for popup window script
- */
-
-import Popup from './popup/popup';
+import {Popup} from '.';
 
 (() => new Popup())();

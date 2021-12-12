@@ -1,9 +1,27 @@
 /**
- * @description This module makes childNodes of some DOM Element draggable,
- * using native HTML drag and drop.
+ * @class Dragging
+ * @classdesc Makes child nodes of some DOM element draggable, using native
+ * HTML drag and drop.
+ *
+ * @description Create a new draggable.
+ *
+ * @param {string} idAttribute - For each draggable element, this attribute will
+ * provide its id, for example `id` when element is expected to have such attribute
+ * e.g. `<span id='label-1'>example</span>`.
+ *
+ * @param {Element} container - The first parent of all draggable elements ->
+ * provide a DOM element reference.
+ *
+ * @param {function} onElementRender - After drag events have been attached,
+ * other remaining action handlers still need to be attached. This callback
+ * function will allow initiator to bind additional events to draggable elements.
+ *
+ * @param {function} onDragEndCallback - After drag is done, this callback
+ * function notifies initiator that the item order within the draggable area
+ * has changed.
  *
  * @example
- * ```js
+ * ``` js title="Creating a new draggable"
  * new Draggable(
  *    "id",
  *    containerElement,
@@ -11,22 +29,6 @@
  *    onDragEndCallback(ids: Array<String>) { ... }
  * );
  * ```
- * @param {string} idAttribute - for each draggable element, this attribute will
- * provide its id, for example `id123`.
- *
- * @param {Element} container - the first parent of all draggable elements ->
- * provide a DOM element reference.
- *
- * @param {function} onElementRender - after drag events have been attached,
- * other remaining action handlers still need to be attached. This callback
- * function will allow initiator to bind additional events to draggable elements.
- *
- * @param {function} onDragEndCallback - after drag is done, this callback
- * function notifies initiator that the item order within the draggable area
- * has changed.
- *
- * @class Dragging
- * @kind module
  */
 export default class Dragging {
 
@@ -43,7 +45,8 @@ export default class Dragging {
     /**
      * @private
      * @static
-     * @description Get or set the element that is being actively dragged
+     * @memberOf Dragging
+     * @description Get or set the element that is being actively dragged.
      * @returns {Dragging|null}
      */
     static get dragSourceElement() {
@@ -57,6 +60,7 @@ export default class Dragging {
     /**
      * @private
      * @static
+     * @memberOf Dragging
      * @description Tell the initiating module that element order has changed
      * as a result of drag/drop. This method has some added latency to make sure
      * the DOM nodes have updated before this event fires.
@@ -75,8 +79,9 @@ export default class Dragging {
     /**
      * @private
      * @static
-     * @description Attach drag and drop events to some DOM element
-     * @param {Element} element - DOM element
+     * @memberOf Dragging
+     * @description Attach drag and drop events to some DOM element.
+     * @param {Element} element - DOM element.
      */
     addDragHandlers(element) {
         element.setAttribute('draggable', 'true');
@@ -92,11 +97,11 @@ export default class Dragging {
     /**
      * @private
      * @static
+     * @memberOf Dragging
      * @description The drop event is fired when an element or text selection is dropped
      * on a valid drop target. When this event occurs, move the dragged element to new
      * DOM location.
-     *
-     * @param {Event} event - drop event
+     * @param {Event} event - `drop` event.
      */
     handleDrop(event) {
         event.stopPropagation();
@@ -116,9 +121,10 @@ export default class Dragging {
     /**
      * @private
      * @static
+     * @memberOf Dragging
      * @description The dragstart event is fired when the user starts dragging an
      * element or text selection.
-     * @param {Object} event - dragStart event
+     * @param {Object} event - `dragstart` event.
      */
     handleDragStart(event) {
         Dragging.dragSourceElement = this;
@@ -129,10 +135,11 @@ export default class Dragging {
     /**
      * @private
      * @static
+     * @memberOf Dragging
      * @description The dragover event is fired when an element or text selection is being
      * dragged over a valid drop target (every few hundred milliseconds). The event is fired
      * on the drop target(s).
-     * @param {Event} event - dragover event
+     * @param {Event} event - `dragover` event.
      */
     handleDragOver(event) {
         event.preventDefault();
@@ -148,7 +155,8 @@ export default class Dragging {
     /**
      * @private
      * @static
-     * @description The dragleave event is fired when a dragged element or text
+     * @memberOf Dragging
+     * @description The `dragleave` event is fired when a dragged element or text
      * selection leaves a valid drop target.
      */
     handleDragLeave() {
@@ -158,7 +166,8 @@ export default class Dragging {
     /**
      * @private
      * @static
-     * @description The dragend event is fired when a drag operation is being
+     * @memberOf Dragging
+     * @description The `dragend` event is fired when a drag operation is being
      * ended (by releasing a mouse button or hitting the escape key).
      */
     handleDragEnd() {
@@ -168,10 +177,11 @@ export default class Dragging {
     /**
      * @private
      * @static
-     * @description Test if some node `a` exists before another `b` in the DOM tree
-     * @param {Element} a - DOM Element
-     * @param {Element} b - DOM Element
-     * @returns {boolean} true if `a` exists before `b`
+     * @memberOf Dragging
+     * @description Test if some node `a` exists before another `b` in the DOM tree.
+     * @param {Element} a - DOM Element.
+     * @param {Element} b - DOM Element.
+     * @returns {boolean} True if `a` exists before `b`.
      */
     static isBefore(a, b) {
         for (let cur = a; cur; cur = cur.previousSibling) {
@@ -183,8 +193,9 @@ export default class Dragging {
     /**
      * @private
      * @static
-     * @description Remove classes that indicate active dragging
-     * @param {Dragging} element - DOM node for which classes will be removed
+     * @memberOf Dragging
+     * @description Remove classes that indicate active dragging.
+     * @param {Dragging} element - DOM node for which classes will be removed.
      */
     static removeClasses(element) {
         element.classList.remove('before');

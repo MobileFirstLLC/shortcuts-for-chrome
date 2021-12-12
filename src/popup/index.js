@@ -1,16 +1,24 @@
-import {Storage, RecentLinks} from '../shared';
+import {Storage, RecentLinks} from '..';
 import {MenuLinks} from './links.json';
-import Menu from '../menu/menu';
+import Menu from '../menu';
 
 /**
- * @description This is the main class for the popup window that shows
- * when user clicks extension icon. This class is responsible for:
- * (1) saving/restoring persistent data and (2) rendering the menu panel.
- * This popup view can easily be extended to display other content, but
- * currently it renders the menu panel only.
- *
  * @class Popup
- * @kind module
+ *
+ * @description Create a popup
+ * @example
+ * ```js title="Create popup"
+ * new Popup()
+ * ```
+ *
+ * @classdesc This is the main class for the popup window that shows when user
+ * clicks extension icon. This class is responsible for:
+ *
+ * 1. saving/restoring persistent data and
+ * 2. rendering the menu panel.
+ *
+ * This popup view can easily be extended to display other content, but currently it
+ * renders the menu panel only.
  */
 export default class Popup {
 
@@ -32,16 +40,22 @@ export default class Popup {
     }
 
     /**
-     * @description Get pinned links
-     * @returns {Array.<String>}
+     * @static
+     * @private
+     * @memberOf Popup
+     * @description Get/set pinned links.
+     * @returns {string[]}
      */
     static get pinned() {
         return this._pinned;
     }
 
     /**
-     * @description Get unpinned links
-     * @returns {Array.<String>}
+     * @static
+     * @private
+     * @memberOf Popup
+     * @description Get/set unpinned links.
+     * @returns {string[]}
      */
     static get unpinned() {
         return MenuLinks.filter(link =>
@@ -53,8 +67,11 @@ export default class Popup {
     }
 
     /**
-     * @description Get recent links
-     * @returns {Array.<String>}
+     * @static
+     * @private
+     * @memberOf Popup
+     * @description Get/set recent links.
+     * @returns {string[]}
      */
     static get recent() {
         return this._recent;
@@ -65,7 +82,10 @@ export default class Popup {
     }
 
     /**
-     * @description Get the view that is currently active in the Popup
+     * @static
+     * @private
+     * @memberOf Popup
+     * @description Get/set the view that is currently active in the popup.
      * @returns {Element}
      */
     static get activeView() {
@@ -78,10 +98,11 @@ export default class Popup {
 
     /**
      * @static
-     * @description
-     * Get DOM element where to render content.
-     * This will also clear all existing children from that element,
-     * meaning you can always assume this element is empty.
+     * @private
+     * @memberOf Popup
+     * @description Get DOM element where to render content. This will also clear
+     * all existing children from that element, meaning you can always assume
+     * this element is empty.
      */
     static get renderTarget() {
         let tmp = document.body;
@@ -93,8 +114,10 @@ export default class Popup {
     }
 
     /**
-     * @description Draw the currently active view in the render target.
      * @static
+     * @private
+     * @memberOf Popup
+     * @description Draw the currently active view in the render target.
      */
     static drawCurrentView() {
         let wrapper = Popup.renderTarget;
@@ -104,9 +127,11 @@ export default class Popup {
     }
 
     /**
-     * @description Handler for when user pins/unpins a link.
-     * @param {String} key - id of the pin that was clicked
      * @static
+     * @private
+     * @memberOf Popup
+     * @description Handler for when user pins/unpins a link.
+     * @param {string} key - Id of the pin that was clicked.
      */
     static onPinToggle(key) {
         const index = Popup.pinned.indexOf(key);
@@ -121,11 +146,13 @@ export default class Popup {
     }
 
     /**
-     * @description Handler for when user rearranges pins, update and save new pin order.
-     * @param {Array<String>} newOrder - list of link ids and their new order
-     * @param {function?} callback - callback function (optional); specify this callback
-     * if you need to perform some action after new order has been persisted.
      * @static
+     * @private
+     * @memberOf Popup
+     * @description Handler for when user rearranges pins, update and save new pin order.
+     * @param {string[]} newOrder - List of link ids and their new order.
+     * @param {function?} callback - Callback function (optional); specify this callback
+     * if you need to perform some action after new order has been persisted.
      */
     static onPinOrderChange(newOrder, callback) {
         Popup.pinned = newOrder;
@@ -133,9 +160,11 @@ export default class Popup {
     }
 
     /**
-     * @description Get menu links
-     * @returns {{pinned: Array.<String>, unpinned: Array.<String>}}
      * @static
+     * @private
+     * @memberOf Popup
+     * @description Get menu links.
+     * @returns {{pinned: string[], unpinned: string[]}}
      */
     static getLinks() {
         return {
@@ -145,9 +174,11 @@ export default class Popup {
     }
 
     /**
-     * @description Get recently used links
-     * @returns {Array.<String>}
      * @static
+     * @private
+     * @memberOf Popup
+     * @description Get recently used links.
+     * @returns {string[]}
      */
     static getRecent() {
         return Popup.recent.filter(x =>

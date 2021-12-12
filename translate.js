@@ -10,11 +10,12 @@ const out = './locales/';
 const fn = 'messages.json';
 const linksFile = './src/popup/links.json';
 
+// eslint-disable-next-line no-unused-vars
 const hasValue = ([_, value]) => !!value.length;
 
 const chromeUrl = key => key.indexOf('_') === -1;
 
-const format = ([key, message]) => [key.replace(/[-\/]/g, '_'), {message}];
+const format = ([key, message]) => [key.replace(/[-/]/g, '_'), {message}];
 
 const locales = json => Object.fromEntries(Object.entries(json).filter(hasValue).map(format));
 

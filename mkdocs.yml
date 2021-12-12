@@ -17,7 +17,7 @@ nav:
     - Documentation: api.md
     - Source code: https://github.com/MobileFirstLLC/shortcuts-for-chrome
   - Help Translate:
-    - "👉 Start now": https://poeditor.com/join/project?hash=c2ihN8duR2
+    - "👉 On POEditor": https://poeditor.com/join/project?hash=c2ihN8duR2
   - Release Notes: changelog.md
   - Privacy: privacy.md
 
@@ -32,6 +32,7 @@ theme:
   logo: '/shortcuts-for-chrome/favicon.png'
   favicon: '/shortcuts-for-chrome/favicon.png'
   features:
+    - content.code.annotate
     - navigation.expand
     - navigation.sections
     - navigation.top
@@ -51,13 +52,17 @@ markdown_extensions:
       permalink: true
       toc_depth: 2
   - admonition
-  - pymdownx.inlinehilite
-  - pymdownx.superfences
-  - pymdownx.snippets
   - pymdownx.magiclink
   - pymdownx.snippets
   - pymdownx.highlight:
       use_pygments: true
       linenums: true
       linenums_style: pymdownx.inline
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
   - meta
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg

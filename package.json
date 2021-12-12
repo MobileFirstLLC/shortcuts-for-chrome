@@ -11,20 +11,20 @@
     "type": "git",
     "url": "https://github.com/MobileFirstLLC/shortcuts-for-chrome.git"
   },
-  "description": "Handy menu of Chrome URLs",
+  "description": "Chrome navigation menu for technical users.",
   "homepage": "https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal",
   "scripts": {
     "start": "npm run translate && xt-build -e dev -w",
     "build": "npm run translate && xt-build -e prod",
-    "docs": "jsdoc2md ./src/**/*.js > docs/api.md",
-    "test": "xt-test",
-    "clean": "xt-clean",
-    "sync": "xt-sync",
+    "docs": "jsdoc2md \"./src/**/*.{js, json}\" > docs/api.md",
     "coverage": "nyc --reporter=lcov npm run test",
     "translate": "node translate.js",
     "push_tags": "git push --follow-tags origin main",
     "patch": "npx standard-version --release-as patch && npm run push_tags",
-    "minor": "npx standard-version --release-as minor && npm run push_tags"
+    "minor": "npx standard-version --release-as minor && npm run push_tags",
+    "test": "xt-test",
+    "clean": "xt-clean",
+    "sync": "xt-sync"
   },
   "devDependencies": {
     "cws-publish": "2.0.7",
