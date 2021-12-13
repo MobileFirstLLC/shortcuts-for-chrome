@@ -61,3 +61,25 @@ Chrome browser navigation is optimized for non-technical users. For technical us
 <p align="center">
 <img width="650" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/screenshot.png' />
 </p>
+
+### Supported languages
+
+**[Help translate this app &rarr;](https://poeditor.com/join/project?hash=c2ihN8duR2)**
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│ SUPPORTED LANGUAGES                                                     │
+├──────────┬──────────────┬─────────────────┬────────────┬────────────────┤
+│ Amharic  │ Arabic       │ Bengali         │ Bulgarian  │ Catalan        │ 
+│ Chinese  │ Chinese (TW) │ Croatian        │ Czech      │ Danish         │
+│ Dutch    │ English      │ English (US)    │ Estonian   │ Filipino       │
+│ Finnish  │ French       │ German          │ Greek      │ Gujarati       │
+│ Hebrew   │ Hindi        │ Hungarian       │ Indonesian │ Italian        │
+│ Japanese │ Kannada      │ Korean          │ Latvian    │ Lithuanian     │
+│ Malay    │ Malayalam    │ Marathi         │ Norwegian  │ Persian        │
+│ Polish   │ Portuguese   │ Portuguese (BR) │ Romanian   │ Russian        │
+│ Serbian  │ Slovak       │ Slovenian       │ Spanish    │ Spanish (LA/C) │
+│ Swahili  │ Swedish      │ Tamil           │ Telugu     │ Thai           │
+| Turkish  │ Ukrainian    │ Vietnamese      │            │                │
+└──────────┴──────────────┴─────────────────┴────────────┴────────────────┘
+```
