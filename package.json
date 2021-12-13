@@ -31,7 +31,7 @@
     "cws-publish": "2.0.7",
     "extension-cli": "1.2.4",
     "jsdoc-to-markdown": "7.1.0",
-    "nodemon": "^2.0.15",
+    "nodemon": "2.0.15",
     "webpack": "5.65.0"
   },
   "babel": {
