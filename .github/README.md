@@ -58,28 +58,31 @@ Chrome browser navigation is fixed and optimized for everyday use. Technical use
 </a>
 </p>
 
-
 ### Supported languages
 
 **[Help translate this app on POEditor &rarr;](https://poeditor.com/join/project?hash=c2ihN8duR2)**
 
 ```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│ SUPPORTED LANGUAGES                                                                     │
-├─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┤
-│ Amharic         │ Arabic          │ Bengali         │ Bulgarian       │ Catalan         │ 
-│ Chinese         │ Chinese (TW)    │ Croatian        │ Czech           │ Danish          │
-│ Dutch           │ English         │ English (US)    │ Estonian        │ Filipino        │
-│ Finnish         │ French          │ German          │ Greek           │ Gujarati        │
-│ Hebrew          │ Hindi           │ Hungarian       │ Indonesian      │ Italian         │
-│ Japanese        │ Kannada         │ Korean          │ Latvian         │ Lithuanian      │
-│ Malay           │ Malayalam       │ Marathi         │ Norwegian       │ Persian         │
-│ Polish          │ Portuguese      │ Portuguese (BR) │ Romanian        │ Russian         │
-│ Serbian         │ Slovak          │ Slovenian       │ Spanish         │ Spanish (LA/C)  │
-│ Swahili         │ Swedish         │ Tamil           │ Telugu          │ Thai            │
-| Turkish         │ Ukrainian       │ Vietnamese      │                 │                 │
-└─────────────────┴─────────────────┴─────────────────┴─────────────────┴─────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                     SUPPORTED  LANGUAGES                                     │
+├──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────┤
+│ Amharic          │ Arabic           │ Bengali          │ Bulgarian        │ Catalan          │ 
+│ Chinese          │ Chinese (TW)     │ Croatian         │ Czech            │ Danish           │
+│ Dutch            │ English          │ English (US)     │ Estonian         │ Filipino         │
+│ Finnish          │ French           │ German           │ Greek            │ Gujarati         │
+│ Hebrew           │ Hindi            │ Hungarian        │ Indonesian       │ Italian          │
+│ Japanese         │ Kannada          │ Korean           │ Latvian          │ Lithuanian       │
+│ Malay            │ Malayalam        │ Marathi          │ Norwegian        │ Persian          │
+│ Polish           │ Portuguese       │ Portuguese (BR)  │ Romanian         │ Russian          │
+│ Serbian          │ Slovak           │ Slovenian        │ Spanish          │ Spanish (LA/C)   │
+│ Swahili          │ Swedish          │ Tamil            │ Telugu           │ Thai             │
+| Turkish          │ Ukrainian        │ Vietnamese       │                  │                  │
+└──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────┘
 ```
+
+### Development & Docs
+
+See [project website](https://oss.mobilefirst.me/shortcuts-for-chrome/).
 
 <p align="center">
 <img width="700" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/preview.gif' />

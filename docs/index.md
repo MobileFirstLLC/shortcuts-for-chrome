@@ -1,4 +1,4 @@
-Shortcuts for Chrome is a customizable browser navigation menu. It is a menu of all `chrome://` browser
+Shortcuts for Chrome is a customizable browser navigation menu. It is a menu of all Chrome browser
 pages ("Chrome URLs"), which are otherwise hard to find. You can also pin and sort your favorite URLs.
 
 ### **Installation**
@@ -8,7 +8,7 @@ pages ("Chrome URLs"), which are otherwise hard to find. You can also pin and so
 [!["users"][user_shield]][cws]  [!["rating"][rate_shield]][cws]
 
 This website contains documentation for this Chrome extension. 
-Extension source code is open source (MIT license) and available [on Github ↗][gh]
+Extension source code is open source, under MIT license, and available [on Github ↗][gh].
 
 [//]: # (github buttons)
 <a class="github-button"
