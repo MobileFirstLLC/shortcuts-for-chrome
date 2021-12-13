@@ -106,7 +106,7 @@ export default class Dragging {
     handleDrop(event) {
         event.stopPropagation();
         Dragging.removeClasses(this);
-        let dragSrc = Dragging.dragSourceElement;
+        const dragSrc = Dragging.dragSourceElement;
 
         if (dragSrc !== this) {
             if (Dragging.isBefore(dragSrc, this)) {
@@ -179,8 +179,8 @@ export default class Dragging {
      * @static
      * @memberOf Dragging
      * @description Test if some node `a` exists before another `b` in the DOM tree.
-     * @param {Element} a - DOM Element.
-     * @param {Element} b - DOM Element.
+     * @param {Dragging} a - DOM Element.
+     * @param {Dragging} b - DOM Element.
      * @returns {boolean} True if `a` exists before `b`.
      */
     static isBefore(a, b) {

@@ -1,5 +1,7 @@
 /**
  * @constant
+ * @static
+ * @readonly
  * @name Config
  * @type {Object}
  * @description Application configurations.

@@ -28,14 +28,6 @@ renders the menu panel only.</p>
 </dd>
 </dl>
 
-## Constants
-
-<dl>
-<dt><a href="#Config">Config</a> : <code>Object</code></dt>
-<dd><p>Application configurations.</p>
-</dd>
-</dl>
-
 <a name="Background"></a>
 
 ## Background
@@ -163,39 +155,6 @@ Create a popup
 ```js title="Create popup"
 new Popup()
 ```
-<a name="Config"></a>
-
-## Config : <code>Object</code>
-Application configurations.
-
-**Kind**: global constant  
-
-* [Config](#Config) : <code>Object</code>
-    * [.SVGIcons](#Config.SVGIcons) : <code>enum</code>
-    * [.ContextMenuOptions](#Config.ContextMenuOptions) : <code>enum</code>
-    * [.recentIntervalMillis](#Config.recentIntervalMillis) : <code>number</code>
-
-<a name="Config.SVGIcons"></a>
-
-### Config.SVGIcons : <code>enum</code>
-App icons svg paths.
-
-**Kind**: static enum of [<code>Config</code>](#Config)  
-<a name="Config.ContextMenuOptions"></a>
-
-### Config.ContextMenuOptions : <code>enum</code>
-List of options to display in the context menu. Links will open
-in new tab when width/height (ww/wh) are not specified. Otherwise, links will
-open in a window of specified size.
-
-**Kind**: static enum of [<code>Config</code>](#Config)  
-<a name="Config.recentIntervalMillis"></a>
-
-### Config.recentIntervalMillis : <code>number</code>
-When a link clicked within last X milliseconds,
-it is considered "recently used".
-
-**Kind**: static constant of [<code>Config</code>](#Config)  
 <a name="ContextMenu"></a>
 
 ## .ContextMenu
@@ -471,3 +430,37 @@ Save some property in storage.
 ```js title="Save value to storage"
 Storage.save(Storage.keys.recent, recentObj, callback);
 ```
+<a name="Config"></a>
+
+## .Config : <code>Object</code>
+Application configurations.
+
+**Kind**: static constant  
+**Read only**: true  
+
+* [.Config](#Config) : <code>Object</code>
+    * [.SVGIcons](#Config.SVGIcons) : <code>enum</code>
+    * [.ContextMenuOptions](#Config.ContextMenuOptions) : <code>enum</code>
+    * [.recentIntervalMillis](#Config.recentIntervalMillis) : <code>number</code>
+
+<a name="Config.SVGIcons"></a>
+
+### Config.SVGIcons : <code>enum</code>
+App icons svg paths.
+
+**Kind**: static enum of [<code>Config</code>](#Config)  
+<a name="Config.ContextMenuOptions"></a>
+
+### Config.ContextMenuOptions : <code>enum</code>
+List of options to display in the context menu. Links will open
+in new tab when width/height (ww/wh) are not specified. Otherwise, links will
+open in a window of specified size.
+
+**Kind**: static enum of [<code>Config</code>](#Config)  
+<a name="Config.recentIntervalMillis"></a>
+
+### Config.recentIntervalMillis : <code>number</code>
+When a link clicked within last X milliseconds,
+it is considered "recently used".
+
+**Kind**: static constant of [<code>Config</code>](#Config)  
