@@ -54,10 +54,11 @@ git clone https://github.com/MobileFirstLLC/shortcuts-for-chrome.git
 npm install
 npm run build
 ```
-## Available Commands
+### Available Commands
 
 This extension is build with [extension-cli](https://oss.mobilefirst.me/extension-cli/).
-Refer to [extension-cli user guide](https://oss.mobilefirst.me/extension-cli/) for further details on each command.
+Refer to [user guide](https://oss.mobilefirst.me/extension-cli/) for further details relating to building 
+the extension.
 
 | Command | Description |
 | :--- | :--- |
@@ -70,7 +71,7 @@ Refer to [extension-cli user guide](https://oss.mobilefirst.me/extension-cli/) f
 | `npm run coverage` | unit test coverage report |
 | `npm run translate` | generate locales |
 
-## Debugging
+### Debugging
 
 1. Go to `chrome://extensions`
 2. Enable developer mode
