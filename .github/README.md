@@ -37,15 +37,15 @@ Chrome browser navigation is fixed and optimized for everyday use. Technical use
 <img width="650" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/screenshot.png' />
 </p>
 
-### Primary Features:
+### Primary Features
 
-#### 💯 &nbsp; Find all `chrome://` URLs in one menu
+- #### 💯 &nbsp; Find all `chrome://` URLs in one menu
 
-#### 📍 &nbsp; Pin your favorite links for fast access
+- #### 📍 &nbsp; Pin your favorite links for fast access
 
-#### 🖲️ &nbsp; Drag and drop to organize links
+- #### 🖲️ &nbsp; Drag and drop to organize links
 
-#### 🌗 &nbsp; Matches browser dark/light mode
+- #### 🌗 &nbsp; Matches browser dark/light mode
 
 <br/>
 
@@ -61,24 +61,24 @@ Chrome browser navigation is fixed and optimized for everyday use. Technical use
 
 ### Supported languages
 
-**[Help translate this app &rarr;](https://poeditor.com/join/project?hash=c2ihN8duR2)**
+**[Help translate this app on POEditor &rarr;](https://poeditor.com/join/project?hash=c2ihN8duR2)**
 
 ```
-┌─────────────────────────────────────────────────────────────────────────┐
-│ SUPPORTED LANGUAGES                                                     │
-├──────────┬──────────────┬─────────────────┬────────────┬────────────────┤
-│ Amharic  │ Arabic       │ Bengali         │ Bulgarian  │ Catalan        │ 
-│ Chinese  │ Chinese (TW) │ Croatian        │ Czech      │ Danish         │
-│ Dutch    │ English      │ English (US)    │ Estonian   │ Filipino       │
-│ Finnish  │ French       │ German          │ Greek      │ Gujarati       │
-│ Hebrew   │ Hindi        │ Hungarian       │ Indonesian │ Italian        │
-│ Japanese │ Kannada      │ Korean          │ Latvian    │ Lithuanian     │
-│ Malay    │ Malayalam    │ Marathi         │ Norwegian  │ Persian        │
-│ Polish   │ Portuguese   │ Portuguese (BR) │ Romanian   │ Russian        │
-│ Serbian  │ Slovak       │ Slovenian       │ Spanish    │ Spanish (LA/C) │
-│ Swahili  │ Swedish      │ Tamil           │ Telugu     │ Thai           │
-| Turkish  │ Ukrainian    │ Vietnamese      │            │                │
-└──────────┴──────────────┴─────────────────┴────────────┴────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│ SUPPORTED LANGUAGES                                                                     │
+├─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┤
+│ Amharic         │ Arabic          │ Bengali         │ Bulgarian       │ Catalan         │ 
+│ Chinese         │ Chinese (TW)    │ Croatian        │ Czech           │ Danish          │
+│ Dutch           │ English         │ English (US)    │ Estonian        │ Filipino        │
+│ Finnish         │ French          │ German          │ Greek           │ Gujarati        │
+│ Hebrew          │ Hindi           │ Hungarian       │ Indonesian      │ Italian         │
+│ Japanese        │ Kannada         │ Korean          │ Latvian         │ Lithuanian      │
+│ Malay           │ Malayalam       │ Marathi         │ Norwegian       │ Persian         │
+│ Polish          │ Portuguese      │ Portuguese (BR) │ Romanian        │ Russian         │
+│ Serbian         │ Slovak          │ Slovenian       │ Spanish         │ Spanish (LA/C)  │
+│ Swahili         │ Swedish         │ Tamil           │ Telugu          │ Thai            │
+| Turkish         │ Ukrainian       │ Vietnamese      │                 │                 │
+└─────────────────┴─────────────────┴─────────────────┴─────────────────┴─────────────────┘
 ```
 
 <p align="center">
