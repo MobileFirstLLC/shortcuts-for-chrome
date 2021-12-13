@@ -7,7 +7,7 @@
   <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">Shortcuts for Chrome</a>
 </h1>
 
-<h3 align="center">Navigation menu of Chrome URLs for technical users</h3>
+<h3 align="center">Chrome navigation menu for technical users</h3>
 
 <p align="center">
 <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
@@ -31,7 +31,11 @@
 </a>
 </p>
 
-Chrome browser navigation is optimized for non-technical users. For technical users, who want to inspect what is happening with indexedDB, service workers, Bluetooth devices etc., this menu adds shortcuts to those hard-to-find browser pages. This menu lists all Chrome URLs in a single, flat list, customizable menu.
+Chrome browser navigation is fixed and optimized for everyday use. Technical users, who want to inspect what is happening with indexedDB, service workers, Bluetooth devices etc., this menu adds shortcuts to those hard-to-find browser pages. This menu lists all Chrome URLs in a single, flat, customizable menu.
+
+<p align="center">
+<img width="650" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/screenshot.png' />
+</p>
 
 ### Primary Features:
 
@@ -43,7 +47,7 @@ Chrome browser navigation is optimized for non-technical users. For technical us
 
 #### 🌗 &nbsp; Matches browser dark/light mode
 
-<br/><br/>
+<br/>
 
 <p align="center">
 <strong><a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">Install at Chrome Web Store</a></strong>
@@ -54,13 +58,6 @@ Chrome browser navigation is optimized for non-technical users. For technical us
 </a>
 </p>
 
-<p align="center">
-<img width="700" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/preview.gif' />
-</p>
-
-<p align="center">
-<img width="650" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/screenshot.png' />
-</p>
 
 ### Supported languages
 
@@ -83,3 +80,7 @@ Chrome browser navigation is optimized for non-technical users. For technical us
 | Turkish  │ Ukrainian    │ Vietnamese      │            │                │
 └──────────┴──────────────┴─────────────────┴────────────┴────────────────┘
 ```
+
+<p align="center">
+<img width="700" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/preview.gif' />
+</p>
