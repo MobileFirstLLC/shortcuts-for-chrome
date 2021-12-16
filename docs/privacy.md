@@ -23,5 +23,5 @@ By using the app the user accepts this policy.
 
 ***
 
-Last modified: December 11, 2021. &nbsp; [(Changelog)](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commits/main/docs/files/privacy.md) 
+Last modified: December 15, 2021. &nbsp; [(Changelog)](https://github.com/MobileFirstLLC/shortcuts-for-chrome/commits/main/docs/files/privacy.md) 
 
