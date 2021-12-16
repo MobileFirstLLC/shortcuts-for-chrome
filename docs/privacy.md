@@ -7,11 +7,13 @@ This is a privacy policy regarding software applications developed by Mobile Fir
 
 ### User Accounts
 
-Application does not require users to create login credentials nor to provide any personal information about themselves. If the app persists any data, such as user preferences, that data is stored on device only. Once app is deleted, all application data will be deleted form device also. The developer does not have access nor cannot recover any data about the user.
+Application does not require users to create login credentials nor to provide any personal information about themselves. If the app persists any data, such as user preferences, that data is stored on device only. Once app is deleted, all application data will be deleted from device also. The developer does not have access nor cannot recover any data about the user.
 
 ### 3rd Party Libraries
 
 App may use third party libraries for purposes of implementing specific features needed by the app to function as intended. This privacy policy does not cover 3rd party libraries.
+
+Currently, only 3rd party libraries used are during the development phase, and no 3rd party code is included in the distributed version of the app.
 
 This application does not contain any ads, tracking or analytics packages.
 
