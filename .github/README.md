@@ -19,7 +19,6 @@
 <a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
 <img src="https://img.shields.io/chrome-web-store/stars/jnmekaomnicdcpgdndekkmojfomifjal?style=flat" alt="rating" />
 </a>
-<br/>
 <a href="https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/test.yml">
 <img alt="Build" src="https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/test.yml/badge.svg">
 </a>
