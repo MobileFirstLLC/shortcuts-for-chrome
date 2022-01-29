@@ -30,7 +30,7 @@
   "devDependencies": {
     "cws-publish": "2.0.8",
     "extension-cli": "1.2.4",
-    "jsdoc-to-markdown": "7.1.0",
+    "jsdoc-to-markdown": "7.1.1",
     "nodemon": "2.0.15",
     "webpack": "5.67.0"
   },
