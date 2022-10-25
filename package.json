@@ -27,7 +27,7 @@
     "minor": "npx standard-version --release-as minor && npm run push_tags"
   },
   "devDependencies": {
-    "cws-publish": "2.1.0",
+    "cws-publish": "2.1.1",
     "extension-cli": "1.2.5-alpha.0",
     "jsdoc-to-markdown": "7.1.1",
     "nodemon": "2.0.20",
