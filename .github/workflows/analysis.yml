@@ -17,9 +17,6 @@ jobs:
         language: [ 'javascript' ]
 
     steps:
-    - name: Cancel Previous Runs
-      uses: styfle/cancel-workflow-action
-
     - name: Checkout repository
       uses: actions/checkout@v3
 

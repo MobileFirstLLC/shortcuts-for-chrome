@@ -8,9 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action
-
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:

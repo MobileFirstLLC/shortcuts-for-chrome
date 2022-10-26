@@ -38,6 +38,12 @@
       "@babel/preset-env"
     ]
   },
+  "renovate": {
+    "extends": [
+      "config:base",
+      ":disableDependencyDashboard"
+    ]
+  },
   "eslintIgnore": [
     "test/**/*"
   ],
