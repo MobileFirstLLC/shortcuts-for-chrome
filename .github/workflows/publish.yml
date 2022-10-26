@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Install dependencies
         run: npm install
@@ -22,14 +22,15 @@ jobs:
           npm run test
           npm run build
 
-      - name: Upload to Web Store
-        run: >-
-          npx cws-upload
-          ${{ secrets.CLIENT }}
-          ${{ secrets.SECRET }}
-          ${{ secrets.TOKEN }}
-          release.zip
-          jnmekaomnicdcpgdndekkmojfomifjal;
+      - name: Upload to Chrome Web Store
+        uses: mobilefirstllc/cws-publish@latest
+        with:
+          action: 'upload'
+          client_id: ${{ secrets.CLIENT }}
+          client_secret: ${{ secrets.SECRET }}
+          refresh_token: ${{ secrets.TOKEN }}
+          extension_id: 'jnmekaomnicdcpgdndekkmojfomifjal'
+          zip_file: 'release.zip'
 
       - uses: ncipollo/release-action@v1
         with:
