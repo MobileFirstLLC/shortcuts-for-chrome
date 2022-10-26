@@ -8,16 +8,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Cancel previous runs
-        uses: styfle/cancel-workflow-action@0.10.1
-        with:
-          access_token: ${{ github.token }}
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action
 
       - uses: actions/checkout@v3
-
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Cache
         uses: actions/cache@v3
@@ -35,12 +32,3 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-
-#      - name: Build docs
-#        run: npm run docs
-#
-#      - name: Deploy docs
-#        uses: JamesIves/github-pages-deploy-action@4.1.7
-#        with:
-#          branch: gh-pages
-#          folder: pages

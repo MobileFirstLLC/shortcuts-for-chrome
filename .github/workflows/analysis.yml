@@ -17,10 +17,8 @@ jobs:
         language: [ 'javascript' ]
 
     steps:
-    - name: Cancel previous runs
-      uses: styfle/cancel-workflow-action@0.10.1
-      with:
-        access_token: ${{ github.token }}
+    - name: Cancel Previous Runs
+      uses: styfle/cancel-workflow-action
 
     - name: Checkout repository
       uses: actions/checkout@v3
