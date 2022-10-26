@@ -57,9 +57,9 @@ Chrome browser navigation is fixed and optimized for everyday use. Technical use
 </a>
 </p>
 
-### Supported languages
+### Development & Docs: **[See project website &rarr;](https://oss.mobilefirst.me/shortcuts-for-chrome/)**
 
-**[Help translate this app on POEditor &rarr;](https://poeditor.com/join/project?hash=c2ihN8duR2)**
+### Supported languages: **[Help translate&rarr;](https://poeditor.com/join/project?hash=c2ihN8duR2)**
 
 ```
  ┌──────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -78,10 +78,6 @@ Chrome browser navigation is fixed and optimized for everyday use. Technical use
  | Turkish          │ Ukrainian        │ Vietnamese       │                  │                  │
  └──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────┘
 ```
-
-### Development & Docs
-
-**[See project website &rarr;](https://oss.mobilefirst.me/shortcuts-for-chrome/)**
 
 <p align="center">
 <img width="700" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/preview.gif' />

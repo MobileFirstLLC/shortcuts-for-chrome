@@ -10,14 +10,14 @@ use_directory_urls: true
 
 nav:
   - About: index.md
-  - "Installation:":
+  - "Installation":
     - Chrome Web Store: https://chrome.google.com/webstore/detail/shortcuts-for-chrome/jnmekaomnicdcpgdndekkmojfomifjal
   - Development:
-    - Guide: dev_guide.md
-    - Documentation: api.md
-    - Source code: https://github.com/MobileFirstLLC/shortcuts-for-chrome
-  - Translation:
-    - Help Translate : translate.md
+    - System description: dev_guide.md
+    - Getting started: start.md
+    - Code organization: organization.md
+    - Source docs: api.md
+    - Translations : translate.md
   - Release Notes: changelog.md
   - Privacy: privacy.md
 

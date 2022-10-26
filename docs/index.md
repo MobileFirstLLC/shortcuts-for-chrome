@@ -1,6 +1,7 @@
-Shortcuts for Chrome is a customizable browser navigation menu. It contains links to all Chrome browser
-pages ("Chrome URLs"), which are otherwise hard to find. You can also pin and sort your favorite URLs
-to suit your individual preferences.
+Shortcuts for Chrome is a customizable browser navigation menu. 
+
+It contains links to all Chrome browser pages ("Chrome URLs"), which are otherwise hard to find. 
+You can pin and sort your favorite URLs to suit your individual preferences.
 
 ### **Installation**
 
