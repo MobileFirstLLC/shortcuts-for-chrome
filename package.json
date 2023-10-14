@@ -31,7 +31,7 @@
     "extension-cli": "1.2.5-alpha.0",
     "jsdoc-to-markdown": "8.0.0",
     "nodemon": "2.0.22",
-    "webpack": "5.88.2"
+    "webpack": "5.89.0"
   },
   "babel": {
     "presets": [
