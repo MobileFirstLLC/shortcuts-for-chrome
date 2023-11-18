@@ -4,7 +4,6 @@
     "app_desc": "Menu sa pag-navigate para sa mga developer na gumagamit ng Chrome. Isaayos gayunpaman gusto mo.",
     "ui_recently_used": "Kakagamit lang",
     "accessibility": "Mga Pag-access sa Internals",
-    "appcache-internals": "Application Cache",
     "apps": "Mga app",
     "autofill-internals": "Mga Panloob na Autofill",
     "blob-internals": "Blob Internals",
@@ -12,7 +11,6 @@
     "bookmarks": "Mga bookmark",
     "chrome-urls": "Mga URL ng Chrome",
     "components": "Mga Bahagi",
-    "conversion-internals": "Mga Panloob na Conversion",
     "crashes": "Nag-crash",
     "credits": "Mga Kredito",
     "device-log": "Mga Log ng Device",
@@ -34,7 +32,6 @@
     "inspect": "Siyasatin",
     "internals/web-app": "Mga Internal na App sa Web",
     "interstitials": "Mga interstitial",
-    "invalidations": "Mga Di-wastong",
     "local-state": "Lokal na Estado",
     "management": "Pamamahala",
     "media-engagement": "Pakikipag-ugnayan sa Media",
@@ -63,7 +60,7 @@
     "settings/importData": "Mag-import ng Mga Bookmark at Setting",
     "settings/languages": "Mga Setting ng Wika",
     "settings/onStartup": "Sa Mga Setting ng Startup",
-    "settings/passwords": "Mga password",
+    "password-manager": "Mga password",
     "settings/people": "Mga tao",
     "settings/privacy": "Mga setting ng Privacy at Security",
     "settings/reset": "I-reset",
@@ -72,7 +69,6 @@
     "settings/system": "Mga Setting ng System",
     "signin-internals": "Mga Signal Internals",
     "site-engagement": "Pakikipag-ugnay sa Site",
-    "suggestions": "Mga Mungkahi",
     "sync-internals": "Mga Pag-sync sa Internals",
     "system": "Sistema",
     "terms": "Mga Tuntunin ng Serbisyo",
@@ -86,6 +82,50 @@
     "webrtc-logs": "Mga Log ng WebRTC",
     "net-internals": "Mga Net Internal",
     "new-tab-page-third-party": "Bagong Tab (3rd party)",
-    "session-service-internals": "Session Internals",
-    "settings/cookies": "Cookie"
+    "settings/cookies": "Cookie",
+    "Attribution Reporting API Internals": {
+        "attribution-internals": "Attribution Reporting API Internals"
+    },
+    "Commerce Internals": {
+        "commerce-internals": "Commerce Internals"
+    },
+    "Enterprise Connectors": {
+        "connectors-internals": "Enterprise Connectors"
+    },
+    "Extensions Internals": {
+        "extensions-internals": "Extensions Internals"
+    },
+    "History Clusters Internals - Debug Logs": {
+        "history-clusters-internals": "History Clusters Internals"
+    },
+    "Metrics Internals": {
+        "metrics-internals": "Metrics Internals"
+    },
+    "Built-in new tab page": {
+        "new-tab-page": "New Tab Page"
+    },
+    "Optimization Guide Internals": {
+        "optimization-guide-internals": "Optimization Guide Internals"
+    },
+    "Private Aggregation API Internals": {
+        "private-aggregation-internals": "Private Aggregation API Internals"
+    },
+    "Profile Internals": {
+        "profile-internals": "Profiles"
+    },
+    "Suggest Debug Tool": {
+        "suggest-internals": "Suggest Debug Tool"
+    },
+    "Search Tabs": {
+        "tab-search.top-chrome": "Search Tabs"
+    },
+    "Topics API Internals": {
+        "topics-internals": "Topics API Internals"
+    },
+    "Web App Internals": {
+        "web-app-internals": "Web App Internals"
+    },
+    "What's New Tab": {
+        "whats-new": "What's New Tab"
+    }
 }
