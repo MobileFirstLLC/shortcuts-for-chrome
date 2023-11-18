@@ -4,7 +4,6 @@
     "app_desc": "Navigačná ponuka pre vývojárov používajúcich prehliadač Chrome. Organizujte, ako sa vám páči.",
     "ui_recently_used": "Nedávno použité",
     "accessibility": "Interné zariadenia dostupnosti",
-    "appcache-internals": "Cache aplikácií",
     "apps": "Aplikácie",
     "autofill-internals": "Interné funkcie automatického dopĺňania",
     "blob-internals": "Vnútorné objekty blob",
@@ -12,7 +11,6 @@
     "bookmarks": "Záložky",
     "chrome-urls": "Chrome URL",
     "components": "Komponenty",
-    "conversion-internals": "Interné konverzie",
     "crashes": "Zlyhania",
     "credits": "Kredity",
     "device-log": "Denníky zariadení",
@@ -34,7 +32,6 @@
     "inspect": "Skontrolovať",
     "internals/web-app": "Interné webové aplikácie",
     "interstitials": "Intersticiálne reklamy",
-    "invalidations": "Invalidácie",
     "local-state": "Miestny štát",
     "management": "Zvládanie",
     "media-engagement": "Mediálna angažovanosť",
@@ -63,7 +60,7 @@
     "settings/importData": "Importujte záložky a nastavenia",
     "settings/languages": "Jazykové nastavenia",
     "settings/onStartup": "Pri spustení Nastavenia",
-    "settings/passwords": "Heslá",
+    "password-manager": "Heslá",
     "settings/people": "Ľudia",
     "settings/privacy": "Nastavenia ochrany osobných údajov a zabezpečenia",
     "settings/reset": "Resetovať",
@@ -72,7 +69,6 @@
     "settings/system": "Systémové nastavenia",
     "signin-internals": "Interné prihlásenie",
     "site-engagement": "Zapojenie stránok",
-    "suggestions": "Návrhy",
     "sync-internals": "Interné synchronizácia",
     "system": "Systém",
     "terms": "Podmienky služby",
@@ -86,6 +82,50 @@
     "webrtc-logs": "Protokoly WebRTC",
     "net-internals": "Interné siete",
     "new-tab-page-third-party": "Nová karta (tretia strana)",
-    "session-service-internals": "Interné zasadnutia",
-    "settings/cookies": "Cookie"
+    "settings/cookies": "Cookie",
+    "Attribution Reporting API Internals": {
+        "attribution-internals": "Attribution Reporting API Internals"
+    },
+    "Commerce Internals": {
+        "commerce-internals": "Commerce Internals"
+    },
+    "Enterprise Connectors": {
+        "connectors-internals": "Enterprise Connectors"
+    },
+    "Extensions Internals": {
+        "extensions-internals": "Extensions Internals"
+    },
+    "History Clusters Internals - Debug Logs": {
+        "history-clusters-internals": "History Clusters Internals"
+    },
+    "Metrics Internals": {
+        "metrics-internals": "Metrics Internals"
+    },
+    "Built-in new tab page": {
+        "new-tab-page": "New Tab Page"
+    },
+    "Optimization Guide Internals": {
+        "optimization-guide-internals": "Optimization Guide Internals"
+    },
+    "Private Aggregation API Internals": {
+        "private-aggregation-internals": "Private Aggregation API Internals"
+    },
+    "Profile Internals": {
+        "profile-internals": "Profiles"
+    },
+    "Suggest Debug Tool": {
+        "suggest-internals": "Suggest Debug Tool"
+    },
+    "Search Tabs": {
+        "tab-search.top-chrome": "Search Tabs"
+    },
+    "Topics API Internals": {
+        "topics-internals": "Topics API Internals"
+    },
+    "Web App Internals": {
+        "web-app-internals": "Web App Internals"
+    },
+    "What's New Tab": {
+        "whats-new": "What's New Tab"
+    }
 }
