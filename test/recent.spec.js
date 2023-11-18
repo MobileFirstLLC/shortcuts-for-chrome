@@ -1,6 +1,6 @@
 import {Config, RecentLinks, Storage} from '../src';
 
-describe('Recent links', function () {
+describe('Recently used links', function () {
 
     beforeEach(() => {
         global.now = Date.now();
