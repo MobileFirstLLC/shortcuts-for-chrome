@@ -4,7 +4,6 @@
     "app_desc": "Navigācijas izvēlne izstrādātājiem, kuri izmanto pārlūku Chrome. Organizējiet, kā vēlaties.",
     "ui_recently_used": "Nesen lietots",
     "accessibility": "Pieejamība Iekšējie",
-    "appcache-internals": "Lietojumprogrammas kešatmiņa",
     "apps": "Lietotnes",
     "autofill-internals": "Automātiskās aizpildes iekšējie elementi",
     "blob-internals": "Blob Internals",
@@ -12,7 +11,6 @@
     "bookmarks": "Grāmatzīmes",
     "chrome-urls": "Chrome vietrāži URL",
     "components": "Sastāvdaļas",
-    "conversion-internals": "Konversijas iekšējie",
     "crashes": "Avārijas",
     "credits": "Kredīti",
     "device-log": "Ierīču žurnāli",
@@ -34,7 +32,6 @@
     "inspect": "Pārbaudīt",
     "internals/web-app": "Tīmekļa lietotnes iekšējie elementi",
     "interstitials": "Iespiestās reklāmas",
-    "invalidations": "Invalidācijas",
     "local-state": "Vietējā valsts",
     "management": "Vadība",
     "media-engagement": "Iesaistīšanās plašsaziņas līdzekļos",
@@ -63,7 +60,7 @@
     "settings/importData": "Importēt grāmatzīmes un iestatījumus",
     "settings/languages": "Valodas iestatījumi",
     "settings/onStartup": "Startēšanas iestatījumos",
-    "settings/passwords": "Paroles",
+    "password-manager": "Paroles",
     "settings/people": "Cilvēki",
     "settings/privacy": "Privātuma un drošības iestatījumi",
     "settings/reset": "Atiestatīt",
@@ -72,7 +69,6 @@
     "settings/system": "Sistēmas iestatījumi",
     "signin-internals": "Pierakstīšanās iekšpusē",
     "site-engagement": "Iesaistīšanās vietnē",
-    "suggestions": "Ieteikumi",
     "sync-internals": "Iekšējo sinhronizācija",
     "system": "Sistēma",
     "terms": "Pakalpojuma noteikumi",
@@ -86,6 +82,50 @@
     "webrtc-logs": "WebRTC žurnāli",
     "net-internals": "Neto iekšējie",
     "new-tab-page-third-party": "Jauna cilne (trešā puse)",
-    "session-service-internals": "Sesijas iekšējie",
-    "settings/cookies": "Sīkfaili"
+    "settings/cookies": "Sīkfaili",
+    "Attribution Reporting API Internals": {
+        "attribution-internals": "Attribution Reporting API Internals"
+    },
+    "Commerce Internals": {
+        "commerce-internals": "Commerce Internals"
+    },
+    "Enterprise Connectors": {
+        "connectors-internals": "Enterprise Connectors"
+    },
+    "Extensions Internals": {
+        "extensions-internals": "Extensions Internals"
+    },
+    "History Clusters Internals - Debug Logs": {
+        "history-clusters-internals": "History Clusters Internals"
+    },
+    "Metrics Internals": {
+        "metrics-internals": "Metrics Internals"
+    },
+    "Built-in new tab page": {
+        "new-tab-page": "New Tab Page"
+    },
+    "Optimization Guide Internals": {
+        "optimization-guide-internals": "Optimization Guide Internals"
+    },
+    "Private Aggregation API Internals": {
+        "private-aggregation-internals": "Private Aggregation API Internals"
+    },
+    "Profile Internals": {
+        "profile-internals": "Profiles"
+    },
+    "Suggest Debug Tool": {
+        "suggest-internals": "Suggest Debug Tool"
+    },
+    "Search Tabs": {
+        "tab-search.top-chrome": "Search Tabs"
+    },
+    "Topics API Internals": {
+        "topics-internals": "Topics API Internals"
+    },
+    "Web App Internals": {
+        "web-app-internals": "Web App Internals"
+    },
+    "What's New Tab": {
+        "whats-new": "What's New Tab"
+    }
 }
