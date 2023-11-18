@@ -4,7 +4,6 @@
     "app_desc": "Menu de navegação para desenvolvedores que usam o Chrome. Organize como quiser.",
     "ui_recently_used": "Usado recentemente",
     "accessibility": "Acessibilidade Internas",
-    "appcache-internals": "Cache de aplicativo",
     "apps": "Apps",
     "autofill-internals": "Autopreencher Internals",
     "blob-internals": "Blob Internals",
@@ -12,7 +11,6 @@
     "bookmarks": "Favoritos",
     "chrome-urls": "URLs do Chrome",
     "components": "Componentes",
-    "conversion-internals": "Conversion Internals",
     "crashes": "Crashes",
     "credits": "Créditos",
     "device-log": "Registros de dispositivos",
@@ -34,7 +32,6 @@
     "inspect": "Inspecionar",
     "internals/web-app": "Web App Internals",
     "interstitials": "Intersticiais",
-    "invalidations": "Invalidações",
     "local-state": "Estado local",
     "management": "Gestão",
     "media-engagement": "Envolvimento com a mídia",
@@ -63,7 +60,7 @@
     "settings/importData": "Importar favoritos e configurações",
     "settings/languages": "Opções de linguagem",
     "settings/onStartup": "Nas configurações de inicialização",
-    "settings/passwords": "Senhas",
+    "password-manager": "Senhas",
     "settings/people": "Pessoas",
     "settings/privacy": "Configurações de privacidade e segurança",
     "settings/reset": "Redefinir",
@@ -72,7 +69,6 @@
     "settings/system": "Configurações do sistema",
     "signin-internals": "Signin Internals",
     "site-engagement": "Engajamento do site",
-    "suggestions": "Sugestões",
     "sync-internals": "Sync Internals",
     "system": "Sistema",
     "terms": "Termos de serviço",
@@ -86,6 +82,50 @@
     "webrtc-logs": "Logs WebRTC",
     "net-internals": "Net Internals",
     "new-tab-page-third-party": "Nova guia (terceiro)",
-    "session-service-internals": "Internals da sessão",
-    "settings/cookies": "Configurações de cookies"
+    "settings/cookies": "Configurações de cookies",
+    "Attribution Reporting API Internals": {
+        "attribution-internals": "Attribution Reporting API Internals"
+    },
+    "Commerce Internals": {
+        "commerce-internals": "Commerce Internals"
+    },
+    "Enterprise Connectors": {
+        "connectors-internals": "Enterprise Connectors"
+    },
+    "Extensions Internals": {
+        "extensions-internals": "Extensions Internals"
+    },
+    "History Clusters Internals - Debug Logs": {
+        "history-clusters-internals": "History Clusters Internals"
+    },
+    "Metrics Internals": {
+        "metrics-internals": "Metrics Internals"
+    },
+    "Built-in new tab page": {
+        "new-tab-page": "New Tab Page"
+    },
+    "Optimization Guide Internals": {
+        "optimization-guide-internals": "Optimization Guide Internals"
+    },
+    "Private Aggregation API Internals": {
+        "private-aggregation-internals": "Private Aggregation API Internals"
+    },
+    "Profile Internals": {
+        "profile-internals": "Profiles"
+    },
+    "Suggest Debug Tool": {
+        "suggest-internals": "Suggest Debug Tool"
+    },
+    "Search Tabs": {
+        "tab-search.top-chrome": "Search Tabs"
+    },
+    "Topics API Internals": {
+        "topics-internals": "Topics API Internals"
+    },
+    "Web App Internals": {
+        "web-app-internals": "Web App Internals"
+    },
+    "What's New Tab": {
+        "whats-new": "What's New Tab"
+    }
 }
