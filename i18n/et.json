@@ -4,7 +4,6 @@
     "app_desc": "Navigeerimismenüü Chrome'i kasutavatele arendajatele. Korraldage kuidas soovite.",
     "ui_recently_used": "Hiljuti kasutatud",
     "accessibility": "Juurdepääsetavus Sisemised",
-    "appcache-internals": "Rakenduse vahemälu",
     "apps": "Rakendused",
     "autofill-internals": "Sisemiste automaattäide",
     "blob-internals": "Blob Internals",
@@ -12,7 +11,6 @@
     "bookmarks": "Järjehoidjad",
     "chrome-urls": "Chrome'i URL -id",
     "components": "Komponendid",
-    "conversion-internals": "Konversiooni sisemised",
     "crashes": "Krahhid",
     "credits": "Autorid",
     "device-log": "Seadme logid",
@@ -34,7 +32,6 @@
     "inspect": "Kontrollige",
     "internals/web-app": "Veebirakenduse sisemised osad",
     "interstitials": "Vahereklaamid",
-    "invalidations": "Kehtetuks tunnistamine",
     "local-state": "Kohalik riik",
     "management": "Juhtimine",
     "media-engagement": "Meedia kaasamine",
@@ -63,7 +60,7 @@
     "settings/importData": "Järjehoidjate ja seadete importimine",
     "settings/languages": "Keele seaded",
     "settings/onStartup": "Käivitusseadetes",
-    "settings/passwords": "Paroolid",
+    "password-manager": "Paroolid",
     "settings/people": "Inimesed",
     "settings/privacy": "Privaatsus- ja turvaseaded",
     "settings/reset": "Lähtesta",
@@ -72,7 +69,6 @@
     "settings/system": "Süsteemisätted",
     "signin-internals": "Sisselogimise sised",
     "site-engagement": "Saidi kaasamine",
-    "suggestions": "Ettepanekud",
     "sync-internals": "Sisemiste sünkroonimine",
     "system": "Süsteem",
     "terms": "Kasutustingimused",
@@ -86,6 +82,50 @@
     "webrtc-logs": "WebRTC logid",
     "net-internals": "Sisemised võrgud",
     "new-tab-page-third-party": "Uus vaheleht (kolmas osapool)",
-    "session-service-internals": "Sessiooni sisemised",
-    "settings/cookies": "Küpsiseaded"
+    "settings/cookies": "Küpsiseaded",
+    "Attribution Reporting API Internals": {
+        "attribution-internals": "Omistamise aruandlus"
+    },
+    "Commerce Internals": {
+        "commerce-internals": "Commerce Internals"
+    },
+    "Enterprise Connectors": {
+        "connectors-internals": "Enterprise Connectors"
+    },
+    "Extensions Internals": {
+        "extensions-internals": "Extensions Internals"
+    },
+    "History Clusters Internals - Debug Logs": {
+        "history-clusters-internals": "History Clusters Internals"
+    },
+    "Metrics Internals": {
+        "metrics-internals": "Metrics Internals"
+    },
+    "Built-in new tab page": {
+        "new-tab-page": "New Tab Page"
+    },
+    "Optimization Guide Internals": {
+        "optimization-guide-internals": "Optimization Guide Internals"
+    },
+    "Private Aggregation API Internals": {
+        "private-aggregation-internals": "Private Aggregation API Internals"
+    },
+    "Profile Internals": {
+        "profile-internals": "Profiles"
+    },
+    "Suggest Debug Tool": {
+        "suggest-internals": "Suggest Debug Tool"
+    },
+    "Search Tabs": {
+        "tab-search.top-chrome": "Search Tabs"
+    },
+    "Topics API Internals": {
+        "topics-internals": "Topics API Internals"
+    },
+    "Web App Internals": {
+        "web-app-internals": "Web App Internals"
+    },
+    "What's New Tab": {
+        "whats-new": "What's New Tab"
+    }
 }
