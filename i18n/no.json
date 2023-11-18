@@ -4,7 +4,6 @@
     "app_desc": "Navigasjonsmeny for utviklere som bruker Chrome. Organiser slik du vil.",
     "ui_recently_used": "Nylig brukt",
     "accessibility": "Tilgjengelighet Internals",
-    "appcache-internals": "Programbuffer",
     "apps": "Apper",
     "autofill-internals": "Autofyll internt",
     "blob-internals": "Blob Internals",
@@ -12,7 +11,6 @@
     "bookmarks": "Bokmerker",
     "chrome-urls": "Chrome -nettadresser",
     "components": "Komponenter",
-    "conversion-internals": "Konvertering intern",
     "crashes": "Krasjer",
     "credits": "Studiepoeng",
     "device-log": "Enhetslogger",
@@ -34,7 +32,6 @@
     "inspect": "Undersøke",
     "internals/web-app": "Interne nettapper",
     "interstitials": "Mellomliggende annonser",
-    "invalidations": "Ugyldigheter",
     "local-state": "Lokal stat",
     "management": "Ledelse",
     "media-engagement": "Medieengasjement",
@@ -63,7 +60,7 @@
     "settings/importData": "Importer bokmerker og innstillinger",
     "settings/languages": "Språkinnstillinger",
     "settings/onStartup": "På oppstartsinnstillinger",
-    "settings/passwords": "Passord",
+    "password-manager": "Passord",
     "settings/people": "Mennesker",
     "settings/privacy": "Personvern og sikkerhetsinnstillinger",
     "settings/reset": "Nullstille",
@@ -72,7 +69,6 @@
     "settings/system": "Systeminnstillinger",
     "signin-internals": "Innlogging internt",
     "site-engagement": "Site Engagement",
-    "suggestions": "Forslag",
     "sync-internals": "Synkroniser interne",
     "system": "System",
     "terms": "Vilkår for bruk",
@@ -86,6 +82,50 @@
     "webrtc-logs": "WebRTC -logger",
     "net-internals": "Net Internals",
     "new-tab-page-third-party": "Ny fane (tredjepart)",
-    "session-service-internals": "Interne økter",
-    "settings/cookies": "Informasjonskapsel"
+    "settings/cookies": "Informasjonskapsel",
+    "Attribution Reporting API Internals": {
+        "attribution-internals": "Attribution Reporting API Internals"
+    },
+    "Commerce Internals": {
+        "commerce-internals": "Commerce Internals"
+    },
+    "Enterprise Connectors": {
+        "connectors-internals": "Enterprise Connectors"
+    },
+    "Extensions Internals": {
+        "extensions-internals": "Extensions Internals"
+    },
+    "History Clusters Internals - Debug Logs": {
+        "history-clusters-internals": "History Clusters Internals"
+    },
+    "Metrics Internals": {
+        "metrics-internals": "Metrics Internals"
+    },
+    "Built-in new tab page": {
+        "new-tab-page": "New Tab Page"
+    },
+    "Optimization Guide Internals": {
+        "optimization-guide-internals": "Optimization Guide Internals"
+    },
+    "Private Aggregation API Internals": {
+        "private-aggregation-internals": "Private Aggregation API Internals"
+    },
+    "Profile Internals": {
+        "profile-internals": "Profiles"
+    },
+    "Suggest Debug Tool": {
+        "suggest-internals": "Suggest Debug Tool"
+    },
+    "Search Tabs": {
+        "tab-search.top-chrome": "Search Tabs"
+    },
+    "Topics API Internals": {
+        "topics-internals": "Topics API Internals"
+    },
+    "Web App Internals": {
+        "web-app-internals": "Web App Internals"
+    },
+    "What's New Tab": {
+        "whats-new": "What's New Tab"
+    }
 }
