@@ -4,7 +4,6 @@
     "app_desc": "Navigációs menü a Chrome -ot használó fejlesztők számára. Szervezze, ahogy tetszik.",
     "ui_recently_used": "Nemrég használt",
     "accessibility": "Hozzáférhetőség Belső",
-    "appcache-internals": "Alkalmazás gyorsítótár",
     "apps": "Alkalmazások",
     "autofill-internals": "Belső elemek automatikus kitöltése",
     "blob-internals": "Blob Internals",
@@ -12,7 +11,6 @@
     "bookmarks": "Könyvjelzők",
     "chrome-urls": "Chrome URL -ek",
     "components": "Alkatrészek",
-    "conversion-internals": "Konverziós belső",
     "crashes": "Összeomlik",
     "credits": "Hitelek",
     "device-log": "Eszköznaplók",
@@ -34,7 +32,6 @@
     "inspect": "Ellenőrizze",
     "internals/web-app": "Internetes alkalmazás belső részei",
     "interstitials": "Közbeiktatott hirdetések",
-    "invalidations": "Érvénytelenítések",
     "local-state": "Helyi állam",
     "management": "Menedzsment",
     "media-engagement": "Media Engagement",
@@ -63,7 +60,7 @@
     "settings/importData": "Könyvjelzők és beállítások importálása",
     "settings/languages": "Nyelvi beállítások",
     "settings/onStartup": "Az indítási beállításoknál",
-    "settings/passwords": "Jelszavak",
+    "password-manager": "Jelszavak",
     "settings/people": "Emberek",
     "settings/privacy": "Adatvédelmi és biztonsági beállítások",
     "settings/reset": "Visszaállítás",
@@ -72,7 +69,6 @@
     "settings/system": "Rendszerbeállítások",
     "signin-internals": "Bejelentkezés belső",
     "site-engagement": "Site Engagement",
-    "suggestions": "Javaslatok",
     "sync-internals": "Belső szinkronizálás",
     "system": "Rendszer",
     "terms": "Szolgáltatási feltételek",
@@ -86,6 +82,50 @@
     "webrtc-logs": "WebRTC naplók",
     "net-internals": "Nettó belső",
     "new-tab-page-third-party": "Új lap (harmadik fél)",
-    "session-service-internals": "Session Belső",
-    "settings/cookies": "Aprósütemény"
+    "settings/cookies": "Aprósütemény",
+    "Attribution Reporting API Internals": {
+        "attribution-internals": "Attribution Reporting API Internals"
+    },
+    "Commerce Internals": {
+        "commerce-internals": "Commerce Internals"
+    },
+    "Enterprise Connectors": {
+        "connectors-internals": "Enterprise Connectors"
+    },
+    "Extensions Internals": {
+        "extensions-internals": "Extensions Internals"
+    },
+    "History Clusters Internals - Debug Logs": {
+        "history-clusters-internals": "History Clusters Internals"
+    },
+    "Metrics Internals": {
+        "metrics-internals": "Metrics Internals"
+    },
+    "Built-in new tab page": {
+        "new-tab-page": "New Tab Page"
+    },
+    "Optimization Guide Internals": {
+        "optimization-guide-internals": "Optimization Guide Internals"
+    },
+    "Private Aggregation API Internals": {
+        "private-aggregation-internals": "Private Aggregation API Internals"
+    },
+    "Profile Internals": {
+        "profile-internals": "Profiles"
+    },
+    "Suggest Debug Tool": {
+        "suggest-internals": "Suggest Debug Tool"
+    },
+    "Search Tabs": {
+        "tab-search.top-chrome": "Search Tabs"
+    },
+    "Topics API Internals": {
+        "topics-internals": "Topics API Internals"
+    },
+    "Web App Internals": {
+        "web-app-internals": "Web App Internals"
+    },
+    "What's New Tab": {
+        "whats-new": "What's New Tab"
+    }
 }
