@@ -4,7 +4,6 @@
     "app_desc": "Chromeを使用している開発者向けのナビゲーションメニュー。",
     "ui_recently_used": "最近使用したもの",
     "accessibility": "Accessibility Internals",
-    "appcache-internals": "Application Cache",
     "apps": "アプリ",
     "autofill-internals": "Autofill Internals",
     "blob-internals": "Blob Internals",
@@ -12,7 +11,6 @@
     "bookmarks": "ブックマーク",
     "chrome-urls": "Chrome URLs",
     "components": "コンポーネント",
-    "conversion-internals": "Conversion Internals",
     "crashes": "クラッシュ",
     "credits": "Credits",
     "device-log": "デバイスログ",
@@ -34,7 +32,6 @@
     "inspect": "Inspect",
     "internals/web-app": "Web App Internals",
     "interstitials": "Interstitials",
-    "invalidations": "Invalidations",
     "local-state": "Local State",
     "management": "管理",
     "media-engagement": "Media Engagement",
@@ -63,7 +60,7 @@
     "settings/importData": "ブックマークと設定のインポート",
     "settings/languages": "言語",
     "settings/onStartup": "起動時",
-    "settings/passwords": "パスワード",
+    "password-manager": "パスワード",
     "settings/people": "Google の設定",
     "settings/privacy": "プライバシーとセキュリティ",
     "settings/reset": "設定のリセット",
@@ -72,7 +69,6 @@
     "settings/system": "システム",
     "signin-internals": "Signin Internals",
     "site-engagement": "Site Engagement",
-    "suggestions": "Suggestions",
     "sync-internals": "Sync Internals",
     "system": "システムについて",
     "terms": "Google Chrome および Chrome OS 追加利用規約",
@@ -86,6 +82,50 @@
     "webrtc-logs": "WebRTC ログ",
     "net-internals": "Net Internals",
     "new-tab-page-third-party": "新しいタブ（サードパーティ）",
-    "session-service-internals": "Session Internals",
-    "settings/cookies": "Cookie と他のサイトデータ"
+    "settings/cookies": "Cookie と他のサイトデータ",
+    "Attribution Reporting API Internals": {
+        "attribution-internals": "Attribution Reporting API Internals"
+    },
+    "Commerce Internals": {
+        "commerce-internals": "Commerce Internals"
+    },
+    "Enterprise Connectors": {
+        "connectors-internals": "Enterprise Connectors"
+    },
+    "Extensions Internals": {
+        "extensions-internals": "Extensions Internals"
+    },
+    "History Clusters Internals - Debug Logs": {
+        "history-clusters-internals": "History Clusters Internals"
+    },
+    "Metrics Internals": {
+        "metrics-internals": "Metrics Internals"
+    },
+    "Built-in new tab page": {
+        "new-tab-page": "New Tab Page"
+    },
+    "Optimization Guide Internals": {
+        "optimization-guide-internals": "Optimization Guide Internals"
+    },
+    "Private Aggregation API Internals": {
+        "private-aggregation-internals": "Private Aggregation API Internals"
+    },
+    "Profile Internals": {
+        "profile-internals": "Profiles"
+    },
+    "Suggest Debug Tool": {
+        "suggest-internals": "Suggest Debug Tool"
+    },
+    "Search Tabs": {
+        "tab-search.top-chrome": "Search Tabs"
+    },
+    "Topics API Internals": {
+        "topics-internals": "Topics API Internals"
+    },
+    "Web App Internals": {
+        "web-app-internals": "Web App Internals"
+    },
+    "What's New Tab": {
+        "whats-new": "What's New Tab"
+    }
 }
