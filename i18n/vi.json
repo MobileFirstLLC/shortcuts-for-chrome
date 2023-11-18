@@ -4,7 +4,6 @@
     "app_desc": "Menu điều hướng dành cho các nhà phát triển sử dụng Chrome. Tổ chức theo cách bạn muốn.",
     "ui_recently_used": "Được sử dụng gần đây",
     "accessibility": "Nội bộ trợ năng",
-    "appcache-internals": "Bộ nhớ đệm ứng dụng",
     "apps": "Ứng dụng",
     "autofill-internals": "Tự động điền nội bộ",
     "blob-internals": "Blob Internals",
@@ -12,7 +11,6 @@
     "bookmarks": "Dấu trang",
     "chrome-urls": "URL của Chrome",
     "components": "Các thành phần",
-    "conversion-internals": "Nội bộ chuyển đổi",
     "crashes": "Sự cố",
     "credits": "Tín dụng",
     "device-log": "Nhật ký thiết bị",
@@ -34,7 +32,6 @@
     "inspect": "Quan sát",
     "internals/web-app": "Nội bộ ứng dụng web",
     "interstitials": "Quảng cáo xen kẽ",
-    "invalidations": "Sự không hợp lệ",
     "local-state": "Tiểu bang địa phương",
     "management": "Ban quản lý",
     "media-engagement": "Tương tác với phương tiện truyền thông",
@@ -63,7 +60,7 @@
     "settings/importData": "Nhập Dấu trang và Cài đặt",
     "settings/languages": "Cài đặt ngôn ngữ",
     "settings/onStartup": "Trên Cài đặt Khởi động",
-    "settings/passwords": "Mật khẩu",
+    "password-manager": "Mật khẩu",
     "settings/people": "Những người",
     "settings/privacy": "Cài đặt quyền riêng tư và bảo mật",
     "settings/reset": "Cài lại",
@@ -72,7 +69,6 @@
     "settings/system": "Cài đặt hệ thống",
     "signin-internals": "Đăng nhập nội bộ",
     "site-engagement": "Tương tác trang web",
-    "suggestions": "Gợi ý",
     "sync-internals": "Đồng bộ hóa nội bộ",
     "system": "Hệ thống",
     "terms": "Điều khoản dịch vụ",
@@ -86,6 +82,50 @@
     "webrtc-logs": "Nhật ký WebRTC",
     "net-internals": "Net Internals",
     "new-tab-page-third-party": "Tab mới (bên thứ 3)",
-    "session-service-internals": "Nội bộ phiên",
-    "settings/cookies": "Cài đặt cookie"
+    "settings/cookies": "Cài đặt cookie",
+    "Attribution Reporting API Internals": {
+        "attribution-internals": "Báo cáo phân bổ"
+    },
+    "Commerce Internals": {
+        "commerce-internals": "Commerce Internals"
+    },
+    "Enterprise Connectors": {
+        "connectors-internals": "Enterprise Connectors"
+    },
+    "Extensions Internals": {
+        "extensions-internals": "Extensions Internals"
+    },
+    "History Clusters Internals - Debug Logs": {
+        "history-clusters-internals": "History Clusters Internals"
+    },
+    "Metrics Internals": {
+        "metrics-internals": "Metrics Internals"
+    },
+    "Built-in new tab page": {
+        "new-tab-page": "New Tab Page"
+    },
+    "Optimization Guide Internals": {
+        "optimization-guide-internals": "Optimization Guide Internals"
+    },
+    "Private Aggregation API Internals": {
+        "private-aggregation-internals": "Private Aggregation API Internals"
+    },
+    "Profile Internals": {
+        "profile-internals": "Profiles"
+    },
+    "Suggest Debug Tool": {
+        "suggest-internals": "Suggest Debug Tool"
+    },
+    "Search Tabs": {
+        "tab-search.top-chrome": "Search Tabs"
+    },
+    "Topics API Internals": {
+        "topics-internals": "Topics API Internals"
+    },
+    "Web App Internals": {
+        "web-app-internals": "Web App Internals"
+    },
+    "What's New Tab": {
+        "whats-new": "What's New Tab"
+    }
 }
