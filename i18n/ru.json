@@ -4,7 +4,6 @@
     "app_desc": "Меню навигации для разработчиков, использующих Chrome. Организуйте как хотите.",
     "ui_recently_used": "Недавно использовалось",
     "accessibility": "Внутренние возможности доступности",
-    "appcache-internals": "Кэш приложения",
     "apps": "Приложения",
     "autofill-internals": "Autofill Internals",
     "blob-internals": "Blob Internals",
@@ -12,7 +11,6 @@
     "bookmarks": "Закладки",
     "chrome-urls": "URL-адреса Chrome",
     "components": "Компоненты",
-    "conversion-internals": "Conversion Internals",
     "crashes": "Сбои",
     "credits": "Кредиты",
     "device-log": "Журналы устройства",
@@ -34,7 +32,6 @@
     "inspect": "Проверить",
     "internals/web-app": "Внутреннее устройство веб-приложения",
     "interstitials": "Межстраничные объявления",
-    "invalidations": "Invalidations",
     "local-state": "Местное государство",
     "management": "Менеджмент",
     "media-engagement": "Взаимодействие со СМИ",
@@ -63,7 +60,7 @@
     "settings/importData": "Импортировать закладки и настройки",
     "settings/languages": "Настройки языка",
     "settings/onStartup": "Настройки при запуске",
-    "settings/passwords": "Пароли",
+    "password-manager": "Пароли",
     "settings/people": "Люди",
     "settings/privacy": "Настройки конфиденциальности и безопасности",
     "settings/reset": "Сброс",
@@ -72,7 +69,6 @@
     "settings/system": "Настройки системы",
     "signin-internals": "Signin Internals",
     "site-engagement": "Взаимодействие с сайтом",
-    "suggestions": "Предложения",
     "sync-internals": "Sync Internals",
     "system": "Система",
     "terms": "Условия использования",
@@ -86,6 +82,50 @@
     "webrtc-logs": "Журналы WebRTC",
     "net-internals": "Net Internals",
     "new-tab-page-third-party": "Новая вкладка (сторонняя)",
-    "session-service-internals": "Session Internals",
-    "settings/cookies": "Cookies"
+    "settings/cookies": "Cookies",
+    "Attribution Reporting API Internals": {
+        "attribution-internals": "Attribution Reporting API Internals"
+    },
+    "Commerce Internals": {
+        "commerce-internals": "Commerce Internals"
+    },
+    "Enterprise Connectors": {
+        "connectors-internals": "Enterprise Connectors"
+    },
+    "Extensions Internals": {
+        "extensions-internals": "Extensions Internals"
+    },
+    "History Clusters Internals - Debug Logs": {
+        "history-clusters-internals": "History Clusters Internals"
+    },
+    "Metrics Internals": {
+        "metrics-internals": "Metrics Internals"
+    },
+    "Built-in new tab page": {
+        "new-tab-page": "New Tab Page"
+    },
+    "Optimization Guide Internals": {
+        "optimization-guide-internals": "Optimization Guide Internals"
+    },
+    "Private Aggregation API Internals": {
+        "private-aggregation-internals": "Private Aggregation API Internals"
+    },
+    "Profile Internals": {
+        "profile-internals": "Profiles"
+    },
+    "Suggest Debug Tool": {
+        "suggest-internals": "Suggest Debug Tool"
+    },
+    "Search Tabs": {
+        "tab-search.top-chrome": "Search Tabs"
+    },
+    "Topics API Internals": {
+        "topics-internals": "Topics API Internals"
+    },
+    "Web App Internals": {
+        "web-app-internals": "Web App Internals"
+    },
+    "What's New Tab": {
+        "whats-new": "What's New Tab"
+    }
 }
