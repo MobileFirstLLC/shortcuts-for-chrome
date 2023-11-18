@@ -4,7 +4,6 @@
     "app_desc": "منوی ناوبری برای توسعه دهندگان با استفاده از Chrome. هرطور که دوست دارید سازماندهی کنید.",
     "ui_recently_used": "اخیراً استفاده شده است",
     "accessibility": "Accessibility Internals",
-    "appcache-internals": "حافظه پنهان برنامه",
     "apps": "برنامه ها",
     "autofill-internals": "تکمیل خودکار داخلی",
     "blob-internals": "Blob Internals",
@@ -12,7 +11,6 @@
     "bookmarks": "نشانک ها",
     "chrome-urls": "نشانی اینترنتی Chrome",
     "components": "جزء",
-    "conversion-internals": "تبدیل داخلی",
     "crashes": "Crashes",
     "credits": "اعتبارات",
     "device-log": "سیاهههای مربوط به دستگاه",
@@ -34,7 +32,6 @@
     "inspect": "بازرسی",
     "internals/web-app": "داخلی برنامه وب",
     "interstitials": "بینابینی",
-    "invalidations": "نامعتبر",
     "local-state": "دولت محلی",
     "management": "مدیریت",
     "media-engagement": "تعامل رسانه ای",
@@ -63,7 +60,7 @@
     "settings/importData": "وارد کردن نشانک ها و تنظیمات",
     "settings/languages": "تنظیمات زبان",
     "settings/onStartup": "در تنظیمات راه اندازی",
-    "settings/passwords": "گذرواژه ها",
+    "password-manager": "گذرواژه ها",
     "settings/people": "مردم",
     "settings/privacy": "تنظیمات حریم خصوصی و امنیت",
     "settings/reset": "بازنشانی",
@@ -72,7 +69,6 @@
     "settings/system": "تنظیمات سیستم",
     "signin-internals": "ورود به سیستم داخلی",
     "site-engagement": "تعامل با سایت",
-    "suggestions": "پیشنهادات",
     "sync-internals": "همگام سازی داخلی",
     "system": "System",
     "terms": "شرایط خدمات",
@@ -86,6 +82,50 @@
     "webrtc-logs": "گزارش WebRTC",
     "net-internals": "Net Internals",
     "new-tab-page-third-party": "برگه جدید (شخص سوم)",
-    "session-service-internals": "جلسه داخلی",
-    "settings/cookies": "کوکی اچ‌تی‌تی‌پی"
+    "settings/cookies": "کوکی اچ‌تی‌تی‌پی",
+    "Attribution Reporting API Internals": {
+        "attribution-internals": "Attribution Reporting API Internals"
+    },
+    "Commerce Internals": {
+        "commerce-internals": "Commerce Internals"
+    },
+    "Enterprise Connectors": {
+        "connectors-internals": "Enterprise Connectors"
+    },
+    "Extensions Internals": {
+        "extensions-internals": "Extensions Internals"
+    },
+    "History Clusters Internals - Debug Logs": {
+        "history-clusters-internals": "History Clusters Internals"
+    },
+    "Metrics Internals": {
+        "metrics-internals": "Metrics Internals"
+    },
+    "Built-in new tab page": {
+        "new-tab-page": "New Tab Page"
+    },
+    "Optimization Guide Internals": {
+        "optimization-guide-internals": "Optimization Guide Internals"
+    },
+    "Private Aggregation API Internals": {
+        "private-aggregation-internals": "Private Aggregation API Internals"
+    },
+    "Profile Internals": {
+        "profile-internals": "Profiles"
+    },
+    "Suggest Debug Tool": {
+        "suggest-internals": "Suggest Debug Tool"
+    },
+    "Search Tabs": {
+        "tab-search.top-chrome": "Search Tabs"
+    },
+    "Topics API Internals": {
+        "topics-internals": "Topics API Internals"
+    },
+    "Web App Internals": {
+        "web-app-internals": "Web App Internals"
+    },
+    "What's New Tab": {
+        "whats-new": "What's New Tab"
+    }
 }
