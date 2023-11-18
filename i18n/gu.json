@@ -4,7 +4,6 @@
     "app_desc": "ક્રોમનો ઉપયોગ કરતા વિકાસકર્તાઓ માટે નેવિગેશન મેનૂ. તમને ગમે તે રીતે ગોઠવો.",
     "ui_recently_used": "તાજેતરમાં વપરાયેલ",
     "accessibility": "સુલભતા આંતરિક",
-    "appcache-internals": "એપ્લિકેશન કેશ",
     "apps": "એપ્લિકેશન્સ",
     "autofill-internals": "આંતરિક સ્વતillભરો",
     "blob-internals": "બ્લોબ આંતરિક",
@@ -12,7 +11,6 @@
     "bookmarks": "બુકમાર્ક્સ",
     "chrome-urls": "ક્રોમ URL",
     "components": "ઘટકો",
-    "conversion-internals": "રૂપાંતર આંતરિક",
     "crashes": "ક્રેશ",
     "credits": "ક્રેડિટ્સ",
     "device-log": "ઉપકરણ લોગ",
@@ -34,7 +32,6 @@
     "inspect": "નિરીક્ષણ કરો",
     "internals/web-app": "વેબ એપ્લિકેશન આંતરિક",
     "interstitials": "ઇન્ટર્સ્ટિશિયલ્સ",
-    "invalidations": "અમાન્યતા",
     "local-state": "સ્થાનિક રાજ્ય",
     "management": "મેનેજમેન્ટ",
     "media-engagement": "મીડિયા સગાઈ",
@@ -63,7 +60,7 @@
     "settings/importData": "બુકમાર્ક્સ અને સેટિંગ્સ આયાત કરો",
     "settings/languages": "ભાષા સેટિંગ્સ",
     "settings/onStartup": "સ્ટાર્ટઅપ સેટિંગ્સ પર",
-    "settings/passwords": "પાસવર્ડ્સ",
+    "password-manager": "પાસવર્ડ્સ",
     "settings/people": "લોકો",
     "settings/privacy": "ગોપનીયતા અને સુરક્ષા સેટિંગ્સ",
     "settings/reset": "ફરીથી સેટ કરો",
@@ -72,7 +69,6 @@
     "settings/system": "સિસ્ટમ સેટિંગ્સ",
     "signin-internals": "સાઇન ઇન આંતરિક",
     "site-engagement": "સાઇટ સગાઈ",
-    "suggestions": "સૂચનો",
     "sync-internals": "આંતરિક સુમેળ કરો",
     "system": "સિસ્ટમ",
     "terms": "સેવાની શરતો",
@@ -86,6 +82,50 @@
     "webrtc-logs": "WebRTC લોગ",
     "net-internals": "નેટ આંતરિક",
     "new-tab-page-third-party": "નવું ટેબ (3 જી પક્ષ)",
-    "session-service-internals": "સત્ર આંતરિક",
-    "settings/cookies": "કૂકીઝ"
+    "settings/cookies": "કૂકીઝ",
+    "Attribution Reporting API Internals": {
+        "attribution-internals": "Attribution Reporting API Internals"
+    },
+    "Commerce Internals": {
+        "commerce-internals": "Commerce Internals"
+    },
+    "Enterprise Connectors": {
+        "connectors-internals": "Enterprise Connectors"
+    },
+    "Extensions Internals": {
+        "extensions-internals": "Extensions Internals"
+    },
+    "History Clusters Internals - Debug Logs": {
+        "history-clusters-internals": "History Clusters Internals"
+    },
+    "Metrics Internals": {
+        "metrics-internals": "Metrics Internals"
+    },
+    "Built-in new tab page": {
+        "new-tab-page": "New Tab Page"
+    },
+    "Optimization Guide Internals": {
+        "optimization-guide-internals": "Optimization Guide Internals"
+    },
+    "Private Aggregation API Internals": {
+        "private-aggregation-internals": "Private Aggregation API Internals"
+    },
+    "Profile Internals": {
+        "profile-internals": "Profiles"
+    },
+    "Suggest Debug Tool": {
+        "suggest-internals": "Suggest Debug Tool"
+    },
+    "Search Tabs": {
+        "tab-search.top-chrome": "Search Tabs"
+    },
+    "Topics API Internals": {
+        "topics-internals": "Topics API Internals"
+    },
+    "Web App Internals": {
+        "web-app-internals": "Web App Internals"
+    },
+    "What's New Tab": {
+        "whats-new": "What's New Tab"
+    }
 }
