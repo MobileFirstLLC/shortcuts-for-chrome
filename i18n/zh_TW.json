@@ -82,7 +82,7 @@
     "webrtc-logs": "WebRTC 日志",
     "net-internals": "网络内部",
     "new-tab-page-third-party": "新标签页（第 3 方）",
-    "settings/cookies": "Cookie 设置",
+    "settings/cookies": "cookies",
     "attribution-internals": "歸因報告",
     "commerce-internals": "商務內部結構",
     "connectors-internals": "企業連結器",
