@@ -1,0 +1,29 @@
+.md-content__inner {
+    padding-bottom: 2rem
+}
+
+.md-tabs  li:nth-child(2) > a {
+    font-weight: 800; opacity: 1!important;}
+
+
+#install {
+    width: 90%;
+    max-width: 300px;
+    margin: 2rem auto;
+    display: block;
+}
+
+#preview {
+    display: block;
+    margin: 3rem auto;
+}
+
+#langs{
+    line-height: 1.5rem;
+    font-size: 0.7rem;
+}
+
+.POButton{
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
