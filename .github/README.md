@@ -30,7 +30,7 @@
 </a>
 </p>
 
-Chrome browser navigation is fixed and optimized for everyday use. Technical users, who want to inspect what is happening with indexedDB, service workers, Bluetooth devices etc., this menu adds shortcuts to those hard-to-find browser pages. This menu lists all Chrome URLs in a single, flat, customizable menu.
+Chrome browser navigation is fixed and optimized for everyday use. For technical users, who want to inspect what is happening with indexedDB, service workers, Bluetooth devices etc., this menu adds shortcuts to those hard-to-find browser pages. This menu lists all Chrome URLs in a single, flat, customizable menu.
 
 <p align="center">
 <img width="650" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/screenshot.png' />
@@ -62,21 +62,21 @@ Chrome browser navigation is fixed and optimized for everyday use. Technical use
 ### Supported languages: **[Help translate&rarr;](https://poeditor.com/join/project?hash=c2ihN8duR2)**
 
 ```
- ┌──────────────────────────────────────────────────────────────────────────────────────────────┐
- │                                     SUPPORTED  LANGUAGES                                     │
- ├──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────┤
- │ Amharic          │ Arabic           │ Bengali          │ Bulgarian        │ Catalan          │ 
- │ Chinese          │ Chinese (TW)     │ Croatian         │ Czech            │ Danish           │
- │ Dutch            │ English          │ English (US)     │ Estonian         │ Filipino         │
- │ Finnish          │ French           │ German           │ Greek            │ Gujarati         │
- │ Hebrew           │ Hindi            │ Hungarian        │ Indonesian       │ Italian          │
- │ Japanese         │ Kannada          │ Korean           │ Latvian          │ Lithuanian       │
- │ Malay            │ Malayalam        │ Marathi          │ Norwegian        │ Persian          │
- │ Polish           │ Portuguese       │ Portuguese (BR)  │ Romanian         │ Russian          │
- │ Serbian          │ Slovak           │ Slovenian        │ Spanish          │ Spanish (LA/C)   │
- │ Swahili          │ Swedish          │ Tamil            │ Telugu           │ Thai             │
- | Turkish          │ Ukrainian        │ Vietnamese       │                  │                  │
- └──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────┘
+ ┌────────────────────────────────────────────────────────────────┐
+ │                      SUPPORTED  LANGUAGES                      │
+ ├────────────┬────────────┬────────────┬────────────┬────────────┤
+ │ Amharic    │ Arabic     │ Bengali    │ Bulgarian  │ Catalan    │ 
+ │ Chinese    │ Chinese    │ Croatian   │ Czech      │ Danish     │
+ │ Dutch      │ English    │ English    │ Estonian   │ Filipino   │
+ │ Finnish    │ French     │ German     │ Greek      │ Gujarati   │
+ │ Hebrew     │ Hindi      │ Hungarian  │ Indonesian │ Italian    │
+ │ Japanese   │ Kannada    │ Korean     │ Latvian    │ Lithuanian │
+ │ Malay      │ Malayalam  │ Marathi    │ Norwegian  │ Persian    │
+ │ Polish     │ Portuguese │ Portugues  │ Romanian   │ Russian    │
+ │ Serbian    │ Slovak     │ Slovenian  │ Spanish    │ Spanish    │
+ │ Swahili    │ Swedish    │ Tamil      │ Telugu     │ Thai       │
+ | Turkish    │ Ukrainian  │ Vietnamese │            │            │
+ └────────────┴────────────┴────────────┴────────────┴────────────┘
 ```
 
 <p align="center">
