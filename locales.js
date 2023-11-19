@@ -1,6 +1,5 @@
 /**
  * Utility script that converts PO Editor export files to Chrome extension locales files.
- * It also generates the links.json used to build the popup menu.
  */
 
 const fs = require('fs');
@@ -16,7 +15,7 @@ const hasValue = ([_, value]) => !!value.length;
 
 const chromeUrl = key => key.indexOf('_') === -1;
 
-const format = ([key, message]) => [key.replace(/[-/]/g, '_'), {message}];
+const format = ([key, message]) => [key.replace(/[-/.]/g, '_'), {message}];
 
 const locales = json => Object.fromEntries(Object.entries(json).filter(hasValue).map(format));
 

@@ -74,7 +74,7 @@ export default class Helpers {
      */
     static translateLabel(name) {
         return chrome.i18n.getMessage(
-            name.replace(/[-/]/g, '_')) || name;
+            name.replace(/[-/.]/g, '_')) || name;
     }
 
     /**

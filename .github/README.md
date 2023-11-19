@@ -30,23 +30,11 @@
 </a>
 </p>
 
-Chrome browser navigation is fixed and optimized for everyday use. Technical users, who want to inspect what is happening with indexedDB, service workers, Bluetooth devices etc., this menu adds shortcuts to those hard-to-find browser pages. This menu lists all Chrome URLs in a single, flat, customizable menu.
+Chrome browser navigation is fixed and optimized for everyday use. For technical users, who want to inspect what is happening with indexedDB, service workers, Bluetooth devices etc., this menu adds shortcuts to those hard-to-find browser pages. This menu lists all Chrome URLs in a single, flat, customizable menu.
 
 <p align="center">
 <img width="650" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/screenshot.png' />
 </p>
-
-### Primary Features
-
-- #### 💯 &nbsp; Find all `chrome://` URLs in one menu
-
-- #### 📍 &nbsp; Pin your favorite links for fast access
-
-- #### 🖲️ &nbsp; Drag and drop to organize links
-
-- #### 🌗 &nbsp; Matches browser dark/light mode
-
-<br/>
 
 <p align="center">
 <strong><a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">Install at Chrome Web Store</a></strong>
@@ -57,27 +45,39 @@ Chrome browser navigation is fixed and optimized for everyday use. Technical use
 </a>
 </p>
 
-### Development & Docs: **[See project website &rarr;](https://oss.mobilefirst.me/shortcuts-for-chrome/)**
+### Primary Features
 
-### Supported languages: **[Help translate&rarr;](https://poeditor.com/join/project?hash=c2ihN8duR2)**
+- 💯 &nbsp; Find all `chrome://` URLs in one menu
 
-```
- ┌──────────────────────────────────────────────────────────────────────────────────────────────┐
- │                                     SUPPORTED  LANGUAGES                                     │
- ├──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────┤
- │ Amharic          │ Arabic           │ Bengali          │ Bulgarian        │ Catalan          │ 
- │ Chinese          │ Chinese (TW)     │ Croatian         │ Czech            │ Danish           │
- │ Dutch            │ English          │ English (US)     │ Estonian         │ Filipino         │
- │ Finnish          │ French           │ German           │ Greek            │ Gujarati         │
- │ Hebrew           │ Hindi            │ Hungarian        │ Indonesian       │ Italian          │
- │ Japanese         │ Kannada          │ Korean           │ Latvian          │ Lithuanian       │
- │ Malay            │ Malayalam        │ Marathi          │ Norwegian        │ Persian          │
- │ Polish           │ Portuguese       │ Portuguese (BR)  │ Romanian         │ Russian          │
- │ Serbian          │ Slovak           │ Slovenian        │ Spanish          │ Spanish (LA/C)   │
- │ Swahili          │ Swedish          │ Tamil            │ Telugu           │ Thai             │
- | Turkish          │ Ukrainian        │ Vietnamese       │                  │                  │
- └──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────┘
-```
+- 📍 &nbsp; Pin your favorite links for fast access
+
+- 🖲️ &nbsp; Drag and drop to organize links
+
+- 🌗 &nbsp; Matches browser dark/light mode
+
+### Development & Docs
+
+**[See website](https://oss.mobilefirst.me/shortcuts-for-chrome/)**
+
+<table align="center"><tr><td><pre>
+ ┌────────────────────────────────────────────────────────────────────────┐
+ │                          SUPPORTED  LANGUAGES                          │
+ ├────────────────────────────────────────────────────────────────────────┤
+ │ Amharic        Arabic         Bengali        Bulgarian      Catalan    │ 
+ │ Chinese        Chinese        Croatian       Czech          Danish     │
+ │ Dutch          English        English        Estonian       Filipino   │
+ │ Finnish        French         German         Greek          Gujarati   │
+ │ Hebrew         Hindi          Hungarian      Indonesian     Italian    │
+ │ Japanese       Kannada        Korean         Latvian        Lithuanian │
+ │ Malay          Malayalam      Marathi        Norwegian      Persian    │
+ │ Polish         Portuguese     Portugues      Romanian       Russian    │
+ │ Serbian        Slovak         Slovenian      Spanish        Spanish    │
+ │ Swahili        Swedish        Tamil          Telugu         Thai       │
+ | Turkish        Ukrainian      Vietnamese                               │
+ └────────────────────────────────────────────────────────────────────────┘
+</pre>
+<a href="https://poeditor.com/join/project?hash=c2ihN8duR2"><strong>Help translate</strong></a>
+</td></tr></table> 
 
 <p align="center">
 <img width="700" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/preview.gif' />
