@@ -1,6 +1,6 @@
 import {Popup, RecentLinks, Storage} from '../src';
 
-describe('Popup Window', function () {
+describe('Popup window menu', function () {
 
     before(function () {
         global.popup = null;
@@ -104,72 +104,70 @@ describe('Popup Window', function () {
         expect(stub.withArgs(url).calledOnce).to.be.true;
     });
 
-    describe('Link dragging', () => {
+    it('Drag hover over elements and drop outside area', (done) => {
+        let firstLink = getLink(0),
+            secondLink = getLink(1),
+            thirdLink = getLink(2);
 
-        it('Hover over elements and drop outside area', (done) => {
-            let firstLink = getLink(0),
-                secondLink = getLink(1),
-                thirdLink = getLink(2);
-
-            expect(Storage.save.notCalled, 'before drag').to.be.true;
-            expect(() => {
-                SimulateDragEvent(secondLink, 'dragstart');
-                SimulateDragEvent(secondLink, 'dragover');  // move over self
-                SimulateDragEvent(secondLink, 'dragleave');
-                SimulateDragEvent(firstLink, 'dragover');  // move to before self
-                SimulateDragEvent(firstLink, 'dragleave');
-                SimulateDragEvent(thirdLink, 'dragover');  // move to after self
-                SimulateDragEvent(thirdLink, 'dragleave');
-                SimulateDragEvent(secondLink, 'dragend'); // drop outside
-            }).to.not.throw();
-            setTimeout(() => {
-                expect(Storage.save.notCalled, 'no drop event occured').to.be.true;
-                done();
-            }, 10);
-        });
-
-        it('Drag/drop on self', (done) => {
-            let firstLink = getLink(0);
-
-            expect(Storage.save.notCalled, 'before drag').to.be.true;
-            expect(() => {
-                SimulateDragEvent(firstLink, 'dragstart');
-                SimulateDragEvent(firstLink, 'drop');
-            }).to.not.throw();
-            setTimeout(() => {
-                expect(Storage.save.calledOnce, 'drop callback fired').to.be.true;
-                done();
-            }, 10);
-        });
-
-        it('Drag/drop with order change > move before to after', (done) => {
-            let firstLink = getLink(0),
-                secondLink = getLink(1);
-
-            expect(Storage.save.notCalled, 'before drag').to.be.true;
-            expect(() => {
-                SimulateDragEvent(firstLink, 'dragstart');
-                SimulateDragEvent(secondLink, 'drop');
-            }).to.not.throw();
-            setTimeout(() => {
-                expect(Storage.save.calledOnce, 'drop callback fired').to.be.true;
-                done();
-            }, 10);
-        });
-
-        it('Drag/drop with order change > move after to before', (done) => {
-            let firstLink = getLink(0),
-                secondLink = getLink(1);
-
-            expect(Storage.save.notCalled, 'before drag').to.be.true;
-            expect(() => {
-                SimulateDragEvent(secondLink, 'dragstart');
-                SimulateDragEvent(firstLink, 'drop');
-            }).to.not.throw();
-            setTimeout(() => {
-                expect(Storage.save.calledOnce, 'drop callback fired').to.be.true;
-                done();
-            }, 10);
-        });
+        expect(Storage.save.notCalled, 'before drag').to.be.true;
+        expect(() => {
+            SimulateDragEvent(secondLink, 'dragstart');
+            SimulateDragEvent(secondLink, 'dragover');  // move over self
+            SimulateDragEvent(secondLink, 'dragleave');
+            SimulateDragEvent(firstLink, 'dragover');  // move to before self
+            SimulateDragEvent(firstLink, 'dragleave');
+            SimulateDragEvent(thirdLink, 'dragover');  // move to after self
+            SimulateDragEvent(thirdLink, 'dragleave');
+            SimulateDragEvent(secondLink, 'dragend'); // drop outside
+        }).to.not.throw();
+        setTimeout(() => {
+            expect(Storage.save.notCalled, 'no drop event occured').to.be.true;
+            done();
+        }, 10);
     });
+
+    it('Drag/drop on self', (done) => {
+        let firstLink = getLink(0);
+
+        expect(Storage.save.notCalled, 'before drag').to.be.true;
+        expect(() => {
+            SimulateDragEvent(firstLink, 'dragstart');
+            SimulateDragEvent(firstLink, 'drop');
+        }).to.not.throw();
+        setTimeout(() => {
+            expect(Storage.save.calledOnce, 'drop callback fired').to.be.true;
+            done();
+        }, 10);
+    });
+
+    it('Drag/drop with order change > move before to after', (done) => {
+        let firstLink = getLink(0),
+            secondLink = getLink(1);
+
+        expect(Storage.save.notCalled, 'before drag').to.be.true;
+        expect(() => {
+            SimulateDragEvent(firstLink, 'dragstart');
+            SimulateDragEvent(secondLink, 'drop');
+        }).to.not.throw();
+        setTimeout(() => {
+            expect(Storage.save.calledOnce, 'drop callback fired').to.be.true;
+            done();
+        }, 10);
+    });
+
+    it('Drag/drop with order change > move after to before', (done) => {
+        let firstLink = getLink(0),
+            secondLink = getLink(1);
+
+        expect(Storage.save.notCalled, 'before drag').to.be.true;
+        expect(() => {
+            SimulateDragEvent(secondLink, 'dragstart');
+            SimulateDragEvent(firstLink, 'drop');
+        }).to.not.throw();
+        setTimeout(() => {
+            expect(Storage.save.calledOnce, 'drop callback fired').to.be.true;
+            done();
+        }, 10);
+    });
+
 });

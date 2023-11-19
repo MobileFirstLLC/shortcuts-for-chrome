@@ -1,5 +1,4 @@
 import {Background, Config} from '../src';
-import ContextMenu from '../src/background/contextMenu';
 
 const manifest = require('../src/manifest.json');
 const {ContextMenuOptions} = Config;
