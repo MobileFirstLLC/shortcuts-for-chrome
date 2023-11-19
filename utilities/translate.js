@@ -31,15 +31,26 @@ const read = file =>
 const write = (file, obj) => fs.writeFileSync(
     file, JSON.stringify(obj, null, 2));
 
+/**
+ * Whether the file should be translated
+ * @param filename - locales file name e.g. "es.json"
+ * @returns {boolean} - true means "skip translation"
+ */
 const skip = (filename) => {
     const ref = parse(refLang).name;
     const tgt = parse(filename).name;
     const mtime = fs.statSync(join(input, filename)).mtime;
     const modDelta = moment().diff(moment(mtime), 'minutes');
-    return tgt.startsWith(ref) || modDelta < freezeMin;
+    return tgt === "ja" // skip japanese
+        || tgt.startsWith(ref) // skip English variants
+        || modDelta < freezeMin; // skip recently modified files
 };
 
 const main = async (files) => {
+    if (!API_KEY || !projectId)
+        return console.error('Set required env variables: ' +
+            'API_KEY and PROJECT_ID') && process.exit(5);
+
     const rlang = read(refLang);
     const sources = files.filter(f => !skip(f));
     const translatable = (tl, target) =>
@@ -60,11 +71,12 @@ const main = async (files) => {
     tl = Array.isArray(tl) ? tl : [tl];
     const updates = Object.fromEntries(
         tl.map((translation, i) => {
-            console.log(`${terms[i]} => ${text[i]} => (${target}) ${translation}`);
+            console.log(`${terms[i]} => ${text[i]}
+             => (${target}) ${translation}`);
             return [terms[i], translation];
         }));
     const final = {...initial, ...updates};
     write(join(input, file), final);
 };
 
-main(fs.readdirSync(input));
+main(fs.readdirSync(input)).then();

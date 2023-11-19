@@ -8,7 +8,7 @@ const {join, parse, dirname} = require('path');
 const inDir = './i18n/';
 const out = './locales/';
 const fn = 'messages.json';
-const linksFile = './src/auto_generated/links.json';
+const linksFile = './src/shared/links.json';
 
 // eslint-disable-next-line no-unused-vars
 const hasValue = ([_, value]) => !!value.length;

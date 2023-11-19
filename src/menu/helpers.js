@@ -1,16 +1,18 @@
 import {Config} from '..';
 
 /**
+ * @private
  * @static
  * @class Helpers
- * @classdesc This module contains various, static menu panel helper methods.
+ * @classdesc This module contains various static helper methods.
  */
 export default class Helpers {
 
     /**
      * @static
      * @memberOf Helpers
-     * @description Given an icon name, this function returns SVG element.
+     * @description Given an icon name, this function returns SVG
+     * element.
      * @param {Object} icon - One of {@type Config.SVGIcons}
      * @param {string?} className - Element class.
      * @returns {string} Icon element as HTML string.
@@ -81,9 +83,9 @@ export default class Helpers {
      * @static
      * @memberOf Helpers
      * @description Create a horizontal menu divider element and append
-     * it to the end of the provided panel element (in place). This method
-     * returns nothing. After calling this method panel will have a divider
-     * as its last DOM child.
+     * it to the end of the provided panel element (in place). This
+     * method returns nothing. After calling this method panel will have
+     * a divider as its last DOM child.
      * @param {Element} panel - DOM element where to append the divider.
      */
     static appendDivider(panel) {

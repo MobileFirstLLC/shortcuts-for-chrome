@@ -8,14 +8,14 @@ edit_uri: blob/main/docs/pages
 use_directory_urls: true
 
 nav:
-  - About: index.md
+  - Introduction: index.md
   - Install:
     - Chrome Web Store: https://chrome.google.com/webstore/detail/shortcuts-for-chrome/jnmekaomnicdcpgdndekkmojfomifjal
   - Development:
     - Getting Started: start.md
-    - About Translations: translate.md
-    - Source Documentation: api.md
-  - Translate: https://poeditor.com/join/project?hash=c2ihN8duR2
+    - Source Code Docs: api.md
+    - License: https://github.com/MobileFirstLLC/shortcuts-for-chrome/blob/main/LICENSE
+  - Translate: translate.md
   - Release Notes: changelog.md
   - Privacy Policy: privacy.md
 
@@ -28,6 +28,7 @@ theme:
   favicon: /shortcuts-for-chrome/favicon.png
   features:
     - content.code.annotate
+    - content.code.copy
     - navigation.tabs
     - navigation.expand
     - navigation.sections
