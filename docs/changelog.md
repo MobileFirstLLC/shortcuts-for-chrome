@@ -1,8 +1,26 @@
+---
+hide:
+- toc
+---
+
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. 
+
+
+### [3.6.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.5.1...v3.6.0) (2021-11-21)
+
+* Update Japanese translation in [33](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/33)
+* Open links in the foreground in [36](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/36)
+* Migrate to mv3 in [37](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/37)
+* Update recent links in foreground in [38](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/38)
+* Update dev dependencies in [30](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/30), [32](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/32)
 
 ### [3.5.1](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.5.0...v3.5.1) (2021-10-08)
+
+* i18n in [24](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/24)
+* update manifest in [25](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/25)
+* update context menu in [28](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/28)
 
 ### [3.5.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.4.1...v3.5.0) (2021-08-21)
 

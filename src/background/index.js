@@ -1,31 +1,22 @@
-/* eslint-disable no-new */
-
-import Api from './api';
 import ContextMenu from './contextMenu';
 
 /**
- * @module
- * @name Background
+ * @class Background
  *
- * @description This module is responsible for setting up all event handlers
- * and actions that happen in the background context of the extension.
+ * @description Initialize background scripts.
  *
- * This module will:
+ * @example
+ * ```js title="Initialize background"
+ * new Background();
+ * ```
  *
- * 1. initialize the message passing API
- * 2. sets up extension context menu
- *
- * Instantiate `new Background()` to enable this functionality.
+ * @classdesc This module sets up all functionality and event handlers in the background
+ * context of the extension. Currently, this module sets up extension context menu.
+ * Instantiate background to activate this functionality.
  */
 export default class Background {
 
-    /**
-     * @constructor
-     * @name Background
-     * @description Instantiate Background to bind background behavior.
-     */
     constructor() {
-        new Api();
-        new ContextMenu();
+        ContextMenu.initialize();
     }
 }

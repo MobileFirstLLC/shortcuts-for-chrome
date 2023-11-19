@@ -1,6 +1,4 @@
-import {AppConfig} from '../src/config';
-import RecentLinks from '../src/shared/recent';
-import Storage from '../src/shared/storage';
+import {Config, RecentLinks, Storage} from '../src';
 
 describe('Recent links', function () {
 
@@ -11,7 +9,7 @@ describe('Recent links', function () {
             recent: [
                 {url: 'apps', ts: global.now},
                 {url: 'about', ts: global.now},
-                {url: 'expired', ts: global.now - AppConfig.recentIntervalMillis - 100}
+                {url: 'expired', ts: global.now - Config.recentIntervalMillis - 100}
             ]
         });
         chrome.storage.sync.set.yields(null);

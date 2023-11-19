@@ -1,37 +1,70 @@
 /**
- * Utility script that converts PO Editor export files to Chrome extension locales files.
+ * Utility script for auto-translating terms using Google Cloud Translate API.
+ * It assumes project variables "PROJECT_ID" and "API_KEY" to access the API.
  */
-
+require('dotenv').config();
 const fs = require('fs');
-const {join, parse, dirname} = require('path');
+const {join, parse} = require('path');
+const {Translate} = require('@google-cloud/translate').v2;
+const moment = require('moment');
 
-const inDir = './i18n/';
-const out = './locales/';
-const fn = 'messages.json';
-const linksFile = './src/popup/links.json';
+const input = './i18n/';
+const refLang = 'en.json';
+const API_KEY = process.env.API_KEY;
+const projectId = process.env.PROJECT_ID;
+const translate = new Translate({projectId, key: API_KEY});
+const freezeMin = 60;
 
-const hasValue = ([_, value]) => !!value.length;
+/**
+ * Read JSON file in the input directory.
+ * @param file - file name.
+ * @returns {Object}
+ */
+const read = file =>
+    JSON.parse(fs.readFileSync(join(input, file), 'utf-8'));
 
-const chromeUrl = key => key.indexOf('_') === -1;
+/**
+ * Write a JSON file.
+ * @param file - full file name.
+ * @param obj - file contents.
+ */
+const write = (file, obj) => fs.writeFileSync(
+    file, JSON.stringify(obj, null, 2));
 
-const format = ([key, message]) => [key.replace(/[-\/]/g, '_'), {message}];
+const skip = (filename) => {
+    const ref = parse(refLang).name;
+    const tgt = parse(filename).name;
+    const mtime = fs.statSync(join(input, filename)).mtime;
+    const modDelta = moment().diff(moment(mtime), 'minutes');
+    return tgt.startsWith(ref) || modDelta < freezeMin;
+};
 
-const locales = json => Object.fromEntries(Object.entries(json).filter(hasValue).map(format));
+const main = async (files) => {
+    const rlang = read(refLang);
+    const sources = files.filter(f => !skip(f));
+    const translatable = (tl, target) =>
+        Object.entries(rlang).map(([x, def]) =>
+            target[x] === def ? x : undefined).filter(x => x);
+    const undone = sources.map(file =>
+        [file, translatable(parse(file).name, read(file))]
+    ).filter((x) => x[1].length > 0);
 
-const links = json => ({['MenuLinks']: Object.keys(json).filter(chromeUrl).sort()});
+    if (!undone.length) return console.log('Nothing to translate');
+    console.log(undone.map(([f, keys]) => [f, keys.length]));
 
-const printLocales = files => files.map(f => `"${parse(f).name}"`).join(',');
+    const [file, terms] = undone[0];
+    const initial = read(file);
+    let target = parse(file).name;
+    let text = terms.map(t => rlang[t]);
+    let [tl] = await translate.translate(text, target);
+    tl = Array.isArray(tl) ? tl : [tl];
+    const updates = Object.fromEntries(
+        tl.map((translation, i) => {
+            console.log(`${terms[i]} => ${text[i]} => (${target}) ${translation}`);
+            return [terms[i], translation];
+        }));
+    const final = {...initial, ...updates};
+    write(join(input, file), final);
+};
 
-const ensureDir = file => fs.mkdirSync(dirname(file), {recursive: true});
-
-const read = file => JSON.parse(fs.readFileSync(file, 'utf-8'));
-
-const write = (file, obj) => ensureDir(file) & fs.writeFileSync(file, JSON.stringify(obj));
-
-const save = (n, fn, json) => (n || write(linksFile, links(json))) & write(fn, locales(json));
-
-const translate = (file, n) => save(n, join(out, parse(file).name, fn), read(join(inDir, file)));
-
-const processFiles = files => files.map(translate) & console.log(files.length, ':', printLocales(files));
-
-processFiles(fs.readdirSync(inDir));
+main(fs.readdirSync(input));

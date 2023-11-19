@@ -9,10 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
@@ -22,16 +22,17 @@ jobs:
           npm run test
           npm run build
 
-      - name: Upload to Web Store
-        run: >-
-          npx cws-upload
-          ${{ secrets.CLIENT }}
-          ${{ secrets.SECRET }}
-          ${{ secrets.TOKEN }}
-          release.zip
-          jnmekaomnicdcpgdndekkmojfomifjal;
+      - name: Upload to Chrome Web Store
+        uses: mobilefirstllc/cws-publish@latest
+        with:
+          action: upload
+          client_id: ${{ secrets.CLIENT }}
+          client_secret: ${{ secrets.SECRET }}
+          refresh_token: ${{ secrets.TOKEN }}
+          extension_id: jnmekaomnicdcpgdndekkmojfomifjal
+          zip_file: release.zip
 
       - uses: ncipollo/release-action@v1
         with:
-          artifacts: "release.zip"
+          artifacts: release.zip
           token: ${{ secrets.GITHUB_TOKEN }}

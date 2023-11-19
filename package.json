@@ -1,6 +1,6 @@
 {
   "name": "shortcuts-for-chrome",
-  "version": "3.5.1",
+  "version": "3.6.0",
   "license": "MIT",
   "author": {
     "name": "Mobile First",
@@ -11,36 +11,48 @@
     "type": "git",
     "url": "https://github.com/MobileFirstLLC/shortcuts-for-chrome.git"
   },
-  "description": "Handy menu of Chrome URLs",
+  "description": "Chrome navigation menu for technical users.",
   "homepage": "https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal",
   "scripts": {
     "start": "npm run translate && xt-build -e dev -w",
     "build": "npm run translate && xt-build -e prod",
-    "docs": "xt-docs -c docs/config.json",
+    "docs": "jsdoc2md \"./src/**/*.{js, json}\" > docs/api.md",
+    "docs:watch": "mkdocs serve & nodemon --watch src -x \"npm run docs\"",
     "test": "xt-test",
-    "clean": "xt-clean",
-    "sync": "xt-sync",
     "coverage": "nyc --reporter=lcov npm run test",
-    "translate": "node translate.js",
+    "translate": "node locales.js",
+    "tl": "node translate.js",
+    "clean": "xt-clean",
     "push_tags": "git push --follow-tags origin main",
     "patch": "npx standard-version --release-as patch && npm run push_tags",
     "minor": "npx standard-version --release-as minor && npm run push_tags"
   },
   "devDependencies": {
-    "cws-publish": "2.0.6",
-    "extension-cli": "1.2.4",
-    "foodoc": "0.0.9"
+    "@google-cloud/translate": "8.0.2",
+    "cws-publish": "2.1.1",
+    "dotenv": "^16.3.1",
+    "extension-cli": "1.2.5-alpha.0",
+    "jsdoc-to-markdown": "8.0.0",
+    "moment": "^2.29.4",
+    "nodemon": "2.0.22",
+    "webpack": "5.89.0"
   },
   "babel": {
     "presets": [
       "@babel/preset-env"
     ]
   },
+  "renovate": {
+    "extends": [
+      "config:base",
+      ":disableDependencyDashboard"
+    ]
+  },
   "eslintIgnore": [
     "test/**/*"
   ],
   "standard-version": {
-    "infile": "docs/files/changelog.md"
+    "infile": "docs/changelog.md"
   },
   "xtbuild": {
     "assets": "assets/img/*",

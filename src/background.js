@@ -1,8 +1,3 @@
-/**
- * @description
- * Run background scripts
- */
-
-import Background from './background/index';
+import {Background} from './index';
 
 (() => new Background())();

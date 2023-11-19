@@ -1,33 +1,24 @@
-import Popup from '../src/popup/popup';
-import Storage from '../src/shared/storage';
+import {Popup, RecentLinks, Storage} from '../src';
 
 describe('Popup Window', function () {
 
     before(function () {
         global.popup = null;
-        global.getLink = (n) => {
-            return document.getElementsByTagName('a')[n || 0];
-        };
-        global.getLinkText = (link) => {
-            return link.getElementsByTagName('span')[0];
-        };
-        global.getLinkName = (link) => {
-            return link.getAttribute('data-name');
-        };
-        global.getLinkPin = (link) => {
-            return link.getElementsByTagName('svg')[0];
-        };
+        global.getLink = (n) =>
+            (document.getElementsByTagName('a')[n || 0]);
+        global.getLinkText = (link) =>
+            (link.getElementsByTagName('span')[0]);
+        global.getLinkName = (link) =>
+            (link.getAttribute('data-name'));
+        global.getLinkPin = (link) =>
+            (link.getElementsByTagName('svg')[0]);
         global.SimulateDragEvent = function (el, type) {
             const createTransferEvent = (type) => {
                 const ev = new window.CustomEvent(type, {});
                 ev.dataTransfer = {
-                    effectAllowed: () => {
-                    },
-                    setData: () => {
-                    },
-                    getData: () => {
-                        return el.outerHTML;
-                    }
+                    effectAllowed: () => false,
+                    setData: () => false,
+                    getData: () => (el.outerHTML)
                 };
                 return ev;
             };
@@ -98,12 +89,19 @@ describe('Popup Window', function () {
     });
 
     it('Clicking link text opens a tab', () => {
-        let link = getLink(0),
-            label = getLinkText(link),
-            url = getLinkName(link);
-        expect(chrome.runtime.sendMessage.withArgs({open: url}).notCalled, 'before click').to.be.true;
+        chrome.storage.sync.set.yields(null);
+        const link = getLink(0), label = getLinkText(link);
+        const fullURL = 'chrome://' + getLinkName(link);
+        expect(chrome.tabs.create.withArgs({url: fullURL}).notCalled, 'before click').to.be.true;
         label.onclick();
-        expect(chrome.runtime.sendMessage.withArgs({open: url}).calledOnce, 'after click').to.be.true;
+        expect(chrome.tabs.create.withArgs({url: fullURL}).calledOnce, 'after click').to.be.true;
+    });
+
+    it('Clicking link  adds opened links to recent links', () => {
+        let link = getLink(0), label = getLinkText(link), url = getLinkName(link);
+        const stub = sandbox.stub(RecentLinks, 'addRecent');
+        label.onclick();
+        expect(stub.withArgs(url).calledOnce).to.be.true;
     });
 
     describe('Link dragging', () => {
