@@ -20,16 +20,20 @@
     "docs:watch": "mkdocs serve & nodemon --watch src -x \"npm run docs\"",
     "test": "xt-test",
     "coverage": "nyc --reporter=lcov npm run test",
-    "translate": "node translate.js",
+    "translate": "node locales.js",
+    "tl": "node translate.js",
     "clean": "xt-clean",
     "push_tags": "git push --follow-tags origin main",
     "patch": "npx standard-version --release-as patch && npm run push_tags",
     "minor": "npx standard-version --release-as minor && npm run push_tags"
   },
   "devDependencies": {
+    "@google-cloud/translate": "8.0.2",
     "cws-publish": "2.1.1",
+    "dotenv": "^16.3.1",
     "extension-cli": "1.2.5-alpha.0",
     "jsdoc-to-markdown": "8.0.0",
+    "moment": "^2.29.4",
     "nodemon": "2.0.22",
     "webpack": "5.89.0"
   },
