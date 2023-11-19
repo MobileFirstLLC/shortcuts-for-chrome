@@ -97,5 +97,6 @@
     "tab-search.top-chrome": "Search Tabs",
     "topics-internals": "Topics API Internals",
     "web-app-internals": "Web App Internals",
-    "whats-new": "What's New Tab"
+    "whats-new": "What's New Tab",
+    "app-service-internals": "App Service Internals"
 }
