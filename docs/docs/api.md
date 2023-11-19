@@ -1,86 +1,140 @@
 ## Classes
 
 <dl>
+<dt><a href="#ContextMenu">ContextMenu</a></dt>
+<dd><p>The ContextMenu class adds custom options to the browser
+action&#39;s context menu (the &quot;right-click&quot; menu). The context menu
+setup must be run in the extension&#39;s background context.</p>
+</dd>
 <dt><a href="#Background">Background</a></dt>
-<dd><p>This module sets up all functionality and event handlers in the background
-context of the extension. Currently, this module sets up extension context menu.
-Instantiate background to activate this functionality.</p>
+<dd><p>The background class sets up all functionality and event
+handlers in the extension&#39;s background context. Currently, this
+module sets up the extension context menu. Instantiate <code>Background</code>
+to activate this functionality. The instantiation must be run in the
+extension&#39;s background context.</p>
 </dd>
 <dt><a href="#Dragging">Dragging</a></dt>
-<dd><p>Makes child nodes of some DOM element draggable, using native
-HTML drag and drop.</p>
+<dd><p>Makes child-nodes of some DOM Element draggable, using
+native HTML drag and drop. This class has no dependencies and can be
+applied to any collection of UI elements to make them draggable.</p>
 </dd>
 <dt><a href="#Menu">Menu</a></dt>
-<dd><p>Menu panel is a DOM elements that shows a list of links. This menu panel
-is drawn dynamically by creating all menu elements programmatically on <code>render()</code>.
-The parent instantiating the menu will call render. Parent must then add the returned
-menu to DOM tree to display it to user.</p>
+<dd><p>Menu panel is a DOM elements that shows a list of links.
+This class is responsible for creating and managing the menu.</p>
 </dd>
 <dt><a href="#Popup">Popup</a></dt>
-<dd><p>This is the main class for the popup window that shows when user
-clicks extension icon. This class is responsible for:</p>
-<ol>
-<li>saving/restoring persistent data and</li>
-<li>rendering the menu panel.</li>
-</ol>
-<p>This popup view can easily be extended to display other content, but currently it
-renders the menu panel only.</p>
+<dd><p>This is the main class of the popup window, displayed when
+user clicks the extension icon. The <code>Popup</code> class is responsible for
+saving/restoring persistent data and rendering the menu panel. This
+popup view can easily be extended to display other content, but
+currently it renders the menu panel only.</p>
+</dd>
+<dt><a href="#RecentLinks">RecentLinks</a></dt>
+<dd><p>Recent links is a list of URL that were used &quot;recently&quot;,
+based on configurable interval in
+<a href="#config-object">Config.recentIntervalMillis</a>. Unpinned recent links
+are displayed at the top of the menu. Recent links become stale after
+some time and are removed from the recent list.</p>
+</dd>
+<dt><a href="#Storage">Storage</a></dt>
+<dd><p>Application storage for persisting data. Persisted data
+includes: pinned links (user preference) and recently used links
+(based on user behavior). This storage is stored in chrome sync
+storage, which is specific to current user, and will sync between
+devices if user is signed in and sync is enabled.</p>
 </dd>
 </dl>
 
+<a name="ContextMenu"></a>
+
+## ContextMenu
+The ContextMenu class adds custom options to the browser
+action's context menu (the "right-click" menu). The context menu
+setup must be run in the extension's background context.
+
+**Kind**: global class  
+**See**: [ chrome.contextMenus](https://developer.chrome.com/docs/extensions/reference/contextMenus/)
+
+!!! info "Required Permissions"
+    This feature requires `contextMenus` permission in extension
+    manifest.  
+<a name="ContextMenu.initialize"></a>
+
+### ContextMenu.initialize()
+This method creates a context menu based on a configuration
+defined in [`Config.ContextMenuOptions`](#config-object).
+
+!!! example "Initializes a context menu"
+    ```js linenums="0"
+    import ContextMenu from 'contextMenu.js';
+
+    ContextMenu.initialize();
+    ```
+
+**Kind**: static method of [<code>ContextMenu</code>](#ContextMenu)  
 <a name="Background"></a>
 
 ## Background
-This module sets up all functionality and event handlers in the background
-context of the extension. Currently, this module sets up extension context menu.
-Instantiate background to activate this functionality.
+The background class sets up all functionality and event
+handlers in the extension's background context. Currently, this
+module sets up the extension context menu. Instantiate `Background`
+to activate this functionality. The instantiation must be run in the
+extension's background context.
 
 **Kind**: global class  
 <a name="new_Background_new"></a>
 
 ### new Background()
-Initialize background scripts.
+Initializes all background scripts.
 
-**Example**  
-```js title="Initialize background"
-new Background();
-```
+!!! example "Initialize background scripts"
+    ```js linenums="0"
+    new Background();
+    ```
+
 <a name="Dragging"></a>
 
 ## Dragging
-Makes child nodes of some DOM element draggable, using native
-HTML drag and drop.
+Makes child-nodes of some DOM Element draggable, using
+native HTML drag and drop. This class has no dependencies and can be
+applied to any collection of UI elements to make them draggable.
 
 **Kind**: global class  
 <a name="new_Dragging_new"></a>
 
 ### new Dragging(idAttribute, container, onElementRender, onDragEndCallback)
-Create a new draggable.
+Initializing a new `Draggable` specifies the parent of
+the draggable content: its immediate children become draggable;
+the id-attribute that uniquely identifies the children; and handlers
+that are called each time after the draggable content is rendered,
+and when element order changes due to dragging.
+
+!!! example "Create a new draggable"
+    ```{ .js }
+    new Draggable(
+        // id attribute of child elements
+        "data-drag-id",
+        // parent container
+        document.getElementById("drag-container"),
+        // function to call after rendering elements
+        onDragRenderCallback,
+        // callback to handle drag action
+        onOrderChangeCallback)
+    ```
 
 
 | Param | Type | Description |
 | --- | --- | --- |
 | idAttribute | <code>string</code> | For each draggable element, this attribute will provide its id, for example `id` when element is expected to have such attribute e.g. `<span id='label-1'>example</span>`. |
-| container | <code>Element</code> | The first parent of all draggable elements -> provide a DOM element reference. |
+| container | <code>Element</code> | The first parent of all draggable elements -> provide a DOM element reference. Typically, a `<div>` or similar block-level element. |
 | onElementRender | <code>function</code> | After drag events have been attached, other remaining action handlers still need to be attached. This callback function will allow initiator to bind additional events to draggable elements. |
 | onDragEndCallback | <code>function</code> | After drag is done, this callback function notifies initiator that the item order within the draggable area has changed. |
 
-**Example**  
-``` js title="Creating a new draggable"
-new Draggable(
-   "id",
-   containerElement,
-   onElementRender(element: Element) { ... },
-   onDragEndCallback(ids: Array<String>) { ... }
-);
-```
 <a name="Menu"></a>
 
 ## Menu
-Menu panel is a DOM elements that shows a list of links. This menu panel
-is drawn dynamically by creating all menu elements programmatically on `render()`.
-The parent instantiating the menu will call render. Parent must then add the returned
-menu to DOM tree to display it to user.
+Menu panel is a DOM elements that shows a list of links.
+This class is responsible for creating and managing the menu.
 
 **Kind**: global class  
 
@@ -93,7 +147,22 @@ menu to DOM tree to display it to user.
 <a name="new_Menu_new"></a>
 
 ### new Menu(getLinks, onPinToggle, onPinOrderChange, getRecent)
-Create a menu of navigation links.
+Create a menu of navigation links. This menu panel is
+drawn dynamically by creating all menu elements programmatically on
+`render()`. The parent instantiating the menu will call render.
+Parent must then add the returned menu to DOM tree to display it to
+user.
+
+!!! example "Creating and rendering a menu of links"
+    ```{ .js }
+    import Menu from './menu';
+
+    // construct a menu
+    const menu = new Menu(getLinks, onPinToggle, onPinOrderChange, getRecent);
+
+    // render the menu by appending it in document body
+    body.append(menu.render());
+    ```
 
 **Returns**: <code>Object</code> - Menu panel reference.  
 
@@ -104,10 +173,6 @@ Create a menu of navigation links.
 | onPinOrderChange | <code>function</code> | Callback function for when links are re-ordered. |
 | getRecent | <code>function</code> | Function that returns list of recent links. |
 
-**Example**  
-```js title="Create menu of links"
-const menu = new Menu(getLinks, onPinToggle, onPinOrderChange, getRecent);
-```
 <a name="Menu.name"></a>
 
 ### Menu.name ⇒ <code>string</code>
@@ -127,197 +192,39 @@ Programmatically draws the menu panel and its links.
 
 **Kind**: static method of [<code>Menu</code>](#Menu)  
 **Returns**: <code>Element</code> - DOM element representing the menu.  
-**Access**: public  
-**Example**  
-```js title="Render menu"
-// render the menu, then append to document body
-body.append(menu.render());
-```
 <a name="Popup"></a>
 
 ## Popup
-This is the main class for the popup window that shows when user
-clicks extension icon. This class is responsible for:
-
-1. saving/restoring persistent data and
-2. rendering the menu panel.
-
-This popup view can easily be extended to display other content, but currently it
-renders the menu panel only.
+This is the main class of the popup window, displayed when
+user clicks the extension icon. The `Popup` class is responsible for
+saving/restoring persistent data and rendering the menu panel. This
+popup view can easily be extended to display other content, but
+currently it renders the menu panel only.
 
 **Kind**: global class  
 <a name="new_Popup_new"></a>
 
 ### new Popup()
-Create a popup
+Instantiating a popup defaults to rendering a
+[`Menu`](#menu).
 
-**Example**  
-```js title="Create popup"
-new Popup()
-```
-<a name="ContextMenu"></a>
-
-## .ContextMenu
-This module adds custom options to Chrome browser action context menu
-
-**Kind**: static class  
-**See**: [ chrome.contextMenus API](https://developer.chrome.com/docs/extensions/reference/contextMenus/)
-
-!!! info
-    This feature requires `contextMenus` permission in extension manifest.  
-
-* [.ContextMenu](#ContextMenu)
-    * [.initialize()](#ContextMenu.initialize)
-    * [.generateOption(key, value)](#ContextMenu.generateOption)
-    * [.generateUrl(option)](#ContextMenu.generateUrl)
-    * [.contextMenuOnClick(info)](#ContextMenu.contextMenuOnClick)
-
-<a name="ContextMenu.initialize"></a>
-
-### ContextMenu.initialize()
-Initialize extension context menu
-
-**Kind**: static method of [<code>ContextMenu</code>](#ContextMenu)  
-**Example**  
-```js
-ContextMenu.initialize();
-```
-<a name="ContextMenu.generateOption"></a>
-
-### ContextMenu.generateOption(key, value)
-Make context menu option.
-
-**Kind**: static method of [<code>ContextMenu</code>](#ContextMenu)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| key | <code>string</code> | Option key/id. |
-| value | <code>Object</code> |  |
-| value.title | <code>string</code> | Option title. |
-| value.id | <code>string</code> \| <code>number</code> | Option id. |
-| value.parentId | <code>string</code> \| <code>number</code> | Option parent id. |
-
-<a name="ContextMenu.generateUrl"></a>
-
-### ContextMenu.generateUrl(option)
-Generates an absolute url for a menu option.
-
-**Kind**: static method of [<code>ContextMenu</code>](#ContextMenu)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| option | <code>Object</code> |  |
-| option.url | <code>string</code> | URL of context menu link. |
-
-<a name="ContextMenu.contextMenuOnClick"></a>
-
-### ContextMenu.contextMenuOnClick(info)
-Handles context menu option click.
-
-**Kind**: static method of [<code>ContextMenu</code>](#ContextMenu)  
-**See**
-
-- [ onClicked](https://developer.chrome.com/docs/extensions/reference/contextMenus/#event-onClicked)
-- [ OnClickData](https://developer.chrome.com/docs/extensions/reference/contextMenus/#type-OnClickData)
-
-
-| Param | Type | Description |
-| --- | --- | --- |
-| info | <code>Object</code> |  |
-| info.menuItemId | <code>string</code> \| <code>number</code> | The ID of the menu item that was clicked. |
-
-<a name="Helpers"></a>
-
-## .Helpers
-This module contains various, static menu panel helper methods.
-
-**Kind**: static class  
-
-* [.Helpers](#Helpers)
-    * [.unpinnedItemIcon](#Helpers.unpinnedItemIcon) ⇒ <code>string</code>
-    * [.pinnedItemIcon](#Helpers.pinnedItemIcon) ⇒ <code>string</code>
-    * [.generateIcon(icon, className)](#Helpers.generateIcon) ⇒ <code>string</code>
-    * [.localizedSort(linkList)](#Helpers.localizedSort) ⇒ <code>Array.&lt;Array.&lt;String&gt;&gt;</code>
-    * [.translateLabel(name)](#Helpers.translateLabel) ⇒ <code>string</code>
-    * [.appendDivider(panel)](#Helpers.appendDivider)
-
-<a name="Helpers.unpinnedItemIcon"></a>
-
-### Helpers.unpinnedItemIcon ⇒ <code>string</code>
-Generate SVG icon for unpinned link.
-
-**Kind**: static property of [<code>Helpers</code>](#Helpers)  
-**Returns**: <code>string</code> - Icon element as HTML.  
-<a name="Helpers.pinnedItemIcon"></a>
-
-### Helpers.pinnedItemIcon ⇒ <code>string</code>
-Generate SVG icon for pinned link.
-
-**Kind**: static property of [<code>Helpers</code>](#Helpers)  
-**Returns**: <code>string</code> - Icon element as HTML.  
-<a name="Helpers.generateIcon"></a>
-
-### Helpers.generateIcon(icon, className) ⇒ <code>string</code>
-Given an icon name, this function returns SVG element.
-
-**Kind**: static method of [<code>Helpers</code>](#Helpers)  
-**Returns**: <code>string</code> - Icon element as HTML string.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| icon | [<code>SVGIcons</code>](#Config.SVGIcons) | One of |
-| className | <code>string</code> | Element class. |
-
-<a name="Helpers.localizedSort"></a>
-
-### Helpers.localizedSort(linkList) ⇒ <code>Array.&lt;Array.&lt;String&gt;&gt;</code>
-Sort a list of links by their localized label.
-
-**Kind**: static method of [<code>Helpers</code>](#Helpers)  
-**Returns**: <code>Array.&lt;Array.&lt;String&gt;&gt;</code> - Sorted list of tuples, where
-
-- first element is localized label
-- second element is the original link  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| linkList | <code>Array.&lt;string&gt;</code> | List of links. |
-
-<a name="Helpers.translateLabel"></a>
-
-### Helpers.translateLabel(name) ⇒ <code>string</code>
-Get the translated dictionary value for some link.
-
-**Kind**: static method of [<code>Helpers</code>](#Helpers)  
-**Returns**: <code>string</code> - Translated label.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| name | <code>string</code> | Link name (dictionary key). |
-
-<a name="Helpers.appendDivider"></a>
-
-### Helpers.appendDivider(panel)
-Create a horizontal menu divider element and append
-it to the end of the provided panel element (in place). This method
-returns nothing. After calling this method panel will have a divider
-as its last DOM child.
-
-**Kind**: static method of [<code>Helpers</code>](#Helpers)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| panel | <code>Element</code> | DOM element where to append the divider. |
+!!! example "Create a popup"
+    ```js linenums="0"
+    new Popup();
+    ```
 
 <a name="RecentLinks"></a>
 
-## .RecentLinks
-Recent links is a list of URL that were used recently (based on config).
-They become stale after some time and then get removed from the recent list.
+## RecentLinks
+Recent links is a list of URL that were used "recently",
+based on configurable interval in
+[Config.recentIntervalMillis](#config-object). Unpinned recent links
+are displayed at the top of the menu. Recent links become stale after
+some time and are removed from the recent list.
 
-**Kind**: static class  
+**Kind**: global class  
 
-* [.RecentLinks](#RecentLinks)
+* [RecentLinks](#RecentLinks)
     * [.isStillRecent(timestamp)](#RecentLinks.isStillRecent) ⇒ <code>boolean</code>
     * [.addRecent(url, callback)](#RecentLinks.addRecent)
     * [.getRecent(callback)](#RecentLinks.getRecent)
@@ -325,27 +232,31 @@ They become stale after some time and then get removed from the recent list.
 <a name="RecentLinks.isStillRecent"></a>
 
 ### RecentLinks.isStillRecent(timestamp) ⇒ <code>boolean</code>
-Determine if some timestamp still qualifies as "recent".
+Determine if some timestamp still qualifies as
+recent.
+
+!!! example "Check if access is recent"
+    ```{ .js }
+    const timestamp = Date.now(); // capture timestamp
+
+    // ... a few minutes later:
+    console.log(RecentLinks.isStillRecent(timestamp));
+    ```
 
 **Kind**: static method of [<code>RecentLinks</code>](#RecentLinks)  
-**Returns**: <code>boolean</code> - True if link is still valid relative to current time.  
+**Returns**: <code>boolean</code> - True if link is still valid relative to
+current time.  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | timestamp | <code>number</code> | Milliseconds since epoch when link was last accessed. |
 
-**Example**  
-``` js title="Check if recent"
-const timestamp = Date.now(); // capture timestamp
-
-// ... a few minutes later:
-console.log(RecentLinks.isStillRecent(timestamp));
-```
 <a name="RecentLinks.addRecent"></a>
 
 ### RecentLinks.addRecent(url, callback)
-Mark some URL as recently used. Will either add or update the link,
-depending on if it already exists as a recently used link.
+Mark some URL as recently used. This will either add
+or update the link, depending on if it already exists as a
+recently used link.
 
 **Kind**: static method of [<code>RecentLinks</code>](#RecentLinks)  
 
@@ -357,9 +268,10 @@ depending on if it already exists as a recently used link.
 <a name="RecentLinks.getRecent"></a>
 
 ### RecentLinks.getRecent(callback)
-Get all recent items; note that this methods returns everything
-that is "not-stale". It doesn't check if link is pinned or not. That should
-be done at display time.
+Get all recent items. This method returns everything
+that qualifies as recent. It doesn't check if a link is pinned or
+not, and that should be done at display time to avoid
+duplication.
 
 **Kind**: static method of [<code>RecentLinks</code>](#RecentLinks)  
 
@@ -369,22 +281,20 @@ be done at display time.
 
 <a name="Storage"></a>
 
-## .Storage
-Application storage for persisting data. Persisted data includes:
+## Storage
+Application storage for persisting data. Persisted data
+includes: pinned links (user preference) and recently used links
+(based on user behavior). This storage is stored in chrome sync
+storage, which is specific to current user, and will sync between
+devices if user is signed in and sync is enabled.
 
-1. pinned links (user preference)
-2. recently used links (based on user behavior).
-
-This storage is stored in chrome sync storage, which is specific to current
-user, and will sync between devices if user is signed in and sync is enabled.
-
-**Kind**: static class  
+**Kind**: global class  
 **See**: [ Chrome storage](https://developer.chrome.com/docs/extensions/reference/storage/#usage)
 
-!!! info
+!!! info "Required Permissions"
     This feature requires `storage` permission in extension manifest.  
 
-* [.Storage](#Storage)
+* [Storage](#Storage)
     * [.keys](#Storage.keys) ⇒ <code>Object</code>
     * [.get(keys, callback)](#Storage.get)
     * [.save(key, value, callback)](#Storage.save)
@@ -392,13 +302,19 @@ user, and will sync between devices if user is signed in and sync is enabled.
 <a name="Storage.keys"></a>
 
 ### Storage.keys ⇒ <code>Object</code>
-List of storage keys. Only these keys can be stored in this storage.
+List of storage keys. Only these keys can be stored
+in this storage.
 
 **Kind**: static enum of [<code>Storage</code>](#Storage)  
 <a name="Storage.get"></a>
 
 ### Storage.get(keys, callback)
-Get some property from storage.
+!!! example "Get values from storage"
+    ```js linenums="0"
+    Storage.get([Storage.keys.recent], items => {
+      // do something with items
+    });
+    ```
 
 **Kind**: static method of [<code>Storage</code>](#Storage)  
 
@@ -407,16 +323,13 @@ Get some property from storage.
 | keys | <code>string</code> \| <code>Array.&lt;string&gt;</code> \| <code>Object</code> | Must be one of: A single key to get, list of keys to get, or a dictionary specifying default values (see description of the object). An empty list or object will return an empty result object. Pass in null to get the entire contents of storage. |
 | callback | <code>function</code> | Function to call with result. |
 
-**Example**  
-```js title="Get values from storage"
-Storage.get([Storage.keys.recent], items => {
-  // do something with items
-});
-```
 <a name="Storage.save"></a>
 
 ### Storage.save(key, value, callback)
-Save some property in storage.
+!!! example "Save value to storage"
+    ```{ .js linenums="0" }
+    Storage.save(Storage.keys.recent, recentObj, callback);
+    ```
 
 **Kind**: static method of [<code>Storage</code>](#Storage)  
 
@@ -426,10 +339,6 @@ Save some property in storage.
 | value | <code>\*</code> | Value to save. |
 | callback | <code>function</code> | Called after save operation has completed. |
 
-**Example**  
-```js title="Save value to storage"
-Storage.save(Storage.keys.recent, recentObj, callback);
-```
 <a name="Config"></a>
 
 ## .Config : <code>Object</code>
@@ -452,9 +361,10 @@ App icons svg paths.
 <a name="Config.ContextMenuOptions"></a>
 
 ### Config.ContextMenuOptions : <code>enum</code>
-List of options to display in the context menu. Links will open
-in new tab when width/height (ww/wh) are not specified. Otherwise, links will
-open in a window of specified size.
+List of options to display in the context menu.
+Links will open in new tab when width/height (ww/wh) are not
+specified. Otherwise, links will open in a window of specified
+size.
 
 **Kind**: static enum of [<code>Config</code>](#Config)  
 <a name="Config.recentIntervalMillis"></a>

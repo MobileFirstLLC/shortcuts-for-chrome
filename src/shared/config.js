@@ -45,8 +45,9 @@ export const Config = Object.freeze({
          * @description SVG icon for a pinned menu link.
          */
         activePin: {
-            path: 'M17,3A2,2 0 0,1 19,5V21L12,18L5,21V5C5,3.89 5.9,3 7,' +
-                '3H17M11,14L17.25,7.76L15.84,6.34L11,11.18L8.41,8.59L7,10L11,14Z'
+            path: 'M17,3A2,2 0 0,1 19,5V21L12,18L5,21V5C5,3.89' +
+                '5.9,3 7,3H17M11,14L17.25,7.76L15.84,6.34L11,' +
+                '11.18L8.41,8.59L7,10L11,14Z'
         }
     },
 
@@ -54,10 +55,12 @@ export const Config = Object.freeze({
      * @constant
      * @memberOf Config
      * @name ContextMenuOptions
-     * @enum {{title:string, url:string, id:string, parentId:string, ww: number, wh:number }}
-     * @description List of options to display in the context menu. Links will open
-     * in new tab when width/height (ww/wh) are not specified. Otherwise, links will
-     * open in a window of specified size.
+     * @enum {{title:string, url:string, id:string, parentId:string, ww:
+     * number, wh:number }}
+     * @description List of options to display in the context menu.
+     * Links will open in new tab when width/height (ww/wh) are not
+     * specified. Otherwise, links will open in a window of specified
+     * size.
      */
     ContextMenuOptions: {
         /**
