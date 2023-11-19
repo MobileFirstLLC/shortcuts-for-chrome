@@ -1,11 +1,10 @@
 site_name: Shortcuts for Chrome
 site_description: Chrome navigation menu for technical users.
-site_author: '@mobilefirstllc'
-docs_dir: ./docs
+docs_dir: docs
 site_url: https://oss.mobilefirst.me/shortcuts-for-chrome/
 repo_url: https://github.com/MobileFirstLLC/shortcuts-for-chrome
 repo_name: "shortcuts-for-chrome"
-edit_uri: blob/main/docs/
+edit_uri: blob/main/docs/pages
 use_directory_urls: true
 
 nav:
