@@ -83,49 +83,19 @@
     "net-internals": "নেট অভ্যন্তরীণ",
     "new-tab-page-third-party": "নতুন ট্যাব (তৃতীয় পক্ষ)",
     "settings/cookies": "কুকি সেটিংস",
-    "Attribution Reporting API Internals": {
-        "attribution-internals": "Attribution Reporting API Internals"
-    },
-    "Commerce Internals": {
-        "commerce-internals": "Commerce Internals"
-    },
-    "Enterprise Connectors": {
-        "connectors-internals": "Enterprise Connectors"
-    },
-    "Extensions Internals": {
-        "extensions-internals": "Extensions Internals"
-    },
-    "History Clusters Internals - Debug Logs": {
-        "history-clusters-internals": "History Clusters Internals"
-    },
-    "Metrics Internals": {
-        "metrics-internals": "Metrics Internals"
-    },
-    "Built-in new tab page": {
-        "new-tab-page": "New Tab Page"
-    },
-    "Optimization Guide Internals": {
-        "optimization-guide-internals": "Optimization Guide Internals"
-    },
-    "Private Aggregation API Internals": {
-        "private-aggregation-internals": "Private Aggregation API Internals"
-    },
-    "Profile Internals": {
-        "profile-internals": "Profiles"
-    },
-    "Suggest Debug Tool": {
-        "suggest-internals": "Suggest Debug Tool"
-    },
-    "Search Tabs": {
-        "tab-search.top-chrome": "Search Tabs"
-    },
-    "Topics API Internals": {
-        "topics-internals": "Topics API Internals"
-    },
-    "Web App Internals": {
-        "web-app-internals": "Web App Internals"
-    },
-    "What's New Tab": {
-        "whats-new": "What's New Tab"
-    }
+    "attribution-internals": "Attribution Reporting",
+    "commerce-internals": "Commerce Internals",
+    "connectors-internals": "Enterprise Connectors",
+    "extensions-internals": "Extensions Internals",
+    "history-clusters-internals": "History Clusters Internals",
+    "metrics-internals": "Metrics Internals",
+    "new-tab-page": "New Tab Page",
+    "optimization-guide-internals": "Optimization Guide Internals",
+    "private-aggregation-internals": "Private Aggregation API Internals",
+    "profile-internals": "Profiles",
+    "suggest-internals": "Suggest Debug Tool",
+    "tab-search.top-chrome": "Search Tabs",
+    "topics-internals": "Topics API Internals",
+    "web-app-internals": "Web App Internals",
+    "whats-new": "What's New Tab"
 }
