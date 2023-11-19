@@ -45,19 +45,19 @@ Chrome browser navigation is fixed and optimized for everyday use. For technical
 </a>
 </p>
 
-### Primary Features
+<h3 align="center">Primary Features</h3>
 
-- 💯 &nbsp; Find all `chrome://` URLs in one menu
+<p align="center">
+💯 &nbsp; Find all `chrome://` URLs in one menu
+<br/><br/>📍 &nbsp; Pin your favorite links for fast access
+<br/><br/>🖲️ &nbsp; Drag and drop to organize links
+<br/><br/>🌗 &nbsp; Matches browser dark/light mode
+</ul><br/><br/>
 
-- 📍 &nbsp; Pin your favorite links for fast access
-
-- 🖲️ &nbsp; Drag and drop to organize links
-
-- 🌗 &nbsp; Matches browser dark/light mode
-
-### Development & Docs
-
-**[See website](https://oss.mobilefirst.me/shortcuts-for-chrome/)**
+<h3 align="center">Development & Docs</h3>
+<p align="center">
+<strong><a href="https://oss.mobilefirst.me/shortcuts-for-chrome/">See Website</a></strong>
+</p>
 
 <table align="center"><tr><td><pre>
  ┌────────────────────────────────────────────────────────────────────────┐
@@ -76,7 +76,7 @@ Chrome browser navigation is fixed and optimized for everyday use. For technical
  | Turkish        Ukrainian      Vietnamese                               │
  └────────────────────────────────────────────────────────────────────────┘
 </pre>
-<a href="https://poeditor.com/join/project?hash=c2ihN8duR2"><strong>Help translate</strong></a>
+<p align="center"><a href="https://poeditor.com/join/project?hash=c2ihN8duR2"><strong>Help translate</strong></a></p>
 </td></tr></table> 
 
 <p align="center">
