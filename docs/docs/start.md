@@ -40,7 +40,9 @@ Howto debug a Chrome extension:
 
 ``` py title="Directories" linenums="0"
 .
-├─ .github/               # automated workflows and readme
+├─ .github/               # Repository configuration
+│  ├─ workflows/          # automated workflows
+│  └─ README.md           # GitHub readme
 ├─ assets/                # extension images and features images 
 │  ├─ img/                # extension icons 
 │  └─ *                   # webstore assets
@@ -52,12 +54,11 @@ Howto debug a Chrome extension:
 │  ├─ popup/              # extension popup view                  
 │  ├─ shared/             # shared classes and modules            
 │  └─ manifest.json       # extension manifest                    
-├─ test                   # unit tests                            
-└─ (root)                 # configuration and utility files
-   ├─ LICENSE             # Software license
-   ├─ locales.js          # utility file to format locales files
-   ├─ package.json        # configuration and dependencies 
-   └─ translate.js        # utility script for automatic translation                     
+├─ test/                  # unit tests                            
+├─ LICENSE                # Software license
+├─ locales.js             # utility file to format locales files
+├─ package.json           # configuration and dependencies 
+└─ translate.js           # utility script for automatic translation                     
 ```
 
 ## System description

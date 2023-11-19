@@ -13,8 +13,9 @@ nav:
     - Chrome Web Store: https://chrome.google.com/webstore/detail/shortcuts-for-chrome/jnmekaomnicdcpgdndekkmojfomifjal
   - Development:
     - Getting Started: start.md
-    - Translations : translate.md
+    - About Translations: translate.md
     - Source Documentation: api.md
+  - Translate: https://poeditor.com/join/project?hash=c2ihN8duR2
   - Release Notes: changelog.md
   - Privacy Policy: privacy.md
 
@@ -33,15 +34,13 @@ theme:
     - navigation.instant
     - navigation.top
     - toc.integrate
-    - content.code.annotate
   palette:
     scheme: light
     primary: indigo
     accent: blue
-
   font:
     text: Inter
-    code: Roboto Mono
+    code: Fira Mono
 
 markdown_extensions:
   - pymdownx.highlight:

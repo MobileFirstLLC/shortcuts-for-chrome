@@ -5,6 +5,10 @@
 .md-tabs  li:nth-child(2) > a {
     font-weight: 800; opacity: 1!important;}
 
+.md-typeset code,
+.highlighttable .linenos{
+    font-size: .95em;
+}
 
 #install {
     width: 90%;

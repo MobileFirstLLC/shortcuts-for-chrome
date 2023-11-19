@@ -4,12 +4,14 @@ hide:
 - toc
 ---
 
-<div class="lead">
 Shortcuts for Chrome is a customizable browser navigation menu, particularly for technical users.
 It contains links to all Chrome browser's internal pages known as "Chrome URLs".
 These links are normally hard to find, but the menu makes them easily accessible.
 The menu also allows to pin and sort favorite URLs to fit individual preferences.
-</div>
+
+This website contains the source code documentation and how to [get started](start.md) working with this project.
+You can also contribute to the [translations](translate.md).
+
 
 [![install at chrome web store][badge]{id=install}][cws]
 
