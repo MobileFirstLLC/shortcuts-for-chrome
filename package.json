@@ -14,14 +14,14 @@
   "description": "Chrome navigation menu for technical users.",
   "homepage": "https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal",
   "scripts": {
-    "start": "npm run translate && xt-build -e dev -w",
-    "build": "npm run translate && xt-build -e prod",
+    "start": "npm run locales && xt-build -e dev -w",
+    "build": "npm run locales && xt-build -e prod",
     "docs": "jsdoc2md \"./src/**/*.{js, json}\" > docs/docs/api.md",
-    "docs:watch": "mkdocs serve & nodemon --watch src -x \"npm run docs\"",
+    "docs:watch": "cd docs && mkdocs serve & nodemon --watch src -x \"npm run docs\"",
     "test": "xt-test",
     "coverage": "nyc --reporter=lcov npm run test",
-    "translate": "node locales.js",
-    "tl": "node translate.js",
+    "locales": "node utilities/locales.js",
+    "translate": "node utilities/translate.js",
     "clean": "xt-clean",
     "push_tags": "git push --follow-tags origin main",
     "patch": "npx standard-version --release-as patch && npm run push_tags",
@@ -34,7 +34,7 @@
     "extension-cli": "1.2.5-alpha.0",
     "jsdoc-to-markdown": "8.0.0",
     "moment": "^2.29.4",
-    "nodemon": "2.0.22",
+    "nodemon": "3.0.1",
     "webpack": "5.89.0"
   },
   "babel": {

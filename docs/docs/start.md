@@ -4,20 +4,20 @@ Building this application from source requires
 
 ## Building from source
 
-:octicons-git-branch-16: First clone project and install dependencies:
+:octicons-git-branch-16: First clone project and install dependencies.
 
 ``` title="Setup" linenums="0"
 git clone https://github.com/MobileFirstLLC/shortcuts-for-chrome.git
-npm install
+cd shortcuts-for-chrome && npm install
 ```
 
-:octicons-tools-16: To build a locally debuggable version, run:
+:octicons-tools-16: Build a locally debuggable version.
 
 ``` title="Build extension" linenums="0"
 npm run build
 ```
 
-:octicons-terminal-16: For a list of ather available developer commands, run:
+:octicons-terminal-16: Get a list of other available development commands.
 
 ``` title="Help" linenums="0"
 npm run
@@ -31,61 +31,80 @@ Refer to [user guide](https://oss.mobilefirst.me/extension-cli/) for further det
 
 Howto debug a Chrome extension:
 
-1. Go to `chrome://extensions`
-2. Enable developer mode
-3. Click `load unpacked` 
-4. Navigate to the extension source and choose `dist` directory
+1. Go to "Extensions" in the Shortcuts for Chrome menu.  
+   Alternatively, navigate to address `chrome://extensions`.
+2. Enable developer mode.
+3. Click `load unpacked`.
+4. Navigate to the extension source and choose `dist` directory.
 
 ## Code organization
 
-``` py title="Directories" linenums="0"
+``` { .py title="Directories & Files" linenums="0" .no-copy }
 .
 ├─ .github/               # Repository configuration
-│  ├─ workflows/          # automated workflows
+│  ├─ workflows/          # Automated workflows
 │  └─ README.md           # GitHub readme
-├─ assets/                # extension images and features images 
-│  ├─ img/                # extension icons 
-│  └─ *                   # webstore assets
-├─ docs/                  # source code documentation (this website)
-├─ i18n/                  # generated translations (edit on POEditor)  
-├─ src/                   # source code                           
-│  ├─ background/         # background scripts                    
-│  ├─ menu/               # links menu                         
-│  ├─ popup/              # extension popup view                  
-│  ├─ shared/             # shared classes and modules            
-│  └─ manifest.json       # extension manifest                    
-├─ test/                  # unit tests                            
+├─ assets/                # Extension images and features images 
+│  ├─ img/                # Extension icons 
+│  └─ *                   # Webstore assets
+├─ docs/                  # Source code documentation (this website)
+├─ i18n/                  # Generated translations (edit on POEditor)  
+├─ src/                   # Source code                           
+│  ├─ background/         # Background scripts                    
+│  ├─ menu/               # Links menu                         
+│  ├─ popup/              # Extension popup view                  
+│  ├─ shared/             # Shared classes and modules            
+│  └─ manifest.json       # Extension manifest                    
+├─ test/                  # Unit tests        
+├─ utilities/             # Utility scripts                         
+│  ├─ locales.js          # Formats locales files
+│  └─ translate.js        # Automatic translations                     
 ├─ LICENSE                # Software license
-├─ locales.js             # utility file to format locales files
-├─ package.json           # configuration and dependencies 
-└─ translate.js           # utility script for automatic translation                     
+└─ package.json           # Configuration and dependencies 
 ```
 
 ## System description
 
-The extension has a popup window, which is visible to a user.
+The extension has a popup window that is visible to a user.
 This is the primary way of interacting with the extension.
-A service worker, that manages extension background services, runs in the background context.
+A service worker, for managing extension background services, runs in the background context.
 
-When a user clicks extension icon or browser action, extension opens the extension popup window.
-Clicking a menu link opens a new browser tab.
-User can pin and unpin menu items, and sort pinned menu items using drag and drop.
-This behavior is implemented by 3 components.
+When a user clicks extension icon (the "browser action") extension opens the popup window.
+The menu contains various navigation links and clicking a link opens a new browser tab.
+User can pin and unpin menu links, and sort the pinned links by dragging and dropping.
+This behavior is implemented by three modules.
 
-1. **`src/popup`** manages the extension popup window.
-    - It saves and restores user preferences
-    - It sets the visible content rendering inside the popup window
-    - Menu is currently the only possible view, so popup always renders the menu panel
-      <br/><br/>
+:material-dock-window: **`src/popup`** manages the extension popup window.
 
-2. **`src/menu`** panel shows list of links.
-    - User can pin/unpin links and drag and drop pinned links
-    - It programmatically launches links on click
-    - It initiates capturing recently used links
-      <br/><br/>
+- It saves and restores user preferences.
+- It sets the visible content rendering inside the popup window.
+- Menu is currently the only possible view, so the popup always renders the menu.
 
-3. **`src/background`** has no visual interface, it runs in the background of the browser.
-    - It creates and manages extension context menu.
+:material-window-shutter-settings: **`src/menu`** panel shows list of links.
 
-This application has no external runtime dependencies.
+- User can pin/unpin links and drag and drop pinned links.
+- It programmatically handles link click actions.
+- It captures recently used links.
 
+:material-texture-box: **`src/background`** has no interface; it runs in the background context of the browser.
+
+- It creates and manages extension context menu.
+
+For a more detailed technical description of these modules see the [Source Code Documentation](api.md).
+
+## Dependencies
+
+The application release version contains no external dependencies.
+
+### Development dependencies
+
+| NPM Package             | Used by          | Purpose                         |
+|-------------------------|------------------|---------------------------------|
+| @google-cloud/translate | translate.js     | Automatic translation           |
+| cws-publish             | publish workflow | Publishing at Chrome Web Store  |
+| dotenv                  | translate.js     | ENV variables                   |
+| extension-cli           | src/*            | Building extension              |
+| jsdoc-to-markdown       | docs             | Building docs                   |
+| moment                  | translate.js     | File mod time                   |
+| nodemon                 | docs             | Monitor file changes to rebuild |
+| webpack                 | src/*            | Building extension              |

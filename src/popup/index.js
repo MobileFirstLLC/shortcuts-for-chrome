@@ -4,20 +4,19 @@ import Menu from '../menu';
 /**
  * @class Popup
  *
- * @description Create a popup
- * @example
- * ```js title="Create popup"
- * new Popup()
- * ```
+ * @classdesc This is the main class of the popup window, displayed when
+ * user clicks the extension icon. The `Popup` class is responsible for
+ * saving/restoring persistent data and rendering the menu panel. This
+ * popup view can easily be extended to display other content, but
+ * currently it renders the menu panel only.
  *
- * @classdesc This is the main class for the popup window that shows when user
- * clicks extension icon. This class is responsible for:
+ * @description Instantiating a popup defaults to rendering a
+ * [`Menu`](#menu).
  *
- * 1. saving/restoring persistent data and
- * 2. rendering the menu panel.
- *
- * This popup view can easily be extended to display other content, but currently it
- * renders the menu panel only.
+ * !!! example "Create a popup"
+ *     ```js linenums="0"
+ *     new Popup();
+ *     ```
  */
 export default class Popup {
 
@@ -84,7 +83,8 @@ export default class Popup {
      * @static
      * @private
      * @memberOf Popup
-     * @description Get/set the view that is currently active in the popup.
+     * @description Get/set the view that is currently active in the
+     * popup.
      * @returns {Element}
      */
     static get activeView() {
@@ -99,9 +99,9 @@ export default class Popup {
      * @static
      * @private
      * @memberOf Popup
-     * @description Get DOM element where to render content. This will also clear
-     * all existing children from that element, meaning you can always assume
-     * this element is empty.
+     * @description Get DOM element where to render content. This will
+     * also clear all existing children from that element, meaning you
+     * can always assume this element is empty.
      */
     static get renderTarget() {
         let tmp = document.body;
@@ -148,10 +148,13 @@ export default class Popup {
      * @static
      * @private
      * @memberOf Popup
-     * @description Handler for when user rearranges pins, update and save new pin order.
-     * @param {string[]} newOrder - List of link ids and their new order.
-     * @param {function?} callback - Callback function (optional); specify this callback
-     * if you need to perform some action after new order has been persisted.
+     * @description Handler for when user rearranges pins, update and
+     * save new pin order.
+     * @param {string[]} newOrder - List of link ids and their new
+     * order.
+     * @param {function?} callback - Callback function (optional);
+     * specify this callback if you need to perform some action after
+     * new order has been persisted.
      */
     static onPinOrderChange(newOrder, callback) {
         Popup.pinned = newOrder;
