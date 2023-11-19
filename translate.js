@@ -1,5 +1,6 @@
 /**
  * Utility script that converts PO Editor export files to Chrome extension locales files.
+ * It also generates the links.json used to build the popup menu.
  */
 
 const fs = require('fs');
@@ -8,7 +9,7 @@ const {join, parse, dirname} = require('path');
 const inDir = './i18n/';
 const out = './locales/';
 const fn = 'messages.json';
-const linksFile = './src/popup/links.json';
+const linksFile = './src/auto_generated/links.json';
 
 // eslint-disable-next-line no-unused-vars
 const hasValue = ([_, value]) => !!value.length;
