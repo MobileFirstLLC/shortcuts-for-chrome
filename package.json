@@ -52,7 +52,7 @@
     "test/**/*"
   ],
   "standard-version": {
-    "infile": "docs/changelog.md"
+    "infile": "docs/docs/changelog.md"
   },
   "xtbuild": {
     "assets": "assets/img/*",
