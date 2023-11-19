@@ -1,5 +1,4 @@
-import {Storage, RecentLinks} from '..';
-import {MenuLinks} from './links.json';
+import {Storage, RecentLinks, MenuLinks} from '..';
 import Menu from '../menu';
 
 /**
