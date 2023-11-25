@@ -21,16 +21,22 @@ jobs:
         run: |
           npm run test
           npm run build
-
-      - name: Upload to Chrome Web Store
-        uses: mobilefirstllc/cws-publish@latest
+      - name: 'Preserve Artifact'
+        uses: actions/upload-artifact@v3
         with:
-          action: upload
-          client_id: ${{ secrets.CLIENT }}
-          client_secret: ${{ secrets.SECRET }}
-          refresh_token: ${{ secrets.TOKEN }}
-          extension_id: jnmekaomnicdcpgdndekkmojfomifjal
-          zip_file: release.zip
+          name: release
+          path: release.zip
+          retention-days: 7
+
+#      - name: Upload to Chrome Web Store
+#        uses: mobilefirstllc/cws-publish@latest
+#        with:
+#          action: upload
+#          client_id: ${{ secrets.CLIENT }}
+#          client_secret: ${{ secrets.SECRET }}
+#          refresh_token: ${{ secrets.TOKEN }}
+#          extension_id: jnmekaomnicdcpgdndekkmojfomifjal
+#          zip_file: release.zip
 
       - uses: ncipollo/release-action@v1
         with:

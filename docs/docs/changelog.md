@@ -6,8 +6,15 @@ hide:
 
 # Changelog
 
-All notable changes to this project will be documented in this file. 
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.7.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.6.0...v3.7.0) (2023-11-19)
+
+* Remove share options from context menu in [96](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/96)
+* Update the chrome urls list in [99](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/99)
+* Update translations in [101](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/101)
+* Update docs and test in [104](https://github.com/MobileFirstLLC/shortcuts-for-chrome/pull/104)
+* Update dev dependencies
 
 ### [3.6.0](https://github.com/MobileFirstLLC/shortcuts-for-chrome/compare/v3.5.1...v3.6.0) (2021-11-21)
 
