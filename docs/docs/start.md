@@ -98,13 +98,13 @@ The application release version contains no external dependencies.
 
 ### Development dependencies
 
-| NPM Package             | Used by          | Purpose                         |
-|-------------------------|------------------|---------------------------------|
-| @google-cloud/translate | translate.js     | Automatic translation           |
-| cws-publish             | publish workflow | Publishing at Chrome Web Store  |
-| dotenv                  | translate.js     | ENV variables                   |
-| extension-cli           | src/*            | Building extension              |
-| jsdoc-to-markdown       | docs             | Building docs                   |
-| moment                  | translate.js     | File mod time                   |
-| nodemon                 | docs             | Monitor file changes to rebuild |
-| webpack                 | src/*            | Building extension              |
+| Task        | NPM Package             | Purpose                        |
+|-------------|-------------------------|--------------------------------|
+| Translation | @google-cloud/translate | Translation API                |
+|             | dotenv                  | ENV variables                  |
+|             | moment                  | File modification time         |
+| Docs        | jsdoc-to-markdown       | Building docs                  |
+|             | nodemon                 | Monitor js-file changes        |
+| Build       | extension-cli           | Building extension             |
+|             | webpack                 | Web module bundling            |
+| Publishing  | cws-publish             | Publishing at Chrome Web Store |
