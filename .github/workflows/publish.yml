@@ -22,7 +22,7 @@ jobs:
           npm run test
           npm run build
       - name: 'Preserve Artifact'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: release
           path: release.zip
