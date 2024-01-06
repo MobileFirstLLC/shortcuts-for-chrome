@@ -30,7 +30,9 @@
 </a>
 </p>
 
-Chrome browser navigation is fixed and optimized for everyday use. For technical users, who want to inspect what is happening with indexedDB, service workers, Bluetooth devices etc.; this menu adds shortcuts to those hard-to-find browser pages. This menu lists all Chrome URLs in a single, flat, customizable menu.
+Chrome browser navigation is fixed and optimized for everyday use. 
+For technical users, who want to inspect what is happening with indexedDB, service workers, Bluetooth devices etc., this menu adds shortcuts to those hard-to-find browser pages. 
+This menu lists all Chrome URLs in a single, flat, customizable menu.
 
 <p align="center">
 <img width="650" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/screenshot.png' />
@@ -47,7 +49,7 @@ Chrome browser navigation is fixed and optimized for everyday use. For technical
 <h3 align="center">Primary Features</h3>
 
 <p align="center">
-💯 &nbsp; Find all `chrome://` URLs in one menu
+💯 &nbsp; Find all <code>chrome://</code> URLs in one menu
 <br/><br/>📍 &nbsp; Pin your favorite links for fast access
 <br/><br/>🖲️ &nbsp; Drag and drop to organize links
 <br/><br/>🌗 &nbsp; Matches browser dark/light mode
