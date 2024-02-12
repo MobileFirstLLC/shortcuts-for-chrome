@@ -10,15 +10,6 @@
 <h3 align="center">Chrome navigation menu for technical users</h3>
 
 <p align="center">
-<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
-<img src="https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal?label=latest%20release&color=2196F3&style=flat" alt="version"/>
-</a> 
-<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
-<img src="https://img.shields.io/chrome-web-store/users/jnmekaomnicdcpgdndekkmojfomifjal?style=flat" alt="users">
-</a> 
-<a href="https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal">
-<img src="https://img.shields.io/chrome-web-store/stars/jnmekaomnicdcpgdndekkmojfomifjal?style=flat" alt="rating" />
-</a>
 <a href="https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/test.yml">
 <img alt="Build" src="https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/test.yml/badge.svg">
 </a>
