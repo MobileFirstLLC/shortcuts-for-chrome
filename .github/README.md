@@ -44,7 +44,7 @@ This menu lists all Chrome URLs in a single, flat, customizable menu.
 <br/><br/>📍 &nbsp; Pin your favorite links for fast access
 <br/><br/>🖲️ &nbsp; Drag and drop to organize links
 <br/><br/>🌗 &nbsp; Matches browser dark/light mode
-</ul><br/><br/>
+</p><br/><br/>
 
 <h3 align="center">Development & Docs</h3>
 <p align="center"><strong><a href="https://oss.mobilefirst.me/shortcuts-for-chrome/">See Website</a></strong></p>
