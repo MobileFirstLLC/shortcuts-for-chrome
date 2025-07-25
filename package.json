@@ -30,7 +30,7 @@
   "devDependencies": {
     "@google-cloud/translate": "9.1.0",
     "cws-publish": "2.1.1",
-    "dotenv": "^16.4.5",
+    "dotenv": "^17.0.0",
     "extension-cli": "1.2.5-alpha.0",
     "file-set": "^6.0.0",
     "jsdoc-to-markdown": "9.1.1",
