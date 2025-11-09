@@ -1,0 +1,36 @@
+.md-content__inner {
+    padding-bottom: 2rem
+}
+
+.md-tabs  li > a {
+    font-weight: 600; opacity: 1!important;
+}
+
+#install {
+    width: 90%;
+    max-width: 256px;
+    margin: 2rem auto;
+    display: block;
+}
+
+#preview {
+    display: block;
+    margin: 3rem auto;
+}
+
+#langs{
+    line-height: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#langs span{
+    display: inline-block;
+    width: 16.5%;
+    min-width: 150px;
+}
+
+.POButton{
+    margin-top:2rem;
+    margin-bottom: 1rem;
+}

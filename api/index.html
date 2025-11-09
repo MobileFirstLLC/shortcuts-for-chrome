@@ -1,0 +1,1297 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Chrome navigation menu for technical users.">
+      
+      
+      
+        <link rel="canonical" href="https://oss.mobilefirst.me/shortcuts-for-chrome/api/">
+      
+      
+        <link rel="prev" href="../dev/">
+      
+      
+        <link rel="next" href="../translate/">
+      
+      
+      <link rel="icon" href="/shortcuts-for-chrome/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Source Code Docs - Shortcuts for Chrome</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CFira+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Fira Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="light" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#classes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Shortcuts for Chrome" class="md-header__button md-logo" aria-label="Shortcuts for Chrome" data-md-component="logo">
+      
+  <img src="/shortcuts-for-chrome/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Shortcuts for Chrome
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Source Code Docs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/MobileFirstLLC/shortcuts-for-chrome" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    shortcuts-for-chrome
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="https://chrome.google.com/webstore/detail/shortcuts-for-chrome/jnmekaomnicdcpgdndekkmojfomifjal" class="md-tabs__link">
+          
+  
+  
+  Install
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../description/" class="md-tabs__link">
+          
+  
+  
+  Development
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../translate/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Translate
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../changelog/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Release Notes
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../privacy/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Privacy Policy
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Shortcuts for Chrome" class="md-nav__button md-logo" aria-label="Shortcuts for Chrome" data-md-component="logo">
+      
+  <img src="/shortcuts-for-chrome/favicon.png" alt="logo">
+
+    </a>
+    Shortcuts for Chrome
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/MobileFirstLLC/shortcuts-for-chrome" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    shortcuts-for-chrome
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Install
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Install
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://chrome.google.com/webstore/detail/shortcuts-for-chrome/jnmekaomnicdcpgdndekkmojfomifjal" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chrome Web Store
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Development
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dev/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Source Code Docs
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Source Code Docs
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contextmenu" class="md-nav__link">
+    <span class="md-ellipsis">
+      ContextMenu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dragging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dragging
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#popup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recentlinks" class="md-nav__link">
+    <span class="md-ellipsis">
+      RecentLinks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      .Config : Object
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/MobileFirstLLC/shortcuts-for-chrome/blob/main/LICENSE" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../translate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Translate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release Notes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Privacy Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Source Code Docs</h1>
+
+<h2 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h2>
+<dl>
+<dt><a href="#ContextMenu">ContextMenu</a></dt>
+<dd><p>The ContextMenu class adds custom options to the browser
+action&#39;s context menu (the &quot;right-click&quot; menu). The context menu
+setup must be run in the extension&#39;s background context.</p>
+</dd>
+<dt><a href="#Background">Background</a></dt>
+<dd><p>The background class sets up all functionality and event
+handlers in the extension&#39;s background context. Currently, this
+module sets up the extension context menu. Instantiate <code>Background</code>
+to activate this functionality. The instantiation must be run in the
+extension&#39;s background context.</p>
+</dd>
+<dt><a href="#Dragging">Dragging</a></dt>
+<dd><p>Makes child-nodes of some DOM Element draggable, using
+native HTML drag and drop. This class has no dependencies and can be
+applied to any collection of UI elements to make them draggable.</p>
+</dd>
+<dt><a href="#Menu">Menu</a></dt>
+<dd><p>Menu panel is a DOM elements that shows a list of links.
+This class is responsible for creating and managing the menu.</p>
+</dd>
+<dt><a href="#Popup">Popup</a></dt>
+<dd><p>This is the main class of the popup window, displayed when
+user clicks the extension icon. The <code>Popup</code> class is responsible for
+saving/restoring persistent data and rendering the menu panel. This
+popup view can easily be extended to display other content, but
+currently it renders the menu panel only.</p>
+</dd>
+<dt><a href="#RecentLinks">RecentLinks</a></dt>
+<dd><p>Recent links is a list of URL that were used &quot;recently&quot;,
+based on configurable interval in
+<a href="#config-object">Config.recentIntervalMillis</a>. Unpinned recent links
+are displayed at the top of the menu. Recent links become stale after
+some time and are removed from the recent list.</p>
+</dd>
+<dt><a href="#Storage">Storage</a></dt>
+<dd><p>Application storage for persisting data. Persisted data
+includes: pinned links (user preference) and recently used links
+(based on user behavior). This storage is stored in chrome sync
+storage, which is specific to current user, and will sync between
+devices if user is signed in and sync is enabled.</p>
+</dd>
+</dl>
+
+<p><a name="ContextMenu"></a></p>
+<h2 id="contextmenu">ContextMenu<a class="headerlink" href="#contextmenu" title="Permanent link">&para;</a></h2>
+<p>The ContextMenu class adds custom options to the browser
+action's context menu (the "right-click" menu). The context menu
+setup must be run in the extension's background context.</p>
+<p><strong>Kind</strong>: global class<br />
+<strong>See</strong>: <a href="https://developer.chrome.com/docs/extensions/reference/contextMenus/"> chrome.contextMenus</a></p>
+<div class="admonition info">
+<p class="admonition-title">Required Permissions</p>
+<p>This feature requires <code>contextMenus</code> permission in extension
+manifest.  </p>
+</div>
+<p><a name="ContextMenu.initialize"></a></p>
+<h3 id="contextmenuinitialize">ContextMenu.initialize()<a class="headerlink" href="#contextmenuinitialize" title="Permanent link">&para;</a></h3>
+<p>This method creates a context menu based on a configuration
+defined in <a href="#config-object"><code>Config.ContextMenuOptions</code></a>.</p>
+<div class="admonition example">
+<p class="admonition-title">Initializes a context menu</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">ContextMenu</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;contextMenu.js&#39;</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">ContextMenu</span><span class="p">.</span><span class="nx">initialize</span><span class="p">();</span>
+</code></pre></div>
+</div>
+<p><strong>Kind</strong>: static method of <a href="#ContextMenu"><code>ContextMenu</code></a><br />
+<a name="Background"></a></p>
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
+<p>The background class sets up all functionality and event
+handlers in the extension's background context. Currently, this
+module sets up the extension context menu. Instantiate <code>Background</code>
+to activate this functionality. The instantiation must be run in the
+extension's background context.</p>
+<p><strong>Kind</strong>: global class<br />
+<a name="new_Background_new"></a></p>
+<h3 id="new-background">new Background()<a class="headerlink" href="#new-background" title="Permanent link">&para;</a></h3>
+<p>Initializes all background scripts.</p>
+<div class="admonition example">
+<p class="admonition-title">Initialize background scripts</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="ow">new</span><span class="w"> </span><span class="nx">Background</span><span class="p">();</span>
+</code></pre></div>
+</div>
+<p><a name="Dragging"></a></p>
+<h2 id="dragging">Dragging<a class="headerlink" href="#dragging" title="Permanent link">&para;</a></h2>
+<p>Makes child-nodes of some DOM Element draggable, using
+native HTML drag and drop. This class has no dependencies and can be
+applied to any collection of UI elements to make them draggable.</p>
+<p><strong>Kind</strong>: global class<br />
+<a name="new_Dragging_new"></a></p>
+<h3 id="new-draggingidattribute-container-onelementrender-ondragendcallback">new Dragging(idAttribute, container, onElementRender, onDragEndCallback)<a class="headerlink" href="#new-draggingidattribute-container-onelementrender-ondragendcallback" title="Permanent link">&para;</a></h3>
+<p>Initializing a new <code>Draggable</code> specifies the parent of
+the draggable content: its immediate children become draggable;
+the id-attribute that uniquely identifies the children; and handlers
+that are called each time after the draggable content is rendered,
+and when element order changes due to dragging.</p>
+<div class="admonition example">
+<p class="admonition-title">Create a new draggable</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span>
+<span class="normal"><a href="#__codelineno-2-8">8</a></span>
+<span class="normal"><a href="#__codelineno-2-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="ow">new</span><span class="w"> </span><span class="nx">Draggable</span><span class="p">(</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="c1">// id attribute of child elements</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="s2">&quot;data-drag-id&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">    </span><span class="c1">// parent container</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;drag-container&quot;</span><span class="p">),</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">    </span><span class="c1">// function to call after rendering elements</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">    </span><span class="nx">onDragRenderCallback</span><span class="p">,</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">    </span><span class="c1">// callback to handle drag action</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">    </span><span class="nx">onOrderChangeCallback</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>idAttribute</td>
+<td><code>string</code></td>
+<td>For each draggable element, this attribute will provide its id, for example <code>id</code> when element is expected to have such attribute e.g. <code>&lt;span id='label-1'&gt;example&lt;/span&gt;</code>.</td>
+</tr>
+<tr>
+<td>container</td>
+<td><code>Element</code></td>
+<td>The first parent of all draggable elements -&gt; provide a DOM element reference. Typically, a <code>&lt;div&gt;</code> or similar block-level element.</td>
+</tr>
+<tr>
+<td>onElementRender</td>
+<td><code>function</code></td>
+<td>After drag events have been attached, other remaining action handlers still need to be attached. This callback function will allow initiator to bind additional events to draggable elements.</td>
+</tr>
+<tr>
+<td>onDragEndCallback</td>
+<td><code>function</code></td>
+<td>After drag is done, this callback function notifies initiator that the item order within the draggable area has changed.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="Menu"></a></p>
+<h2 id="menu">Menu<a class="headerlink" href="#menu" title="Permanent link">&para;</a></h2>
+<p>Menu panel is a DOM elements that shows a list of links.
+This class is responsible for creating and managing the menu.</p>
+<p><strong>Kind</strong>: global class  </p>
+<ul>
+<li><a href="#Menu">Menu</a><ul>
+<li><a href="#new_Menu_new">new Menu(getLinks, onPinToggle, onPinOrderChange, getRecent)</a></li>
+<li><a href="#Menu.name">.name</a> ⇒ <code>string</code></li>
+<li><a href="#Menu.idAttr">.idAttr</a> ⇒ <code>string</code></li>
+<li><a href="#Menu.render">.render()</a> ⇒ <code>Element</code></li>
+</ul>
+</li>
+</ul>
+<p><a name="new_Menu_new"></a></p>
+<h3 id="new-menugetlinks-onpintoggle-onpinorderchange-getrecent">new Menu(getLinks, onPinToggle, onPinOrderChange, getRecent)<a class="headerlink" href="#new-menugetlinks-onpintoggle-onpinorderchange-getrecent" title="Permanent link">&para;</a></h3>
+<p>Create a menu of navigation links. This menu panel is
+drawn dynamically by creating all menu elements programmatically on
+<code>render()</code>. The parent instantiating the menu will call render.
+Parent must then add the returned menu to DOM tree to display it to
+user.</p>
+<div class="admonition example">
+<p class="admonition-title">Creating and rendering a menu of links</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span>
+<span class="normal"><a href="#__codelineno-3-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">Menu</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./menu&#39;</span><span class="p">;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="c1">// construct a menu</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">menu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Menu</span><span class="p">(</span><span class="nx">getLinks</span><span class="p">,</span><span class="w"> </span><span class="nx">onPinToggle</span><span class="p">,</span><span class="w"> </span><span class="nx">onPinOrderChange</span><span class="p">,</span><span class="w"> </span><span class="nx">getRecent</span><span class="p">);</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="c1">// render the menu by appending it in document body</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="nx">body</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">menu</span><span class="p">.</span><span class="nx">render</span><span class="p">());</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<p><strong>Returns</strong>: <code>Object</code> - Menu panel reference.  </p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>getLinks</td>
+<td><code>function</code></td>
+<td>Function that returns all links.</td>
+</tr>
+<tr>
+<td>onPinToggle</td>
+<td><code>function</code></td>
+<td>Callback function for when link is pinned/unpinned.</td>
+</tr>
+<tr>
+<td>onPinOrderChange</td>
+<td><code>function</code></td>
+<td>Callback function for when links are re-ordered.</td>
+</tr>
+<tr>
+<td>getRecent</td>
+<td><code>function</code></td>
+<td>Function that returns list of recent links.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="Menu.name"></a></p>
+<h3 id="menuname-string">Menu.name ⇒ <code>string</code><a class="headerlink" href="#menuname-string" title="Permanent link">&para;</a></h3>
+<p>Name of this menu view.</p>
+<p><strong>Kind</strong>: static property of <a href="#Menu"><code>Menu</code></a><br />
+<a name="Menu.idAttr"></a></p>
+<h3 id="menuidattr-string">Menu.idAttr ⇒ <code>string</code><a class="headerlink" href="#menuidattr-string" title="Permanent link">&para;</a></h3>
+<p>DOM attribute for getting the unique id of a link.</p>
+<p><strong>Kind</strong>: static property of <a href="#Menu"><code>Menu</code></a><br />
+<a name="Menu.render"></a></p>
+<h3 id="menurender-element">Menu.render() ⇒ <code>Element</code><a class="headerlink" href="#menurender-element" title="Permanent link">&para;</a></h3>
+<p>Programmatically draws the menu panel and its links.</p>
+<p><strong>Kind</strong>: static method of <a href="#Menu"><code>Menu</code></a><br />
+<strong>Returns</strong>: <code>Element</code> - DOM element representing the menu.<br />
+<a name="Popup"></a></p>
+<h2 id="popup">Popup<a class="headerlink" href="#popup" title="Permanent link">&para;</a></h2>
+<p>This is the main class of the popup window, displayed when
+user clicks the extension icon. The <code>Popup</code> class is responsible for
+saving/restoring persistent data and rendering the menu panel. This
+popup view can easily be extended to display other content, but
+currently it renders the menu panel only.</p>
+<p><strong>Kind</strong>: global class<br />
+<a name="new_Popup_new"></a></p>
+<h3 id="new-popup">new Popup()<a class="headerlink" href="#new-popup" title="Permanent link">&para;</a></h3>
+<p>Instantiating a popup defaults to rendering a
+<a href="#menu"><code>Menu</code></a>.</p>
+<div class="admonition example">
+<p class="admonition-title">Create a popup</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="ow">new</span><span class="w"> </span><span class="nx">Popup</span><span class="p">();</span>
+</code></pre></div>
+</div>
+<p><a name="RecentLinks"></a></p>
+<h2 id="recentlinks">RecentLinks<a class="headerlink" href="#recentlinks" title="Permanent link">&para;</a></h2>
+<p>Recent links is a list of URL that were used "recently",
+based on configurable interval in
+<a href="#config-object">Config.recentIntervalMillis</a>. Unpinned recent links
+are displayed at the top of the menu. Recent links become stale after
+some time and are removed from the recent list.</p>
+<p><strong>Kind</strong>: global class  </p>
+<ul>
+<li><a href="#RecentLinks">RecentLinks</a><ul>
+<li><a href="#RecentLinks.isStillRecent">.isStillRecent(timestamp)</a> ⇒ <code>boolean</code></li>
+<li><a href="#RecentLinks.addRecent">.addRecent(url, callback)</a></li>
+<li><a href="#RecentLinks.getRecent">.getRecent(callback)</a></li>
+</ul>
+</li>
+</ul>
+<p><a name="RecentLinks.isStillRecent"></a></p>
+<h3 id="recentlinksisstillrecenttimestamp-boolean">RecentLinks.isStillRecent(timestamp) ⇒ <code>boolean</code><a class="headerlink" href="#recentlinksisstillrecenttimestamp-boolean" title="Permanent link">&para;</a></h3>
+<p>Determine if some timestamp still qualifies as
+recent.</p>
+<div class="admonition example">
+<p class="admonition-title">Check if access is recent</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">timestamp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">();</span><span class="w"> </span><span class="c1">// capture timestamp</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="c1">// ... a few minutes later:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">RecentLinks</span><span class="p">.</span><span class="nx">isStillRecent</span><span class="p">(</span><span class="nx">timestamp</span><span class="p">));</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<p><strong>Kind</strong>: static method of <a href="#RecentLinks"><code>RecentLinks</code></a><br />
+<strong>Returns</strong>: <code>boolean</code> - True if link is still valid relative to
+current time.  </p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp</td>
+<td><code>number</code></td>
+<td>Milliseconds since epoch when link was last accessed.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="RecentLinks.addRecent"></a></p>
+<h3 id="recentlinksaddrecenturl-callback">RecentLinks.addRecent(url, callback)<a class="headerlink" href="#recentlinksaddrecenturl-callback" title="Permanent link">&para;</a></h3>
+<p>Mark some URL as recently used. This will either add
+or update the link, depending on if it already exists as a
+recently used link.</p>
+<p><strong>Kind</strong>: static method of <a href="#RecentLinks"><code>RecentLinks</code></a>  </p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td><code>string</code></td>
+<td>Link URL.</td>
+</tr>
+<tr>
+<td>callback</td>
+<td><code>function</code></td>
+<td>Handler for when function is done.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="RecentLinks.getRecent"></a></p>
+<h3 id="recentlinksgetrecentcallback">RecentLinks.getRecent(callback)<a class="headerlink" href="#recentlinksgetrecentcallback" title="Permanent link">&para;</a></h3>
+<p>Get all recent items. This method returns everything
+that qualifies as recent. It doesn't check if a link is pinned or
+not, and that should be done at display time to avoid
+duplication.</p>
+<p><strong>Kind</strong>: static method of <a href="#RecentLinks"><code>RecentLinks</code></a>  </p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>callback</td>
+<td><code>function</code></td>
+<td>Result handler</td>
+</tr>
+</tbody>
+</table>
+<p><a name="Storage"></a></p>
+<h2 id="storage">Storage<a class="headerlink" href="#storage" title="Permanent link">&para;</a></h2>
+<p>Application storage for persisting data. Persisted data
+includes: pinned links (user preference) and recently used links
+(based on user behavior). This storage is stored in chrome sync
+storage, which is specific to current user, and will sync between
+devices if user is signed in and sync is enabled.</p>
+<p><strong>Kind</strong>: global class<br />
+<strong>See</strong>: <a href="https://developer.chrome.com/docs/extensions/reference/storage/#usage"> Chrome storage</a></p>
+<div class="admonition info">
+<p class="admonition-title">Required Permissions</p>
+<p>This feature requires <code>storage</code> permission in extension manifest.  </p>
+</div>
+<ul>
+<li><a href="#Storage">Storage</a><ul>
+<li><a href="#Storage.keys">.keys</a> ⇒ <code>Object</code></li>
+<li><a href="#Storage.get">.get(keys, callback)</a></li>
+<li><a href="#Storage.save">.save(key, value, callback)</a></li>
+</ul>
+</li>
+</ul>
+<p><a name="Storage.keys"></a></p>
+<h3 id="storagekeys-object">Storage.keys ⇒ <code>Object</code><a class="headerlink" href="#storagekeys-object" title="Permanent link">&para;</a></h3>
+<p>List of storage keys. Only these keys can be stored
+in this storage.</p>
+<p><strong>Kind</strong>: static enum of <a href="#Storage"><code>Storage</code></a><br />
+<a name="Storage.get"></a></p>
+<h3 id="storagegetkeys-callback">Storage.get(keys, callback)<a class="headerlink" href="#storagegetkeys-callback" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Get values from storage</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nx">Storage</span><span class="p">.</span><span class="nx">get</span><span class="p">([</span><span class="nx">Storage</span><span class="p">.</span><span class="nx">keys</span><span class="p">.</span><span class="nx">recent</span><span class="p">],</span><span class="w"> </span><span class="nx">items</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="c1">// do something with items</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">});</span>
+</code></pre></div>
+</div>
+<p><strong>Kind</strong>: static method of <a href="#Storage"><code>Storage</code></a>  </p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>keys</td>
+<td><code>string</code> | <code>Array.&lt;string&gt;</code> | <code>Object</code></td>
+<td>Must be one of: A single key to get, list of keys to get, or a dictionary specifying default values (see description of the object). An empty list or object will return an empty result object. Pass in null to get the entire contents of storage.</td>
+</tr>
+<tr>
+<td>callback</td>
+<td><code>function</code></td>
+<td>Function to call with result.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="Storage.save"></a></p>
+<h3 id="storagesavekey-value-callback">Storage.save(key, value, callback)<a class="headerlink" href="#storagesavekey-value-callback" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Save value to storage</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nx">Storage</span><span class="p">.</span><span class="nx">save</span><span class="p">(</span><span class="nx">Storage</span><span class="p">.</span><span class="nx">keys</span><span class="p">.</span><span class="nx">recent</span><span class="p">,</span><span class="w"> </span><span class="nx">recentObj</span><span class="p">,</span><span class="w"> </span><span class="nx">callback</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<p><strong>Kind</strong>: static method of <a href="#Storage"><code>Storage</code></a>  </p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>key</td>
+<td><code>string</code></td>
+<td>One of  <a href="#Storage.keys">keys</a>.</td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>*</code></td>
+<td>Value to save.</td>
+</tr>
+<tr>
+<td>callback</td>
+<td><code>function</code></td>
+<td>Called after save operation has completed.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="Config"></a></p>
+<h2 id="config-object">.Config : <code>Object</code><a class="headerlink" href="#config-object" title="Permanent link">&para;</a></h2>
+<p>Application configurations.</p>
+<p><strong>Kind</strong>: static constant<br />
+<strong>Read only</strong>: true  </p>
+<ul>
+<li><a href="#Config">.Config</a> : <code>Object</code><ul>
+<li><a href="#Config.SVGIcons">.SVGIcons</a> : <code>enum</code></li>
+<li><a href="#Config.ContextMenuOptions">.ContextMenuOptions</a> : <code>enum</code></li>
+<li><a href="#Config.recentIntervalMillis">.recentIntervalMillis</a> : <code>number</code></li>
+</ul>
+</li>
+</ul>
+<p><a name="Config.SVGIcons"></a></p>
+<h3 id="configsvgicons-enum">Config.SVGIcons : <code>enum</code><a class="headerlink" href="#configsvgicons-enum" title="Permanent link">&para;</a></h3>
+<p>App icons svg paths.</p>
+<p><strong>Kind</strong>: static enum of <a href="#Config"><code>Config</code></a><br />
+<a name="Config.ContextMenuOptions"></a></p>
+<h3 id="configcontextmenuoptions-enum">Config.ContextMenuOptions : <code>enum</code><a class="headerlink" href="#configcontextmenuoptions-enum" title="Permanent link">&para;</a></h3>
+<p>List of options to display in the context menu.
+Links will open in new tab when width/height (ww/wh) are not
+specified. Otherwise, links will open in a window of specified
+size.</p>
+<p><strong>Kind</strong>: static enum of <a href="#Config"><code>Config</code></a><br />
+<a name="Config.recentIntervalMillis"></a></p>
+<h3 id="configrecentintervalmillis-number">Config.recentIntervalMillis : <code>number</code><a class="headerlink" href="#configrecentintervalmillis-number" title="Permanent link">&para;</a></h3>
+<p>When a link clicked within last X milliseconds,
+it is considered "recently used".</p>
+<p><strong>Kind</strong>: static constant of <a href="#Config"><code>Config</code></a>  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.code.copy", "navigation.tabs", "navigation.expand", "navigation.sections", "navigation.instant", "navigation.top", "toc.integrate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
