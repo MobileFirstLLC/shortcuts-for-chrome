@@ -1,7 +1,7 @@
 {
     "app_name": "Shortcuts for Chrome",
     "app_short_name": "Shortcuts for Chrome",
-    "app_desc": "Navigation menu of Chrome URLs: internal pages of the Google Chrome browser.",
+    "app_desc": "A customizable navigation menu of Chrome URLs.",
     "ui_recently_used": "Recently used",
     "accessibility": "Accessibility Internals",
     "apps": "Apps",
