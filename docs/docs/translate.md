@@ -5,7 +5,7 @@ hide:
 ---
 
 Shortcuts for Chrome supports multiple languages and locales.
-The application matches the language preference of the user's browser.
+The extension language automatically matches the language setting of the browser.
 The translations are updated with each release.
 
 We thank [**all translation contributors**](https://poeditor.com/contributors/project?id_project=440791)
