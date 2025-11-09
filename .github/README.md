@@ -5,7 +5,7 @@
 [![Chrome Web Store Version](https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal)](https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal)
 [![Static Badge](https://img.shields.io/badge/available-FF4081?style=flat&label=docs%20%E2%99%A1&labelColor=333333)][docs]
 
-> A Chrome browser navigation menu for technical users.
+> A customizable Chrome browser navigation menu for technical users.
 
 By default, Chrome browser navigation is designed for everyday use. 
 The default navigation is suboptimal to users who want to access more technical browser features like indexedDB, service workers, Bluetooth internals, etc.

@@ -6,7 +6,7 @@ hide:
 
 # Shortcuts for Chrome
 
-**A customizable browser navigation menu for technical users.**
+*A customizable Chrome browser navigation menu for technical users.**
 
 The menu contains links to technical browser features called _Chrome URLs_.
 Normally, Chrome URLs are hard to find, but this menu makes them easily accessible.
