@@ -34,9 +34,9 @@ Shortcuts for Chrome is available for [installation at the Chrome Web Store][ins
 
 Shortcuts for Chrome is multilingual! 
 
-Ideally, the menu should list the available shortcuts in the user's native language.
-Certain languages are translated with automated APIs, and may not be correct to native speakers.
-If you would like to help improve the translation quality in your native language, participate at [PO Editor][i18n] — no programming experience required.
+Ideally, the menu displays shortcuts in the user's native language.
+Certain languages are translated with automated APIs, and these translations may not be correct to native speakers.
+If you would like to help improve the translation quality in your native language, participate at [PO Editor][i18n] — no programming experience is needed.
 
     ┌────────────────────────────────────────────────────────────────────────┐
     │                          SUPPORTED  LANGUAGES                          │
@@ -58,7 +58,6 @@ If you would like to help improve the translation quality in your native languag
 
 Detailed technical documentation is available at [this website][docs].
 
----
 
 <img width="650" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/preview.gif' />
 
