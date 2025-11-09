@@ -4,21 +4,18 @@ hide:
 - toc
 ---
 
-Shortcuts for Chrome is internationalized to support multiple languages and locales of its users.
-The application presents in the same language as the user's browser.
-The initial translations are machine-generated and they may not be great.
-
-\*You\* can improve the quality of Shortcuts for Chrome by reviewing and editing the translations.
-No coding experience is necessary, but you should be fluent in at least one other language besides English. 
-Follow the instructions at POEditor to get started. 
-The translations are updated with each release. 
-
-[Translate on POEditor ↗](https://poeditor.com/join/project?hash=c2ihN8duR2){ .md-button .md-button--primary .POButton }
-
-### Contributors
+Shortcuts for Chrome supports multiple languages and locales.
+The application matches the language preference of the user's browser.
+The translations are updated with each release.
 
 We thank [**all translation contributors**](https://poeditor.com/contributors/project?id_project=440791)
-for improving this free open-source extension! 
+for improving this free open-source extension!
+
+The initial language translations are machine-generated.
+You can improve the translation quality by reviewing and editing the translations in your native languages. 
+Follow the instructions at POEditor to get started. 
+
+[Translate on POEditor ↗](https://poeditor.com/join/project?hash=c2ihN8duR2){ .md-button .md-button--primary .POButton }
 
 ### Supported Languages 
 

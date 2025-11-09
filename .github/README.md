@@ -10,6 +10,7 @@
 By default, Chrome browser navigation is designed for everyday use. 
 The default navigation is suboptimal to users who want to access more technical browser features like indexedDB, service workers, Bluetooth internals, etc.
 These technical features are collectively called Chrome URLs.
+
 _Shortcuts for Chrome_ is a browser extension that adds a special navigation menu to the Chrome browser.
 The menu lists all Chrome URLs in one customizable menu.
 When the extension is pinned, the menu appears beside the address bar for easy access.
@@ -34,8 +35,8 @@ Shortcuts for Chrome is available for [installation at the Chrome Web Store][ins
 Shortcuts for Chrome is multilingual! 
 
 Ideally, the menu should list the available shortcuts in the user's native language.
-Certain languages are translations using automated APIs and may not be correct to native language speakers.
-If you would like to help improve the translation quality, participate at [PO Editor][i18n] (no programming experience required).
+Certain languages are translated with automated APIs, and may not be correct to native speakers.
+If you would like to help improve the translation quality in your native language, participate at [PO Editor][i18n] — no programming experience required.
 
     ┌────────────────────────────────────────────────────────────────────────┐
     │                          SUPPORTED  LANGUAGES                          │

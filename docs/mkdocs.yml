@@ -8,11 +8,12 @@ edit_uri: blob/main/docs/pages
 use_directory_urls: true
 
 nav:
-  - Introduction: index.md
+  - About: index.md
   - Install:
     - Chrome Web Store: https://chrome.google.com/webstore/detail/shortcuts-for-chrome/jnmekaomnicdcpgdndekkmojfomifjal
   - Development:
-    - Getting Started: start.md
+    - Introduction: description.md
+    - Getting Started Guide: dev.md
     - Source Code Docs: api.md
     - License: https://github.com/MobileFirstLLC/shortcuts-for-chrome/blob/main/LICENSE
   - Translate: translate.md
@@ -43,6 +44,9 @@ theme:
     text: Inter
     code: Fira Mono
 
+plugins:
+  - mermaid2:
+
 markdown_extensions:
   - pymdownx.highlight:
       use_pygments: true
@@ -55,14 +59,18 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 2
-  - admonition
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.magiclink
   - pymdownx.snippets
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - meta
   - admonition
+  - meta
   - attr_list
   - md_in_html
   - def_list

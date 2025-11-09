@@ -6,20 +6,19 @@ hide:
 
 # Shortcuts for Chrome
 
-Shortcuts for Chrome is a customizable browser navigation menu particularly for technical users.
-It contains links to all Chrome browser's internal pages called "Chrome URLs".
-Chrome URLs are normally hard to find, but this menu makes them easily accessible.
-Chrome URLs change over time with browser updates.
-The intent is to keep the Shortcuts for Chrome in sync with the latest version of Chrome.
-The menu also allows to pin and sort favorite URLs to fit individual preferences.
+**A customizable browser navigation menu for technical users.**
 
-This website contains the documentation for Shortcuts for Chrome.
-It explains, for example, how to get started with its [development](start.md).
-You can also contribute to the software [translations](translate.md).
+The menu contains links to technical browser features called _Chrome URLs_.
+Normally, Chrome URLs are hard to find, but this menu makes them easily accessible.
+With Shortcuts for Chrome you can also pin and sort your favorite Chrome URLs to match your preferences.
 
-We thank all [**source code contributors**](https://github.com/MobileFirstLLC/shortcuts-for-chrome/graphs/contributors) 
-and [**translation contributors**](https://poeditor.com/contributors/project?id_project=440791)
-for their efforts in improving this free and open-source software. 
+This website contains the software documentation for Shortcuts for Chrome.
+It is mainly intended for those who want to help in developing the extension.
+You can also contribute to the software quality by enhancing the [language translations](translate.md).
+
+We thank all [source code contributors](https://github.com/MobileFirstLLC/shortcuts-for-chrome/graphs/contributors) 
+and [translation contributors](https://poeditor.com/contributors/project?id_project=440791)
+for their efforts in improving this free, open source software! ♡
 
 [![install at chrome web store][badge]{id=install}][cws]
 

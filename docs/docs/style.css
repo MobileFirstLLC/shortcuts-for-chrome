@@ -2,16 +2,13 @@
     padding-bottom: 2rem
 }
 
-.md-tabs  li:nth-child(2) > a {
-    font-weight: 800; opacity: 1!important;}
-
-.md-typeset code, .highlighttable .linenos{
-    font-size: .95em;
+.md-tabs  li > a {
+    font-weight: 600; opacity: 1!important;
 }
 
 #install {
     width: 90%;
-    max-width: 300px;
+    max-width: 256px;
     margin: 2rem auto;
     display: block;
 }
