@@ -3,6 +3,7 @@
 [![Test status](https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/test.yml/badge.svg)](https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/test.yml)
 [![Test coverage](https://img.shields.io/coveralls/github/MobileFirstLLC/shortcuts-for-chrome?style=flat)](https://coveralls.io/github/MobileFirstLLC/shortcuts-for-chrome)
 [![Chrome Web Store Version](https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal)](https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal)
+![Chrome Web Store Users](https://img.shields.io/chrome-web-store/users/jnmekaomnicdcpgdndekkmojfomifjal)
 [![Static Badge](https://img.shields.io/badge/available-FF4081?style=flat&label=docs%20%E2%99%A1&labelColor=333333)][docs]
 
 > A customizable Chrome browser navigation menu for technical users.
