@@ -28,7 +28,7 @@
     "minor": "npx standard-version --release-as minor && npm run push_tags"
   },
   "devDependencies": {
-    "@google-cloud/translate": "9.2.1",
+    "@google-cloud/translate": "9.3.0",
     "dotenv": "^17.2.3",
     "extension-cli": "1.2.5-alpha.0",
     "file-set": "^6.0.0",
