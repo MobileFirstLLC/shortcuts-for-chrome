@@ -3,6 +3,7 @@ name: Code Quality
 on:
   push:
     branches: [ main ]
+    paths: [ src/* ]
   pull_request:
     branches-ignore: [ i18n ]
 
@@ -10,20 +11,11 @@ jobs:
   analyze:
     name: Analyze
     runs-on: ubuntu-latest
-
-    strategy:
-      fail-fast: false
-      matrix:
-        language: [ 'javascript' ]
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v5
-
+    - ses: actions/checkout@v5
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
       with:
-        languages: ${{ matrix.language }}
-
+        languages: javascript
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3

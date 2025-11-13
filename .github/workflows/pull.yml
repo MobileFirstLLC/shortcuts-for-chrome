@@ -3,6 +3,10 @@ name: Test PR
 on:
   pull_request:
     branches-ignore: [ i18n ]
+    paths:
+      - src/*
+      - test/*
+      - utilities/*
 
 jobs:
   test-pr:

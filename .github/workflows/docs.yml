@@ -3,33 +3,24 @@ name: Docs
 on:
   push:
     branches: [ main ]
+    paths:
+      - src/*
+      - docs/*
 
 jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 22
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
+          node-version: 24
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-
-      - name: Install Python libs
-        run: |
+      - run: |
           python -m pip install --upgrade pip
           pip install -r docs/requirements.txt
-
-      - name: Install Node libs
-        run: npm ci
-
-      - name: Build source code doc
-        run: npm run docs
-
-      - name: Build & Deploy Pages
-        run: cd docs && mkdocs gh-deploy --force
+      - run: npm ci
+      - run: npm run docs
+      - run: cd docs && mkdocs gh-deploy --force

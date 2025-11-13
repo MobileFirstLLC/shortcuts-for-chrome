@@ -12,33 +12,10 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: |
-          npm run test
-          npm run build
-      - name: 'Preserve Artifact'
-        uses: actions/upload-artifact@v4
-        with:
-          name: release
-          path: release.zip
-          retention-days: 7
-
-#      - name: Upload to Chrome Web Store
-#        uses: mobilefirstllc/cws-publish@latest
-#        with:
-#          action: upload
-#          client_id: ${{ secrets.CLIENT }}
-#          client_secret: ${{ secrets.SECRET }}
-#          refresh_token: ${{ secrets.TOKEN }}
-#          extension_id: jnmekaomnicdcpgdndekkmojfomifjal
-#          zip_file: release.zip
-
+          node-version: 24
+      - run: npm install
+      - run: npm run test
+      - run: npm run build
       - uses: ncipollo/release-action@v1
         with:
           artifacts: release.zip
-          token: ${{ secrets.GITHUB_TOKEN }}

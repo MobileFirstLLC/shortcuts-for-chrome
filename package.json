@@ -3,21 +3,21 @@
   "version": "3.7.0",
   "license": "MIT",
   "author": {
-    "name": "Mobile First",
-    "email": "hello@mobilefirst.me",
-    "url": "https://mobilefirst.me"
+    "name": "Neea",
+    "email": "hi@neea.dev",
+    "url": "https://neea.dev"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/MobileFirstLLC/shortcuts-for-chrome.git"
   },
-  "description": "Chrome navigation menu for technical users.",
+  "description": "A customizable Chrome browser navigation menu for technical users.",
   "homepage": "https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal",
   "scripts": {
     "start": "npm run locales && xt-build -e dev -w",
     "build": "npm run locales && xt-build -e prod",
     "docs": "jsdoc2md \"./src/**/*.{js, json}\" > docs/docs/api.md",
-    "docs:watch": "cd docs && mkdocs serve & nodemon --watch src -x \"npm run docs\"",
+    "docs:watch": "cd docs && mkdocs serve",
     "test": "xt-test",
     "coverage": "nyc --reporter=lcov npm run test",
     "locales": "node utilities/locales.js",
@@ -28,13 +28,10 @@
     "minor": "npx standard-version --release-as minor && npm run push_tags"
   },
   "devDependencies": {
-    "@google-cloud/translate": "9.2.1",
-    "dotenv": "^17.2.3",
+    "@google-cloud/translate": "9.3.0",
     "extension-cli": "1.2.5-alpha.0",
-    "file-set": "^6.0.0",
     "jsdoc-to-markdown": "9.1.3",
     "moment": "^2.30.1",
-    "nodemon": "3.1.10",
     "webpack": "5.102.1"
   },
   "babel": {
@@ -47,6 +44,9 @@
       "config:base",
       ":disableDependencyDashboard"
     ]
+  },
+  "engines" : {
+    "node" : ">=24.0.0"
   },
   "eslintIgnore": [
     "test/**/*"

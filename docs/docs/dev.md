@@ -82,9 +82,7 @@ Development-time dependencies are used to translate, document, and package the e
 | Task        | NPM Package             | Purpose                        |
 |-------------|-------------------------|--------------------------------|
 | Translation | @google-cloud/translate | Translation API                |
-|             | dotenv                  | ENV variables                  |
-|             | moment                  | File modification time         |
-| Docs        | jsdoc-to-markdown       | Building docs                  |
-|             | nodemon                 | Monitor js-file changes        |
-| Build       | extension-cli           | Building extension             |
+|             | moment                  | Capture file modification time |
+| Docs        | jsdoc-to-markdown       | Source code documentation      |
+| Build       | extension-cli           | Building the extension         |
 |             | webpack                 | Web module bundling            |
