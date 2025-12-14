@@ -1,12 +1,15 @@
-# <img width="30" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/img/128x128.png" /> Shortcuts for Chrome
+<picture>
+  <img alt="logo" src="https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/img/128x128.png" align="right" width="64">
+</picture>
 
+# Shortcuts for Chrome
+
+[![Version](https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal)](https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal)
+[![Users](https://img.shields.io/chrome-web-store/users/jnmekaomnicdcpgdndekkmojfomifjal)](https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal)
 [![Test status](https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/test.yml/badge.svg)](https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/test.yml)
-[![Test coverage](https://img.shields.io/coveralls/github/MobileFirstLLC/shortcuts-for-chrome?style=flat)](https://coveralls.io/github/MobileFirstLLC/shortcuts-for-chrome)
-[![Chrome Web Store Version](https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal)](https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal)
-![Chrome Web Store Users](https://img.shields.io/chrome-web-store/users/jnmekaomnicdcpgdndekkmojfomifjal)
-[![Static Badge](https://img.shields.io/badge/available-FF4081?style=flat&label=docs%20%E2%99%A1&labelColor=333333)][docs]
+[![Docs](https://img.shields.io/badge/available-FF4081?style=flat&label=docs&labelColor=333333)][docs]
 
-> A customizable Chrome browser navigation menu for technical users.
+**A customizable Chrome browser navigation menu for technical users.**
 
 By default, Chrome browser navigation is designed for everyday use. 
 The default navigation is suboptimal to users who want to access more technical browser features like indexedDB, service workers, Bluetooth internals, etc.
