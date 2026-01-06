@@ -7,7 +7,7 @@
 [![Version](https://img.shields.io/chrome-web-store/v/jnmekaomnicdcpgdndekkmojfomifjal)](https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal)
 [![Users](https://img.shields.io/chrome-web-store/users/jnmekaomnicdcpgdndekkmojfomifjal)](https://chrome.google.com/webstore/detail/jnmekaomnicdcpgdndekkmojfomifjal)
 [![Test status](https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/test.yml/badge.svg)](https://github.com/MobileFirstLLC/shortcuts-for-chrome/actions/workflows/test.yml)
-[![Docs](https://img.shields.io/badge/available-FF4081?style=flat&label=docs&labelColor=333333)][docs]
+[![Docs](https://img.shields.io/badge/online-BA68C8?style=flat&label=docs&labelColor=333333)][docs]
 
 **A customizable Chrome browser navigation menu for technical users.**
 
@@ -21,26 +21,22 @@ When the extension is pinned, the menu appears beside the address bar for easy a
 
 Key Features
 
-* 💯 &nbsp;__Fast access__ Find all Chrome URLs in one menu
-* 📍 &nbsp;__Personalization__ Pin your favorite shortcuts to top for even faster access
-* 🖲️ &nbsp;__Intuitive customization__ Drag and drop to organize links
-* 🌗 &nbsp;__Automatic theming__ Seamlessly matches the browser dark/light mode
+* 💯 &nbsp;__Fast access__ - All Chrome URLs in one menu
+* 📍 &nbsp;__Personalization__ - Pin favorite shortcuts to top of menu
+* 🖲️ &nbsp;__Intuitivity__ - Drag and drop to organize links
+* 🌗 &nbsp;__Theming__ - Automatically matches browser appearance
 
 <img width="650" class="feature" src='https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/screenshot.png' />
 
 ## Installation
 
-Shortcuts for Chrome is available for [installation at the Chrome Web Store][install].
+Shortcuts for Chrome is available at [the Chrome Web Store][install].
 
 [![install at chrome web store](https://raw.githubusercontent.com/MobileFirstLLC/shortcuts-for-chrome/main/assets/badge.png)][install]
 
 ## Internationalization
 
 Shortcuts for Chrome is multilingual! 
-
-Ideally, the menu displays shortcuts in the user's native language.
-Certain languages are translated with automated APIs, and these translations may not be correct to native speakers.
-If you would like to help improve the translation quality in your native language, participate at [PO Editor][i18n] — no programming experience is needed.
 
     ┌────────────────────────────────────────────────────────────────────────┐
     │                          SUPPORTED  LANGUAGES                          │
@@ -57,6 +53,11 @@ If you would like to help improve the translation quality in your native languag
     │ Swahili        Swedish        Tamil          Telugu         Thai       │
     | Turkish        Ukrainian      Vietnamese                               │
     └────────────────────────────────────────────────────────────────────────┘
+
+Ideally, the menu displays shortcuts in the user's native language.
+Certain languages are translated with automated APIs, and these translations may not be read correctly to native speakers.
+
+You can help improve the translation quality at [PO Editor][i18n] — no programming experience is needed.
 
 ## Documentation
 
