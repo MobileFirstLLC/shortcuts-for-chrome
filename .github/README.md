@@ -55,9 +55,10 @@ Shortcuts for Chrome is multilingual!
     └────────────────────────────────────────────────────────────────────────┘
 
 Ideally, the menu displays shortcuts in the user's native language.
-Certain languages are translated with automated APIs, and these translations may not be read correctly to native speakers.
+Certain languages are translated with automated APIs, and these translations may not read correctly to native speakers.
 
-You can help improve the translation quality at [PO Editor][i18n] — no programming experience is needed.
+You can help improve the translation quality at [PO Editor][i18n] — _no programming experience needed._
+The translations are updated with each software releases.
 
 ## Documentation
 
