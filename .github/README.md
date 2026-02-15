@@ -58,7 +58,7 @@ Ideally, the menu displays shortcuts in the user's native language.
 Certain languages are translated with automated APIs, and these translations may not read correctly to native speakers.
 
 You can help improve the translation quality at [PO Editor][i18n] — _no programming experience needed._
-The translations are updated with each software releases.
+The translations are updated with each software release.
 
 ## Documentation
 
