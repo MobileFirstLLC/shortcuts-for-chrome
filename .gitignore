@@ -11,3 +11,4 @@ venv/
 .env
 release.zip
 yarn-error.log
+icon.png
